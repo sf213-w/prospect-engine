@@ -17,19 +17,11 @@ FREE_EMAIL_DOMAINS = {
 	"protonmail.com"
 }
 
-US_STATE_ABBREVIATIONS = {
-	"AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA",
-	"HI","ID","IL","IN","IA","KS","KY","LA","ME","MD",
-	"MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ",
-	"NM","NY","NC","ND","OH","OK","OR","PA","RI","SC",
-	"SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"
-}
-
 EMAIL_REGEX = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 PHONE_REGEX = r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}"
 
 HEADERS = {
-	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+	"User-Agent": "Mozilla/5.0",
 	"Accept-Language": "en-US,en;q=0.9"
 }
 
@@ -38,6 +30,7 @@ class ProspectingEngine:
 
 	def __init__(self):
 		self.rows = []
+
 
 	def run(self):
 
@@ -79,7 +72,6 @@ class ProspectingEngine:
 
 					emails = self.clean_emails(re.findall(EMAIL_REGEX, html))
 					phones = re.findall(PHONE_REGEX, html)
-
 					names = self.extract_names(soup)
 
 					all_emails.update(emails)
@@ -89,8 +81,14 @@ class ProspectingEngine:
 					if "/contact" in page.lower():
 						contact_page = page
 
+				# Choose best email for outreach
 				if all_emails:
-					row["Person - Email - Work"] = list(all_emails)[0]
+
+					best_email = self.choose_best_email(list(all_emails))
+					row["Person - Email - Work"] = best_email
+
+					role = self.infer_role_from_email(best_email)
+					row["Contact Role Guess"] = role
 
 				if all_phones:
 					row["Person - Phone - Work"] = list(all_phones)[0]
@@ -102,7 +100,6 @@ class ProspectingEngine:
 					row["Person - ReferralURL"] = contact_page
 
 				metadata = self.extract_metadata(page_title, website)
-
 				enriched = self.enrich_data(row.get("Person - Email - Work"), metadata)
 
 				row.update(metadata)
@@ -133,7 +130,7 @@ class ProspectingEngine:
 
 	def build_page_list(self, base):
 
-		pages = [
+		return [
 			base,
 			urljoin(base, "/contact"),
 			urljoin(base, "/contact-us"),
@@ -141,10 +138,11 @@ class ProspectingEngine:
 			urljoin(base, "/team"),
 			urljoin(base, "/staff"),
 			urljoin(base, "/providers"),
-			urljoin(base, "/leadership")
+			urljoin(base, "/leadership"),
+			urljoin(base, "/education"),
+			urljoin(base, "/training"),
+			urljoin(base, "/compliance")
 		]
-
-		return pages
 
 
 	def download_page(self, url):
@@ -179,6 +177,77 @@ class ProspectingEngine:
 			valid.append(e)
 
 		return valid
+
+
+	def choose_best_email(self, emails):
+
+		priorities = {
+			"training": 100,
+			"education": 100,
+			"learning": 100,
+			"compliance": 100,
+			"privacy": 95,
+			"security": 90,
+			"hr": 90,
+			"humanresources": 90,
+			"director": 80,
+			"admin": 75,
+			"administrator": 75,
+			"manager": 70,
+			"operations": 70,
+			"info": 40,
+			"contact": 40,
+			"office": 40
+		}
+
+		best_email = None
+		best_score = -1
+
+		for email in emails:
+
+			email = email.lower()
+
+			score = 0
+
+			local = email.split("@")[0]
+			domain = email.split("@")[1]
+
+			for key, value in priorities.items():
+
+				if key in local:
+					score += value
+
+			if domain in FREE_EMAIL_DOMAINS:
+				score -= 50
+
+			if score > best_score:
+
+				best_score = score
+				best_email = email
+
+		return best_email
+
+
+	def infer_role_from_email(self, email):
+
+		local = email.split("@")[0]
+
+		if "training" in local or "education" in local:
+			return "Training"
+
+		if "compliance" in local or "privacy" in local:
+			return "Compliance"
+
+		if "security" in local:
+			return "Security"
+
+		if "hr" in local or "human" in local:
+			return "HR"
+
+		if "admin" in local or "manager" in local:
+			return "Administration"
+
+		return "General"
 
 
 	def extract_names(self, soup):
@@ -241,6 +310,7 @@ class ProspectingEngine:
 			"Person - Phone - Work",
 			"Person - ReferralURL",
 			"Person - Name",
+			"Contact Role Guess",
 			"Page Title",
 			"Website Domain",
 			"Email Domain",
