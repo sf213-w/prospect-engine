@@ -1,0 +1,5 @@
+# Ignore temporary files for open Word documents
+~$*.doc*
+
+# Ignore temporary files for open Excel spreadsheets
+~$*.xls*

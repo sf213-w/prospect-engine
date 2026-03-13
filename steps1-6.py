@@ -1,20 +1,21 @@
 import requests
 import csv
 import re
+import dns.resolver
+import smtplib
+
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 from datetime import datetime, UTC
+from collections import deque
 
 INPUT_FILE = "test.csv"
 OUTPUT_FILE = "lead_dataset.csv"
 
+MAX_PAGES_TO_CRAWL = 30
+
 FREE_EMAIL_DOMAINS = {
-	"gmail.com",
-	"yahoo.com",
-	"hotmail.com",
-	"outlook.com",
-	"aol.com",
-	"protonmail.com"
+	"gmail.com","yahoo.com","hotmail.com","outlook.com","aol.com","protonmail.com"
 }
 
 EMAIL_REGEX = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
@@ -30,7 +31,6 @@ class ProspectingEngine:
 
 	def __init__(self):
 		self.rows = []
-
 
 	def run(self):
 
@@ -49,7 +49,7 @@ class ProspectingEngine:
 
 			try:
 
-				pages = self.build_page_list(website)
+				pages = self.crawl_site(website)
 
 				all_emails = set()
 				all_phones = set()
@@ -65,30 +65,61 @@ class ProspectingEngine:
 					if not html:
 						continue
 
+					html = self.decode_obfuscated_emails(html)
+
 					soup = BeautifulSoup(html, "html.parser")
 
 					if not page_title and soup.title:
 						page_title = soup.title.get_text(strip=True)
 
 					emails = self.clean_emails(re.findall(EMAIL_REGEX, html))
-					phones = re.findall(PHONE_REGEX, html)
-					names = self.extract_names(soup)
-
 					all_emails.update(emails)
+
+					for link in soup.find_all("a", href=True):
+
+						href = link["href"]
+
+						if href.startswith("mailto:"):
+
+							email = href.replace("mailto:", "").strip()
+							all_emails.add(email)
+
+					phones = re.findall(PHONE_REGEX, html)
 					all_phones.update(phones)
+
+					names = self.extract_names(soup)
 					all_names.update(names)
 
-					if "/contact" in page.lower():
+					if "contact" in page.lower():
 						contact_page = page
 
-				# Choose best email for outreach
 				if all_emails:
 
 					best_email = self.choose_best_email(list(all_emails))
-					row["Person - Email - Work"] = best_email
+					row["Contact Role Guess"] = self.infer_role_from_email(best_email)
 
-					role = self.infer_role_from_email(best_email)
-					row["Contact Role Guess"] = role
+				else:
+
+					best_email = self.generate_fallback_email(website)
+					row["Contact Role Guess"] = "Guessed"
+
+				row["Person - Email - Work"] = best_email
+
+				mx_valid = self.verify_domain_mx(best_email)
+				smtp_valid = False
+
+				if mx_valid:
+					smtp_valid = self.verify_email_smtp(best_email)
+
+				row["MX Valid"] = mx_valid
+				row["SMTP Valid"] = smtp_valid
+
+				if smtp_valid:
+					row["Email Verified"] = "Mailbox Valid"
+				elif mx_valid:
+					row["Email Verified"] = "Domain Valid"
+				else:
+					row["Email Verified"] = "Invalid"
 
 				if all_phones:
 					row["Person - Phone - Work"] = list(all_phones)[0]
@@ -100,7 +131,7 @@ class ProspectingEngine:
 					row["Person - ReferralURL"] = contact_page
 
 				metadata = self.extract_metadata(page_title, website)
-				enriched = self.enrich_data(row.get("Person - Email - Work"), metadata)
+				enriched = self.enrich_data(best_email, metadata)
 
 				row.update(metadata)
 				row.update(enriched)
@@ -113,6 +144,9 @@ class ProspectingEngine:
 
 		self.write_csv()
 
+	# -----------------------------
+	# LOAD CSV
+	# -----------------------------
 
 	def load_organizations(self):
 
@@ -127,23 +161,51 @@ class ProspectingEngine:
 
 		return orgs
 
+	# -----------------------------
+	# CRAWLER
+	# -----------------------------
 
-	def build_page_list(self, base):
+	def crawl_site(self, base):
 
-		return [
-			base,
-			urljoin(base, "/contact"),
-			urljoin(base, "/contact-us"),
-			urljoin(base, "/about"),
-			urljoin(base, "/team"),
-			urljoin(base, "/staff"),
-			urljoin(base, "/providers"),
-			urljoin(base, "/leadership"),
-			urljoin(base, "/education"),
-			urljoin(base, "/training"),
-			urljoin(base, "/compliance")
-		]
+		visited = set()
+		queue = deque([base])
+		domain = urlparse(base).netloc
 
+		pages = []
+
+		while queue and len(pages) < MAX_PAGES_TO_CRAWL:
+
+			url = queue.popleft()
+
+			if url in visited:
+				continue
+
+			visited.add(url)
+			pages.append(url)
+
+			html = self.download_page(url)
+
+			if not html:
+				continue
+
+			soup = BeautifulSoup(html, "html.parser")
+
+			for link in soup.find_all("a", href=True):
+
+				href = link["href"]
+				full = urljoin(base, href)
+				parsed = urlparse(full)
+
+				if parsed.netloc == domain:
+
+					if full not in visited:
+						queue.append(full)
+
+		return pages
+
+	# -----------------------------
+	# DOWNLOAD PAGE
+	# -----------------------------
 
 	def download_page(self, url):
 
@@ -159,6 +221,21 @@ class ProspectingEngine:
 		except Exception:
 			return None
 
+	# -----------------------------
+	# DECODE HIDDEN EMAILS
+	# -----------------------------
+
+	def decode_obfuscated_emails(self, text):
+
+		text = text.replace("[at]", "@").replace("(at)", "@")
+		text = text.replace("[dot]", ".").replace("(dot)", ".")
+		text = text.replace("&#64;", "@")
+
+		return text
+
+	# -----------------------------
+	# EMAIL CLEANING
+	# -----------------------------
 
 	def clean_emails(self, emails):
 
@@ -171,33 +248,30 @@ class ProspectingEngine:
 			if any(e.endswith(ext) for ext in [".png",".jpg",".jpeg",".svg",".gif",".webp"]):
 				continue
 
-			if "@" not in e:
-				continue
-
 			valid.append(e)
 
 		return valid
 
+	# -----------------------------
+	# EMAIL PRIORITY
+	# -----------------------------
 
 	def choose_best_email(self, emails):
 
 		priorities = {
-			"training": 100,
-			"education": 100,
-			"learning": 100,
-			"compliance": 100,
-			"privacy": 95,
-			"security": 90,
-			"hr": 90,
-			"humanresources": 90,
-			"director": 80,
-			"admin": 75,
-			"administrator": 75,
-			"manager": 70,
-			"operations": 70,
-			"info": 40,
-			"contact": 40,
-			"office": 40
+			"training":100,
+			"education":100,
+			"learning":100,
+			"compliance":100,
+			"privacy":95,
+			"security":90,
+			"hr":90,
+			"human":90,
+			"director":80,
+			"admin":75,
+			"manager":70,
+			"info":40,
+			"contact":40
 		}
 
 		best_email = None
@@ -205,14 +279,11 @@ class ProspectingEngine:
 
 		for email in emails:
 
-			email = email.lower()
-
 			score = 0
-
 			local = email.split("@")[0]
 			domain = email.split("@")[1]
 
-			for key, value in priorities.items():
+			for key,value in priorities.items():
 
 				if key in local:
 					score += value
@@ -221,12 +292,57 @@ class ProspectingEngine:
 				score -= 50
 
 			if score > best_score:
-
 				best_score = score
 				best_email = email
 
 		return best_email
 
+	# -----------------------------
+	# EMAIL VERIFICATION
+	# -----------------------------
+
+	def verify_domain_mx(self, email):
+
+		try:
+
+			domain = email.split("@")[1]
+
+			records = dns.resolver.resolve(domain, "MX")
+
+			return len(records) > 0
+
+		except Exception:
+
+			return False
+
+	def verify_email_smtp(self, email):
+
+		try:
+
+			domain = email.split("@")[1]
+
+			mx_records = dns.resolver.resolve(domain, "MX")
+			mx_host = str(mx_records[0].exchange)
+
+			server = smtplib.SMTP(timeout=10)
+
+			server.connect(mx_host)
+			server.helo("example.com")
+			server.mail("verify@example.com")
+
+			code, message = server.rcpt(email)
+
+			server.quit()
+
+			return code == 250
+
+		except Exception:
+
+			return False
+
+	# -----------------------------
+	# ROLE INFERENCE
+	# -----------------------------
 
 	def infer_role_from_email(self, email):
 
@@ -249,6 +365,9 @@ class ProspectingEngine:
 
 		return "General"
 
+	# -----------------------------
+	# NAME EXTRACTION
+	# -----------------------------
 
 	def extract_names(self, soup):
 
@@ -263,19 +382,30 @@ class ProspectingEngine:
 
 		return names
 
+	# -----------------------------
+	# METADATA
+	# -----------------------------
 
 	def extract_metadata(self, title, website):
 
-		data = {}
+		return {
+			"Page Title": title,
+			"Website Domain": urlparse(website).netloc
+		}
 
-		data["Page Title"] = title
+	# -----------------------------
+	# FALLBACK EMAIL
+	# -----------------------------
+
+	def generate_fallback_email(self, website):
 
 		domain = urlparse(website).netloc
 
-		data["Website Domain"] = domain
+		return f"training@{domain}"
 
-		return data
-
+	# -----------------------------
+	# ENRICHMENT
+	# -----------------------------
 
 	def enrich_data(self, email, metadata):
 
@@ -289,15 +419,14 @@ class ProspectingEngine:
 			data["Free Email"] = domain in FREE_EMAIL_DOMAINS
 			data["Company Domain"] = domain
 
-		website_domain = metadata.get("Website Domain")
-
-		if website_domain:
-
-			data["Country"] = "USA"
-			data["US Status"] = "US"
+		data["Country"] = "USA"
+		data["US Status"] = "US"
 
 		return data
 
+	# -----------------------------
+	# CSV OUTPUT
+	# -----------------------------
 
 	def write_csv(self):
 
@@ -307,6 +436,9 @@ class ProspectingEngine:
 			"Person - Website",
 			"Person - Person created",
 			"Person - Email - Work",
+			"Email Verified",
+			"MX Valid",
+			"SMTP Valid",
 			"Person - Phone - Work",
 			"Person - ReferralURL",
 			"Person - Name",
@@ -321,9 +453,9 @@ class ProspectingEngine:
 			"Error"
 		]
 
-		with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
+		with open(OUTPUT_FILE,"w",newline="",encoding="utf-8") as f:
 
-			writer = csv.DictWriter(f, fieldnames=fieldnames)
+			writer = csv.DictWriter(f,fieldnames=fieldnames)
 
 			writer.writeheader()
 
