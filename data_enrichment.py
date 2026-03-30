@@ -229,10 +229,7 @@ class DataEnricher:
 
 		if domain == DEFAULT_VALUE:
 			return DEFAULT_VALUE
-
-		if domain in self.FREE_EMAIL_DOMAINS:
-			return "Personal"
-
+		
 		tld = domain.split('.')[-1]
 
 		if tld in self.DOMAIN_ORG_TYPES:
@@ -256,6 +253,9 @@ class DataEnricher:
 			if any(x in org for x in ['inc','corp','llc','ltd']):
 				return "Corporate"
 
+		if domain in self.FREE_EMAIL_DOMAINS:
+			return "Personal"
+	
 		return "Other"
 
 

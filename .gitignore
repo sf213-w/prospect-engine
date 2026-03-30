@@ -3,3 +3,5 @@
 
 # Ignore temporary files for open Excel spreadsheets
 ~$*.xls*
+
+n4j/*
