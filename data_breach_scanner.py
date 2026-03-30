@@ -162,7 +162,7 @@ def save_report(articles: list[dict], cutoff: datetime) -> None:
             for a in articles
         ],
     }
-    json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
     # Plain text
     txt_path = OUTPUT_DIR / f"breaches_{stamp}.txt"

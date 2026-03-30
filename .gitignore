@@ -5,3 +5,5 @@
 ~$*.xls*
 
 n4j/*
+
+breach_reports/*
