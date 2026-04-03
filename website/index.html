@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROSPECTOR // Breach Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="noise"></div>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <span class="logo-bracket">[</span>
+                PROSPECTOR
+                <span class="logo-bracket">]</span>
+            </div>
+            <div class="logo-sub">// BREACH INTELLIGENCE TERMINAL</div>
+        </div>
+        <div class="header-right">
+            <div class="status-indicator">
+                <span class="pulse"></span>
+                <span id="status-text">AWAITING DATA</span>
+            </div>
+            <div class="clock" id="clock"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Upload / Load Section -->
+        <section class="panel upload-panel" id="upload-panel">
+            <div class="panel-header">
+                <span class="panel-title">01 // DATA INGESTION</span>
+                <span class="panel-line"></span>
+            </div>
+            <div class="upload-area" id="upload-area">
+                <div class="upload-icon">⬡</div>
+                <div class="upload-text">DROP BREACH REPORT OR CONTACT CSV HERE</div>
+                <div class="upload-sub">Accepts breaches_*.json &nbsp;·&nbsp; breach_contacts_*.csv</div>
+                <div class="upload-buttons">
+                    <label class="btn btn-primary" for="file-json">LOAD BREACH JSON</label>
+                    <input type="file" id="file-json" accept=".json" style="display:none">
+                    <label class="btn btn-secondary" for="file-csv">LOAD CONTACTS CSV</label>
+                    <input type="file" id="file-csv" accept=".csv" style="display:none">
+                </div>
+            </div>
+            <div class="loaded-files" id="loaded-files"></div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-bar" id="stats-bar" style="display:none">
+            <div class="stat-block" id="stat-articles">
+                <div class="stat-value">0</div>
+                <div class="stat-label">ARTICLES</div>
+            </div>
+            <div class="stat-divider">//</div>
+            <div class="stat-block" id="stat-sources">
+                <div class="stat-value">0</div>
+                <div class="stat-label">SOURCES</div>
+            </div>
+            <div class="stat-divider">//</div>
+            <div class="stat-block" id="stat-contacts">
+                <div class="stat-value">0</div>
+                <div class="stat-label">CONTACTS</div>
+            </div>
+            <div class="stat-divider">//</div>
+            <div class="stat-block" id="stat-emails">
+                <div class="stat-value">0</div>
+                <div class="stat-label">EMAILS FOUND</div>
+            </div>
+            <div class="stat-divider">//</div>
+            <div class="stat-block" id="stat-period">
+                <div class="stat-value" style="font-size:14px">—</div>
+                <div class="stat-label">REPORT PERIOD</div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="panel filter-panel" id="filter-panel" style="display:none">
+            <div class="panel-header">
+                <span class="panel-title">02 // FILTER &amp; SEARCH</span>
+                <span class="panel-line"></span>
+            </div>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label class="filter-label">VIEW MODE</label>
+                    <div class="tab-group">
+                        <button class="tab active" onclick="setMode('articles')" id="tab-articles">BREACH ARTICLES</button>
+                        <button class="tab" onclick="setMode('contacts')" id="tab-contacts">COMPANY CONTACTS</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">SOURCE</label>
+                    <select id="filter-source" onchange="applyFilters()">
+                        <option value="">ALL SOURCES</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">KEYWORD SEARCH</label>
+                    <div class="search-wrap">
+                        <span class="search-prefix">&gt;_</span>
+                        <input type="text" id="filter-search" placeholder="company, attack type, keyword..." oninput="applyFilters()">
+                    </div>
+                </div>
+                <div class="filter-group filter-group-btn">
+                    <button class="btn btn-ghost" onclick="resetFilters()">CLEAR FILTERS</button>
+                    <button class="btn btn-primary" onclick="exportFiltered()">EXPORT FILTERED</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="panel results-panel" id="results-panel" style="display:none">
+            <div class="panel-header">
+                <span class="panel-title">03 // RESULTS</span>
+                <span class="panel-line"></span>
+                <span class="result-count" id="result-count">0 RECORDS</span>
+            </div>
+
+            <!-- Articles View -->
+            <div id="articles-view">
+                <div class="table-wrap">
+                    <table id="articles-table">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('articles','published')">#DATE <span class="sort-icon">⇅</span></th>
+                                <th onclick="sortTable('articles','title')">TITLE <span class="sort-icon">⇅</span></th>
+                                <th onclick="sortTable('articles','source')">SOURCE <span class="sort-icon">⇅</span></th>
+                                <th>SUMMARY</th>
+                                <th>LINK</th>
+                            </tr>
+                        </thead>
+                        <tbody id="articles-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Contacts View -->
+            <div id="contacts-view" style="display:none">
+                <div class="table-wrap">
+                    <table id="contacts-table">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('contacts','company_name')">COMPANY <span class="sort-icon">⇅</span></th>
+                                <th>WEBSITE</th>
+                                <th>EMAIL</th>
+                                <th>SECURITY EMAIL</th>
+                                <th>PHONE</th>
+                                <th>ADDRESS</th>
+                                <th>BREACH ARTICLE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contacts-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span class="modal-title" id="modal-title">RECORD DETAIL</span>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
