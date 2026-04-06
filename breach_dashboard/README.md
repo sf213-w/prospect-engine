@@ -165,3 +165,11 @@ Review articles, check contacts, export outreach list
 - **Finding your latest report** — files are named with a timestamp so sorting by name or date in File Explorer will put the newest at the top.
 - **Empty contacts tab** — if Contacts shows nothing, make sure you have loaded a CSV file (not just the JSON). The two files are loaded separately.
 - **Emails not showing** — some company websites hide their emails or use contact forms. The contact finder can only find emails that appear as plain text on the page.
+
+## AI
+
+run
+
+```bash
+$env:OLLAMA_ORIGINS="*"; ollama serve
+```
