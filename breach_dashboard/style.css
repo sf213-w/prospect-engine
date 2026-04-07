@@ -538,6 +538,7 @@ tr.highlight td { background: rgba(0,212,255,0.06); }
     max-width: 340px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
