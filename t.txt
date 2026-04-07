@@ -1,2 +1,0 @@
-Input: Company Name + Website + Others... = Persona. Accept Individual data as well?
-Output: Find Targets on the Internet that fit the input Persona
