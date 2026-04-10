@@ -1,0 +1,301 @@
+{
+  "generated": "2026-03-30T17:36:46.896777+00:00",
+  "lookback_days": 7,
+  "article_count": 42,
+  "articles": [
+    {
+      "source": "SecurityWeek",
+      "title": "Healthcare IT Platform CareCloud Probing Potential Data Breach",
+      "summary": "The company has disclosed a cybersecurity incident involving one of its electronic health record environments.\nThe post Healthcare IT Platform CareCloud Probing Potential Data Breach appeared first on SecurityWeek.",
+      "url": "https://www.securityweek.com/healthcare-it-platform-carecloud-probing-potential-data-breach/",
+      "published": "2026-03-30 14:16 UTC"
+    },
+    {
+      "source": "SecurityWeek",
+      "title": "European Commission Reports Cyber Intrusion and Data Theft",
+      "summary": "The ShinyHunters hacker group claimed to have stolen over 350GB of information from European Commission cloud systems.\nThe post European Commission Reports Cyber Intrusion and Data Theft appeared first on SecurityWeek.",
+      "url": "https://www.securityweek.com/european-commission-reports-cyber-intrusion-and-data-theft/",
+      "published": "2026-03-30 11:29 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "South African government agency and Spanish psychological software provider victims of cyberattacks by XP95",
+      "summary": "Jan Vermeulen reports: Statistics South Africa has become the latest government entity to fall victim to a ransomware attack by the emerging cybercrime group known as XP95. The threat actors claim to have successfully breached the agency responsible for conducting South Africa’s census, as well as producing and disseminating other official statistics, like the Consumer...\nSource",
+      "url": "https://databreaches.net/2026/03/30/south-african-government-agency-and-spanish-psychological-software-provider-victims-of-cyberattacks-by-xp95/?pk_campaign=feed&pk_kwd=south-african-government-agency-and-spanish-psychological-software-provider-victims-of-cyberattacks-by-xp95",
+      "published": "2026-03-30 11:24 UTC"
+    },
+    {
+      "source": "SecurityWeek",
+      "title": "Hacked Hospitals, Hidden Spyware: Iran Conflict Shows How Digital Fight Is Ingrained in Warfare",
+      "summary": "Iran-linked hacking groups are turning to high-volume, low-impact cyberattacks, and AI is providing a boost.\nThe post Hacked Hospitals, Hidden Spyware: Iran Conflict Shows How Digital Fight Is Ingrained in Warfare appeared first on SecurityWeek.",
+      "url": "https://www.securityweek.com/hacked-hospitals-hidden-spyware-iran-conflict-shows-how-digital-fight-is-ingrained-in-warfare/",
+      "published": "2026-03-30 11:09 UTC"
+    },
+    {
+      "source": "BleepingComputer Security",
+      "title": "Hackers now exploit critical F5 BIG-IP flaw in attacks, patch now",
+      "summary": "F5 has reclassified a BIG-IP APM denial-of-service (DoS) vulnerability as a critical-severity remote code execution (RCE) flaw, warning that attackers are exploiting it to deploy webshells on unpatched devices. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-f5-big-ip-flaw-in-attacks-patch-now/",
+      "published": "2026-03-30 10:59 UTC"
+    },
+    {
+      "source": "Infosecurity Magazine",
+      "title": "European Commission Confirms Cloud Data Breach",
+      "summary": "The European Commission has revealed details of a data breach impacting its AWS infrastructure",
+      "url": "https://www.infosecurity-magazine.com/news/european-commission-cloud-data/",
+      "published": "2026-03-30 08:15 UTC"
+    },
+    {
+      "source": "SecurityWeek",
+      "title": "FBI Confirms Kash Patel Email Hack as US Offers $10M Reward for Hackers",
+      "summary": "The agency said Iranian hackers targeted the director’s personal email account and noted that the compromised information is old.\nThe post FBI Confirms Kash Patel Email Hack as US Offers $10M Reward for Hackers appeared first on SecurityWeek.",
+      "url": "https://www.securityweek.com/fbi-confirms-kash-patel-email-hack-as-us-offers-10m-reward-for-hackers/",
+      "published": "2026-03-30 08:01 UTC"
+    },
+    {
+      "source": "BleepingComputer Security",
+      "title": "European Commission confirms data breach after Europa.eu hack",
+      "summary": "The European Commission has confirmed a data breach after its Europa.eu web platform was hacked in a cyberattack claimed by the ShinyHunters extortion gang. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-breach-after-europaeu-hack/",
+      "published": "2026-03-30 06:42 UTC"
+    },
+    {
+      "source": "BleepingComputer Security",
+      "title": "FBI confirms hack of Director Patel's personal email inbox",
+      "summary": "The Handala hackers associated with Iran have breached the personal email account of FBI Director Kash Patel and published photos and documents. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-confirms-hack-of-director-patels-personal-email-inbox/",
+      "published": "2026-03-29 21:09 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "CareCloud notifies the SEC after attack on one of its EHR environments",
+      "summary": "DysruptionHub reports: CareCloud said an unauthorized third party briefly disrupted one of its six electronic health record environments on March 16, restoring access that evening as investigators assess possible patient data exposure. In a March 27 SEC filing, the Somerset, New Jersey-based company said an unauthorized third party temporarily accessed part of its CareCloud Health division...\nSour…",
+      "url": "https://databreaches.net/2026/03/29/carecloud-notifies-the-sec-after-attack-on-one-of-its-ehr-environments/?pk_campaign=feed&pk_kwd=carecloud-notifies-the-sec-after-attack-on-one-of-its-ehr-environments",
+      "published": "2026-03-29 15:34 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Thankfully, the Infinite Campus incident did not involve a lot of non-directory student information",
+      "summary": "In the wake of the Infinite Campus data breach, DataBreaches was contacted by several concerned EdTech professionals who weren&#8217;t prepared to accept Infinite Campus&#8217;s word that there was no sensitive student information in the data tranche. With their encouragement, DataBreaches downloaded the data tranche from ShinyHunters&#8217; leak site and examined it. Most of the files...\nSource",
+      "url": "https://databreaches.net/2026/03/28/thankfully-the-infinite-campus-incident-did-not-involve-a-lot-of-non-directory-student-information/?pk_campaign=feed&pk_kwd=thankfully-the-infinite-campus-incident-did-not-involve-a-lot-of-non-directory-student-information",
+      "published": "2026-03-28 20:37 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Iran-Linked Hackers Breach FBI Director’s Personal Email, Hit Stryker With Wiper Attack",
+      "summary": "Threat actors with ties to Iran successfully broke into the personal email account of Kash Patel, the director of the U.S. Federal Bureau of Investigation (FBI), and leaked a cache of photos and other documents to the internet.\nHandala Hack Team, which carried out the breach, said on its website that Patel \"will now find his name among the list of successfully hacked victims.\" In a statement",
+      "url": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
+      "published": "2026-03-28 15:40 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Iran-linked group Handala hacked FBI Director Kash Patel’s personal email account",
+      "summary": "Pierluigi Paganini reports: Iran-linked hacking group Handala claims it breached FBI Director Kash Patel’s personal Gmail account and shared alleged data, including photos and files. The FBI confirmed it is aware of the incident and has taken steps to mitigate risks, stressing that the exposed material is old and does not involve any government or classified information....\nSource",
+      "url": "https://databreaches.net/2026/03/28/iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account/?pk_campaign=feed&pk_kwd=iran-linked-group-handala-hacked-fbi-director-kash-patels-personal-email-account",
+      "published": "2026-03-28 13:34 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Woodfords Family Services notifying patients and families about 2024 ransomware attack",
+      "summary": "A notice by Woodfords Family Services in Maine caught my eye because the name sounded familiar. They provide support services for people with disabilities and their families. On March 27, 2026, they issued a notice: What Happened? On April 8, 2024, we discovered suspicious activity within our network. We took steps to secure our environment and...\nSource",
+      "url": "https://databreaches.net/2026/03/28/woodfords-family-services-notifying-patients-and-families-about-2024-ransomware-attack/?pk_campaign=feed&pk_kwd=woodfords-family-services-notifying-patients-and-families-about-2024-ransomware-attack",
+      "published": "2026-03-28 13:18 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Thousands of Corewell Health patients affected by security breach",
+      "summary": "Fox2 reports: Corewell Health announced their former health care consulting vendor experienced a data breach in 2024, affecting thousands of patients. Pinnacle Holdings previously provided health care consulting services to Corewell Health. After being notified of the data breach, Corewell said they conducted a review to identify who was impacted. The health system said around...\nSource",
+      "url": "https://databreaches.net/2026/03/28/thousands-of-corewell-health-patients-affected-by-security-breach/?pk_campaign=feed&pk_kwd=thousands-of-corewell-health-patients-affected-by-security-breach",
+      "published": "2026-03-28 11:35 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "Meet Claude Mythos: Leaked Anthropic post reveals the powerful upcoming model",
+      "summary": "Matt Binder reports: An accidental leak has now been officially confirmed by AI company Anthropic regarding its most powerful AI model yet. The model, now known as &#8220;Claude Mythos,&#8221; was originally uncovered in a report from Fortune. Anthropic has since confirmed the details about the leak to the outlet. The data leak included details about the upcoming release of the...\nSource",
+      "url": "https://databreaches.net/2026/03/28/meet-claude-mythos-leaked-anthropic-post-reveals-the-powerful-upcoming-model/?pk_campaign=feed&pk_kwd=meet-claude-mythos-leaked-anthropic-post-reveals-the-powerful-upcoming-model",
+      "published": "2026-03-28 11:34 UTC"
+    },
+    {
+      "source": "DataBreaches.net",
+      "title": "LeakBase’s “Chucky” detained in Russia",
+      "summary": "TASS reports: Police have detained a Taganrog resident suspected of administering LeakBase, one of the largest hacker platforms. Law enforcement officials told TASS. The detained Taganrog resident is suspected of administering &#8220;one of the largest international hacker platforms, LeakBase,&#8221; the agency&#8217;s source said. According to him, the liquidated platform operated a credit system…",
+      "url": "https://databreaches.net/2026/03/27/leakbases-chucky-detained-in-russia/?pk_campaign=feed&pk_kwd=leakbases-chucky-detained-in-russia",
+      "published": "2026-03-27 22:38 UTC"
+    },
+    {
+      "source": "BleepingComputer Security",
+      "title": "Backdoored Telnyx PyPI package pushes malware hidden in WAV audio",
+      "summary": "TeamPCP hackers compromised the Telnyx package on the Python Package Index today, uploading malicious versions that deliver credential-stealing malware hidden inside a WAV file. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/backdoored-telnyx-pypi-package-pushes-malware-hidden-in-wav-audio/",
+      "published": "2026-03-27 21:13 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Infrastructure Attacks With Physical Consequences Down 25%",
+      "summary": "Operational technology (OT) at industrial and critical infrastructure sites seem to have been benefitting from a lull in ransomware, and hackers' relative ignorance of OT systems.",
+      "url": "https://www.darkreading.com/threat-intelligence/infrastructure-attacks-physical-consequences-down",
+      "published": "2026-03-27 13:30 UTC"
+    },
+    {
+      "source": "BleepingComputer Security",
+      "title": "European Commission investigating breach after Amazon cloud account hack",
+      "summary": "The European Commission, the European Union's main executive body, is investigating a security breach after a threat actor gained access to the Commission's Amazon cloud environment. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-investigating-breach-after-amazon-cloud-account-hack/",
+      "published": "2026-03-27 12:22 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Bearlyfy Hits Russian Firms with Custom GenieLocker Ransomware",
+      "summary": "A pro-Ukrainian group called Bearlyfy has been attributed to more than 70 cyber attacks targeting Russian companies since it first surfaced in the threat landscape in January 2025, with recent attacks leveraging a custom Windows ransomware strain codenamed GenieLocker.\n\"Bearlyfy (also known as Labubu) operates as a dual-purpose group aimed at inflicting maximum damage upon Russian businesses;",
+      "url": "https://thehackernews.com/2026/03/bearlyfy-hits-70-russian-firms-with.html",
+      "published": "2026-03-27 10:04 UTC"
+    },
+    {
+      "source": "Have I Been Pwned Blog",
+      "title": "BreachForums Version 5 - 339,778 breached accounts",
+      "summary": "In March 2026, a breach of one of the many iterations of the BreachForums hacking forum known as \"Version 5\" was publicly disclosed. The incident exposed 340k unique email addresses along with usernames and argon2 password hashes.",
+      "url": "https://haveibeenpwned.com/Breach/BreachForumsV5",
+      "published": "2026-03-27 02:19 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Automotive Cybersecurity Threats Grow in Era of Connected, Autonomous Vehicles",
+      "summary": "More than a decade since the 2015 Jeep hack, the cybersecurity of vehicles remains of the utmost importance.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/automotive-cybersecurity-threats-grow-connected-autonomous-vehicles",
+      "published": "2026-03-26 19:48 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Claude Extension Flaw Enabled Zero-Click XSS Prompt Injection via Any Website",
+      "summary": "Cybersecurity researchers have disclosed a vulnerability in Anthropic's Claude Google Chrome Extension that could have been exploited to trigger malicious prompts simply by visiting a web page.\nThe flaw \"allowed any website to silently inject prompts into that assistant as if the user wrote them,\" Koi Security researcher Oren Yomtov said in a report shared with The Hacker News. \"No clicks, no",
+      "url": "https://thehackernews.com/2026/03/claude-extension-flaw-enabled-zero.html",
+      "published": "2026-03-26 13:11 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Masters of Imitation: How Hackers and Art Forgers Perfect the Art of Deception",
+      "summary": "Unmasking impostors is something the art world has faced for decades, and there are valuable lessons from the works of Elmyr de Hory that can apply to the world of defensive cybersecurity. During the 1960s, de Hory gained infamy as a premier forger, passing off counterfeit masterworks of Picasso, Matisse, and Renoir to unsuspecting collectors and renowned museums. Over the next several decades,",
+      "url": "https://thehackernews.com/2026/03/masters-of-imitation-how-hackers-and.html",
+      "published": "2026-03-26 11:58 UTC"
+    },
+    {
+      "source": "Infosecurity Magazine",
+      "title": "Iran-Linked Pay2Key Ransomware Group Re-Emerges",
+      "summary": "Halcyon and Beazley Security track the return of Iranian ransomware group Pay2Key",
+      "url": "https://www.infosecurity-magazine.com/news/iranlinked-pay2key-ransomware/",
+      "published": "2026-03-26 10:45 UTC"
+    },
+    {
+      "source": "Have I Been Pwned Blog",
+      "title": "Scuf Gaming - 128,683 breached accounts",
+      "summary": "In June 2015, custom gaming controller maker Scuf Gaming suffered a data breach. The incident exposed 129k unique email addresses along with usernames, display names, IP addresses and password hashes.",
+      "url": "https://haveibeenpwned.com/Breach/ScufGaming",
+      "published": "2026-03-26 05:31 UTC"
+    },
+    {
+      "source": "Have I Been Pwned Blog",
+      "title": "Sound Radix - 292,993 breached accounts",
+      "summary": "In March 2026, the audio production tools company Sound Radix disclosed a data breach that they subsequently self-submitted to HIBP. The incident impacted 293k unique email addresses and names. Sound Radix advised that it is possible that additional data including hashed passwords may have been exposed, and that no financial or credit card information was impacted.",
+      "url": "https://haveibeenpwned.com/Breach/SoundRadix",
+      "published": "2026-03-26 00:06 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Blame Game: Why Public Cyber Attribution Carries Risks",
+      "summary": "Publicly accusing an entity of a cyberattack could have negative consequences that organizations should consider before taking the plunge.",
+      "url": "https://www.darkreading.com/cyber-risk/blame-game-public-cyber-attribution-risks",
+      "published": "2026-03-25 16:03 UTC"
+    },
+    {
+      "source": "Infosecurity Magazine",
+      "title": "Hackers Exploit Compromised Enterprise Identities at Industrial Scale, Warns SentinelOne",
+      "summary": "Cybersecurity company’s annual report issues warning over a “mass-marketed impersonation crisis” over attackers abusing legitimate credentials",
+      "url": "https://www.infosecurity-magazine.com/news/hackers-exploit-id-industrial-scale/",
+      "published": "2026-03-25 15:30 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Ex-NSA Directors Discuss 'Red Line' for Offensive Cyberattacks",
+      "summary": "Four former NSA chiefs representing a near-complete history of US Cyber Command debate the role of offensive cyber in the government at RSAC.",
+      "url": "https://www.darkreading.com/cyber-risk/ex-nsa-directors-red-line-offensive-cyberattacks",
+      "published": "2026-03-25 11:55 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Russian Hacker Sentenced to 2 Years for TA551 Botnet-Driven Ransomware Attacks",
+      "summary": "The U.S. Department of Justice (DoJ) said a Russian national has been sentenced to two years in prison for managing a botnet that was used to launch ransomware attacks against U.S. companies.\nIlya Angelov, 40, of Tolyatti, Russia, was also fined $100,000. Angelov, who went by the online aliases \"milan\" and \"okart,\" is said to have co-managed a Russia-based cybercriminal group known as TA551 (aka",
+      "url": "https://thehackernews.com/2026/03/russian-hacker-sentenced-to-2-years-for.html",
+      "published": "2026-03-25 11:52 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Iran Hacktivists Make Noise but Have Little Impact on War",
+      "summary": "Iran-aligned groups are trying to make their mark in the Gulf, but the results have fallen short of remarkable.",
+      "url": "https://www.darkreading.com/threat-intelligence/iran-hacktivists-impact-on-war",
+      "published": "2026-03-25 05:00 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Hackers Use Fake Resumes to Steal Enterprise Credentials and Deploy Crypto Miner",
+      "summary": "An ongoing phishing campaign is targeting French-speaking corporate environments with fake resumes that lead to the deployment of cryptocurrency miners and information stealers.\n\"The campaign uses highly obfuscated VBScript files disguised as resume/CV documents, delivered through phishing emails,\" Securonix researchers Shikha Sangwan, Akshay Gaikwad, and Aaron Beardslee said in a report shared",
+      "url": "https://thehackernews.com/2026/03/hackers-use-fake-resumes-to-steal.html",
+      "published": "2026-03-24 16:35 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "TeamPCP Hacks Checkmarx GitHub Actions Using Stolen CI Credentials",
+      "summary": "Two more GitHub Actions workflows have become the latest to be compromised by credential-stealing malware by a threat actor known as TeamPCP, the cloud-native cybercriminal operation also behind the Trivy supply chain attack.\nThe workflows, both maintained by the supply chain security company Checkmarx, are listed below -\n\ncheckmarx/ast-github-action\ncheckmarx/kics-github-action\n\nCloud security",
+      "url": "https://thehackernews.com/2026/03/teampcp-hacks-checkmarx-github-actions.html",
+      "published": "2026-03-24 10:38 UTC"
+    },
+    {
+      "source": "Infosecurity Magazine",
+      "title": "Russian Initial Access Broker Handed 81-Month Sentence",
+      "summary": "Russian cybercriminal Aleksei Volkov has received close to seven years behind bars for role in Yanluowang ransomware",
+      "url": "https://www.infosecurity-magazine.com/news/russian-initial-access-broker/",
+      "published": "2026-03-24 10:32 UTC"
+    },
+    {
+      "source": "Infosecurity Magazine",
+      "title": "Handala Group Tied to Iranian Hack‑and‑Leak Operations, FBI Reveals",
+      "summary": "The FBI has warned that Iranian hacking group Handala has been targeting opponents of the regime since 2023",
+      "url": "https://www.infosecurity-magazine.com/news/handala-group-iranian-hack-and/",
+      "published": "2026-03-24 09:30 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "U.S. Sentences Russian Hacker to 6.75 Years for Role in $9M Ransomware Damage",
+      "summary": "A 26-year-old Russian citizen has been sentenced in the U.S. to 6.75 years (81 months) in prison for his role in assisting major cybercrime groups, including the Yanluowang ransomware crew, in conducting numerous attacks against U.S. companies and other organizations.\nAccording to the U.S. Department of Justice (DoJ), Aleksei Olegovich Volkov facilitated dozens of ransomware attacks across the",
+      "url": "https://thehackernews.com/2026/03/us-sentences-russian-hacker-to-675.html",
+      "published": "2026-03-24 06:49 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "Citrix Urges Patching Critical NetScaler Flaw Allowing Unauthenticated Data Leaks",
+      "summary": "Citrix has released security updates to address two vulnerabilities in NetScaler ADC and NetScaler Gateway, including a critical flaw that could be exploited to leak sensitive data from the application.\nThe vulnerabilities are listed below -\n\nCVE-2026-3055 (CVSS score: 9.3) - Insufficient input validation leading to memory overread\nCVE-2026-4368 (CVSS score: 7.7) - Race condition leading to user",
+      "url": "https://thehackernews.com/2026/03/citrix-urges-patching-critical.html",
+      "published": "2026-03-24 05:59 UTC"
+    },
+    {
+      "source": "Dark Reading",
+      "title": "Ransomware's New Era: Moving at AI Speed",
+      "summary": "Threat actors bypass security tools and use AI to launch faster ransomware attacks that exploit valid credentials and target data.",
+      "url": "https://www.darkreading.com/endpoint-security/ransomware-new-era-moving-ai-speed",
+      "published": "2026-03-23 21:40 UTC"
+    },
+    {
+      "source": "Have I Been Pwned Blog",
+      "title": "RuneScape Boards - 222,762 breached accounts",
+      "summary": "In around 2011, the now defunct RuneScape Boards forum (also known as RSBoards) suffered a data breach that was later redistributed as part of a larger corpus of data. The vBulletin-based service exposed 223k unique email addresses along with usernames, IP addresses and salted MD5 password hashes.",
+      "url": "https://haveibeenpwned.com/Breach/RSBoards",
+      "published": "2026-03-23 21:40 UTC"
+    },
+    {
+      "source": "The Hacker News",
+      "title": "North Korean Hackers Abuse VS Code Auto-Run Tasks to Deploy StoatWaffle Malware",
+      "summary": "The North Korean threat actors behind the Contagious Interview campaign, also tracked as WaterPlum, have been attributed to a malware family tracked as StoatWaffle that's distributed via malicious Microsoft Visual Studio Code (VS Code) projects.\nThe use of VS Code \"tasks.json\" to distribute malware is a relatively new tactic adopted by the threat actor since December 2025, with the attacks",
+      "url": "https://thehackernews.com/2026/03/north-korean-hackers-abuse-vs-code-auto.html",
+      "published": "2026-03-23 18:09 UTC"
+    }
+  ]
+}

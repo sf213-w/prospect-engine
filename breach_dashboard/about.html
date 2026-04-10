@@ -7,216 +7,54 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
   <style>
-    body { font-family: 'IBM Plex Mono', monospace; background: #020617; color: #94a3b8; }
+    body { font-family: 'IBM Plex Mono', monospace; background:#020617; color:#94a3b8; font-size:18px; }
     .font-display { font-family: 'Syne', sans-serif; }
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: #0f172a; }
-    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
-    .fade-in { animation: fup 0.4s ease forwards; }
-    @keyframes fup { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
-    .step-card:hover { border-color: #334155; }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-slate-800 px-6 py-3 flex items-center justify-between" style="background:#0f172a">
+<header class="border-b border-slate-800 px-6 py-4 flex flex-row-reverse justify-between items-center" style="background:#0f172a">
+  <h1 class="font-display text-2xl text-amber-400">PROSPECTOR</h1>
+  <a href="index.html" class="text-sm border border-amber-500 px-3 py-1.5 text-amber-400 rounded">
+    ← DASHBOARD
+  </a>
+</header>
+
+<main class="max-w-6xl mx-auto px-8 py-12 space-y-12">
+
+<section>
+  <h2 class="font-display text-4xl text-slate-100 mb-4">What is Prospector?</h2>
+  <p class="text-lg text-slate-300 leading-relaxed max-w-3xl">
+    Prospector is a local breach intelligence dashboard designed to identify companies affected by data breaches and extract actionable contact information for security analysis.
+  </p>
+</section>
+
+<section class="space-y-8">
+  <h2 class="font-display text-3xl text-slate-100">How to Use Prospector</h2>
+  
+  <div class="grid gap-10">
     <div>
-      <h1 class="font-display text-xl font-bold tracking-widest text-amber-400">PROSPECTOR</h1>
-      <p class="text-slate-600 text-xs tracking-widest">BREACH INTELLIGENCE DASHBOARD</p>
+      <h3 class="text-amber-400 font-bold text-xl mb-2">1. The Start</h3>
+      <p class="text-slate-300">Begin by running your local Python scanner scripts. This generates the necessary JSON (breach news) and CSV (contact data) files in your <code>breach_reports/</code> directory.</p>
     </div>
-    <a href="index.html" class="text-xs tracking-widest px-3 py-1.5 border border-amber-500 text-amber-400 hover:bg-amber-500/10 rounded transition-colors">← DASHBOARD</a>
-  </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-10 space-y-10 fade-in">
+    <div>
+      <h3 class="text-amber-400 font-bold text-xl mb-2">2. How it Works (Workflow)</h3>
+      <p class="text-slate-300">Open the dashboard and load your generated files. The dashboard acts as a "Single Source of Truth," aggregating disparate data into a unified, searchable interface without requiring an external database.</p>
+    </div>
 
-    <!-- HERO -->
-    <section class="border border-slate-800 rounded-lg p-8" style="background:rgba(245,158,11,0.03)">
-      <div class="text-amber-500 text-xs tracking-widest mb-3">// WHAT IS PROSPECTOR</div>
-      <h2 class="font-display text-3xl font-bold text-slate-100 mb-4 leading-tight">A local breach intelligence tool<br/>for sales and security research.</h2>
-      <p class="text-slate-400 text-sm leading-relaxed max-w-2xl">
-        Prospector scans security RSS feeds weekly for data breach news, extracts the affected companies, finds their contact information, and presents everything in a searchable dashboard. It runs entirely on your machine — no cloud, no subscriptions, no data leaving your computer.
-      </p>
-    </section>
+    <div>
+      <h3 class="text-amber-400 font-bold text-xl mb-2">3. Analyze & Filter</h3>
+      <p class="text-slate-300">Use the <strong>Articles</strong> tab to scan for specific keywords or industries. Use the <strong>Search</strong> bar to narrow down records across both tabs instantly to find high-priority leads.</p>
+    </div>
 
-    <!-- HOW IT WORKS -->
-    <section>
-      <div class="text-amber-500 text-xs tracking-widest mb-5">// HOW IT WORKS</div>
-      <div class="grid sm:grid-cols-3 gap-3">
-        <div class="step-card border border-slate-800 rounded-lg p-5 transition-colors" style="background:#0f172a">
-          <div class="font-display text-4xl font-bold text-slate-800 mb-3">01</div>
-          <h3 class="text-slate-200 text-sm font-semibold mb-2">Scan Feeds</h3>
-          <p class="text-slate-500 text-xs leading-relaxed">Run <span class="text-amber-400">data_breach_scanner.py</span> to scan 9 security RSS feeds for breach-related articles from the past 7 days. Saves a dated JSON report.</p>
-        </div>
-        <div class="step-card border border-slate-800 rounded-lg p-5 transition-colors" style="background:#0f172a">
-          <div class="font-display text-4xl font-bold text-slate-800 mb-3">02</div>
-          <h3 class="text-slate-200 text-sm font-semibold mb-2">Find Contacts</h3>
-          <p class="text-slate-500 text-xs leading-relaxed">Run <span class="text-amber-400">breach_contact_finder.py</span> to extract company names, locate their websites, and scrape contact info. Saves a dated CSV.</p>
-        </div>
-        <div class="step-card border border-slate-800 rounded-lg p-5 transition-colors" style="background:#0f172a">
-          <div class="font-display text-4xl font-bold text-slate-800 mb-3">03</div>
-          <h3 class="text-slate-200 text-sm font-semibold mb-2">Analyze & Enrich</h3>
-          <p class="text-slate-500 text-xs leading-relaxed">Load both files into this dashboard. Search, filter, sort, and use the AI enrichment tool to have Ollama extract deeper contact info from company websites.</p>
-        </div>
-      </div>
-    </section>
+    <div>
+      <h3 class="text-amber-400 font-bold text-xl mb-2">4. Enrichment</h3>
+      <p class="text-slate-300">Switch to the <strong>Contacts</strong> tab to view scraped emails and phone numbers. Use the <strong>ENRICH</strong> button to trigger local AI analysis via Ollama, which verifies company details and adds security context to each record.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- WEEKLY WORKFLOW -->
-    <section class="border border-slate-800 rounded-lg overflow-hidden" style="background:#0f172a">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-xs tracking-widest">// WEEKLY WORKFLOW</span>
-      </div>
-      <div class="p-5 space-y-2">
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">1.</span>
-          <div>
-            <p class="text-slate-300 text-xs">Run the breach scanner (or let Task Scheduler run it automatically)</p>
-            <code class="text-emerald-400 text-xs">python data_breach_scanner.py</code>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">2.</span>
-          <div>
-            <p class="text-slate-300 text-xs">Run the contact finder</p>
-            <code class="text-emerald-400 text-xs">python breach_contact_finder.py</code>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">3.</span>
-          <p class="text-slate-300 text-xs">Open <span class="text-amber-400">index.html</span> in your browser</p>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">4.</span>
-          <p class="text-slate-300 text-xs">Load <span class="text-amber-400">breach_reports/breaches_DATE.json</span> using the LOAD BREACH JSON button</p>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">5.</span>
-          <p class="text-slate-300 text-xs">Load <span class="text-amber-400">breach_reports/breach_contacts_DATE.csv</span> using the LOAD CONTACTS CSV button</p>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-amber-500 text-xs mt-0.5">6.</span>
-          <p class="text-slate-300 text-xs">Search, filter, and export your outreach list</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- DASHBOARD FEATURES -->
-    <section>
-      <div class="text-amber-500 text-xs tracking-widest mb-5">// DASHBOARD FEATURES</div>
-      <div class="space-y-3">
-
-        <div class="border border-slate-800 rounded-lg p-5" style="background:#0f172a">
-          <h3 class="text-slate-200 text-sm font-semibold mb-2 flex items-center gap-2">
-            <span class="text-amber-400">◈</span> Breach Articles Tab
-          </h3>
-          <p class="text-slate-500 text-xs leading-relaxed">View all matched articles sorted by date. Each row shows the publication date, headline, source feed, a summary snippet, and a direct link. Click any headline to open a full detail panel. Sort any column by clicking its header.</p>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-5" style="background:#0f172a">
-          <h3 class="text-slate-200 text-sm font-semibold mb-2 flex items-center gap-2">
-            <span class="text-amber-400">◈</span> Company Contacts Tab
-          </h3>
-          <p class="text-slate-500 text-xs leading-relaxed">View all companies extracted from breach articles. Shows website, general email, security email, phone, address, and the related breach article. Click any company name for the full detail view. Email addresses are clickable mailto links.</p>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-5" style="background:#0f172a">
-          <h3 class="text-slate-200 text-sm font-semibold mb-2 flex items-center gap-2">
-            <span class="text-amber-400">◈</span> Filter & Search
-          </h3>
-          <p class="text-slate-500 text-xs leading-relaxed">Use the keyword search to filter across all fields simultaneously — titles, summaries, company names, emails, and addresses. Filter by source feed using the dropdown. Filters apply as you type and persist when switching tabs. Click CLEAR to reset.</p>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-5" style="background:#0f172a">
-          <h3 class="text-slate-200 text-sm font-semibold mb-2 flex items-center gap-2">
-            <span class="text-amber-400">◈</span> Export Filtered
-          </h3>
-          <p class="text-slate-500 text-xs leading-relaxed">Click EXPORT FILTERED to download the currently visible rows as a CSV. In Articles mode it exports date, title, source, summary, and URL. In Contacts mode it exports all contact fields plus the related article. The file is named with today's date automatically.</p>
-        </div>
-
-        <div class="border border-slate-800 rounded-lg p-5" style="background:#0f172a">
-          <h3 class="text-slate-200 text-sm font-semibold mb-2 flex items-center gap-2">
-            <span class="text-amber-400">◈</span> AI Contact Enrichment
-          </h3>
-          <p class="text-slate-500 text-xs leading-relaxed mb-3">Uses a local Ollama model to intelligently extract contact information from company websites. The LLM reads the raw page text and extracts emails, phones, and addresses more accurately than regex alone.</p>
-          <div class="border border-slate-700 rounded p-3 space-y-1.5" style="background:#020617">
-            <p class="text-xs text-slate-400 font-semibold">Before using — start Ollama with CORS enabled:</p>
-            <code class="text-emerald-400 text-xs block">$env:OLLAMA_ORIGINS="*"; ollama serve</code>
-            <p class="text-xs text-slate-600 mt-1">Keep this PowerShell window open while using the dashboard.</p>
-          </div>
-          <p class="text-slate-500 text-xs leading-relaxed mt-3">Click TEST CONNECTION to verify Ollama is reachable. Use ENRICH ALL CONTACTS to process every company, or click the ENRICH button on individual rows. Results update the table in place and are highlighted in amber. Note: some company sites block browser requests (CORS) — the log will indicate when this happens.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TIPS -->
-    <section class="border border-slate-800 rounded-lg overflow-hidden" style="background:#0f172a">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-xs tracking-widest">// TIPS & NOTES</span>
-      </div>
-      <ul class="p-5 space-y-3">
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>No internet connection required to use the dashboard. Only article links and AI enrichment fetch open URLs.</span>
-        </li>
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>Files are named with timestamps — the most recent report is always the one with the highest date number in <span class="text-amber-400">breach_reports/</span>.</span>
-        </li>
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>You can load just the JSON or just the CSV — you don't need both. The dashboard shows whichever data is loaded.</span>
-        </li>
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>The contact finder only extracts companies whose names follow a clear breach headline pattern. You can manually add more companies to the <span class="text-amber-400">KNOWN_COMPANIES</span> set in <span class="text-amber-400">breach_contact_finder.py</span>.</span>
-        </li>
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>To schedule the scripts to run automatically every Monday, use Windows Task Scheduler pointing to <span class="text-amber-400">data_breach_scanner.py</span> and <span class="text-amber-400">breach_contact_finder.py</span>.</span>
-        </li>
-        <li class="flex items-start gap-3 text-xs text-slate-500">
-          <span class="text-amber-500 mt-0.5 shrink-0">—</span>
-          <span>Press <span class="text-slate-300 border border-slate-700 px-1.5 py-0.5 rounded text-xs">ESC</span> to close any detail panel.</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- FILES -->
-    <section class="border border-slate-800 rounded-lg overflow-hidden" style="background:#0f172a">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-xs tracking-widest">// FILES IN THIS TOOLKIT</span>
-      </div>
-      <div class="p-5 space-y-2 text-xs">
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">data_breach_scanner.py</code>
-          <span class="text-slate-500">Scans RSS feeds, saves breach JSON reports weekly</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">breach_contact_finder.py</code>
-          <span class="text-slate-500">Extracts companies from JSON, finds contact info, saves CSV</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">index.html</code>
-          <span class="text-slate-500">Main dashboard — load and analyze your reports</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">about.html</code>
-          <span class="text-slate-500">This page</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">script.js</code>
-          <span class="text-slate-500">Dashboard logic — parsing, filtering, Ollama integration</span>
-        </div>
-        <div class="flex items-start gap-3">
-          <code class="text-amber-400 shrink-0 w-56">breach_reports/</code>
-          <span class="text-slate-500">Output folder — all generated JSON and CSV reports saved here</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="text-center text-xs text-slate-700 pb-4">PROSPECTOR // BREACH INTELLIGENCE TOOLKIT</div>
-
-  </main>
+</main>
 </body>
 </html>

@@ -2,6 +2,8 @@ import httpx
 from bs4 import BeautifulSoup
 import llm
 import json
+import os
+from datetime import datetime
 from pydantic import BaseModel
 from typing import List, Optional
 
@@ -51,7 +53,6 @@ def scrape_and_extract(url: str, model):
         return None
 
 if __name__ == "__main__":
-    # 2. Define your list of target websites
     target_websites = [
         "https://www.bleepingcomputer.com/",
         "https://thehackernews.com/",
@@ -59,7 +60,6 @@ if __name__ == "__main__":
         "https://krebsonsecurity.com/"
     ]
 
-    # Initialize model once outside the loop
     llama = llm.get_model("llama3.2")
     all_found_breaches = []
 
@@ -70,16 +70,39 @@ if __name__ == "__main__":
             print(f"Success! Found {len(data['breaches'])} potential items on {site}")
             for b in data["breaches"]:
                 if b.get("is_actual_breach"):
-                    # Add metadata so you know which site reported it
-                    b["source_site"] = site
-                    all_found_breaches.append(b)
+                    # Map LLM output to Dashboard-compatible format
+                    dashboard_item = {
+                        "published": b.get("date_reported", datetime.now().isoformat()),
+                        "title": f"Breach: {b.get('victim_company')}",
+                        "source": site,
+                        "summary": b.get("summary"),
+                        "url": site # Using site as placeholder; update scrape_and_extract to return specific article URLs if possible
+                    }
+                    all_found_breaches.append(dashboard_item)
         else:
             print(f"No confirmed breaches found on {site}.")
 
-    # 3. Final Summary
+    # 3. Final Summary and File Export
     print("\n" + "="*50)
     print(f"SCAN COMPLETE: Found {len(all_found_breaches)} verified incidents.")
     print("="*50)
     
     if all_found_breaches:
-        print(json.dumps(all_found_breaches, indent=2))
+        # Prepare the dashboard JSON structure
+        output_data = {
+            "generated": datetime.now().isoformat(),
+            "lookback_days": 7,
+            "articles": all_found_breaches
+        }
+
+        # Create breach_reports directory if it doesn't exist
+        os.makedirs("breach_reports", exist_ok=True)
+        
+        # Save file with required timestamp naming
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+        filename = f"breach_reports/breaches_{timestamp}.json"
+        
+        with open(filename, "w") as f:
+            json.dump(output_data, f, indent=2)
+            
+        print(f"SUCCESS: Report saved for dashboard at {filename}")
