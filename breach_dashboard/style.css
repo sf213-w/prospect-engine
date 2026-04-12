@@ -1,41 +1,49 @@
-/* ── style.css (Updated Font Sizes) ── */
-:root {
-    --bg:        #080c10;
-    --bg2:       #0d1117;
-    --bg3:       #111820;
-    --panel:     #0d1520;
-    --border:    #1a2a3a;
-    --border2:   #243040;
-    --accent:    #00d4ff;
-    --accent2:   #ff4060;
-    --accent3:   #00ff88;
-    --text:      #c8d8e8;
-    --text-dim:  #5a7a90;
-    --text-mid:  #8aa8c0;
-    --mono:      'Share Tech Mono', monospace;
-    --sans:      'Rajdhani', sans-serif;
-}
+{
+  /* Brand Colors /
+  --cj-primary: #1A73B8;        / Main blue /
+  --cj-primary-dark: #125A8A;   / Hover blue /
+  --cj-accent: #F47C20;         / Orange CTA /
 
-body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--sans);
-    font-size: 18px; /* Increased from 15px */
-    min-height: 100vh;
-}
+  / Text Colors /
+  --cj-text-dark: #333333;
+  --cj-text-medium: #666666;
+  --cj-text-light: #FFFFFF;
 
-.stat-value {
-    font-family: var(--mono);
-    font-size: 32px; /* Increased from 28px */
-    color: var(--accent);
-}
+  / Backgrounds /
+  --cj-bg-light: #FFFFFF;
+  --cj-bg-section: #F5F5F5;
+  --cj-bg-footer: #222222;
 
-.btn {
-    font-family: var(--mono);
-    font-size: 14px; /* Increased from 12px */
-    padding: 12px 24px;
-}
+  / Borders /
+  --cj-border-light: #E0E0E0;
+  --cj-border-medium: #CCCCCC;
 
-.modal-field-value {
-    font-size: 16px; /* Increased from 14px */
+  / Typography /
+  --cj-font-primary: "Roboto", Arial, Helvetica, sans-serif;
+  --cj-font-secondary: "Open Sans", Arial, Helvetica, sans-serif;
+
+  / Font Sizes /
+  --cj-font-size-base: 16px;
+  --cj-font-size-sm: 14px;
+  --cj-font-size-lg: 20px;
+  --cj-font-size-xl: 28px;
+  --cj-font-size-xxl: 36px;
+
+  / Spacing /
+  --cj-spacing-xs: 4px;
+  --cj-spacing-sm: 8px;
+  --cj-spacing-md: 16px;
+  --cj-spacing-lg: 24px;
+  --cj-spacing-xl: 40px;
+
+  / Buttons /
+  --cj-btn-bg: var(--cj-primary);
+  --cj-btn-bg-hover: var(--cj-primary-dark);
+  --cj-btn-text: #FFFFFF;
+  --cj-btn-radius: 4px;
+  --cj-btn-padding: 12px 24px;
+
+  / Shadows */
+  --cj-shadow-soft: 0 2px 4px rgba(0,0,0,0.08);
+  --cj-shadow-medium: 0 4px 10px rgba(0,0,0,0.12);
 }

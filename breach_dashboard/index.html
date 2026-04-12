@@ -4,155 +4,506 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prospector — Breach Intelligence</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    body { font-family: 'IBM Plex Mono', monospace; background:#020617; color:#94a3b8; }
-    .syne { font-family: 'Syne', sans-serif; }
-    ::-webkit-scrollbar { width:5px; height:5px; }
-    ::-webkit-scrollbar-track { background:#0f172a; }
-    ::-webkit-scrollbar-thumb { background:#334155; border-radius:3px; }
-    ::-webkit-scrollbar-thumb:hover { background:#f59e0b; }
-    .tab-on  { border-color:#f59e0b; color:#fbbf24; background:rgba(245,158,11,0.08); }
-    .tab-off { border-color:#334155; color:#94a3b8; background:transparent; }
-    .tab-off:hover { border-color:#64748b; color:#cbd5e1; }
-    tr:hover td { background:rgba(245,158,11,0.03); }
-    .row-flash td { background:rgba(245,158,11,0.12) !important; transition:background 0.4s; }
-    .drag-over { border-color:#f59e0b !important; background:rgba(245,158,11,0.06) !important; }
-    input:focus, select:focus { outline:none; border-color:#f59e0b !important; box-shadow:0 0 0 2px rgba(245,158,11,0.12); }
-    .pulse { animation:pdot 2s infinite; }
-    @keyframes pdot { 0%,100%{opacity:1} 50%{opacity:0.2} }
-    .fade-in { animation:fup 0.3s ease forwards; }
-    @keyframes fup { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
-    th { cursor:pointer; user-select:none; white-space:nowrap; }
-    th:hover { color:#f59e0b; }
-    select option { background:#1e293b; }
-    .enrich-row-btn:hover { border-color:#f59e0b; color:#fbbf24; }
+    /* ── CJ DESIGN SYSTEM ── */
+    :root {
+      --cj-primary:        #1A73B8;
+      --cj-primary-dark:   #125A8A;
+      --cj-accent:         #F47C20;
+      --cj-text-dark:      #333333;
+      --cj-text-medium:    #666666;
+      --cj-text-light:     #FFFFFF;
+      --cj-bg-light:       #FFFFFF;
+      --cj-bg-section:     #F5F5F5;
+      --cj-bg-footer:      #222222;
+      --cj-border-light:   #E0E0E0;
+      --cj-border-medium:  #CCCCCC;
+      --cj-font-primary:   "Roboto", Arial, Helvetica, sans-serif;
+      --cj-font-secondary: "Open Sans", Arial, Helvetica, sans-serif;
+      --cj-font-size-base: 16px;
+      --cj-font-size-sm:   14px;
+      --cj-font-size-lg:   20px;
+      --cj-font-size-xl:   28px;
+      --cj-font-size-xxl:  36px;
+      --cj-spacing-xs:     4px;
+      --cj-spacing-sm:     8px;
+      --cj-spacing-md:     16px;
+      --cj-spacing-lg:     24px;
+      --cj-spacing-xl:     40px;
+      --cj-btn-radius:     4px;
+      --cj-btn-padding:    12px 24px;
+      --cj-shadow-soft:    0 2px 4px rgba(0,0,0,0.08);
+      --cj-shadow-medium:  0 4px 10px rgba(0,0,0,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--cj-font-primary);
+      font-size: var(--cj-font-size-base);
+      color: var(--cj-text-dark);
+      background: var(--cj-bg-section);
+      min-height: 100vh;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--cj-bg-section); }
+    ::-webkit-scrollbar-thumb { background: var(--cj-border-medium); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--cj-primary); }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--cj-primary);
+      color: var(--cj-text-light);
+      padding: 0 var(--cj-spacing-xl);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--cj-shadow-medium);
+    }
+
+    .header-left { display: flex; align-items: center; gap: var(--cj-spacing-lg); }
+
+    .site-logo {
+      font-family: var(--cj-font-primary);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cj-text-light);
+      letter-spacing: 1px;
+    }
+
+    .site-logo span { color: #90CAF9; font-size: 13px; font-weight: 400; margin-left: 8px; opacity: 0.85; }
+
+    .btn-about {
+      font-family: var(--cj-font-secondary);
+      font-size: var(--cj-font-size-sm);
+      font-weight: 600;
+      color: var(--cj-text-light);
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: var(--cj-btn-radius);
+      padding: 7px 16px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-about:hover { background: rgba(255,255,255,0.25); }
+
+    .header-right { display: flex; align-items: center; gap: var(--cj-spacing-lg); }
+
+    .status-indicator { display: flex; align-items: center; gap: 7px; font-size: var(--cj-font-size-sm); color: rgba(255,255,255,0.75); }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); transition: all 0.3s; }
+    .status-dot.live { background: #4CAF50; box-shadow: 0 0 8px #4CAF50; animation: blink 2s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    #clock { font-size: 13px; color: rgba(255,255,255,0.6); font-family: monospace; }
+
+    /* ── MAIN ── */
+    main { max-width: 1600px; margin: 0 auto; padding: var(--cj-spacing-lg) var(--cj-spacing-xl); display: flex; flex-direction: column; gap: var(--cj-spacing-md); }
+
+    /* ── CARD / PANEL ── */
+    .card {
+      background: var(--cj-bg-light);
+      border: 1px solid var(--cj-border-light);
+      border-radius: 6px;
+      box-shadow: var(--cj-shadow-soft);
+      overflow: hidden;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: var(--cj-spacing-md);
+      padding: 12px 20px;
+      background: var(--cj-bg-section);
+      border-bottom: 1px solid var(--cj-border-light);
+    }
+
+    .card-header-title {
+      font-family: var(--cj-font-secondary);
+      font-size: var(--cj-font-size-sm);
+      font-weight: 600;
+      color: var(--cj-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card-header-line { flex: 1; height: 1px; background: var(--cj-border-light); }
+    .card-header-badge { font-size: 13px; font-weight: 600; color: #2E7D32; }
+
+    /* ── DROP ZONE ── */
+    .drop-zone {
+      margin: var(--cj-spacing-md);
+      border: 2px dashed var(--cj-border-medium);
+      border-radius: 6px;
+      padding: 48px var(--cj-spacing-xl);
+      text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .drop-zone:hover, .drop-zone.drag-over {
+      border-color: var(--cj-primary);
+      background: #EEF6FF;
+    }
+
+    .drop-icon { font-size: 48px; color: var(--cj-border-medium); margin-bottom: 12px; }
+    .drop-title { font-size: var(--cj-font-size-base); font-weight: 500; color: var(--cj-text-medium); margin-bottom: 4px; }
+    .drop-sub { font-size: var(--cj-font-size-sm); color: #999; margin-bottom: 24px; }
+    .drop-sub code { color: var(--cj-text-medium); background: var(--cj-bg-section); padding: 1px 6px; border-radius: 3px; font-size: 13px; }
+
+    .drop-buttons { display: flex; justify-content: center; gap: var(--cj-spacing-md); flex-wrap: wrap; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      font-family: var(--cj-font-secondary);
+      font-size: var(--cj-font-size-sm);
+      font-weight: 600;
+      padding: var(--cj-btn-padding);
+      border-radius: var(--cj-btn-radius);
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .btn-primary { background: var(--cj-primary); color: var(--cj-text-light); }
+    .btn-primary:hover { background: var(--cj-primary-dark); box-shadow: var(--cj-shadow-medium); }
+
+    .btn-accent { background: var(--cj-accent); color: var(--cj-text-light); }
+    .btn-accent:hover { background: #D96A10; box-shadow: var(--cj-shadow-medium); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--cj-primary);
+      border: 1.5px solid var(--cj-primary);
+    }
+    .btn-outline:hover { background: var(--cj-primary); color: var(--cj-text-light); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--cj-text-medium);
+      border: 1.5px solid var(--cj-border-medium);
+    }
+    .btn-ghost:hover { border-color: #e53935; color: #e53935; }
+
+    .btn-sm { padding: 8px 16px; font-size: 13px; }
+
+    /* ── FILE BADGES ── */
+    #loaded-files { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 var(--cj-spacing-md) var(--cj-spacing-md); }
+    .file-badge { font-size: 13px; padding: 4px 12px; border-radius: 20px; background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; font-family: var(--cj-font-secondary); font-weight: 600; }
+
+    /* ── STATS BAR ── */
+    .stats-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
+    .stat-cell {
+      padding: 16px var(--cj-spacing-md);
+      text-align: center;
+      border-right: 1px solid var(--cj-border-light);
+      transition: background 0.15s;
+    }
+    .stat-cell:last-child { border-right: none; }
+    .stat-cell:hover { background: #EEF6FF; }
+    .stat-val { font-size: 28px; font-weight: 700; color: var(--cj-primary); font-family: var(--cj-font-primary); line-height: 1; }
+    .stat-label { font-size: 12px; font-weight: 600; color: var(--cj-text-medium); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+    /* ── FILTER PANEL ── */
+    .filter-row { display: flex; flex-wrap: wrap; gap: var(--cj-spacing-md); padding: var(--cj-spacing-md) 20px; align-items: flex-end; }
+    .filter-group { display: flex; flex-direction: column; gap: 5px; }
+    .filter-label { font-size: 12px; font-weight: 600; color: var(--cj-text-medium); text-transform: uppercase; letter-spacing: 0.06em; }
+
+    .tab-group { display: flex; border: 1.5px solid var(--cj-border-medium); border-radius: var(--cj-btn-radius); overflow: hidden; }
+    .tab {
+      font-family: var(--cj-font-secondary);
+      font-size: var(--cj-font-size-sm);
+      font-weight: 600;
+      padding: 8px 16px;
+      background: transparent;
+      color: var(--cj-text-medium);
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      border-right: 1.5px solid var(--cj-border-medium);
+    }
+    .tab:last-child { border-right: none; }
+    .tab.active { background: var(--cj-primary); color: var(--cj-text-light); }
+    .tab:not(.active):hover { background: var(--cj-bg-section); color: var(--cj-text-dark); }
+
+    select, input[type="text"] {
+      font-family: var(--cj-font-primary);
+      font-size: var(--cj-font-size-sm);
+      color: var(--cj-text-dark);
+      background: var(--cj-bg-light);
+      border: 1.5px solid var(--cj-border-medium);
+      border-radius: var(--cj-btn-radius);
+      padding: 8px 12px;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    select:focus, input[type="text"]:focus {
+      border-color: var(--cj-primary);
+      box-shadow: 0 0 0 3px rgba(26,115,184,0.12);
+    }
+
+    .search-box { display: flex; align-items: center; border: 1.5px solid var(--cj-border-medium); border-radius: var(--cj-btn-radius); overflow: hidden; background: var(--cj-bg-light); }
+    .search-box:focus-within { border-color: var(--cj-primary); box-shadow: 0 0 0 3px rgba(26,115,184,0.12); }
+    .search-prefix { padding: 0 10px; color: var(--cj-primary); font-weight: 700; font-size: 15px; user-select: none; }
+    .search-box input { border: none; box-shadow: none; border-radius: 0; padding: 8px 12px 8px 0; min-width: 220px; flex: 1; }
+    .search-box input:focus { border: none; box-shadow: none; }
+
+    .filter-btn-row { display: flex; gap: 8px; }
+
+    /* ── RESULTS TABLE ── */
+    .table-wrap { overflow-x: auto; max-height: 580px; overflow-y: auto; }
+
+    table { width: 100%; border-collapse: collapse; font-size: var(--cj-font-size-sm); }
+
+    thead { position: sticky; top: 0; z-index: 10; background: var(--cj-bg-section); }
+
+    th {
+      font-family: var(--cj-font-secondary);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cj-text-medium);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 11px 16px;
+      text-align: left;
+      border-bottom: 2px solid var(--cj-border-light);
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+    th:hover { color: var(--cj-primary); }
+
+    td { padding: 11px 16px; border-bottom: 1px solid var(--cj-border-light); vertical-align: top; color: var(--cj-text-dark); }
+    tr:hover td { background: #F0F7FF; }
+    tr.row-flash td { background: #FFF3E0 !important; transition: background 0.4s; }
+
+    .td-date { color: var(--cj-text-medium); white-space: nowrap; font-size: 13px; }
+    .td-title { color: var(--cj-text-dark); font-weight: 500; cursor: pointer; max-width: 340px; }
+    .td-title:hover { color: var(--cj-primary); text-decoration: underline; }
+    .td-source { white-space: nowrap; }
+    .source-chip { font-size: 12px; font-weight: 600; color: var(--cj-primary); background: #EEF6FF; border: 1px solid #BBDEFB; padding: 2px 8px; border-radius: 12px; white-space: nowrap; }
+    .td-summary { color: var(--cj-text-medium); max-width: 360px; font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .td-link a { font-size: 13px; color: var(--cj-primary); font-weight: 600; text-decoration: none; white-space: nowrap; }
+    .td-link a:hover { color: var(--cj-primary-dark); text-decoration: underline; }
+    .td-company { font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .td-company:hover { color: var(--cj-primary); text-decoration: underline; }
+    .td-website a { color: #2E7D32; font-size: 13px; text-decoration: none; }
+    .td-website a:hover { text-decoration: underline; }
+    .td-email a { color: var(--cj-primary); font-size: 13px; text-decoration: none; }
+    .td-email a:hover { text-decoration: underline; }
+    .td-empty { color: #BDBDBD; }
+
+    .enrich-row-btn {
+      font-family: var(--cj-font-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border: 1.5px solid var(--cj-border-medium);
+      border-radius: var(--cj-btn-radius);
+      background: transparent;
+      color: var(--cj-text-medium);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .enrich-row-btn:hover { border-color: var(--cj-accent); color: var(--cj-accent); }
+
+    .empty-state { text-align: center; padding: 56px; color: #BDBDBD; font-size: var(--cj-font-size-sm); }
+
+    /* ── OLLAMA PANEL ── */
+    .ollama-controls { display: flex; flex-wrap: wrap; gap: var(--cj-spacing-md); padding: var(--cj-spacing-md) 20px; border-bottom: 1px solid var(--cj-border-light); align-items: flex-end; }
+    .ollama-input-group { display: flex; flex-direction: column; gap: 5px; }
+    #ollama-log { padding: var(--cj-spacing-md) 20px; font-family: monospace; font-size: 13px; color: var(--cj-text-medium); max-height: 200px; overflow-y: auto; background: #FAFAFA; line-height: 1.8; }
+    #ollama-log .log-ok  { color: #2E7D32; }
+    #ollama-log .log-err { color: #C62828; }
+    #ollama-log .log-info{ color: var(--cj-primary); }
+
+    .progress-wrap { padding: 12px 20px; border-bottom: 1px solid var(--cj-border-light); }
+    .progress-meta { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: var(--cj-font-size-sm); color: var(--cj-text-medium); }
+    .progress-track { height: 6px; background: var(--cj-border-light); border-radius: 3px; overflow: hidden; }
+    #progress-bar { height: 100%; background: var(--cj-accent); transition: width 0.3s; border-radius: 3px; width: 0%; }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: var(--cj-spacing-md);
+    }
+    .modal-box {
+      background: var(--cj-bg-light);
+      border-radius: 8px;
+      width: 100%;
+      max-width: 680px;
+      max-height: 88vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 2px solid var(--cj-border-light);
+      position: sticky;
+      top: 0;
+      background: var(--cj-bg-light);
+    }
+    #modal-title { font-size: var(--cj-font-size-lg); font-weight: 700; color: var(--cj-primary); }
+    .modal-close { background: none; border: none; font-size: 22px; color: var(--cj-text-medium); cursor: pointer; line-height: 1; padding: 0 4px; }
+    .modal-close:hover { color: #C62828; }
+    #modal-body { padding: 24px; }
+
+    .mf { padding: 12px 0; border-bottom: 1px solid var(--cj-border-light); }
+    .mf:last-child { border-bottom: none; }
+    .mf-label { font-size: 12px; font-weight: 700; color: var(--cj-text-medium); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 5px; }
+    .mf-value { font-size: var(--cj-font-size-base); color: var(--cj-text-dark); line-height: 1.6; word-break: break-word; }
+    .mf-value a { color: var(--cj-primary); }
+    .mf-value a:hover { color: var(--cj-primary-dark); }
+
+    /* ── FADE IN ── */
+    .fade-in { animation: fup 0.3s ease forwards; }
+    @keyframes fup { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      main { padding: var(--cj-spacing-md); }
+      .site-header { padding: 0 var(--cj-spacing-md); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .filter-row { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 border-b border-slate-800 px-6 py-3 flex items-center justify-between" style="background:#0f172a">
-    <div class="flex items-center gap-4">
-      <a href="about.html" class="text-sm tracking-widest px-4 py-2 border border-slate-700 text-slate-400 hover:border-amber-500 hover:text-amber-400 rounded transition-colors">ABOUT</a>
-      <div>
-        <div class="syne text-2xl font-bold tracking-widest text-amber-400">PROSPECTOR</div>
-        <div class="text-sm text-slate-600 tracking-widest">BREACH INTELLIGENCE DASHBOARD</div>
-      </div>
+  <header class="site-header">
+    <div class="header-left">
+      <a href="about.html" class="btn-about">About</a>
+      <div class="site-logo">Prospector <span>Breach Intelligence Dashboard</span></div>
     </div>
-    <div class="flex items-center gap-5">
-      <div class="flex items-center gap-2">
-        <span id="status-dot" class="w-2.5 h-2.5 rounded-full bg-slate-700 transition-all"></span>
-        <span id="status-text" class="text-sm text-slate-500 tracking-widest">AWAITING DATA</span>
+    <div class="header-right">
+      <div class="status-indicator">
+        <span id="status-dot" class="status-dot"></span>
+        <span id="status-text">Awaiting Data</span>
       </div>
-      <span id="clock" class="text-sm text-slate-700 hidden sm:block"></span>
+      <span id="clock"></span>
     </div>
   </header>
 
-  <main class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-6 space-y-4">
+  <main>
 
     <!-- 01 DATA INGESTION -->
-    <section class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden fade-in">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-sm tracking-widest">01 // DATA INGESTION</span>
-        <div class="flex-1 h-px" style="background:linear-gradient(90deg,#334155,transparent)"></div>
+    <div class="card fade-in">
+      <div class="card-header">
+        <span class="card-header-title">01 — Data Ingestion</span>
+        <div class="card-header-line"></div>
       </div>
-      <div id="drop-zone" class="m-5 border border-dashed border-slate-700 rounded-lg p-10 text-center transition-all">
-        <div class="text-5xl text-slate-800 mb-3 select-none">◈</div>
-        <p class="text-slate-400 text-sm tracking-widest mb-1">DROP FILES HERE OR USE THE BUTTONS BELOW</p>
-        <p class="text-slate-600 text-sm mb-7">Accepts <span class="text-slate-500">breaches_*.json</span> &nbsp;·&nbsp; <span class="text-slate-500">breach_contacts_*.csv</span></p>
-        <div class="flex justify-center gap-3 flex-wrap">
-          <label for="file-json" class="cursor-pointer text-sm tracking-widest px-5 py-2.5 border border-amber-500 text-amber-400 hover:bg-amber-500/10 rounded transition-colors">LOAD BREACH JSON</label>
-          <input type="file" id="file-json" accept=".json" class="hidden"/>
-          <label for="file-csv" class="cursor-pointer text-sm tracking-widest px-5 py-2.5 border border-slate-600 text-slate-400 hover:border-slate-400 hover:text-slate-300 rounded transition-colors">LOAD CONTACTS CSV</label>
-          <input type="file" id="file-csv" accept=".csv" class="hidden"/>
+      <div id="drop-zone" class="drop-zone">
+        <div class="drop-icon">⬆</div>
+        <p class="drop-title">Drop your report files here, or use the buttons below</p>
+        <p class="drop-sub">Accepts <code>breaches_*.json</code> &nbsp;·&nbsp; <code>breach_contacts_*.csv</code></p>
+        <div class="drop-buttons">
+          <label for="file-json" class="btn btn-primary" style="cursor:pointer">Load Breach JSON</label>
+          <input type="file" id="file-json" accept=".json" style="display:none"/>
+          <label for="file-csv" class="btn btn-outline" style="cursor:pointer">Load Contacts CSV</label>
+          <input type="file" id="file-csv" accept=".csv" style="display:none"/>
         </div>
       </div>
-      <div id="loaded-files" class="flex flex-wrap gap-2 px-5 pb-4 min-h-4"></div>
-    </section>
+      <div id="loaded-files"></div>
+    </div>
 
     <!-- STATS BAR -->
-    <section id="stats-bar" style="display:none" class="border border-slate-800 rounded-lg overflow-hidden fade-in">
-      <div class="grid grid-cols-2 sm:grid-cols-5 divide-x divide-y sm:divide-y-0 divide-slate-800 bg-slate-900">
-        <div id="stat-articles" class="px-5 py-4 text-center hover:bg-amber-500/5 transition-colors">
-          <div class="stat-val syne text-2xl font-bold text-amber-400">0</div>
-          <div class="text-sm text-slate-600 tracking-widest mt-1">ARTICLES</div>
+    <div id="stats-bar" class="card fade-in" style="display:none">
+      <div class="stats-grid">
+        <div id="stat-articles" class="stat-cell">
+          <div class="stat-val">0</div>
+          <div class="stat-label">Articles</div>
         </div>
-        <div id="stat-sources" class="px-5 py-4 text-center hover:bg-amber-500/5 transition-colors">
-          <div class="stat-val syne text-2xl font-bold text-amber-400">0</div>
-          <div class="text-sm text-slate-600 tracking-widest mt-1">SOURCES</div>
+        <div id="stat-sources" class="stat-cell">
+          <div class="stat-val">0</div>
+          <div class="stat-label">Sources</div>
         </div>
-        <div id="stat-contacts" class="px-5 py-4 text-center hover:bg-amber-500/5 transition-colors">
-          <div class="stat-val syne text-2xl font-bold text-amber-400">0</div>
-          <div class="text-sm text-slate-600 tracking-widest mt-1">CONTACTS</div>
+        <div id="stat-contacts" class="stat-cell">
+          <div class="stat-val">0</div>
+          <div class="stat-label">Contacts</div>
         </div>
-        <div id="stat-emails" class="px-5 py-4 text-center hover:bg-amber-500/5 transition-colors">
-          <div class="stat-val syne text-2xl font-bold text-amber-400">0</div>
-          <div class="text-sm text-slate-600 tracking-widest mt-1">EMAILS FOUND</div>
+        <div id="stat-emails" class="stat-cell">
+          <div class="stat-val">0</div>
+          <div class="stat-label">Emails Found</div>
         </div>
-        <div id="stat-period" class="px-5 py-4 text-center hover:bg-amber-500/5 transition-colors">
-          <div class="stat-val syne text-base font-bold text-amber-400">—</div>
-          <div class="text-sm text-slate-600 tracking-widest mt-1">REPORT DATE</div>
+        <div id="stat-period" class="stat-cell">
+          <div class="stat-val" style="font-size:18px">—</div>
+          <div class="stat-label">Report Date</div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- 02 FILTER & SEARCH -->
-    <section id="filter-panel" style="display:none" class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden fade-in">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-sm tracking-widest">02 // FILTER &amp; SEARCH</span>
-        <div class="flex-1 h-px" style="background:linear-gradient(90deg,#334155,transparent)"></div>
+    <div id="filter-panel" class="card fade-in" style="display:none">
+      <div class="card-header">
+        <span class="card-header-title">02 — Filter &amp; Search</span>
+        <div class="card-header-line"></div>
       </div>
-      <div class="flex flex-wrap gap-4 p-5 items-end">
-        <div class="flex flex-col gap-1.5">
-          <label class="text-sm text-slate-500 tracking-widest">VIEW MODE</label>
-          <div class="flex gap-1">
-            <button id="tab-articles" onclick="setMode('articles')" class="tab-on text-sm tracking-wider px-3 py-2 border rounded transition-all">BREACH ARTICLES</button>
-            <button id="tab-contacts" onclick="setMode('contacts')" class="tab-off text-sm tracking-wider px-3 py-2 border rounded transition-all">COMPANY CONTACTS</button>
+      <div class="filter-row">
+        <div class="filter-group">
+          <span class="filter-label">View Mode</span>
+          <div class="tab-group">
+            <button id="tab-articles" onclick="setMode('articles')" class="tab active">Breach Articles</button>
+            <button id="tab-contacts" onclick="setMode('contacts')" class="tab">Company Contacts</button>
           </div>
         </div>
-        <div class="flex flex-col gap-1.5 min-w-40">
-          <label class="text-sm text-slate-500 tracking-widest">SOURCE</label>
-          <select id="filter-source" onchange="applyFilters()" class="bg-slate-800 border border-slate-700 text-slate-300 text-sm px-3 py-2 rounded" style="font-family:inherit">
-            <option value="">ALL SOURCES</option>
+        <div class="filter-group">
+          <span class="filter-label">Source</span>
+          <select id="filter-source" onchange="applyFilters()" style="min-width:160px">
+            <option value="">All Sources</option>
           </select>
         </div>
-        <div class="flex flex-col gap-1.5 flex-1 min-w-48">
-          <label class="text-sm text-slate-500 tracking-widest">KEYWORD SEARCH</label>
-          <div class="flex items-center bg-slate-800 border border-slate-700 rounded overflow-hidden">
-            <span class="text-amber-500 text-base px-3 select-none">&gt;_</span>
-            <input type="text" id="filter-search" oninput="applyFilters()" placeholder="company, keyword, attack type…"
-              class="bg-transparent text-slate-300 text-sm py-2 pr-3 flex-1 border-none"
-              style="outline:none;font-family:inherit"/>
+        <div class="filter-group" style="flex:1;min-width:240px">
+          <span class="filter-label">Keyword Search</span>
+          <div class="search-box">
+            <span class="search-prefix">🔍</span>
+            <input type="text" id="filter-search" oninput="applyFilters()" placeholder="company, keyword, attack type…"/>
           </div>
         </div>
-        <div class="flex gap-2 items-end">
-          <button onclick="resetFilters()" class="text-sm tracking-widest px-3 py-2 border border-slate-700 text-slate-500 hover:border-red-500/60 hover:text-red-400 rounded transition-colors">CLEAR</button>
-          <button onclick="exportFiltered()" class="text-sm tracking-widest px-3 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 rounded transition-colors">EXPORT FILTERED</button>
+        <div class="filter-btn-row">
+          <button onclick="resetFilters()" class="btn btn-ghost btn-sm">Clear</button>
+          <button onclick="exportFiltered()" class="btn btn-accent btn-sm">Export Filtered</button>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- 03 RESULTS -->
-    <section id="results-panel" style="display:none" class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden fade-in">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-sm tracking-widest">03 // RESULTS</span>
-        <div class="flex-1 h-px" style="background:linear-gradient(90deg,#334155,transparent)"></div>
-        <span id="result-count" class="text-sm text-emerald-400 tracking-widest">0 RECORDS</span>
+    <div id="results-panel" class="card fade-in" style="display:none">
+      <div class="card-header">
+        <span class="card-header-title">03 — Results</span>
+        <div class="card-header-line"></div>
+        <span id="result-count" class="card-header-badge">0 records</span>
       </div>
 
-      <!-- Articles view -->
+      <!-- Articles -->
       <div id="articles-view">
-        <div style="overflow-x:auto;max-height:600px;overflow-y:auto">
-          <table class="w-full border-collapse">
-            <thead class="sticky top-0 z-10 bg-slate-900">
-              <tr class="border-b border-slate-800">
-                <th onclick="sortBy('articles','published')" class="text-left text-sm text-slate-500 tracking-widest px-4 py-3 hover:text-amber-400 transition-colors">DATE ⇅</th>
-                <th onclick="sortBy('articles','title')"     class="text-left text-sm text-slate-500 tracking-widest px-4 py-3 hover:text-amber-400 transition-colors">TITLE ⇅</th>
-                <th onclick="sortBy('articles','source')"    class="text-left text-sm text-slate-500 tracking-widest px-4 py-3 hover:text-amber-400 transition-colors">SOURCE ⇅</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">SUMMARY</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">LINK</th>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="sortBy('articles','published')">Date ⇅</th>
+                <th onclick="sortBy('articles','title')">Title ⇅</th>
+                <th onclick="sortBy('articles','source')">Source ⇅</th>
+                <th>Summary</th>
+                <th>Link</th>
               </tr>
             </thead>
             <tbody id="articles-tbody"></tbody>
@@ -160,74 +511,256 @@
         </div>
       </div>
 
-      <!-- Contacts view -->
+      <!-- Contacts -->
       <div id="contacts-view" style="display:none">
-        <div style="overflow-x:auto;max-height:600px;overflow-y:auto">
-          <table class="w-full border-collapse">
-            <thead class="sticky top-0 z-10 bg-slate-900">
-              <tr class="border-b border-slate-800">
-                <th onclick="sortBy('contacts','company_name')" class="text-left text-sm text-slate-500 tracking-widest px-4 py-3 hover:text-amber-400 transition-colors">COMPANY ⇅</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">WEBSITE</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">EMAIL</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">SEC EMAIL</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">PHONE</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">ADDRESS</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">BREACH ARTICLE</th>
-                <th class="text-left text-sm text-slate-500 tracking-widest px-4 py-3">AI</th>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="sortBy('contacts','company_name')">Company ⇅</th>
+                <th>Website</th>
+                <th>Email</th>
+                <th>Sec Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Breach Article</th>
+                <th>AI</th>
               </tr>
             </thead>
             <tbody id="contacts-tbody"></tbody>
           </table>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- 04 AI ENRICHMENT -->
-    <section id="ollama-panel" style="display:none" class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden fade-in">
-      <div class="flex items-center gap-3 px-5 py-3 border-b border-slate-800" style="background:rgba(245,158,11,0.04)">
-        <span class="text-amber-500 text-sm tracking-widest">04 // AI CONTACT ENRICHMENT</span>
-        <div class="flex-1 h-px" style="background:linear-gradient(90deg,#334155,transparent)"></div>
-        <span class="text-sm text-slate-600 tracking-widest">OLLAMA // llama3.2</span>
+    <div id="ollama-panel" class="card fade-in" style="display:none">
+      <div class="card-header">
+        <span class="card-header-title">04 — AI Contact Enrichment</span>
+        <div class="card-header-line"></div>
+        <span style="font-size:13px;color:var(--cj-text-medium)">Ollama / llama3.2</span>
       </div>
-      <div class="flex flex-wrap gap-4 p-5 border-b border-slate-800 items-end">
-        <div class="flex flex-col gap-1.5">
-          <label class="text-sm text-slate-500 tracking-widest">OLLAMA URL</label>
-          <input type="text" id="ollama-url" value="http://localhost:11434" class="bg-slate-800 border border-slate-700 text-slate-300 text-sm px-3 py-2 rounded w-52" style="font-family:inherit"/>
+      <div class="ollama-controls">
+        <div class="ollama-input-group">
+          <span class="filter-label">Ollama URL</span>
+          <input type="text" id="ollama-url" value="http://localhost:11434" style="width:220px"/>
         </div>
-        <div class="flex flex-col gap-1.5">
-          <label class="text-sm text-slate-500 tracking-widest">MODEL</label>
-          <input type="text" id="ollama-model" value="llama3.2" class="bg-slate-800 border border-slate-700 text-slate-300 text-sm px-3 py-2 rounded w-36" style="font-family:inherit"/>
+        <div class="ollama-input-group">
+          <span class="filter-label">Model</span>
+          <input type="text" id="ollama-model" value="llama3.2" style="width:140px"/>
         </div>
-        <div class="flex gap-2">
-          <button onclick="testOllama()" class="text-sm tracking-widest px-3 py-2 border border-slate-600 text-slate-400 hover:border-amber-500 hover:text-amber-400 rounded transition-colors">TEST CONNECTION</button>
-          <button onclick="enrichAll()" id="enrich-all-btn" class="text-sm tracking-widest px-3 py-2 border border-amber-500 text-amber-400 hover:bg-amber-500/10 rounded transition-colors">ENRICH ALL CONTACTS</button>
-        </div>
-      </div>
-      <div id="ollama-progress" style="display:none" class="px-5 py-3 border-b border-slate-800">
-        <div class="flex justify-between mb-2">
-          <span id="progress-label" class="text-sm text-slate-500 tracking-widest">PROCESSING 0 / 0</span>
-          <span id="progress-pct"   class="text-sm text-amber-400 tracking-widest">0%</span>
-        </div>
-        <div class="h-1 bg-slate-800 rounded overflow-hidden">
-          <div id="progress-bar" class="h-full bg-amber-500 rounded transition-all duration-300" style="width:0%"></div>
+        <div class="filter-btn-row">
+          <button onclick="testOllama()" class="btn btn-outline btn-sm">Test Connection</button>
+          <button onclick="enrichAll()" id="enrich-all-btn" class="btn btn-accent btn-sm">Enrich All Contacts</button>
         </div>
       </div>
-      <div id="ollama-log" class="p-5 text-sm leading-relaxed space-y-0.5" style="max-height:220px;overflow-y:auto;font-family:inherit"></div>
-    </section>
+      <div id="ollama-progress" class="progress-wrap" style="display:none">
+        <div class="progress-meta">
+          <span id="progress-label">Processing 0 / 0</span>
+          <span id="progress-pct">0%</span>
+        </div>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+      </div>
+      <div id="ollama-log"></div>
+    </div>
 
   </main>
 
   <!-- MODAL -->
-  <div id="modal-overlay" onclick="closeModal()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);z-index:100;align-items:center;justify-content:center;padding:16px">
-    <div onclick="event.stopPropagation()" class="bg-slate-900 border border-slate-700 rounded-lg w-full max-w-2xl shadow-2xl" style="max-height:85vh;overflow-y:auto">
-      <div class="flex items-center justify-between px-5 py-4 border-b border-slate-800 sticky top-0" style="background:#0f172a">
-        <span id="modal-title" class="text-sm text-amber-400 tracking-widest">RECORD DETAIL</span>
-        <button onclick="closeModal()" class="text-slate-500 hover:text-red-400 transition-colors text-lg leading-none px-1">✕</button>
+  <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span id="modal-title">Record Detail</span>
+        <button class="modal-close" onclick="closeModal()">✕</button>
       </div>
-      <div id="modal-body" class="p-5"></div>
+      <div id="modal-body"></div>
     </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    // ── CJ THEME OVERRIDES FOR script.js ──────────────────────────────────────
+    // These adapt script.js output to the CJ design system
+
+    function showBadge(name, type) {
+      const c = document.getElementById('loaded-files');
+      const old = c.querySelector('[data-type="' + type + '"]');
+      if (old) old.remove();
+      const el = document.createElement('div');
+      el.className = 'file-badge';
+      el.dataset.type = type;
+      el.textContent = '✓ ' + name;
+      c.appendChild(el);
+    }
+
+    function setLive() {
+      const dot  = document.getElementById('status-dot');
+      const text = document.getElementById('status-text');
+      dot.classList.add('live');
+      text.textContent = 'Live';
+      text.style.color = 'rgba(255,255,255,0.9)';
+    }
+
+    function showPanels() {
+      ['stats-bar','filter-panel','results-panel'].forEach(function(id) {
+        document.getElementById(id).style.display = 'block';
+      });
+      if (S.contacts.length > 0) {
+        document.getElementById('ollama-panel').style.display = 'block';
+      }
+    }
+
+    function updateStats() {
+      const sources    = new Set(S.articles.map(function(a){return a.source;}).filter(Boolean));
+      const emailCount = S.contacts.filter(function(c){return c.emails_general && c.emails_general.trim();}).length;
+      countUp('stat-articles', S.articles.length);
+      countUp('stat-sources',  sources.size);
+      countUp('stat-contacts', S.contacts.length);
+      countUp('stat-emails',   emailCount);
+      const el = document.querySelector('#stat-period .stat-val');
+      if (el && S.reportMeta.generated) {
+        const d = new Date(S.reportMeta.generated);
+        el.textContent = d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'});
+      }
+    }
+
+    function setMode(mode) {
+      S.mode = mode;
+      document.getElementById('tab-articles').className = 'tab' + (mode==='articles' ? ' active' : '');
+      document.getElementById('tab-contacts').className = 'tab' + (mode==='contacts' ? ' active' : '');
+      document.getElementById('articles-view').style.display = mode==='articles' ? '' : 'none';
+      document.getElementById('contacts-view').style.display = mode==='contacts' ? '' : 'none';
+      renderView();
+    }
+
+    function renderArticles() {
+      const tbody = document.getElementById('articles-tbody');
+      const data  = S.filteredArticles;
+      document.getElementById('result-count').textContent = data.length + ' records';
+      if (!data.length) {
+        tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state">No articles match the current filters.</div></td></tr>';
+        return;
+      }
+      tbody.innerHTML = data.map(function(a, i) {
+        return '<tr>'
+          + '<td class="td-date">' + esc(fmtDate(a.published)) + '</td>'
+          + '<td><span class="td-title" onclick="openArticleModal(' + i + ')">' + esc(a.title) + '</span></td>'
+          + '<td class="td-source"><span class="source-chip">' + esc(a.source||'—') + '</span></td>'
+          + '<td class="td-summary">' + esc(a.summary||'—') + '</td>'
+          + '<td class="td-link">' + (a.url ? '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">View ↗</a>' : '<span class="td-empty">—</span>') + '</td>'
+          + '</tr>';
+      }).join('');
+    }
+
+    function renderContacts() {
+      const tbody = document.getElementById('contacts-tbody');
+      const data  = S.filteredContacts;
+      document.getElementById('result-count').textContent = data.length + ' records';
+      if (!data.length) {
+        tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state">No contacts found. Load a breach_contacts_*.csv file.</div></td></tr>';
+        return;
+      }
+      tbody.innerHTML = data.map(function(c, i) {
+        return '<tr id="crow-' + i + '">'
+          + '<td><span class="td-company" onclick="openContactModal(' + i + ')">' + esc(c.company_name||'—') + '</span></td>'
+          + '<td class="td-website">' + (c.website ? '<a href="' + esc(c.website) + '" target="_blank" rel="noopener">' + esc(stripProto(c.website)) + '</a>' : '<span class="td-empty">—</span>') + '</td>'
+          + '<td class="td-email" id="ce-' + i + '">' + fmtEmails(c.emails_general) + '</td>'
+          + '<td class="td-email" id="cs-' + i + '">' + fmtEmails(c.emails_security) + '</td>'
+          + '<td id="cp-' + i + '" style="white-space:nowrap;font-size:13px">' + (esc(c.phones||'')||'<span class="td-empty">—</span>') + '</td>'
+          + '<td id="ca-' + i + '" style="font-size:13px;max-width:180px;color:var(--cj-text-medium)">' + (esc(c.addresses||'')||'<span class="td-empty">—</span>') + '</td>'
+          + '<td style="max-width:200px">' + (c.article_url ? '<a href="' + esc(c.article_url) + '" target="_blank" rel="noopener" style="font-size:13px;color:var(--cj-primary)">' + esc((c.article_title||'').slice(0,55)) + ((c.article_title||'').length>55?'…':'') + '</a>' : '<span class="td-empty">—</span>') + '</td>'
+          + '<td><button id="eb-' + i + '" onclick="enrichOne(' + i + ')" class="enrich-row-btn">Enrich</button></td>'
+          + '</tr>';
+      }).join('');
+    }
+
+    function fmtEmails(str) {
+      if (!str || !str.trim()) return '<span class="td-empty">—</span>';
+      return str.split(',').map(function(e){e=e.trim();return e?'<a href="mailto:'+esc(e)+'" class="td-email">'+esc(e)+'</a>':''}).filter(Boolean).join('<br>');
+    }
+
+    function openArticleModal(idx) {
+      const a = S.filteredArticles[idx];
+      if (!a) return;
+      document.getElementById('modal-title').textContent = a.title;
+      document.getElementById('modal-body').innerHTML =
+          mf('Source',    '<span class="source-chip">'+esc(a.source||'—')+'</span>')
+        + mf('Published', esc(a.published||'—'))
+        + mf('Summary',   esc(a.summary||'—'))
+        + mf('URL',       a.url?'<a href="'+esc(a.url)+'" target="_blank">'+esc(a.url)+'</a>':'—');
+      showModal();
+    }
+
+    function openContactModal(idx) {
+      const c = S.filteredContacts[idx];
+      if (!c) return;
+      document.getElementById('modal-title').textContent = c.company_name || 'Contact Detail';
+      document.getElementById('modal-body').innerHTML =
+          mf('Website',        c.website?'<a href="'+esc(c.website)+'" target="_blank">'+esc(c.website)+'</a>':'—')
+        + mf('General Email',  fmtEmailsFull(c.emails_general))
+        + mf('Security Email', fmtEmailsFull(c.emails_security))
+        + mf('Phone',          esc(c.phones||'—'))
+        + mf('Address',        esc(c.addresses||'—'))
+        + mf('Breach Article', c.article_url?'<a href="'+esc(c.article_url)+'" target="_blank">'+esc(c.article_title||c.article_url)+'</a>':esc(c.article_title||'—'))
+        + mf('Breach Summary', esc(c.summary||'—'))
+        + mf('Reported',       esc(c.published||'—'));
+      showModal();
+    }
+
+    function fmtEmailsFull(str) {
+      if (!str||!str.trim()) return '—';
+      return str.split(',').map(function(e){e=e.trim();return e?'<a href="mailto:'+esc(e)+'">'+esc(e)+'</a>':''}).filter(Boolean).join('<br>');
+    }
+
+    function mf(label, valueHtml) {
+      return '<div class="mf"><div class="mf-label">'+label+'</div><div class="mf-value">'+valueHtml+'</div></div>';
+    }
+
+    function showModal() {
+      const o = document.getElementById('modal-overlay');
+      o.style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
+
+    function ollamaLog(msg, colorKey) {
+      const log  = document.getElementById('ollama-log');
+      const line = document.createElement('div');
+      const cls  = colorKey === 'var(--accent3)' ? 'log-ok'
+                 : colorKey === 'var(--accent2)' ? 'log-err'
+                 : colorKey === 'var(--accent)'  ? 'log-info'
+                 : '';
+      if (cls) line.className = cls;
+      line.textContent = '[' + new Date().toLocaleTimeString() + '] ' + msg;
+      log.appendChild(line);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    const _origUpdateContactRow = updateContactRow;
+    function updateContactRow(idx, enriched) {
+      _origUpdateContactRow(idx, enriched);
+      const row = document.getElementById('crow-' + idx);
+      if (row) {
+        row.classList.add('row-flash');
+        setTimeout(function(){ row.classList.remove('row-flash'); }, 2000);
+      }
+    }
+
+    // Drag and drop handlers (script.js looks for 'drag-over' class)
+    const dz = document.getElementById('drop-zone');
+    dz.addEventListener('dragover',  function(e){ e.preventDefault(); this.classList.add('drag-over'); });
+    dz.addEventListener('dragleave', function(){ this.classList.remove('drag-over'); });
+    dz.addEventListener('drop', function(e){
+      e.preventDefault(); this.classList.remove('drag-over');
+      Array.from(e.dataTransfer.files).forEach(function(f){
+        if(f.name.endsWith('.json')) readJSON(f);
+        else if(f.name.endsWith('.csv')) readCSV(f);
+      });
+    });
+
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+  </script>
 </body>
 </html>
