@@ -608,3 +608,138 @@ async function enrichAll() {
     if (btn) btn.disabled = false;
     ollamaLog('━━ Enrichment complete ━━', '#34d399');
 }
+
+// ── PI BRIDGE ENRICHMENT ──────────────────────────────────────────────────────
+
+function piBridgeUrl() {
+    var el = document.getElementById('pi-bridge-url');
+    return el ? (el.value || 'http://localhost:5050').replace(/\/$/, '') : 'http://localhost:5050';
+}
+
+function piModel() {
+    var el = document.getElementById('pi-model');
+    return el ? (el.value || 'llama3.2') : 'llama3.2';
+}
+
+function piLog(msg, color) {
+    var log = document.getElementById('pi-log');
+    if (!log) return;
+    var line = document.createElement('div');
+    line.style.color = color || '#64748b';
+    line.textContent = '[' + new Date().toLocaleTimeString() + '] ' + msg;
+    log.appendChild(line);
+    log.scrollTop = log.scrollHeight;
+}
+
+async function testPiBridge() {
+    piLog('Testing connection to Pi bridge…', '#94a3b8');
+    try {
+        var resp = await fetch(piBridgeUrl() + '/health');
+        var data = await resp.json();
+        if (data.status === 'ok') {
+            piLog('✓ Bridge online. Pi found at: ' + data.pi_path, '#34d399');
+        } else {
+            piLog('✗ Bridge error: ' + data.message, '#f87171');
+        }
+    } catch(e) {
+        piLog('✗ Could not reach bridge: ' + e.message, '#f87171');
+        piLog('  Start the bridge with: python pi_bridge.py', '#f87171');
+    }
+}
+
+async function piEnrichOne(idx) {
+    var c   = S.filteredContacts[idx];
+    if (!c) return;
+    var btn = document.getElementById('pi-eb-' + idx);
+    if (btn) { btn.textContent = '⟳'; btn.disabled = true; }
+
+    document.getElementById('pi-panel').style.display = 'block';
+    piLog('Enriching with Pi: ' + c.company_name, '#94a3b8');
+
+    try {
+        var resp = await fetch(piBridgeUrl() + '/enrich', {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                company: c.company_name,
+                website: c.website  || '',
+                model:   piModel(),
+                context: c.summary  || c.article_title || '',
+            })
+        });
+
+        if (!resp.ok) {
+            var err = await resp.json();
+            piLog('✗ ' + c.company_name + ': ' + (err.error || 'HTTP ' + resp.status), '#f87171');
+            if (btn) { btn.textContent = 'ERR'; btn.disabled = false; }
+            return;
+        }
+
+        var result = await resp.json();
+
+        if (result.error) {
+            piLog('✗ ' + c.company_name + ': ' + result.error, '#f87171');
+            if (btn) { btn.textContent = 'ERR'; btn.disabled = false; }
+            return;
+        }
+
+        if (result.warning) {
+            piLog('⚠ ' + c.company_name + ': ' + result.warning, '#f59e0b');
+            piLog('  Raw output: ' + (result.raw || '').slice(0, 120), '#64748b');
+            if (btn) { btn.textContent = 'WARN'; btn.disabled = false; }
+            return;
+        }
+
+        // Merge results into contact row
+        updateContactRow(idx, result);
+
+        var found = [
+            result.emails_general  ? 'email: '  + result.emails_general.slice(0,40)  : '',
+            result.emails_security ? 'sec: '    + result.emails_security.slice(0,30) : '',
+            result.phones          ? 'phone: '  + result.phones.slice(0,20)           : '',
+            result.addresses       ? 'addr: '   + result.addresses.slice(0,40)        : '',
+        ].filter(Boolean).join(' | ');
+
+        piLog('✓ ' + c.company_name + ': ' + (found || 'no new info found'), found ? '#34d399' : '#64748b');
+        if (btn) { btn.textContent = '✓ DONE'; btn.disabled = false; }
+
+    } catch(e) {
+        piLog('✗ ' + c.company_name + ': ' + e.message, '#f87171');
+        if (btn) { btn.textContent = 'ERR'; btn.disabled = false; }
+    }
+}
+
+async function piEnrichAll() {
+    var data = S.filteredContacts;
+    if (!data.length) return piLog('No contacts loaded.', '#f87171');
+
+    var btn = document.getElementById('pi-enrich-all-btn');
+    if (btn) btn.disabled = true;
+
+    var prog = document.getElementById('pi-progress');
+    if (prog) prog.style.display = 'block';
+
+    piLog('━━ Starting Pi enrichment of ' + data.length + ' companies ━━', '#f59e0b');
+
+    for (var i = 0; i < data.length; i++) {
+        var pct = Math.round((i / data.length) * 100);
+        var lbl = document.getElementById('pi-progress-label');
+        var pctEl = document.getElementById('pi-progress-pct');
+        var bar = document.getElementById('pi-progress-bar');
+        if (lbl)   lbl.textContent  = 'Processing ' + (i+1) + ' / ' + data.length;
+        if (pctEl) pctEl.textContent = pct + '%';
+        if (bar)   bar.style.width   = pct + '%';
+        await piEnrichOne(i);
+        // Pi needs more time between calls than Ollama direct
+        await new Promise(function(r) { setTimeout(r, 1000); });
+    }
+
+    var lbl   = document.getElementById('pi-progress-label');
+    var pctEl = document.getElementById('pi-progress-pct');
+    var bar   = document.getElementById('pi-progress-bar');
+    if (lbl)   lbl.textContent   = 'Complete — ' + data.length + ' / ' + data.length;
+    if (pctEl) pctEl.textContent = '100%';
+    if (bar)   bar.style.width   = '100%';
+    if (btn)   btn.disabled      = false;
+    piLog('━━ Pi enrichment complete ━━', '#34d399');
+}

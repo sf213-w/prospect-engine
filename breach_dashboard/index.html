@@ -524,7 +524,8 @@
                 <th>Phone</th>
                 <th>Address</th>
                 <th>Breach Article</th>
-                <th>AI</th>
+                <th>Ollama</th>
+                <th>Pi</th>
               </tr>
             </thead>
             <tbody id="contacts-tbody"></tbody>
@@ -533,12 +534,12 @@
       </div>
     </div>
 
-    <!-- 04 AI ENRICHMENT -->
+    <!-- 04 AI ENRICHMENT (Ollama direct) -->
     <div id="ollama-panel" class="card fade-in" style="display:none">
       <div class="card-header">
-        <span class="card-header-title">04 — AI Contact Enrichment</span>
+        <span class="card-header-title">04 — Ollama Direct Enrichment</span>
         <div class="card-header-line"></div>
-        <span style="font-size:13px;color:var(--cj-text-medium)">Ollama / llama3.2</span>
+        <span style="font-size:13px;color:var(--cj-text-medium)">Fetches pages from browser · regex + LLM extraction</span>
       </div>
       <div class="ollama-controls">
         <div class="ollama-input-group">
@@ -551,7 +552,7 @@
         </div>
         <div class="filter-btn-row">
           <button onclick="testOllama()" class="btn btn-outline btn-sm">Test Connection</button>
-          <button onclick="enrichAll()" id="enrich-all-btn" class="btn btn-accent btn-sm">Enrich All Contacts</button>
+          <button onclick="enrichAll()" id="enrich-all-btn" class="btn btn-accent btn-sm">Enrich All (Ollama)</button>
         </div>
       </div>
       <div id="ollama-progress" class="progress-wrap" style="display:none">
@@ -562,6 +563,46 @@
         <div class="progress-track"><div id="progress-bar"></div></div>
       </div>
       <div id="ollama-log"></div>
+    </div>
+
+    <!-- 05 PI AGENT ENRICHMENT -->
+    <div id="pi-panel" class="card fade-in" style="display:none">
+      <div class="card-header">
+        <span class="card-header-title">05 — Pi Agent Enrichment</span>
+        <div class="card-header-line"></div>
+        <span style="font-size:13px;color:var(--cj-text-medium)">Uses Pi's web search &amp; fetch tools · runs via local bridge server</span>
+      </div>
+
+      <!-- Setup instructions (always visible) -->
+      <div style="background:#FFF8E1;border-bottom:1px solid #FFE082;padding:12px 20px;font-size:13px;color:#5D4037">
+        <strong>Before using:</strong> &nbsp;
+        1. Install Pi: <code style="background:#F5F5F5;padding:1px 6px;border-radius:3px">npm install -g @mariozechner/pi-coding-agent</code> &nbsp;·&nbsp;
+        2. Start the bridge: <code style="background:#F5F5F5;padding:1px 6px;border-radius:3px">python pi_bridge.py</code> &nbsp;·&nbsp;
+        3. Start Ollama: <code style="background:#F5F5F5;padding:1px 6px;border-radius:3px">$env:OLLAMA_ORIGINS="*"; ollama serve</code>
+      </div>
+
+      <div class="ollama-controls">
+        <div class="ollama-input-group">
+          <span class="filter-label">Bridge URL</span>
+          <input type="text" id="pi-bridge-url" value="http://localhost:5050" style="width:200px"/>
+        </div>
+        <div class="ollama-input-group">
+          <span class="filter-label">Model</span>
+          <input type="text" id="pi-model" value="llama3.2" style="width:140px"/>
+        </div>
+        <div class="filter-btn-row">
+          <button onclick="testPiBridge()" class="btn btn-outline btn-sm">Test Bridge</button>
+          <button onclick="piEnrichAll()" id="pi-enrich-all-btn" class="btn btn-accent btn-sm">Enrich All (Pi)</button>
+        </div>
+      </div>
+      <div id="pi-progress" class="progress-wrap" style="display:none">
+        <div class="progress-meta">
+          <span id="pi-progress-label">Processing 0 / 0</span>
+          <span id="pi-progress-pct">0%</span>
+        </div>
+        <div class="progress-track"><div id="pi-progress-bar" style="height:100%;background:var(--cj-accent);transition:width 0.3s;border-radius:3px;width:0%"></div></div>
+      </div>
+      <div id="pi-log" style="padding:16px 20px;font-family:monospace;font-size:13px;color:var(--cj-text-medium);max-height:200px;overflow-y:auto;background:#FAFAFA;line-height:1.8"></div>
     </div>
 
   </main>
@@ -607,6 +648,7 @@
       });
       if (S.contacts.length > 0) {
         document.getElementById('ollama-panel').style.display = 'block';
+        document.getElementById('pi-panel').style.display = 'block';
       }
     }
 
@@ -657,7 +699,7 @@
       const data  = S.filteredContacts;
       document.getElementById('result-count').textContent = data.length + ' records';
       if (!data.length) {
-        tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state">No contacts found. Load a breach_contacts_*.csv file.</div></td></tr>';
+        tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state">No contacts found. Load a breach_contacts_*.csv file.</div></td></tr>';
         return;
       }
       tbody.innerHTML = data.map(function(c, i) {
@@ -669,7 +711,8 @@
           + '<td id="cp-' + i + '" style="white-space:nowrap;font-size:13px">' + (esc(c.phones||'')||'<span class="td-empty">—</span>') + '</td>'
           + '<td id="ca-' + i + '" style="font-size:13px;max-width:180px;color:var(--cj-text-medium)">' + (esc(c.addresses||'')||'<span class="td-empty">—</span>') + '</td>'
           + '<td style="max-width:200px">' + (c.article_url ? '<a href="' + esc(c.article_url) + '" target="_blank" rel="noopener" style="font-size:13px;color:var(--cj-primary)">' + esc((c.article_title||'').slice(0,55)) + ((c.article_title||'').length>55?'…':'') + '</a>' : '<span class="td-empty">—</span>') + '</td>'
-          + '<td><button id="eb-' + i + '" onclick="enrichOne(' + i + ')" class="enrich-row-btn">Enrich</button></td>'
+          + '<td><button id="eb-' + i + '" onclick="enrichOne(' + i + ')" class="enrich-row-btn">Ollama</button></td>'
+          + '<td><button id="pi-eb-' + i + '" onclick="piEnrichOne(' + i + ')" class="enrich-row-btn" style="border-color:#1A73B8;color:#1A73B8">Pi</button></td>'
           + '</tr>';
       }).join('');
     }
