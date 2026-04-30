@@ -1,0 +1,165 @@
+
+<style>
+#erd svg { max-width: 100%; }
+#erd svg.erDiagram .divider path { stroke-opacity: 0.5; }
+#erd svg.erDiagram .row-rect-odd path,
+#erd svg.erDiagram .row-rect-odd rect,
+#erd svg.erDiagram .row-rect-even path,
+#erd svg.erDiagram .row-rect-even rect { stroke: none !important; }
+</style>
+<div id="erd"></div>
+<script type="module">
+import mermaid from 'https://esm.sh/mermaid@11/dist/mermaid.esm.min.mjs';
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+await document.fonts.ready;
+mermaid.initialize({
+  startOnLoad: false,
+  theme: 'base',
+  fontFamily: '"Anthropic Sans", sans-serif',
+  themeVariables: {
+    darkMode: dark,
+    fontSize: '13px',
+    fontFamily: '"Anthropic Sans", sans-serif',
+    lineColor: dark ? '#9c9a92' : '#73726c',
+    textColor: dark ? '#c2c0b6' : '#3d3d3a',
+    primaryColor: dark ? '#1a2a3a' : '#E6F1FB',
+    primaryBorderColor: dark ? '#185FA5' : '#185FA5',
+    primaryTextColor: dark ? '#c2c0b6' : '#0C447C',
+    secondaryColor: dark ? '#1a1a2e' : '#EEEDFE',
+    tertiaryColor: dark ? '#1a2e1a' : '#EAF3DE',
+  },
+});
+const diagram = `erDiagram
+  organizations {
+    int id PK
+    text name
+    text website
+    text address_street
+    text address_city
+    text address_state
+    text address_zip
+    text phone
+    text industry
+    text sub_industry
+    int employee_count_est
+    text source
+    text source_url
+    real lead_score
+    text status
+    text created_at
+    text updated_at
+  }
+
+  contacts {
+    int id PK
+    int organization_id FK
+    text first_name
+    text last_name
+    text job_title
+    text email
+    text email_status
+    text phone_direct
+    text linkedin_url
+    text source
+    real confidence_score
+    int enrichment_approved
+    text created_at
+    text updated_at
+  }
+
+  breach_events {
+    int id PK
+    int organization_id FK
+    text event_type
+    text headline
+    text summary
+    text source_url
+    text source_name
+    text published_at
+    text discovered_at
+    real urgency_score
+    text trigger_keywords
+    int is_duplicate
+    int reviewed
+  }
+
+  compliance_scans {
+    int id PK
+    int organization_id FK
+    text scanned_at
+    int has_privacy_policy
+    int has_hipaa_notice
+    int has_ssl
+    text tech_stack
+    text emr_ehr_detected
+    text missing_items
+    real gap_score
+  }
+
+  outreach_log {
+    int id PK
+    int contact_id FK
+    int organization_id FK
+    text campaign_id
+    text platform
+    text status
+    text dispatched_at
+    text responded_at
+    text opt_out_at
+    text notes
+  }
+
+  opt_outs {
+    int id PK
+    text email
+    text reason
+    text opted_out_at
+    text source
+  }
+
+  run_log {
+    int id PK
+    text run_type
+    text started_at
+    text completed_at
+    int orgs_found
+    int contacts_found
+    int breaches_found
+    int errors
+    text status
+    text notes
+  }
+
+  organizations ||--o{ contacts : "has"
+  organizations ||--o{ breach_events : "flagged in"
+  organizations ||--o{ compliance_scans : "audited by"
+  organizations ||--o{ outreach_log : "receives"
+  contacts ||--o{ outreach_log : "contacted via"
+`;
+
+const { svg } = await mermaid.render('erd-svg', diagram);
+document.getElementById('erd').innerHTML = svg;
+
+document.querySelectorAll('#erd svg.erDiagram .node').forEach(node => {
+  const firstPath = node.querySelector('path[d]');
+  if (!firstPath) return;
+  const d = firstPath.getAttribute('d');
+  const nums = d.match(/-?[\d.]+/g)?.map(Number);
+  if (!nums || nums.length < 8) return;
+  const xs = [nums[0], nums[2], nums[4], nums[6]];
+  const ys = [nums[1], nums[3], nums[5], nums[7]];
+  const x = Math.min(...xs), y = Math.min(...ys);
+  const w = Math.max(...xs) - x, h = Math.max(...ys) - y;
+  const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  rect.setAttribute('x', x); rect.setAttribute('y', y);
+  rect.setAttribute('width', w); rect.setAttribute('height', h);
+  rect.setAttribute('rx', '8');
+  for (const a of ['fill', 'stroke', 'stroke-width', 'class', 'style']) {
+    if (firstPath.hasAttribute(a)) rect.setAttribute(a, firstPath.getAttribute(a));
+  }
+  firstPath.replaceWith(rect);
+});
+document.querySelectorAll('#erd svg.erDiagram .row-rect-odd path, #erd svg.erDiagram .row-rect-even path').forEach(p => {
+  p.setAttribute('stroke', 'none');
+});
+</script>

@@ -1,0 +1,63 @@
+PRD: COMPLIANCE & CYBERSECURITY LEAD GENERATION ENGINE
+
+1. PROJECT OVERVIEW
+The objective is to build a modular automated lead generation system that identifies US-based healthcare providers and vendors (HIPAA focus) and financial/tech firms (Cybersecurity focus). The system will scrape business data, enrich it with decision-maker contact info, analyze their current compliance posture, and inject them into a Woodpecker email campaign.
+
+2. MODULE 1: SCRAPING LOGIC (THE DISCOVERY ENGINE)
+Goal: Identify high-intent targets and extract baseline digital footprints.
+
+A. Targeting Parameters:
+- Search Sources: Google Maps API, NPI Registry, HealthGrades, niche directories.
+- Queries: "Dental practices in [City]", "Outpatient Surgery Centers", "Managed IT Services [State]".
+- Extraction: Company Name, Website URL, Physical Address, Phone Number.
+
+B. Technical Requirements:
+- Use Playwright or Selenium for JavaScript-heavy rendering.
+- Filtering: Target SMBs (10-200 employees); exclude enterprise-level entities.
+- Anti-Detection: Implement rotating user-agents, proxy rotation, and random sleep intervals (jitter).
+
+3. MODULE 2: ENRICHMENT LOGIC (LEAD INTELLIGENCE)
+Goal: Transform a URL into a contactable lead with personalized context.
+
+A. Contact Discovery:
+- Use Apollo.io, Hunter.io, or Snov.io APIs.
+- Personas: Practice Manager, IT Director, Compliance Officer, CEO/Founder.
+
+B. Compliance Gap Analysis (The "Hook"):
+- Scripted Scan: Check website for "Privacy Policy", "HIPAA Notice", or "Terms of Use".
+- Tech Stack Detection: Use Wappalyzer/BuiltWith API to identify medical software (EHR/EMR).
+- Security Audit: Check for SSL/HTTPS presence.
+
+C. Scoring & Normalization:
+- Lead Scoring: Rank leads based on industry relevance and detected gaps.
+- Email Verification: Final validation via NeverBounce or Hunter to ensure <5% bounce rate.
+
+4. MODULE 3: OUTREACH DISPATCH (WOODPECKER INTEGRATION)
+Goal: Programmatically push leads into automated email sequences.
+
+A. Technical Configuration:
+- API: Woodpecker REST API (v2).
+- Authentication: x-api-key header.
+- Endpoint: POST https://api.woodpecker.co/rest/v1/add_prospects_campaign
+
+B. Data Mapping:
+- Email: [Verified Email]
+- First Name: [Lead First Name]
+- Company: [Company Name]
+- Snippet 1 (The Hook): Specific compliance gap (e.g., "Missing HIPAA privacy link").
+- Snippet 2: Industry niche for personalization.
+
+C. Logic Flow:
+- Deduplication: Check against existing prospect list.
+- Batching: Push in batches of 50 to respect rate limits.
+- Dry Run Mode: Log payload locally for validation before live injection.
+
+5. SUCCESS METRICS
+- Volume: 500+ verified leads per week.
+- Quality: < 5% email bounce rate.
+- Accuracy: 80% of leads categorized correctly by industry.
+
+6. ETHICS & COMPLIANCE
+- Adherence to CAN-SPAM Act.
+- Compliance with platform Terms of Service (ToS) regarding scraping.
+- Implementation of human-like browsing patterns.
