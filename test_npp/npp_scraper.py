@@ -1,15 +1,56 @@
 import time
 import re
+import csv
 import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 from ddgs import DDGS
 from urllib.parse import urlparse
+from datetime import datetime
 
 URL = "https://ocrportal.hhs.gov/ocr/breach/breach_report_hip.jsf"
 
-TARGET_COUNT = 5
-MAX_PAGES = 3
+TARGET_COUNT = 100
+MAX_PAGES = 10
+
+CSV_FILE = f"privacy_contacts_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+CSV_FIELDS = [
+    "provider_name",
+    "website",
+    "emails",
+    "phones",
+    "source_url",
+    "context_snippet",
+    "found_via",
+]
+
+
+# -----------------------------
+# CSV WRITER
+# -----------------------------
+def init_csv():
+    with open(CSV_FILE, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+        writer.writeheader()
+    print(f"📄 CSV initialized: {CSV_FILE}")
+
+
+def write_csv_row(row: dict):
+    with open(CSV_FILE, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+        writer.writerow(row)
+
+
+def write_not_found(provider_name, website=""):
+    write_csv_row({
+        "provider_name": provider_name,
+        "website": website,
+        "emails": "",
+        "phones": "",
+        "source_url": "",
+        "context_snippet": "",
+        "found_via": "not found",
+    })
 
 
 # -----------------------------
@@ -59,7 +100,7 @@ def extract_providers(page, collected):
         name, entity_type = parse_row(row)
         if not name or not entity_type:
             continue
-        print(f"DEBUG: {name} | {entity_type}")
+        print(f"  DEBUG: {name} | {entity_type}")
         if "Healthcare Provider" in entity_type:
             if name not in collected:
                 collected.append(name)
@@ -148,7 +189,6 @@ def get_base_url(url):
 # FIND OFFICIAL WEBSITE
 # -----------------------------
 def find_official_site(company):
-    # Try multiple queries to improve accuracy
     queries = [
         f'"{company}" official site privacy officer contact',
         f'"{company}" hospital clinic official website',
@@ -166,10 +206,9 @@ def find_official_site(company):
                     continue
                 if not is_valid_domain(url):
                     continue
-                # Prefer URLs that look like an org's own domain (not aggregators)
                 base = get_base_url(url)
                 if base:
-                    return base  # Return just the root domain
+                    return base
 
         except Exception as e:
             print(f"  Search error: {e}")
@@ -192,7 +231,6 @@ def extract_emails(text):
 def extract_privacy_contact(text, source_url):
     results = []
 
-    # Patterns for privacy/compliance officer context blocks
     context_patterns = [
         r".{0,300}privacy officer.{0,300}",
         r".{0,300}compliance officer.{0,300}",
@@ -205,7 +243,6 @@ def extract_privacy_contact(text, source_url):
         for match in re.finditer(pattern, text, re.IGNORECASE):
             snippet = match.group()
             emails = extract_emails(snippet)
-            # Look for phone numbers near these mentions
             phones = re.findall(r"\(?\d{3}\)?[\s\-\.]\d{3}[\s\-\.]\d{4}", snippet)
 
             results.append({
@@ -267,7 +304,6 @@ def find_privacy_contact(base_url):
         contacts = extract_privacy_contact(text, url)
         if contacts:
             all_contacts.extend(contacts)
-            # If we found emails, stop searching further
             if any(c["emails"] for c in contacts):
                 break
 
@@ -275,7 +311,7 @@ def find_privacy_contact(base_url):
 
 
 # -----------------------------
-# ALSO SEARCH DDG FOR PRIVACY OFFICER EMAIL
+# SEARCH DDG FOR PRIVACY OFFICER EMAIL
 # -----------------------------
 def search_for_privacy_officer(company):
     queries = [
@@ -296,7 +332,6 @@ def search_for_privacy_officer(company):
                 if emails:
                     return emails, url
 
-                # Try fetching if no email in snippet
                 if url and is_valid_domain(url):
                     text = fetch_text(url)
                     if text:
@@ -318,13 +353,15 @@ def search_for_privacy_officer(company):
 def main():
     print("Starting full pipeline...\n")
 
+    init_csv()
+
     providers = get_healthcare_providers()
 
     if not providers:
         print("❌ No providers found")
         return
 
-    print("\n✅ Providers found:")
+    print(f"\n✅ {len(providers)} providers found:")
     for p in providers:
         print(" -", p)
 
@@ -339,6 +376,7 @@ def main():
         site = find_official_site(provider)
         if not site:
             print("  ❌ No official site found")
+            write_not_found(provider)
             continue
 
         print(f"  🌐 Website: {site}")
@@ -358,6 +396,16 @@ def main():
                     print(f"     📞 Phones: {', '.join(c['phones'])}")
                 print(f"     📝 Context: ...{c['snippet'][:200]}...")
 
+                write_csv_row({
+                    "provider_name": provider,
+                    "website": site,
+                    "emails": "; ".join(c["emails"]),
+                    "phones": "; ".join(c["phones"]),
+                    "source_url": c["source"],
+                    "context_snippet": c["snippet"][:300],
+                    "found_via": "site crawl",
+                })
+
         # Step 3: If nothing found on-site, try a targeted web search
         if not found_anything:
             print(f"\n  🔎 Trying targeted web search for privacy officer...")
@@ -366,8 +414,21 @@ def main():
                 print(f"  ✅ Found via web search!")
                 print(f"     📧 Emails: {', '.join(emails)}")
                 print(f"     Source: {source}")
+
+                write_csv_row({
+                    "provider_name": provider,
+                    "website": site,
+                    "emails": "; ".join(emails),
+                    "phones": "",
+                    "source_url": source,
+                    "context_snippet": "",
+                    "found_via": "web search",
+                })
             else:
                 print(f"  ❌ No privacy officer contact found")
+                write_not_found(provider, site)
+
+    print(f"\n✅ Done. Results saved to: {CSV_FILE}")
 
 
 if __name__ == "__main__":

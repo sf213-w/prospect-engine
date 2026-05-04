@@ -20,7 +20,7 @@ B. Technical Requirements:
 Goal: Transform a URL into a contactable lead with personalized context.
 
 A. Contact Discovery:
-- Use Apollo.io, Hunter.io, or Snov.io APIs.
+- Use Apollo.io.
 - Personas: Practice Manager, IT Director, Compliance Officer, CEO/Founder.
 
 B. Compliance Gap Analysis (The "Hook"):

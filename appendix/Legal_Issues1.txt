@@ -1,0 +1,59 @@
+Analyze and Review these issues. Pay attention to Federal and State law, as well as Required System Controls.
+
+Lawful public sources
+✓
+NPI Registry API (nppes.hhs.gov/api) — public federal database, explicitly open for bulk access. Covers all licensed US healthcare providers including dentists, surgery centers, and group practices.
+✓
+CMS Open Payments, Medicare Provider Data — federal datasets published under open data mandates. No ToS restrictions on programmatic access.
+✓
+State business registries (Secretary of State filings) — public record. Many states offer bulk download or API access. Provides registered agent, address, officer names.
+✓
+OCR Breach Portal ("Wall of Shame") — HHS publishes all HIPAA breach reports exceeding 500 records. Public, structured, updated monthly. This is your breach_events feed.
+✓
+RSS/news feeds and press releases — linking to publicly indexed articles is fine. Parse structured feed data, not the underlying site's DOM.
+✓
+Contact data APIs (Apollo.io, Hunter.io, Cognism) — these vendors aggregate public data and carry their own legal liability for sourcing. Using their API is legal, provided you follow their ToS and downstream usage rules.
+
+Avoid these High-risk or prohibited sources
+✗
+Scraping Google Maps, HealthGrades, or Yelp with Playwright/Selenium — all three explicitly prohibit scraping in their ToS. Google has pursued CFAA litigation against scrapers. Use the Google Places API (paid, has ToS) or switch sources entirely.
+✗
+Scraping LinkedIn — LinkedIn v. hiQ established some legal protection for public data, but that case is narrow and ongoing. LinkedIn actively blocks scrapers and can pursue ToS claims. Use official LinkedIn Sales Navigator API or a licensed data vendor instead.
+✗
+Rotating proxies + fake user agents to disguise scraping — this signals intent to circumvent technical controls, which strengthens a CFAA "unauthorized access" argument even if the underlying data is public.
+
+CAN-SPAM (email) Federal floor — must comply
+✓
+Every email must include a physical mailing address and a working one-click unsubscribe mechanism.
+✓
+Subject lines must not be deceptive. "Your HIPAA compliance risk" is fine. "Re: our last conversation" when there was none is not.
+✓
+Honor opt-out requests within 10 business days. This is what the opt_outs table in the schema is for — and it must suppress across all future campaigns.
+✗
+B2B email to work addresses is not exempt from CAN-SPAM — the law applies to all commercial email. The B2B exemption is a myth.
+
+TCPA (phone/SMS) Much stricter than email
+✗
+Do not dial cell phones with an autodialer or prerecorded message without prior express written consent. TCPA violations are $500–$1,500 per call with a private right of action — class actions are common.
+✓
+Manual dialing to a business landline for a legitimate business purpose is generally permissible. If you add phone outreach, flag mobile vs. landline in the contacts table and gate auto-dialing behind a consent check.
+
+State laws Stricter than federal in several states
+✗
+CCPA/CPRA (California) — if any contact is a California resident, they have the right to know what data you hold, request deletion, and opt out of "sale" of their data. Apollo/Hunter data often includes California contacts. Add a deletion request workflow to the system.
+✗
+Florida, Texas, and Virginia have passed their own consumer privacy laws with overlapping requirements. The practical floor: build CCPA-compliant processes and you cover most state law.
+
+Mandatory before going live
+1
+Global suppression list — the opt_outs table must be checked before every outreach dispatch. An email that appears in opt_outs must never receive another message, across all campaigns, forever.
+2
+Human review gate — no record should flow from enrichment into Woodpecker without a human approving it. This catches false positives before they become legal exposure.
+3
+Data retention policy — define how long you keep contact records. Indefinite storage of personal data you're not actively using is a CCPA risk. 12–18 months is a common B2B standard.
+4
+Privacy policy on your own site — if you're sending emails directing people to your website, your site must have a privacy policy disclosing what data you collect and how you use it.
+5
+Source documentation per lead — the source and source_url fields in the schema serve a legal function: if a contact disputes how you got their information, you need to be able to show it came from a public source.
+6
+Vendor DPA agreements — sign a Data Processing Agreement with Apollo.io, Hunter.io, and any other enrichment vendor. This is standard practice and most vendors offer them. It clarifies liability for sourcing.
