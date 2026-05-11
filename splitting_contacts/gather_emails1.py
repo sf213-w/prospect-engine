@@ -85,6 +85,79 @@ after = len(df)
 print(f"Removed {before - after} duplicate emails")
 
 # ============================================
+# COLUMN MAPPING
+# ============================================
+
+COLUMN_MAPPING = {
+	"Person - Marketing status": "marketing_status",
+	"Person - Double opt-in": "double_opt-in",
+	"Person - First name": "first_name",
+	"Person - Last name": "last_name",
+	"Person - ReferralURL": "refferal_url",
+	"Person - Phone - Work": "phone",
+	"Organization - Website": "website",
+	"Person - Title": "title",
+	"Organization - State": "state",
+	"Person - Role": "role",
+	"Organization - Name": "organization",
+	"Organization - LinkedIn URL": "linkedin_company",
+	"Organization - Employees": "employees",
+	"Company Name": "company_name",
+	"Organization - City": "city",
+	"Sweet Spot": "sweet_spot",
+	"Sales Process Stage": "sales_process_stage",
+	"Sample Modules": "sample_modules",
+	"Date Created": "date_created",
+	"Category": "category"
+}
+
+# Rename columns that exist
+existing_mapping = {
+	old: new
+	for old, new in COLUMN_MAPPING.items()
+	if old in df.columns
+}
+
+df = df.rename(columns=existing_mapping)
+
+# ============================================
+# KEEP ONLY DESIRED COLUMNS
+# ============================================
+
+FINAL_COLUMNS = [
+	"marketing_status",
+	"double_opt-in",
+	"first_name",
+	"last_name",
+	"refferal_url",
+	"phone",
+	"website",
+	"title",
+	"state",
+	"role",
+	"organization",
+	"linkedin_company",
+	"employees",
+	"company_name",
+	"city",
+	"sweet_spot",
+	"sales_process_stage",
+	"sample_modules",
+	"date_created",
+	"category",
+	"email"
+]
+
+# Create any missing columns
+for col in FINAL_COLUMNS:
+
+	if col not in df.columns:
+		df[col] = ""
+
+# Keep only final columns
+df = df[FINAL_COLUMNS]
+
+# ============================================
 # SAVE OUTPUT
 # ============================================
 
