@@ -1,370 +1,162 @@
-Person - Marketing status,Person - Double opt-in,Person - First name,Person - Last name,Person - Email - Work,Person - Email - Home,Person - Email - Other,Person - ReferralURL,Person - Phone - Work,Person - Phone - Home,Person - Phone - Mobile,Person - Phone - Other,Person - DirectPhone,Person - Website,Person - Title,Person - State,Person - Role,Person - Organization,Person - LinkedInCompany,Person - Employees,Person - CompanyName,Person - City,Person - Name,Person - Sweet Spot,Person - Sales Process Stage,Person - Sample Modules,Person - Person created
-Bounced,Not confirmed,Munesh,Kumar,monee@student.elte.hu,,,,,,,,,www.elte.hu,,,,,http://www.linkedin.com/company/ai-research-elte-mathematics,485.0,Eötvös Loránd University,,Munesh Kumar,,,,2025-04-12 21:00:55
-Subscribed,Not confirmed,Jason,Roswell,jason.roswell@capital.k12.de.us,,,,,,,,,www.capital.k12.de.us,,,,,http://www.linkedin.com/company/capital-school-district,1094.0,Capital School District,,Jason Roswell,,,,2025-04-10 19:43:41
-Subscribed,Not confirmed,Xavier,McEachern,xavier.mceachern@robeson.k12.nc.us,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,,IT Support Technician,,,,https://www.linkedin.com/in/xavier-mceachern-b707b1168,,CW IT Support,,Xavier McEachern,,,,2025-03-24 16:50:23
-Subscribed,Not confirmed,Cassie,Kovar,ckovar@smithvilleisd.org,,,,,,,,,www.smithvilleisd.org,,,,,http://www.linkedin.com/company/smithville-junior-high-school,192.0,Smithville Independent School District,,Cassie Kovar,,,,2025-03-12 20:36:07
-Subscribed,Not confirmed,Kimber,McClimon,kmcclimon@greenville.k12.sc.us,,,,,,,,,,,,,,,,,,Kimber McClimon,,,,2025-01-13 20:07:58
-Subscribed,Not confirmed,Keara,Smith,ksmith@polarisdirect.net,,,https://www.hipaaguide.net/free-hipaa-training/,,,,,,,,,,,,,Polaris Direct,,Keara Smith,,,,2024-11-20 20:20:21
-Subscribed,Not confirmed,Michaela,Stacy,michaela.stacy@laaa.k12.de.us,,,,,,,,,,,,,,,,,,Michaela Stacy,,,,2024-11-18 15:28:12
-Subscribed,Not confirmed,Heather,Morin,morinh@flaglerschools.com,,,,(386) 437-7526 x 1163,,,,0.0,www.flaglerschools.com,Human Resource Secretary,Florida,,,http://www.linkedin.com/company/old-kings-elementary-school-p-t-o,2286.0,Flagler County Public Schools,Bunnell,Heather Morin,,,,2024-11-07 19:39:53
-Subscribed,Not confirmed,Deana,,crosslind@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,6154566316,,,,,,,,,,,,,,Deana,,,,2024-09-18 15:02:44
-No consent,Not confirmed,Masaley,Kargbo,masaley.kargbo@k12.dc.gov,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,www.dc.gov,Director,,,,,,DC.gov,,Masaley Kargbo,,,,2024-09-09 20:22:42
-Subscribed,Not confirmed,Oakley,Gillett,ogillett@hartdistrict.org,,,,,,,,,www.canyonhighschool.org,Health and CCR Teacher,,,,http://www.linkedin.com/company/orange-unified-school-district,122.0,Orange Unified School District,,Oakley Gillett,,,,2024-08-26 16:59:45
-Subscribed,Not confirmed,Christine,Damon,cdamon2@schools.nyc.gov,,,https://www.hipaaguide.net/hipaa-training/,(718) 330-9280,,,,0.0,schools.nyc.gov,Teacher,New York,,,http://www.linkedin.com/company/nyc-department-of-education,150000.0,New York City Department of Education,Brooklyn,Christine Damon,,,,2024-08-06 01:37:46
-Subscribed,Not confirmed,Taysia,Thornton,taysia.thornton@k12.hi.us,,,,,,,,,www.k12.hi.us,,,,,http://www.linkedin.com/company/kaleiopuu-elementary-school,13.0,Kaleiopuu Elementary School,,Taysia Thornton,,,,2024-08-03 21:50:29
-Bounced,Not confirmed,MICHAEL,Cockrell,michael.cockrell@bcsdk12.net,,,,,,,,,www.bibbsheriff.us,,,,,http://www.linkedin.com/company/bibb-county-tax-commissioner,24.0,Bibb County School District,,MICHAEL Cockrell,,,,2024-07-04 04:37:03
-No consent,Not confirmed,Teresa,Peirce,peircet@santarosa.k12.fl.ua,,,,,,,,,,,,,,,,,,Teresa Peirce,,,,2024-06-21 04:28:34
-No consent,Not confirmed,Ashley,Hurst,ashleyhurst@meigsgschool.net,,,,,,,,,www.meigsgschool.net,HOSA Teacher and Lead Nurse,Tennessee,,,http://www.linkedin.com/company/meigs-county-school-district,361.0,Meigs County Schools,Decatur,Ashley Hurst,,,,2024-03-26 19:05:39
-No consent,Not confirmed,Ashley,Hurst,ashleyhurst@meigsgschool.net,,,,,,,,,www.meigsgschool.net,HOSA Teacher and Lead Nurse,Tennessee,,,http://www.linkedin.com/company/meigs-county-school-district,361.0,Meigs County Schools,Decatur,Ashley Hurst,,,,2024-03-26 19:00:04
-Subscribed,Not confirmed,Morgan,Morazzano,morgan.morazzano@gpisd.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.gpisd.org,,,,,,,Grand Prairie Independent School District,,Morgan Morazzano,,,,2024-02-19 06:21:46
-Subscribed,Not confirmed,Shanna,Mustin,shanna.mustin@cherokee.k12.nc.us,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,www.redcross.org,CPR Instructor,North Carolina,,,https://www.linkedin.com/in/shanna-mustin-795b398a,,American National Red Cross,Andrews,Shanna Mustin,,,,2024-01-30 16:09:57
-Subscribed,Not confirmed,Abolanle,salami,asalami2@schools.nyc.gov,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,schools.nyc.gov,,,,,,,New York City Department of Education,,Abolanle salami,,,,2024-01-12 20:31:31
-Subscribed,Not confirmed,Tamara,Sandler,tsandler@ucschools.org,,,,,,,,,www.ucschools.org,Head Athletic Trainer,,,,http://www.linkedin.com/company/mountain-education-ctr,68.0,Union County High School,,Tamara Sandler,,,,2023-12-11 20:33:28
-Subscribed,Not confirmed,Kate,Fifield,k.fifield@clubkafterschool.com,,,https://www.hipaajournal.com/free-hipaa-training/,,,,,,www.clubkafterschool.com,Chief Operating Officer,Washington,,,https://www.linkedin.com/in/katereneewortman,,Club K After School Zone,Battle Ground,Kate Fifield,,,,2023-11-19 03:27:12
-Subscribed,Not confirmed,Heather,Gamache,heathergamache@selahschools.org,,,,,,,,,www.selahschools.org,,,,,http://www.linkedin.com/company/selah-school-district-119,115.0,Selah School District,,Heather Gamache,,,,2023-11-05 19:51:15
-Subscribed,Not confirmed,Jennifer,Megahan,j.megahan@seariders.k12.hi.us,,,,,,,,,,,,,,,,,,Jennifer Megahan,,,,2023-10-14 00:52:47
-Subscribed,Not confirmed,Natalie,Vasquez,natalie.v@theprimaryschool.org,,,,,,,,,www.theprimaryschool.org,,,,,http://www.linkedin.com/company/the-primary-school,101.0,The Primary School,,Natalie Vasquez,,,,2023-10-06 17:33:25
-Subscribed,Not confirmed,Chrisi,Eggert,cbarker@sequatchie.k12.tn.us,,,,,,,,,,,,,,,,,,Chrisi Eggert,,,,2023-10-04 16:04:20
-Bounced,Not confirmed,ashley,kelly,kelly.ashley.c@mucogee.k12.ga.us,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,,,,,,,,mcsd,,ashley kelly,,,,2023-10-03 13:22:51
-Subscribed,Not confirmed,Sara,Garcia,24_garcia.sara@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,9314349491,,,,,,,,,,,,,,Sara Garcia,,,,2023-09-18 17:09:15
-Subscribed,Not confirmed,Kaitlyn,walker,crosslind@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,9319522387,,,,,,,,,,,,,,Kaitlyn walker,,,,2023-09-18 15:19:50
-Subscribed,Not confirmed,Deana,Crosslin,crosslind@k12coffee.net,,,https://www.compliancejunction.com/,6154566316,,,,,,,,,,,,,,Deana Crosslin,,,,2023-09-15 16:23:18
-Subscribed,Not confirmed,Deana,Crosslin,crosslind@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,6154566316,,,,,,,,,,,,,,Deana Crosslin,,,,2023-09-15 16:16:27
-Subscribed,Not confirmed,Deana,Crosslin,crosslind@k12coffee.net,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,,,,,,,,School,,Deana Crosslin,,,,2023-09-14 15:30:05
-Subscribed,Not confirmed,Michelle,Allen,mallen@lewistonpublicschools.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.lewistonpublicschools.org,,,,,,,Lewiston High School,,Michelle Allen,,,,2023-09-06 15:40:07
-Subscribed,Not confirmed,Sheena,Gasner,sgasner@smec.k12.mn.us,,,https://www.hipaajournal.com/free-hipaa-training/,,,,,,,,,,,,,Southern Minnesota Education Consortium,,Sheena Gasner,,,,2023-08-24 15:28:03
-Subscribed,Not confirmed,Marissa,Cox,mcox@ephrataschools.org,,,,,,,,,www.ephrataschools.org,,,,,http://www.linkedin.com/company/ephrata-schools,41.0,Ephrata School District,,Marissa Cox,,,,2023-08-23 21:08:14
-Subscribed,Not confirmed,Donald,Petersen,dpetersen@smec.k12.mn.us,,,,5072105163,,,,5072105163.0,,,,,,,,,,Donald Petersen,,,,2023-08-23 17:35:15
-Subscribed,Not confirmed,Elizabeth,Trevino,etrevino@uisd.net,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.uisd.net,Teacher,Texas,,,https://www.linkedin.com/in/elizabeth-trevino-97bbb279,,United ISD,Laredo,Elizabeth Trevino,,,,2023-08-20 00:21:24
-Subscribed,Not confirmed,Toni,Thorp,tthorp@lpa.k12.mn.us,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,,,,,,,,Lake Park Audubon High School,,Toni Thorp,,,,2023-08-09 17:46:45
-Subscribed,Not confirmed,Lauren,Cowherd,lauren.cowherd@bpsk12.net,,,,,,,,,www.boonviller1foundation.org,,,,,http://www.linkedin.com/company/boonville-r1-education-foundation-inc,20.0,Boonville R-1 School District,,Lauren Cowherd,,,,2023-08-04 19:01:51
-Subscribed,Not confirmed,Nolan,Field,nolan.field@ralstonschools.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.ralstonschools.org,Science Teacher,Nebraska,,,https://www.linkedin.com/in/nolan-field-b8971399,,Ralston Public Schools,Ralston,Nolan Field,,,,2023-07-20 18:14:02
-Subscribed,Not confirmed,Danielle,Kalette,dkalette@bostonpublicschools.org,,,https://www.hipaajournal.com/free-hipaa-training/,,,,,,www.bostonpublicschools.org,Reading Specialist,Massachusetts,,,https://www.linkedin.com/in/danielle-kalette-5884a71a5,,Boston Public Schools,Mattapan,Danielle Kalette,,,,2023-06-13 00:57:28
-Subscribed,Not confirmed,Annette,Billups,annette.billups@sbcusd.k12.ca.us,,,,,,,,,,,,,,,,,,Annette Billups,,,,2023-06-06 21:18:59
-Subscribed,Not confirmed,Hillary,Goldsmith,goldsmith.hillary@marbleheadschools.org,,,,,,,,,www.marbleheadmuseum.org,Speech Language Pathologist,Massachusetts,,,http://www.linkedin.com/company/marblehead-little-theatre,30.0,Marblehead Museum,Marblehead,Hillary Goldsmith,,,,2023-06-05 22:15:13
-Subscribed,Not confirmed,Tamara,Sandler,tsandler@ucschools.org,,,,,,,,,www.ucschools.org,Head Athletic Trainer,,,,http://www.linkedin.com/company/mountain-education-ctr,72.0,Union County Schools,,Tamara Sandler,,,,2023-05-24 23:02:07
-Subscribed,Not confirmed,Stephen,Pettifor,spettifor@muskegonisd.org,,,,(231) 767-3627,,,,0.0,www.muskegonisd.org,Career Specialist,Michigan,,,http://www.linkedin.com/company/muskegon-area-isd,39.0,Muskegon Area ISD,,Stephen Pettifor,,,,2023-04-26 15:22:37
-Subscribed,Not confirmed,Marilyn,Koltis,sec.treasurer@thorpfire-amb-district.com,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,,,,,,,,Thorp Area Ambulance District,,Marilyn Koltis,,,,2023-04-24 23:59:23
-No consent,Not confirmed,Alicia,McConnell,,,aespinosa@landerschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,3073324711,,,,,,,,,,,Alicia McConnell,,,,2023-02-14 17:22:08
-No consent,Not confirmed,Chandler,Merrell,,,Chandler.Merrell@hayscisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9364657488,,,,,,,,,,,Chandler Merrell,,,,2023-02-06 17:45:06
+marketing_status,double_opt_in,first_name,last_name,Person - Email - Work,Person - Email - Home,Person - Email - Other,referral_url,phone,Person - Phone - Home,Person - Phone - Mobile,Person - Phone - Other,Person - DirectPhone,website,title,state,role,organization,linkedin_company,employees,company_name,city,full_name,sweet_spot,sales_process_stage,sample_modules,date_created,email,domain,root_domain,normalized_org,domain_category_hint,is_generic_inbox,contact_quality,contact_type
+Subscribed,Not confirmed,Cassie,Kovar,ckovar@smithvilleisd.org,,,,,,,,,www.smithvilleisd.org,,,,,http://www.linkedin.com/company/smithville-junior-high-school,192.0,Smithville Independent School District,,Cassie Kovar,,,,2025-03-12 20:36:07,ckovar@smithvilleisd.org,smithvilleisd.org,smithvilleisd.org,smithville independent school district,,False,high,student
+Subscribed,Not confirmed,Keara,Smith,ksmith@polarisdirect.net,,,https://www.hipaaguide.net/free-hipaa-training/,,,,,,,,,,,,,Polaris Direct,,Keara Smith,,,,2024-11-20 20:20:21,ksmith@polarisdirect.net,polarisdirect.net,polarisdirect.net,polaris direct,,False,high,student
+Subscribed,Not confirmed,Heather,Morin,morinh@flaglerschools.com,,,,(386) 437-7526 x 1163,,,,0.0,www.flaglerschools.com,Human Resource Secretary,Florida,,,http://www.linkedin.com/company/old-kings-elementary-school-p-t-o,2286.0,Flagler County Public Schools,Bunnell,Heather Morin,,,,2024-11-07 19:39:53,morinh@flaglerschools.com,flaglerschools.com,flaglerschools.com,flagler county public schools,,False,high,student
+Subscribed,Not confirmed,Deana,,crosslind@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,6154566316,,,,,,,,,,,,,,Deana,,,,2024-09-18 15:02:44,crosslind@k12coffee.net,k12coffee.net,k12coffee.net,,,False,high,student
+Subscribed,Not confirmed,Oakley,Gillett,ogillett@hartdistrict.org,,,,,,,,,www.canyonhighschool.org,Health and CCR Teacher,,,,http://www.linkedin.com/company/orange-unified-school-district,122.0,Orange Unified School District,,Oakley Gillett,,,,2024-08-26 16:59:45,ogillett@hartdistrict.org,hartdistrict.org,hartdistrict.org,orange unified school district,,False,high,student
+Bounced,Not confirmed,MICHAEL,Cockrell,michael.cockrell@bcsdk12.net,,,,,,,,,www.bibbsheriff.us,,,,,http://www.linkedin.com/company/bibb-county-tax-commissioner,24.0,Bibb County School District,,MICHAEL Cockrell,,,,2024-07-04 04:37:03,michael.cockrell@bcsdk12.net,bcsdk12.net,bcsdk12.net,bibb county school district,,False,high,student
+No consent,Not confirmed,Ashley,Hurst,ashleyhurst@meigsgschool.net,,,,,,,,,www.meigsgschool.net,HOSA Teacher and Lead Nurse,Tennessee,,,http://www.linkedin.com/company/meigs-county-school-district,361.0,Meigs County Schools,Decatur,Ashley Hurst,,,,2024-03-26 19:05:39,ashleyhurst@meigsgschool.net,meigsgschool.net,meigsgschool.net,meigs county schools,,False,high,student
+Subscribed,Not confirmed,Morgan,Morazzano,morgan.morazzano@gpisd.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.gpisd.org,,,,,,,Grand Prairie Independent School District,,Morgan Morazzano,,,,2024-02-19 06:21:46,morgan.morazzano@gpisd.org,gpisd.org,gpisd.org,grand prairie independent school district,,False,high,student
+Subscribed,Not confirmed,Tamara,Sandler,tsandler@ucschools.org,,,,,,,,,www.ucschools.org,Head Athletic Trainer,,,,http://www.linkedin.com/company/mountain-education-ctr,68.0,Union County High School,,Tamara Sandler,,,,2023-12-11 20:33:28,tsandler@ucschools.org,ucschools.org,ucschools.org,union county high school,,False,high,student
+Subscribed,Not confirmed,Kate,Fifield,k.fifield@clubkafterschool.com,,,https://www.hipaajournal.com/free-hipaa-training/,,,,,,www.clubkafterschool.com,Chief Operating Officer,Washington,,,https://www.linkedin.com/in/katereneewortman,,Club K After School Zone,Battle Ground,Kate Fifield,,,,2023-11-19 03:27:12,k.fifield@clubkafterschool.com,clubkafterschool.com,clubkafterschool.com,club k after school zone,,False,high,student
+Subscribed,Not confirmed,Heather,Gamache,heathergamache@selahschools.org,,,,,,,,,www.selahschools.org,,,,,http://www.linkedin.com/company/selah-school-district-119,115.0,Selah School District,,Heather Gamache,,,,2023-11-05 19:51:15,heathergamache@selahschools.org,selahschools.org,selahschools.org,selah school district,,False,high,student
+Subscribed,Not confirmed,Natalie,Vasquez,natalie.v@theprimaryschool.org,,,,,,,,,www.theprimaryschool.org,,,,,http://www.linkedin.com/company/the-primary-school,101.0,The Primary School,,Natalie Vasquez,,,,2023-10-06 17:33:25,natalie.v@theprimaryschool.org,theprimaryschool.org,theprimaryschool.org,the primary school,,False,high,student
+Subscribed,Not confirmed,Sara,Garcia,24_garcia.sara@k12coffee.net,,,https://www.compliancejunction.com/free-hipaa-training/,9314349491,,,,,,,,,,,,,,Sara Garcia,,,,2023-09-18 17:09:15,24_garcia.sara@k12coffee.net,k12coffee.net,k12coffee.net,,,False,high,student
+Subscribed,Not confirmed,Michelle,Allen,mallen@lewistonpublicschools.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.lewistonpublicschools.org,,,,,,,Lewiston High School,,Michelle Allen,,,,2023-09-06 15:40:07,mallen@lewistonpublicschools.org,lewistonpublicschools.org,lewistonpublicschools.org,lewiston high school,,False,high,student
+Subscribed,Not confirmed,Marissa,Cox,mcox@ephrataschools.org,,,,,,,,,www.ephrataschools.org,,,,,http://www.linkedin.com/company/ephrata-schools,41.0,Ephrata School District,,Marissa Cox,,,,2023-08-23 21:08:14,mcox@ephrataschools.org,ephrataschools.org,ephrataschools.org,ephrata school district,,False,high,student
+Subscribed,Not confirmed,Elizabeth,Trevino,etrevino@uisd.net,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.uisd.net,Teacher,Texas,,,https://www.linkedin.com/in/elizabeth-trevino-97bbb279,,United ISD,Laredo,Elizabeth Trevino,,,,2023-08-20 00:21:24,etrevino@uisd.net,uisd.net,uisd.net,united isd,,False,high,student
+Subscribed,Not confirmed,Lauren,Cowherd,lauren.cowherd@bpsk12.net,,,,,,,,,www.boonviller1foundation.org,,,,,http://www.linkedin.com/company/boonville-r1-education-foundation-inc,20.0,Boonville R-1 School District,,Lauren Cowherd,,,,2023-08-04 19:01:51,lauren.cowherd@bpsk12.net,bpsk12.net,bpsk12.net,boonville r 1 school district,,False,high,student
+Subscribed,Not confirmed,Nolan,Field,nolan.field@ralstonschools.org,,,https://www.hipaajournal.com/hipaa-training-for-students/,,,,,,www.ralstonschools.org,Science Teacher,Nebraska,,,https://www.linkedin.com/in/nolan-field-b8971399,,Ralston Public Schools,Ralston,Nolan Field,,,,2023-07-20 18:14:02,nolan.field@ralstonschools.org,ralstonschools.org,ralstonschools.org,ralston public schools,,False,high,student
+Subscribed,Not confirmed,Danielle,Kalette,dkalette@bostonpublicschools.org,,,https://www.hipaajournal.com/free-hipaa-training/,,,,,,www.bostonpublicschools.org,Reading Specialist,Massachusetts,,,https://www.linkedin.com/in/danielle-kalette-5884a71a5,,Boston Public Schools,Mattapan,Danielle Kalette,,,,2023-06-13 00:57:28,dkalette@bostonpublicschools.org,bostonpublicschools.org,bostonpublicschools.org,boston public schools,,False,high,student
+Subscribed,Not confirmed,Hillary,Goldsmith,goldsmith.hillary@marbleheadschools.org,,,,,,,,,www.marbleheadmuseum.org,Speech Language Pathologist,Massachusetts,,,http://www.linkedin.com/company/marblehead-little-theatre,30.0,Marblehead Museum,Marblehead,Hillary Goldsmith,,,,2023-06-05 22:15:13,goldsmith.hillary@marbleheadschools.org,marbleheadschools.org,marbleheadschools.org,marblehead museum,,False,high,student
+Subscribed,Not confirmed,Stephen,Pettifor,spettifor@muskegonisd.org,,,,(231) 767-3627,,,,0.0,www.muskegonisd.org,Career Specialist,Michigan,,,http://www.linkedin.com/company/muskegon-area-isd,39.0,Muskegon Area ISD,,Stephen Pettifor,,,,2023-04-26 15:22:37,spettifor@muskegonisd.org,muskegonisd.org,muskegonisd.org,muskegon area isd,,False,high,student
+Subscribed,Not confirmed,Marilyn,Koltis,sec.treasurer@thorpfire-amb-district.com,,,https://www.hipaajournal.com/hipaa-training-requirements/,,,,,,,,,,,,,Thorp Area Ambulance District,,Marilyn Koltis,,,,2023-04-24 23:59:23,sec.treasurer@thorpfire-amb-district.com,thorpfire-amb-district.com,thorpfire-amb-district.com,thorp area ambulance district,,False,high,student
+No consent,Not confirmed,Alicia,McConnell,,,aespinosa@landerschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,3073324711,,,,,,,,,,,Alicia McConnell,,,,2023-02-14 17:22:08,aespinosa@landerschools.org,landerschools.org,landerschools.org,,,False,high,student
+No consent,Not confirmed,Chandler,Merrell,,,Chandler.Merrell@hayscisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9364657488,,,,,,,,,,,Chandler Merrell,,,,2023-02-06 17:45:06,chandler.merrell@hayscisd.net,hayscisd.net,hayscisd.net,,,False,high,student
 No consent,Not confirmed,Hey,"sweety!! ^. ^ like to see my boobs? Just click -
  &gt;&gt;&gt; https://vvftr.page.link/a?",,,mark.roche@newparkschool.ie,https://www.compliancejunction.com/,,,,"Hey sweety!! ^. ^ like to see my boobs? Just click -
  &gt;&gt;&gt; https://vvftr.page.link/a?",,,,,,,,,,,"Hey sweety!! ^. ^ like to see my boobs? Just click -
- &gt;&gt;&gt; https://vvftr.page.link/a?",,,,2023-01-08 11:11:26
+ &gt;&gt;&gt; https://vvftr.page.link/a?",,,,2023-01-08 11:11:26,mark.roche@newparkschool.ie,newparkschool.ie,newparkschool.ie,,,False,high,student
 No consent,Not confirmed,Heey,"sweety!! =))) like to see my pussy? Just click -
  &gt;&gt;&gt; https://qqawe.page.link/a?",,,abrady@stlouishighschool.ie,https://www.compliancejunction.com/,,,,"Heey sweety!! =))) like to see my pussy? Just click -
  &gt;&gt;&gt; https://qqawe.page.link/a?",,,,,,,,,,,"Heey sweety!! =))) like to see my pussy? Just click -
- &gt;&gt;&gt; https://qqawe.page.link/a?",,,,2023-01-08 11:02:43
+ &gt;&gt;&gt; https://qqawe.page.link/a?",,,,2023-01-08 11:02:43,abrady@stlouishighschool.ie,stlouishighschool.ie,stlouishighschool.ie,,,False,high,student
 No consent,Not confirmed,Sup!,")) wana touch my ass? C'mon Dear!!; -
  &gt;&gt;&gt; https://ccvfg.page.link/a?",,,gavinobriain@templecarrigschool.ie,https://www.compliancejunction.com/,,,,"Sup! Dear!!; )) wana touch my ass? C'mon -
  &gt;&gt;&gt; https://ccvfg.page.link/a?",,,,,,,,,,,"Sup! Dear!!; )) wana touch my ass? C'mon -
- &gt;&gt;&gt; https://ccvfg.page.link/a?",,,,2023-01-08 09:13:29
+ &gt;&gt;&gt; https://ccvfg.page.link/a?",,,,2023-01-08 09:13:29,gavinobriain@templecarrigschool.ie,templecarrigschool.ie,templecarrigschool.ie,,,False,high,student
 No consent,Not confirmed,Hi,"baby.: ) Bored? I'm too... Make it -
  &gt;&gt;&gt; https://llmkj.page.link/a?",,,emilya@stmarysstratford.school.nz,https://www.compliancejunction.com/,,,,"Hi baby.: ) Bored? I'm too... Make it -
  &gt;&gt;&gt; https://llmkj.page.link/a?",,,,,,,,,,,"Hi baby.: ) Bored? I'm too... Make it -
- &gt;&gt;&gt; https://llmkj.page.link/a?",,,,2023-01-08 06:53:16
-No consent,Not confirmed,Heey,"sweety!!; )) like to see my puzzy? Just click -
- &gt;&gt;&gt; https://nnhyt.page.link/a?",,,debbie@mortgage-wisdom.com.au,https://www.compliancejunction.com/,,,,"Heey sweety!!; )) like to see my puzzy? Just click -
- &gt;&gt;&gt; https://nnhyt.page.link/a?",,,,,,,,,,,"Heey sweety!!; )) like to see my puzzy? Just click -
- &gt;&gt;&gt; https://nnhyt.page.link/a?",,,,2023-01-08 05:26:21
+ &gt;&gt;&gt; https://llmkj.page.link/a?",,,,2023-01-08 06:53:16,emilya@stmarysstratford.school.nz,stmarysstratford.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hallo,"sweety!: )) want to touch my pussy? Just click -
  &gt;&gt;&gt; https://ttuio.page.link/a?",,,stellag@pukeruabay.school.nz,https://www.compliancejunction.com/,,,,"Hallo sweety!: )) want to touch my pussy? Just click -
  &gt;&gt;&gt; https://ttuio.page.link/a?",,,,,,,,,,,"Hallo sweety!: )) want to touch my pussy? Just click -
- &gt;&gt;&gt; https://ttuio.page.link/a?",,,,2023-01-08 02:43:42
+ &gt;&gt;&gt; https://ttuio.page.link/a?",,,,2023-01-08 02:43:42,stellag@pukeruabay.school.nz,pukeruabay.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hi,"boy!; ))) like to see my body? Let's do it -
  &gt;&gt;&gt; https://hhnju.page.link/a?",,,thomasr@oteha.school.nz,https://www.compliancejunction.com/,,,,"Hi boy!; ))) like to see my body? Let's do it -
  &gt;&gt;&gt; https://hhnju.page.link/a?",,,,,,,,,,,"Hi boy!; ))) like to see my body? Let's do it -
- &gt;&gt;&gt; https://hhnju.page.link/a?",,,,2023-01-07 16:09:47
+ &gt;&gt;&gt; https://hhnju.page.link/a?",,,,2023-01-07 16:09:47,thomasr@oteha.school.nz,oteha.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Heya!,"=* Wana have fun? I'm too... Make it Sweety!!! -
  &gt;&gt;&gt; https://llkoi.page.link/a?",,,crystal.watts@karamea.school.nz,https://www.compliancejunction.com/,,,,"Heya! Sweety!!! =* Wana have fun? I'm too... Make it -
  &gt;&gt;&gt; https://llkoi.page.link/a?",,,,,,,,,,,"Heya! Sweety!!! =* Wana have fun? I'm too... Make it -
- &gt;&gt;&gt; https://llkoi.page.link/a?",,,,2023-01-07 15:48:12
-No consent,Not confirmed,Vickie,Morrison-Salyer,,,vickiem@wcs.k12.va.us,https://www.hipaajournal.com/free-hipaa-training/,,,,2767393103,,,,,,,,,,,Vickie Morrison-Salyer,,,,2023-01-03 15:22:39
+ &gt;&gt;&gt; https://llkoi.page.link/a?",,,,2023-01-07 15:48:12,crystal.watts@karamea.school.nz,karamea.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hello,"dear... ^^ like to see my boobs? Just click -
  &gt;&gt;&gt; https://ggnjh.page.link/a?",,,t.cannon@oc.school.nz,https://www.compliancejunction.com/,,,,"Hello dear... ^^ like to see my boobs? Just click -
  &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,,,,,,,,"Hello dear... ^^ like to see my boobs? Just click -
- &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,2023-01-02 18:18:25
+ &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,2023-01-02 18:18:25,t.cannon@oc.school.nz,oc.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hi,"dear... ^_^ like to see my b00bs? Make it -
  &gt;&gt;&gt; https://eedsa.page.link/a?",,,matthew.beaven@unlimited.school.nz,https://www.compliancejunction.com/,,,,"Hi dear... ^_^ like to see my b00bs? Make it -
  &gt;&gt;&gt; https://eedsa.page.link/a?",,,,,,,,,,,"Hi dear... ^_^ like to see my b00bs? Make it -
- &gt;&gt;&gt; https://eedsa.page.link/a?",,,,2023-01-02 18:04:34
+ &gt;&gt;&gt; https://eedsa.page.link/a?",,,,2023-01-02 18:04:34,matthew.beaven@unlimited.school.nz,unlimited.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Heya!,"* like to see my booty? C'mon Dear.: -
  &gt;&gt;&gt; https://ggnjh.page.link/a?",,,338183@stcuthberts.school.nz,https://www.compliancejunction.com/,,,,"Heya! Dear.: * like to see my booty? C'mon -
  &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,,,,,,,,"Heya! Dear.: * like to see my booty? C'mon -
- &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,2023-01-02 17:12:53
+ &gt;&gt;&gt; https://ggnjh.page.link/a?",,,,2023-01-02 17:12:53,338183@stcuthberts.school.nz,stcuthberts.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hi,"dear!!! ^. ^ Wana have fun? I'm too... Let's do it -
  &gt;&gt;&gt; https://ggtyg.page.link/a?",,,eli.l@marshland.school.nz,https://www.compliancejunction.com/,,,,"Hi dear!!! ^. ^ Wana have fun? I'm too... Let's do it -
  &gt;&gt;&gt; https://ggtyg.page.link/a?",,,,,,,,,,,"Hi dear!!! ^. ^ Wana have fun? I'm too... Let's do it -
- &gt;&gt;&gt; https://ggtyg.page.link/a?",,,,2023-01-02 16:34:30
+ &gt;&gt;&gt; https://ggtyg.page.link/a?",,,,2023-01-02 16:34:30,eli.l@marshland.school.nz,marshland.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Sup!,"^^ like to see my b00bs? Just click Boy!! -
  &gt;&gt;&gt; https://eedfd.page.link/a?",,,mclellanca@kavanagh.school.nz,https://www.compliancejunction.com/,,,,"Sup! Boy!! ^^ like to see my b00bs? Just click -
  &gt;&gt;&gt; https://eedfd.page.link/a?",,,,,,,,,,,"Sup! Boy!! ^^ like to see my b00bs? Just click -
- &gt;&gt;&gt; https://eedfd.page.link/a?",,,,2023-01-02 16:23:32
+ &gt;&gt;&gt; https://eedfd.page.link/a?",,,,2023-01-02 16:23:32,mclellanca@kavanagh.school.nz,kavanagh.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hi,"boy!! =* like to see my legs? Make it -
  &gt;&gt;&gt; https://ttuio.page.link/a?",,,joshua-cronin@morrcoll.school.nz,https://www.compliancejunction.com/,,,,"Hi boy!! =* like to see my legs? Make it -
  &gt;&gt;&gt; https://ttuio.page.link/a?",,,,,,,,,,,"Hi boy!! =* like to see my legs? Make it -
- &gt;&gt;&gt; https://ttuio.page.link/a?",,,,2023-01-02 16:07:14
-No consent,Not confirmed,Hey,"hey! Dear!: * wana touch my ass? Let's do it -
- &gt;&gt;&gt; https://asaqw.page.link/a?",,,ryan.slaney@student.qut.au,https://www.compliancejunction.com/,,,,"Hey hey! Dear!: * wana touch my ass? Let's do it -
- &gt;&gt;&gt; https://asaqw.page.link/a?",,,,,,,,,,,"Hey hey! Dear!: * wana touch my ass? Let's do it -
- &gt;&gt;&gt; https://asaqw.page.link/a?",,,,2023-01-02 15:45:44
+ &gt;&gt;&gt; https://ttuio.page.link/a?",,,,2023-01-02 16:07:14,joshua-cronin@morrcoll.school.nz,morrcoll.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hey,"boy. ^_^ wana be my boyfriend? Just click -
  &gt;&gt;&gt; https://yyiop.page.link/a?",,,t.rhiannon@ghs.school.nz,https://www.compliancejunction.com/,,,,"Hey boy. ^_^ wana be my boyfriend? Just click -
  &gt;&gt;&gt; https://yyiop.page.link/a?",,,,,,,,,,,"Hey boy. ^_^ wana be my boyfriend? Just click -
- &gt;&gt;&gt; https://yyiop.page.link/a?",,,,2023-01-02 15:13:13
+ &gt;&gt;&gt; https://yyiop.page.link/a?",,,,2023-01-02 15:13:13,t.rhiannon@ghs.school.nz,ghs.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hey,"hey! Sweety!: * wana touch my pussy? Make it -
  &gt;&gt;&gt; https://nnhgf.page.link/a?",,,r.mangan@tbc.school.nz,https://www.compliancejunction.com/,,,,"Hey hey! Sweety!: * wana touch my pussy? Make it -
  &gt;&gt;&gt; https://nnhgf.page.link/a?",,,,,,,,,,,"Hey hey! Sweety!: * wana touch my pussy? Make it -
- &gt;&gt;&gt; https://nnhgf.page.link/a?",,,,2023-01-02 15:06:06
+ &gt;&gt;&gt; https://nnhgf.page.link/a?",,,,2023-01-02 15:06:06,r.mangan@tbc.school.nz,tbc.school.nz,school.nz,,,False,high,student
 No consent,Not confirmed,Hi,"baby!; )) the earnings it's 979euro a day Make it -
  &gt;&gt;&gt; https://nnmhg.page.link/a?",,,224524524@fmisdm.cpom,https://www.compliancejunction.com/,,,,"Hi baby!; )) the earnings it's 979euro a day Make it -
  &gt;&gt;&gt; https://nnmhg.page.link/a?",,,,,,,,,,,"Hi baby!; )) the earnings it's 979euro a day Make it -
- &gt;&gt;&gt; https://nnmhg.page.link/a?",,,,2023-01-01 19:06:20
-No consent,Not confirmed,Gracie,Crain,,,crain3842@vanisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9039638908,,,,,,,,,,,Gracie Crain,,,,2022-12-22 19:21:30
-No consent,Not confirmed,William,Neiss,,,bneiss@district16.org,https://www.hipaajournal.com/free-hipaa-training/,,,,7636005147,,,,,,,,,,,William Neiss,,,,2022-12-21 14:52:36
-No consent,Not confirmed,Gracie,Crain,,,crain3842@vanisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9039638908,,,,,,,,,,,Gracie Crain,,,,2022-12-13 22:07:39
-No consent,Not confirmed,Karrah,Sanders,,,karrahsanders@stewartcountyschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,9312325179,,,,,,,,,,,Karrah Sanders,,,,2022-12-13 20:59:11
-No consent,Not confirmed,Cheryl L,Newsome,,,cheryl.newsome@crowley.k12.tx.us,https://www.hipaajournal.com/free-hipaa-training/,,,,8172973018,,,,,,,,,,,Cheryl L Newsome,,,,2022-12-11 20:18:58
-No consent,Not confirmed,Anna,Wiemken,,,wiemkea1@fargoschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,7018660561,,,,,,,,,,,Anna Wiemken,,,,2022-12-08 15:41:08
-No consent,Not confirmed,Lauren,Pryba,,,lauren.pryba@franklin.k12.wi.us,https://www.hipaajournal.com/free-hipaa-training/,,,,414-367-1620,,,,,,,,,,,Lauren Pryba,,,,2022-11-18 16:21:05
-No consent,Not confirmed,Yolanda,Ortega,,,yortega@ccaisd.net,https://www.hipaajournal.com/hipaa-training-for-students,,,,4322840461,,,,,,,,,,,Yolanda Ortega,,,,2022-11-10 21:34:39
-No consent,Not confirmed,Mallory,Evilsizer,,,mallory.evilsizer@bisdmail.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8172239175,,,,,,,,,,,Mallory Evilsizer,,,,2022-11-09 03:25:13
-No consent,Not confirmed,Mallory,Evilsizer,,,mallory.evilsizer@bisdmail.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8172239175,,,,,,,,,,,Mallory Evilsizer,,,,2022-11-09 03:25:13
-No consent,Not confirmed,Chandler,Merrell,,,Chandler.Merrell@hayscisd.net,https://www.hipaajournal.com/,,,,9364657488,,,,,,,,,,,Chandler Merrell,,,,2022-11-07 19:19:19
-No consent,Not confirmed,Rashunda,Mendy,,,rmendy@dallasisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2145346447,,,,,,,,,,,Rashunda Mendy,,,,2022-11-04 20:11:05
-No consent,Not confirmed,Clifford,Attaglo,,,cattaglo@amherstschools.org,https://www.hipaajournal.com/hipaa-training-requirements,,,,7163623026,,,,,,,,,,,Clifford Attaglo,,,,2022-10-31 19:00:40
-No consent,Not confirmed,jessie,,,,jessie@nelisdds.com,https://www.hipaajournal.com/hipaa-training-requirements,,,,616-399-1500,,,,,,,,,,,jessie,,,,2022-10-27 14:26:27
-No consent,Not confirmed,Dulce,Carrillo,,,206404@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-974-5905,,,,,,,,,,,Dulce Carrillo,,,,2022-10-25 00:31:41
-No consent,Not confirmed,Carol,Barton,,,cbarton@rvaschools.net,https://www.hipaaguide.net/hipaa-training-for-students,,,,8049223862,,,,,,,,,,,Carol Barton,,,,2022-10-10 20:45:18
-No consent,Not confirmed,Mayra,Tovar,,,cistarrantkjh@kisdtx.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8177196878,,,,,,,,,,,Mayra Tovar,,,,2022-10-10 19:39:32
-No consent,Not confirmed,Josearmando,Espinoza,,,201880@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6619172064,,,,,,,,,,,Josearmando Espinoza,,,,2022-10-08 20:06:34
-No consent,Not confirmed,,samantha Arnaout,,,SArnaout@schools.nyc.gov,https://www.compliancejunction.com/,,,,347-634-4662,,,,,,,,,,,samantha Arnaout,,,,2022-10-01 16:01:47
-No consent,Not confirmed,Lindsey,Miller-Boyd,,,lindseymillerboyd@melissaisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2817986575,,,,,,,,,,,Lindsey Miller-Boyd,,,,2022-09-30 21:23:37
-No consent,Not confirmed,shaunna,scoville,,,shaunna.scoville@youngstown.k12.oh.us,https://www.hipaajournal.com/free-hipaa-training/,,,,3307448740,,,,,,,,,,,shaunna scoville,,,,2022-09-26 14:04:42
-No consent,Not confirmed,Hayley,Morales,,,211798@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111111111111111,,,,,,,,,,,Hayley Morales,,,,2022-09-23 02:52:52
-No consent,Not confirmed,Hayley,Morales,,,211798@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111111111111111,,,,,,,,,,,Hayley Morales,,,,2022-09-23 02:52:51
-No consent,Not confirmed,Sherri Bono,RN,,,bonos@friscoisd.org,https://www.hipaajournal.com/,,,,14693710380,,,,,,,,,,,Sherri Bono RN,,,,2022-09-15 03:17:44
-No consent,Not confirmed,Juliana,Carreon,,,201839@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-227-6181,,,,,,,,,,,Juliana Carreon,,,,2022-09-15 01:32:14
-No consent,Not confirmed,Mallory,Jimenez,,,203883@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,6613737627,,,,,,,,,,,Mallory Jimenez,,,,2022-09-08 06:37:23
-No consent,Not confirmed,Mallory,Jimenez,,,203883@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,6613737627,,,,,,,,,,,Mallory Jimenez,,,,2022-09-08 06:37:22
-No consent,Not confirmed,Mallory,Jimenez,,,203883@students.avhsd.org,https://www.hipaajournal.com/,,,,6613737627,,,,,,,,,,,Mallory Jimenez,,,,2022-09-08 06:30:12
-No consent,Not confirmed,Chayse,Gomez,,,168110@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6618396369,,,,,,,,,,,Chayse Gomez,,,,2022-09-02 23:57:15
-No consent,Not confirmed,brittney,liebig,,,23_liebig.brittney@k12coffee.net,https://www.compliancejunction.com/,,,,9315816862,,,,,,,,,,,brittney liebig,,,,2022-08-31 15:09:43
-No consent,Not confirmed,Robin,Duckett,,,robin.duckett@bhisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8329848659,,,,,,,,,,,Robin Duckett,,,,2022-08-30 21:17:33
-Subscribed,Not confirmed,Deana,Crosslin,,,crosslind@k12coffee.net,https://www.compliancejunction.com/,,,,6154566316,,,,,,,,,,,Deana Crosslin,,,,2022-08-30 15:07:21
-No consent,Not confirmed,Anna,Palmer,,,apalmer@benton.k12.ms.us,https://www.hipaaguide.net/hipaa-training-for-students,,,,6622243801,,,,,,,,,,,Anna Palmer,,,,2022-08-29 21:58:23
-No consent,Not confirmed,Sara Lynn,WIllis,,,swillis@csisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,9792556458,,,,,,,,,,,Sara Lynn WIllis,,,,2022-08-24 22:15:59
-No consent,Not confirmed,Lydia,Meyer,,,lmeyer@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,5074406052,,,,,,,,,,,Lydia Meyer,,,,2022-08-24 19:48:02
-No consent,Not confirmed,Claire,Heichel,,,cheichel@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,5073181799,,,,,,,,,,,Claire Heichel,,,,2022-08-24 19:42:08
-No consent,Not confirmed,Claire,Heichel,,,cheichel@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,5073181799,,,,,,,,,,,Claire Heichel,,,,2022-08-24 19:40:24
-No consent,Not confirmed,Jenna,Clark,,,jclark@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,317-607-2121,,,,,,,,,,,Jenna Clark,,,,2022-08-24 19:39:46
-Subscribed,Not confirmed,Tamara,Sandler,,,tsandler@ucschools.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,7063308383,,,,,,,,,,,Tamara Sandler,,,,2022-08-24 18:32:58
-No consent,Not confirmed,Ashley,Morales,,,206508@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111,,,,,,,,,,,Ashley Morales,,,,2022-08-23 04:40:08
-No consent,Not confirmed,Hermoine,Jimenez,,,206331@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1234567890,,,,,,,,,,,Hermoine Jimenez,,,,2022-08-23 00:08:33
-No consent,Not confirmed,ANDREA,J. MARTINEZ,,,AMARTINEZ@JEFFERSONTWP.K12.OH.US,https://www.compliancejunction.com/,,,,+1 09378355682 ext. 1131,,,,,,,,,,,ANDREA J. MARTINEZ,,,,2022-08-22 21:49:08
-No consent,Not confirmed,ANDREA,J. MARTINEZ,,,AMARTINEZ@JEFFERSONTWP.K12.OH.US,https://www.hipaajournal.com/free-hipaa-training/,,,,+1 09378355682 ext. 1131,,,,,,,,,,,ANDREA J. MARTINEZ,,,,2022-08-22 21:48:15
-No consent,Not confirmed,Martha,Ruvalcaba,,,206887@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111,,,,,,,,,,,Martha Ruvalcaba,,,,2022-08-21 06:25:39
-No consent,Not confirmed,Martha,Ruvalcaba,,,206887@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111,,,,,,,,,,,Martha Ruvalcaba,,,,2022-08-21 05:16:22
-No consent,Not confirmed,Josearmando,Espinoza-Garcia,,,201880@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,,,,,,,,,,,,Josearmando Espinoza-Garcia,,,,2022-08-20 08:34:33
-No consent,Not confirmed,Josearmando,Espinoza-Garcia,,,201880@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,,,,,,,,,,,,Josearmando Espinoza-Garcia,,,,2022-08-20 08:34:32
-No consent,Not confirmed,Herberth,Zelaya,,,194298@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2134699272,,,,,,,,,,,Herberth Zelaya,,,,2022-08-20 06:05:53
-No consent,Not confirmed,herberth,zelaya,,,194298@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2134699272,,,,,,,,,,,herberth zelaya,,,,2022-08-20 06:03:26
-No consent,Not confirmed,Natalie Yamileth,Garcia,,,179989@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614343090,,,,,,,,,,,Natalie Yamileth Garcia,,,,2022-08-20 05:24:54
-No consent,Not confirmed,Natalie Yamileth,Garcia,,,179989@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614343090,,,,,,,,,,,Natalie Yamileth Garcia,,,,2022-08-20 05:24:53
-No consent,Not confirmed,Jennifer Lopez,Nunez,,,170489@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6618991679,,,,,,,,,,,Jennifer Lopez Nunez,,,,2022-08-20 05:22:12
-No consent,Not confirmed,violette,stover,,,187448@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614663119,,,,,,,,,,,violette stover,,,,2022-08-20 04:49:58
-No consent,Not confirmed,Makaylah,Brittney - Michelle Buchanan,,,206413@students.avhsd.org,https://www.hipaajournal.com/,,,,1111111111,,,,,,,,,,,Makaylah Brittney - Michelle Buchanan,,,,2022-08-20 04:37:19
-No consent,Not confirmed,Makaylah,Brittney - Michelle Buchanan,,,206413@students.avhsd.org,https://www.hipaajournal.com/,,,,1111111111,,,,,,,,,,,Makaylah Brittney - Michelle Buchanan,,,,2022-08-20 04:36:06
-No consent,Not confirmed,Alexis Caroline,Abed,,,201784@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-618-3718,,,,,,,,,,,Alexis Caroline Abed,,,,2022-08-20 04:33:06
-No consent,Not confirmed,Camilla,Guerrero,,,170432@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111-111-1111,,,,,,,,,,,Camilla Guerrero,,,,2022-08-20 04:00:05
-No consent,Not confirmed,Alexis Caroline,Abed,,,201784@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-618-3718,,,,,,,,,,,Alexis Caroline Abed,,,,2022-08-20 02:26:40
-No consent,Not confirmed,Anahi,Guzman,,,211613@students.avhsd.org,https://www.hipaajournal.com/,,,,(661) 777-9999,,,,,,,,,,,Anahi Guzman,,,,2022-08-20 02:02:15
-No consent,Not confirmed,Josephine,,,,166916@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-902-8685,,,,,,,,,,,Josephine,,,,2022-08-20 01:24:31
-No consent,Not confirmed,Josephine,,,,166916@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-902-8685,,,,,,,,,,,Josephine,,,,2022-08-20 01:24:15
-No consent,Not confirmed,Richard,Valdez,,,170076@students.avhsd.org,https://www.hipaajournal.com/,,,,6614359514,,,,,,,,,,,Richard Valdez,,,,2022-08-20 01:18:00
-No consent,Not confirmed,Richard,Valdez,,,170076@students.avhsd.org,https://www.hipaajournal.com/,,,,6614359514,,,,,,,,,,,Richard Valdez,,,,2022-08-20 01:17:57
-No consent,Not confirmed,Nakaiyah,Herring,,,207226@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,1111111111,,,,,,,,,,,Nakaiyah Herring,,,,2022-08-20 00:05:55
-No consent,Not confirmed,Makaylah Brittney Michelle,Buchanan,,,206413@students.avhsd.org,https://www.hipaajournal.com/,,,,11111111,,,,,,,,,,,Makaylah Brittney Michelle Buchanan,,,,2022-08-20 00:02:35
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 23:59:31
-No consent,Not confirmed,Khaila,,,,177190@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,55555,,,,,,,,,,,Khaila,,,,2022-08-19 23:54:08
-No consent,Not confirmed,Khaila,,,,177190@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,11111,,,,,,,,,,,Khaila,,,,2022-08-19 23:51:17
-No consent,Not confirmed,Christian,Jones,,,206679@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,661 433 5568,,,,,,,,,,,Christian Jones,,,,2022-08-19 23:49:25
-No consent,Not confirmed,Na'Kaiyah,Herring,,,207226@students.avhsd.org,https://www.hipaajournal.com/,,,,1111111111,,,,,,,,,,,Na'Kaiyah Herring,,,,2022-08-19 23:48:39
-No consent,Not confirmed,Justin,verdin Ruiz,,,206128@students.avhsd.org,https://www.hipaajournal.com/,,,,6616758568,,,,,,,,,,,Justin verdin Ruiz,,,,2022-08-19 23:48:28
-No consent,Not confirmed,Dulce,Carrillo,,,206404@students.avhsd.org,https://www.hipaajournal.com/,,,,661-974-5905,,,,,,,,,,,Dulce Carrillo,,,,2022-08-19 23:48:23
-No consent,Not confirmed,Anahi,Guzman,,,211613@students.avhsd.org,https://www.hipaajournal.com/,,,,(661) 777-9999,,,,,,,,,,,Anahi Guzman,,,,2022-08-19 23:48:18
-No consent,Not confirmed,Natalia,Fernandez,,,206461@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111,,,,,,,,,,,Natalia Fernandez,,,,2022-08-19 23:48:11
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 23:46:56
-No consent,Not confirmed,Natalia,Fernandez,,,206461@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111,,,,,,,,,,,Natalia Fernandez,,,,2022-08-19 23:46:31
-No consent,Not confirmed,Eliana,,,,206255@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,1233247890,,,,,,,,,,,Eliana,,,,2022-08-19 23:45:39
-No consent,Not confirmed,Mia,Osorio,,,187597@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111-111-1111,,,,,,,,,,,Mia Osorio,,,,2022-08-19 23:44:35
-No consent,Not confirmed,Anahi,Guzman,,,211613@students.avhsd.org,https://www.hipaajournal.com/,,,,(661) 777-9999,,,,,,,,,,,Anahi Guzman,,,,2022-08-19 19:08:01
-No consent,Not confirmed,Anahi,Guzman,,,211613@students.avhsd.org,https://www.hipaajournal.com/,,,,(661) 777-9999,,,,,,,,,,,Anahi Guzman,,,,2022-08-19 19:08:00
-No consent,Not confirmed,Makaylah Brittney Michelle,Buchanan,,,206413@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111111111,,,,,,,,,,,Makaylah Brittney Michelle Buchanan,,,,2022-08-19 18:31:44
-No consent,Not confirmed,Stephanie,Galindo,,,168176@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6619176234,,,,,,,,,,,Stephanie Galindo,,,,2022-08-19 18:24:13
-No consent,Not confirmed,Na'Kaiyah,Herring,,,207226@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,1111111111,,,,,,,,,,,Na'Kaiyah Herring,,,,2022-08-19 09:21:21
-No consent,Not confirmed,Na'Kaiyah,Herring,,,207226@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Na'Kaiyah Herring,,,,2022-08-19 09:19:29
-No consent,Not confirmed,Jennifer Lopez,Nunez,,,170489@students.avhsd.org,https://www.hipaajournal.com/,,,,6618991679,,,,,,,,,,,Jennifer Lopez Nunez,,,,2022-08-19 08:21:45
-No consent,Not confirmed,Karla,Luna,,,168913@students.avhsd.org,https://www.hipaajournal.com/,,,,(661)495-4571,,,,,,,,,,,Karla Luna,,,,2022-08-19 05:45:18
-No consent,Not confirmed,Emily,Chavez,,,201205@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-802-2241,,,,,,,,,,,Emily Chavez,,,,2022-08-19 05:22:36
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 05:21:49
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 05:19:39
-No consent,Not confirmed,Herberth,Zelaya,,,194298@students.avhsd.org,https://www.hipaajournal.com/,,,,2134699272,,,,,,,,,,,Herberth Zelaya,,,,2022-08-19 04:48:38
-No consent,Not confirmed,Natalie Yamileth,Garcia,,,179989@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614343090,,,,,,,,,,,Natalie Yamileth Garcia,,,,2022-08-19 04:07:57
-No consent,Not confirmed,Natalie Yamileth,Garcia,,,179989@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614343090,,,,,,,,,,,Natalie Yamileth Garcia,,,,2022-08-19 04:07:56
-No consent,Not confirmed,Aubrey,Garcia,,,185095@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614886674,,,,,,,,,,,Aubrey Garcia,,,,2022-08-19 03:11:55
-No consent,Not confirmed,Aubrey,Garcia,,,185095@students.avhsd.org,https://www.hipaajournal.com/,,,,6614886674,,,,,,,,,,,Aubrey Garcia,,,,2022-08-19 03:04:59
-No consent,Not confirmed,Na'Kaiyah,Herring,,,207226@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Na'Kaiyah Herring,,,,2022-08-19 00:32:25
-No consent,Not confirmed,Ashley,Morales,,,206508@students.avahsd.org,https://www.hipaajournal.com/,,,,11111111111,,,,,,,,,,,Ashley Morales,,,,2022-08-19 00:24:28
-No consent,Not confirmed,Ivan,Ortega,,,206451@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111111111,,,,,,,,,,,Ivan Ortega,,,,2022-08-19 00:22:10
-No consent,Not confirmed,Estrella,Cervantes-Garcia,,,206052@students.avhsd.org,https://www.hipaajournal.com/,,,,111111111,,,,,,,,,,,Estrella Cervantes-Garcia,,,,2022-08-19 00:20:33
-No consent,Not confirmed,Violette,Stover,,,187448@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614663119,,,,,,,,,,,Violette Stover,,,,2022-08-19 00:14:44
-No consent,Not confirmed,Aryanna,Morales,,,201996@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-321-5467,,,,,,,,,,,Aryanna Morales,,,,2022-08-19 00:14:37
-No consent,Not confirmed,Aryanna,,,,201996@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-321-5467,,,,,,,,,,,Aryanna,,,,2022-08-19 00:14:29
-No consent,Not confirmed,Justin,Verdin,,,206128@students.avhsd.org,https://www.hipaajournal.com/,,,,6616758568,,,,,,,,,,,Justin Verdin,,,,2022-08-19 00:13:49
-No consent,Not confirmed,Crystal,Garcia-Guadarrama,,,201905@students.avhsd.org,https://www.hipaajournal.com/,,,,1111111111,,,,,,,,,,,Crystal Garcia-Guadarrama,,,,2022-08-19 00:13:48
-No consent,Not confirmed,Justin,Verdin,,,206128@students.avhsd.org,https://www.hipaajournal.com/,,,,6616758568,,,,,,,,,,,Justin Verdin,,,,2022-08-19 00:13:48
-No consent,Not confirmed,Aryanna,,,,201996@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-321-5467,,,,,,,,,,,Aryanna,,,,2022-08-19 00:13:15
-No consent,Not confirmed,Aryanna,,,,201996@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661-998-6750,,,,,,,,,,,Aryanna,,,,2022-08-19 00:12:57
-No consent,Not confirmed,Mallory,Jimenez,,,203883@students.avhsd.org,https://www.hipaajournal.com/,,,,6613737627,,,,,,,,,,,Mallory Jimenez,,,,2022-08-19 00:12:56
-No consent,Not confirmed,Crystal,Garcia-Guadarrama,,,201905@students.avhsd.org,https://www.hipaajournal.com/,,,,1111111111,,,,,,,,,,,Crystal Garcia-Guadarrama,,,,2022-08-19 00:12:45
-No consent,Not confirmed,Katherine Galindo,Hernandez,,,207259@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Katherine Galindo Hernandez,,,,2022-08-19 00:12:15
-No consent,Not confirmed,Paola Anahi,Guzman,,,211613@students.avhsd.org,https://www.hipaajournal.com/,,,,661119999,,,,,,,,,,,Paola Anahi Guzman,,,,2022-08-19 00:11:07
-No consent,Not confirmed,Eliana,,,,206255@students.avhsd.org,https://www.hipaajournal.com/,,,,111-222-3333,,,,,,,,,,,Eliana,,,,2022-08-19 00:10:53
-No consent,Not confirmed,Natalia,Fernandez,,,206461@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111,,,,,,,,,,,Natalia Fernandez,,,,2022-08-19 00:10:52
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 00:10:51
-No consent,Not confirmed,Erick,Saravia,,,206870@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Erick Saravia,,,,2022-08-19 00:10:49
-No consent,Not confirmed,Christian,Jones,,,206679@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,661 433 5568,,,,,,,,,,,Christian Jones,,,,2022-08-19 00:10:46
-No consent,Not confirmed,Mia,Osorio,,,187597@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,111-111-1111,,,,,,,,,,,Mia Osorio,,,,2022-08-19 00:10:43
-No consent,Not confirmed,Malaree,Green,,,206462@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111111111,,,,,,,,,,,Malaree Green,,,,2022-08-19 00:10:35
-No consent,Not confirmed,Melissa,Rodriguez,,,206754@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,1111,,,,,,,,,,,Melissa Rodriguez,,,,2022-08-19 00:10:33
-No consent,Not confirmed,Caniyah,Williams,,,207271@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,11111111,,,,,,,,,,,Caniyah Williams,,,,2022-08-19 00:10:29
-No consent,Not confirmed,Brandon,Galvan,,,206049@students.avhsd.org,https://www.hipaajournal.com/,,,,1+ (559) 290-2717,,,,,,,,,,,Brandon Galvan,,,,2022-08-19 00:10:12
-No consent,Not confirmed,Jonathan Arriaga,Alba,,,201801@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6619177812,,,,,,,,,,,Jonathan Arriaga Alba,,,,2022-08-19 00:09:54
-No consent,Not confirmed,Arianna,Badillo,,,206663@students.avhsd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,6618748418,,,,,,,,,,,Arianna Badillo,,,,2022-08-19 00:09:52
-No consent,Not confirmed,Aubrey,,,,185095@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6614886674,,,,,,,,,,,Aubrey,,,,2022-08-19 00:08:54
-No consent,Not confirmed,Dylan,Alcantara,,,200996@students.avhsd.org,https://www.hipaajournal.com/,,,,111111111,,,,,,,,,,,Dylan Alcantara,,,,2022-08-18 03:53:16
-No consent,Not confirmed,Ashley,Tello,,,204660@students.avhsd.org,https://www.hipaajournal.com/hipaa-training-for-students,,,,6618441033,,,,,,,,,,,Ashley Tello,,,,2022-08-18 00:22:50
-No consent,Not confirmed,Erin,Schatzle,,,eschatzle@schools.nyc.gov,https://www.compliancejunction.com/,,,,(516) 343-6120,,,,,,,,,,,Erin Schatzle,,,,2022-08-17 03:58:37
-No consent,Not confirmed,Baasil,Furqan,,,BFurqan@schools.nyc.gov,https://www.compliancejunction.com/,,,,3473871198,,,,,,,,,,,Baasil Furqan,,,,2022-08-15 23:44:36
-No consent,Not confirmed,chuying,pan,,,chuyingp@nycstudents.net,https://www.hipaajournal.com/free-hipaa-training/,,,,917-831-9186,,,,,,,,,,,chuying pan,,,,2022-08-11 19:34:20
-No consent,Not confirmed,Chuying,Pan,,,chuyingp@nycstudents.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9178319186,,,,,,,,,,,Chuying Pan,,,,2022-08-11 18:29:34
-No consent,Not confirmed,kendall,,,,kendallm4496@aurorak12.org,https://www.compliancejunction.com/,,,,3039166469,,,,,,,,,,,kendall,,,,2022-08-11 17:47:06
-No consent,Not confirmed,Regina,Toliver,,,rtoliver@genesisdoctors.com,https://www.hipaajournal.com/free-hipaa-training/,,,,2814444444,,,,,,,,,,,Regina Toliver,,,,2022-08-09 19:57:03
-No consent,Not confirmed,Rebecca,Baker,,,rebecca.baker@henry.k12.ga.us,https://www.hipaajournal.com/hipaa-training-for-students,,,,4044359924,,,,,,,,,,,Rebecca Baker,,,,2022-08-09 17:41:52
-No consent,Not confirmed,Erica,Hanson,,,ehanson@schools.nyc.gov,https://www.compliancejunction.com/,,,,5163955510,,,,,,,,,,,Erica Hanson,,,,2022-08-09 14:49:57
-No consent,Not confirmed,Franceen Shelby,Knowles,,,fknowles1@kleinisd.net,https://www.compliancejunction.com/,,,,2102597973,,,,,,,,,,,Franceen Shelby Knowles,,,,2022-08-01 00:11:52
-No consent,Not confirmed,Deanna,Oleen,,,deanna@williamscommunityschool.org,https://www.hipaajournal.com/free-hipaa-training/,,,,5122505700,,,,,,,,,,,Deanna Oleen,,,,2022-07-26 23:16:14
-No consent,Not confirmed,Carol,Grider,,,pgrider@nbschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,903-733-6523,,,,,,,,,,,Carol Grider,,,,2022-07-21 00:38:57
-No consent,Not confirmed,Melissa L,Tart,,,mtart2@schools.nyc.gov,https://www.compliancejunction.com/,,,,3476831789,,,,,,,,,,,Melissa L Tart,,,,2022-07-15 03:06:09
-No consent,Not confirmed,Clare,Deignan,,,CDeignan@schools.nyc.gov,https://www.compliancejunction.com/,,,,516-298-5291,,,,,,,,,,,Clare Deignan,,,,2022-07-12 19:28:34
-No consent,Not confirmed,Clare,Deignan,,,CDeignan@schools.nyc.gov,https://www.compliancejunction.com/,,,,516-298-5291,,,,,,,,,,,Clare Deignan,,,,2022-07-11 19:30:29
-No consent,Not confirmed,Melissa L,Tart,,,mtart2@schools.nyc.gov,https://www.compliancejunction.com/,,,,3476831789,,,,,,,,,,,Melissa L Tart,,,,2022-07-11 00:48:29
-No consent,Not confirmed,Clare,Deignan,,,CDeignan@schools.nyc.gov,https://www.compliancejunction.com/,,,,516-298-5291,,,,,,,,,,,Clare Deignan,,,,2022-07-07 18:08:51
-No consent,Not confirmed,Clare,Deignan,,,CDeignan@schools.nyc.gov,https://www.compliancejunction.com/,,,,516-298-5291,,,,,,,,,,,Clare Deignan,,,,2022-07-06 19:53:19
-No consent,Not confirmed,Clare,Deignan,,,CDeignan@schools.nyc.gov,https://www.compliancejunction.com/,,,,516-298-5291,,,,,,,,,,,Clare Deignan,,,,2022-07-06 19:53:14
-No consent,Not confirmed,Marybell,Martinez,,,m1martinez@nps.k12.nj.us,https://www.hipaajournal.com/free-hipaa-training/,,,,9738205035,,,,,,,,,,,Marybell Martinez,,,,2022-06-16 18:27:23
-No consent,Not confirmed,Carol,Thomison,,,Carolthomison@walkerschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,4233559681,,,,,,,,,,,Carol Thomison,,,,2022-06-02 23:32:19
-No consent,Not confirmed,Mike,Quiery,,,mike.quiery@plainedgeschools.org,https://www.compliancejunction.com/,,,,6313353034,,,,,,,,,,,Mike Quiery,,,,2022-05-25 16:06:12
-No consent,Not confirmed,Kristin,Ferguson,,,kristin.ferguson@knoxschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,8657122304,,,,,,,,,,,Kristin Ferguson,,,,2022-05-19 14:25:33
-No consent,Not confirmed,Daniela,,,,dfawcett@hlpusd.k12.ca.us,https://www.compliancejunction.com/#popup,,,,3103846520,,,,,,,,,,,Daniela,,,,2022-05-10 20:58:02
-No consent,Not confirmed,Darla,Carter,,,carterd@oldfieldsschool.org,https://www.hipaajournal.com/free-hipaa-training/,,,,4436621031,,,,,,,,,,,Darla Carter,,,,2022-05-05 19:43:59
-No consent,Not confirmed,Ashley,Linkous,,,ashley.linkous@hck12.net,https://www.hipaajournal.com/free-hipaa-training/,,,,4239140985,,,,,,,,,,,Ashley Linkous,,,,2022-05-05 17:45:45
-No consent,Not confirmed,Ashley,Linkous,,,ashley.linkous@hck12.net,https://www.hipaajournal.com/free-hipaa-training/,,,,4239140985,,,,,,,,,,,Ashley Linkous,,,,2022-05-05 17:45:44
-No consent,Not confirmed,Lakisha,,,,lbarzar@royal-isd.net,https://www.hipaajournal.com/,,,,2819342215,,,,,,,,,,,Lakisha,,,,2022-04-19 14:54:38
-No consent,Not confirmed,Jennifer,Dail,,,jennifer.dail@edgerton.k12.wi.us,https://www.hipaajournal.com/free-hipaa-training/,,,,6085616183,,,,,,,,,,,Jennifer Dail,,,,2022-04-13 17:18:41
-No consent,Not confirmed,John,Smith,,,bill@walllakeschools.com,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,7126418745,,,,,,,,,,,John Smith,,,,2022-03-27 19:16:50
-No consent,Not confirmed,Kimberly,Picklesimer,,,kpicklesimer@k12.wv.us,https://www.compliancejunction.com/,,,,3047847547,,,,,,,,,,,Kimberly Picklesimer,,,,2022-03-22 18:08:20
-No consent,Not confirmed,george,boafo,,,gboafo2@schools.nyc.gov,https://www.hipaajournal.com/what-is-texas-hb-300,,,,6468819230,,,,,,,,,,,george boafo,,,,2022-03-08 20:48:42
-No consent,Not confirmed,Wendy,LILES,,,lilesw@joshuaisd.org,https://www.compliancejunction.com/,,,,81720225001135,,,,,,,,,,,Wendy LILES,,,,2022-02-16 00:09:21
-No consent,Not confirmed,Sharon D,Warthen,,,warthen_s@hcsb.k12.fl.us,https://www.hipaaguide.net/#popup,,,,3524038108,,,,,,,,,,,Sharon D Warthen,,,,2022-02-09 18:17:34
-No consent,Not confirmed,susan,hawkins,,,susanhawkins@averyschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,828-260-1832,,,,,,,,,,,susan hawkins,,,,2022-01-26 20:19:30
-No consent,Not confirmed,Olivia,Holly,,,oliviag.holly@ecschools.org,https://www.compliancejunction.com/,,,,423707843,,,,,,,,,,,Olivia Holly,,,,2022-01-20 13:54:23
-No consent,Not confirmed,Emily,Shepherd,,,emilyg.shepherd@ecschools.org,https://www.compliancejunction.com/,,,,4233354244,,,,,,Elizabethon City Schools,,,,,Emily Shepherd,,,,2022-01-20 03:54:44
-No consent,Not confirmed,Olivia,Holly,,,oliviag.holly@ecschools.org,https://www.compliancejunction.com/,,,,4237078543,,,,,,,,,,,Olivia Holly,,,,2022-01-19 19:42:21
-No consent,Not confirmed,hannah,carr,,,"hannahm.carr@ecschool.org, hannahm.carr@ecschools.org",https://www.compliancejunction.com/,,,,(423)444-9171,,,,,,Elizabethon City Schools,,,,,hannah carr,,,,2022-01-19 15:36:05
-No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 04:00:25
-No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 03:59:34
-No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 03:59:32
-No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 03:50:16
-No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 03:50:14
-No consent,Not confirmed,Angelina,Lyon,,,angelinal.lyon@ecschools.org,https://www.compliancejunction.com/,,,,4238951694,,,,,Student,Elizabethon City Schools,,,,,Angelina Lyon,,,,2022-01-14 19:36:32
-No consent,Not confirmed,Kaden,Street,,,kadenc.street@ecschools.org,https://www.compliancejunction.com/,,,,4232134206,,,,,,,,,,,Kaden Street,,,,2022-01-14 15:16:53
-No consent,Not confirmed,Caitlin Victoria,Darling,,,caitlinv.darling@ecschools.org,https://www.compliancejunction.com/,,,,(423) 491-3338,,,,,Student,,,,,,Caitlin Victoria Darling,,,,2022-01-13 20:19:27
-No consent,Not confirmed,Renna,Lane,,,"renna.a.lane@gmail.com, rennaa.lane@ecschools.org",https://www.compliancejunction.com/,,,,4238955292,,,,,,Elizabethon City Schools,,,,,Renna Lane,,,,2022-01-13 20:19:12
-No consent,Not confirmed,Hannah,Reese,,,hannahj.reese@ecschools.org,"https://www.compliancejunction.com/, https://www.compliancejunction.com/training-signup, https://www.compliancejunction.com/",,,,4237730498,,,,,,Elizabethon City Schools,,,,,Hannah Reese,,,,2022-01-12 16:23:38
-No consent,Not confirmed,Maggie,Rowland,,,"maggiel.rowland@eschools.org, maggiel.rowland@ecschools.org",https://www.compliancejunction.com/,,,,4232973090,,,,,,Elizabethon City Schools,,,,,Maggie Rowland,,,,2022-01-12 16:23:21
-No consent,Not confirmed,Grayson,Hatfield,,,graysonc.hatfield@ecschools.org,https://www.compliancejunction.com/,,,,423-297-6495,,,,,,Elizabethon City Schools,,,,,Grayson Hatfield,,,,2022-01-12 16:23:01
-No consent,Not confirmed,Kaden Carter,Street,,,kadenc.street@ecschools.org,https://www.compliancejunction.com/,,,,4232134206,,,,,,Elizabethon City Schools,,,,,Kaden Carter Street,,,,2022-01-12 16:22:44
-No consent,Not confirmed,Isaiah Jerome Walter,King,,,isaiahj.king@ecschools.org,https://www.compliancejunction.com/,,,,4235575243,,,,,,Elizabethon City Schools,,,,,Isaiah Jerome Walter King,,,,2022-01-12 16:22:40
-No consent,Not confirmed,Caden Kendall,Miller,,,cadenk.miller@ecschools.org,https://www.compliancejunction.com/,,,,4236760371,,,,,,Elizabethon City Schools,,,,,Caden Kendall Miller,,,,2022-01-12 16:22:27
-No consent,Not confirmed,Armando,Mora-Leon,,,"armando.moraleon@ecschools.org, armandomoraleon247@gmail.com",https://www.compliancejunction.com/,,,,4233284666,,,,,,,,,,,Armando Mora-Leon,,,,2022-01-12 16:22:15
-No consent,Not confirmed,Reaghan,Curde,,,"reaghane.curde@ecschools.org, reaghanelizabeth@yahoo.com",https://www.compliancejunction.com/,,,,4235575327,,,,,,Elizabethon City Schools,,,,,Reaghan Curde,,,,2022-01-12 16:21:46
-No consent,Not confirmed,Abigaile,Tolley,,,abigailem.tolley@ecschools.org,https://www.compliancejunction.com/,,,,(423)297-4826,,,,,,Elizabethon City Schools,,,,,Abigaile Tolley,,,,2022-01-12 16:21:35
-No consent,Not confirmed,Maely,Ingram,,,maelyg.ingram@ecschools.org,https://www.compliancejunction.com/,,,,4232139680,,,,,,Elizabethon City Schools,,,,,Maely Ingram,,,,2022-01-12 16:21:34
-No consent,Not confirmed,Rosie,Granados,,,rosalbar.granados@ecschools.org,https://www.compliancejunction.com/,,,,4232976128,,,,,,Elizabethon City Schools,,,,,Rosie Granados,,,,2022-01-12 16:21:23
-No consent,Not confirmed,Elizabeth,Thomas,,,elizabethk.thomas@ecschools.org,https://www.compliancejunction.com/,,,,4232972957,,,,,,Elizabethon City Schools,,,,,Elizabeth Thomas,,,,2022-01-12 16:20:50
-No consent,Not confirmed,Sarah,Dean,,,sdean@shepherdisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,77777777,,,,,,,,,,,Sarah Dean,,,,2022-01-04 23:55:20
-No consent,Not confirmed,Lauren,Meier,,,lauren.meier@ecschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,4233669559,,,,,Teacher,Elizabethon City Schools,,,,,Lauren Meier,,,,2022-01-03 17:36:31
-No consent,Not confirmed,Angela,Pattillo,,,angela.pattillo@districtgov.org,https://www.hipaaguide.net/#popup,,,,3526741905,,,,,"Manager, Training & Instructional Design",,,,,,Angela Pattillo,,,,2022-01-03 13:58:34
-No consent,Not confirmed,Tanika,Clayton-Henry,,,tanika.clayton-henry@districtgov.org,https://www.hipaaguide.net/hipaa-compliance-guide/,,,,3526741905,,,,,,,,,,,Tanika Clayton-Henry,,,,2021-12-30 19:28:19
-No consent,Not confirmed,Tanika,Clayton-Henry,,,tanika.clayton-henry@districtgov.org,https://www.hipaaguide.net/hipaa-compliance-guide/,,,,3526741905,,,,,,,,,,,Tanika Clayton-Henry,,,,2021-12-30 19:24:33
-No consent,Not confirmed,Brenda Elizabeth,Gatica,,,bg0286926@pasadenaisd.org,https://www.compliancejunction.com/training-signup,,,,8324552535,,,,,,,,,,,Brenda Elizabeth Gatica,,,,2021-12-20 19:52:14
-No consent,Not confirmed,Tiffany,Pierce,,,tpierce2@rvaschools.net,https://www.compliancejunction.com/,,,,8047806237,,,,,,,,,,,Tiffany Pierce,,,,2021-12-14 15:17:28
-No consent,Not confirmed,Cindy,Balsam,,,"cbalsam25@gmail.com, cindy.balsam@communitychristianschool.net","https://www.hipaajournal.com/free-hipaa-training/, https://www.compliancejunction.com/training-signup",,,,2014632385,,,,,Adjunct Professor,Truett McConnell University,,,,,Cindy Balsam,,,,2021-12-13 17:47:03
-No consent,Not confirmed,Magdalena,Espinoza,,,mespinoza1@pasadenaisd.org,"https://www.hipaajournal.com/free-hipaa-training/, https://www.compliancejunction.com/",,,,"8322729461, 2818842631",,,,,Health Science Instructor,Pasadena School District,,,,,Magdalena Espinoza,,,,2021-11-29 17:38:19
-No consent,Not confirmed,Thania,Molina,,,thania.molina@cherokeek12.net,https://www.hipaajournal.com/free-hipaa-training/,,,,6783275182,,,,,,,,,,,Thania Molina,,,,2021-11-18 18:39:34
-No consent,Not confirmed,Waynokia,Roberts,,,"wmr20a@acu.edu, wmroberts@forneyisd.net",https://www.hipaajournal.com/free-hipaa-training/,,,,4698370149,,,,,Marriage And Family Therapy Intern,Abilene University,,,,,Waynokia Roberts,,,,2021-11-09 16:58:57
-No consent,Not confirmed,ILNISE,MATHIEU,,,opsmgr@thespeechschoolmiami.com,https://www.hipaajournal.com/free-hipaa-training/,,,,3057493692,,,,,Director Of Operations,,,,,,ILNISE MATHIEU,,,,2021-10-13 18:46:23
-No consent,Not confirmed,Ashleigh,Torres,,,"atorres.4960@wcstudents.wc.edu, ashleighvtorres@gmail.com","https://www.hipaajournal.com/free-hipaa-training/, https://www.compliancejunction.com/, https://www.hipaajournal.com/free-hipaa-training/",,,,8174586220,,,,,Student,Weatherford College,,,,,Ashleigh Torres,,,,2021-10-09 23:54:44
-No consent,Not confirmed,BJ,Barnes,,,"bbarnes.2495@wcstudents.wc.edu, bj.barnes@msn.com, bj.barnes@msn.dom",https://www.hipaajournal.com/free-hipaa-training/,,,,5052520199,,,,,Student,Weatherford College,,,,,BJ Barnes,,,,2021-10-07 17:44:17
-No consent,Not confirmed,Heather,Regan,,,hregan@psdschools.org,https://www.hipaajournal.com/hipaa-training-requirements,,,,7194654504,,,,,,,,,,,Heather Regan,,,,2021-10-05 22:50:48
-No consent,Not confirmed,Kim,Richter,,,krichter@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,507-857-1160,,,,,,,,,,,Kim Richter,,,,2021-10-05 22:16:03
-No consent,Not confirmed,kristin,sikes,,,sikesk@stratk12.org,https://www.hipaajournal.com/free-hipaa-training/,,,,203-254-3458,,,,,,,,,,,kristin sikes,,,,2021-10-05 17:29:38
-No consent,Not confirmed,Rebecca,Anthony,,,anthonyr@chapelhillisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,903-566-2441 Ext. 1805,,,,,,,,,,,Rebecca Anthony,,,,2021-10-03 23:32:46
-No consent,Not confirmed,Katlyn,Fults,,,22_fults.katlyn@k12coffee.net,https://www.compliancejunction.com/,,,,9414098671,,,,,,,,,,,Katlyn Fults,,,,2021-09-21 16:09:54
-Subscribed,Not confirmed,Deana,Crosslin,,,crosslind@k12coffee.net,https://www.compliancejunction.com/,,,,6154566316,,,,,,,,,,,Deana Crosslin,,,,2021-09-20 17:03:51
-No consent,Not confirmed,Olivia,Hinojosa,,,olivia.hinojosa@sfisd.org,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,4097951468,,,,,,,,,,,Olivia Hinojosa,,,,2021-09-20 16:04:23
-No consent,Not confirmed,Olawale,Lateef,,,"bwale751@gmail.com, olateef001@students.allsaintsu.org","https://www.hipaajournal.com/free-hipaa-training/, https://www.compliancejunction.com/training-signup",,,,+17844319908,,,,,,,,,,,Olawale Lateef,,,,2021-09-15 17:55:46
-No consent,Not confirmed,Marisa,Meyers,,,mmeyers@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,5074405857,,,,,,,,,,,Marisa Meyers,,,,2021-08-30 18:05:08
-No consent,Not confirmed,Autumn,,,,autumn.beatty@k12.wv.us,https://www.compliancejunction.com/,,,,3045272302,,,,,,,,,,,Autumn,,,,2021-08-23 14:15:51
-No consent,Not confirmed,John,Arnold,,,arnoldj@davenportschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,6183190215,,,,,,,,,,,John Arnold,,,,2021-08-22 04:41:22
-No consent,Not confirmed,Orlando Crespo,III,,,"orlandoc0599@aurorak12.org, orlandoc0104@gmail.com, orlandoc030104@gmail.com",https://www.compliancejunction.com/,,,,8083216254,,,,,,,,,,,Orlando Crespo III,,,,2021-08-16 20:16:42
-No consent,Not confirmed,Orlando,,,,orlandoc0599@aurorak12.org,https://www.compliancejunction.com/,,,,8083216254,,,,,,,,,,,Orlando,,,,2021-08-13 21:01:13
-No consent,Not confirmed,Alanah,Torres,,,"alanaht3323@aurorak12.org, alanaht3323@gmail.com",https://www.compliancejunction.com/,,,,7205250151,,,,,,,,,,,Alanah Torres,,,,2021-08-13 20:49:32
-No consent,Not confirmed,Nevaeh,,,,nevaehs7648@aurorak12.org,https://www.compliancejunction.com/,,,,7202248038,,,,,,,,,,,Nevaeh,,,,2021-08-13 20:49:20
-No consent,Not confirmed,Bella,McCarty,,,"mc.bella324@gmail.com, bellam7283@aurorak12.org",https://www.compliancejunction.com/,,,,7207241694,,,,,,,,,,,Bella McCarty,,,,2021-08-13 20:44:28
-No consent,Not confirmed,Mia,Fifer,,,"Mia.j.fifer@gmail.com, miaf8207@aurorak12.org",https://www.compliancejunction.com/,,,,9405858298,,,,,,,,,,,Mia Fifer,,,,2021-08-13 20:44:23
-No consent,Not confirmed,Fatoumata,Sow,,,"arounas8994@gmail.com, fatoumatas3325@aurorak12.org",https://www.compliancejunction.com/,,,,7202856610,,,,,,,,,,,Fatoumata Sow,,,,2021-08-13 20:44:22
-No consent,Not confirmed,David,Benedict,,,dabenedict@aurorak12.org,https://www.compliancejunction.com/,,,,3033400121,,,,,,,,,,,David  Benedict,,,,2021-08-12 18:21:20
-No consent,Not confirmed,Tana,Brancato,,,tjbrancato@aurorak12.org,https://www.hipaaguide.net/#popup,,,,3033400121,,,,,,,,,,,Tana Brancato,,,,2021-08-12 18:09:26
-No consent,Not confirmed,joni,chandler,,,jchandler@martinsvilleisd.com,https://www.hipaajournal.com/free-hipaa-training/,,,,9365649999,,,,,,,,,,,joni chandler,,,,2021-08-10 19:25:33
-No consent,Not confirmed,Brooke,Hoebing,,,bhoebing@smec.k12.mn.us,https://www.hipaajournal.com/free-hipaa-training/,,,,"5072697127, 507-269-7127",,,,,,,,,,,Brooke Hoebing,,,,2021-08-09 20:00:38
-No consent,Not confirmed,Lori,Renner,,,lkrenner@k12.wv.us,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,13046842464,,,,,,,,,,,Lori Renner,,,,2021-08-04 19:54:33
-No consent,Not confirmed,Karla,Weishalla,,,karla.weishalla@isd786.org,https://www.hipaajournal.com/,,,,2186391200,,,,,,,,,,,Karla Weishalla,,,,2021-07-19 21:57:19
-No consent,Not confirmed,Jaclyn,Franecki,,,kbrayman@hamburgschools.org,https://www.hipaaguide.net/nist-seeks-feedback-on-hipaa-security-rule-implementation-guidance,,,,80998595834,,,,,,,,,,,Jaclyn Franecki,,,,2021-07-13 10:20:30
-No consent,Not confirmed,Shaylee,Lemke,,,kbrayman@hamburgschools.org,https://www.compliancejunction.com/,,,,16633255070,,,,,,,,,,,Shaylee Lemke,,,,2021-07-13 10:20:25
-No consent,Not confirmed,Mervin,Sawayn,,,kbrayman@hamburgschools.org,https://www.compliancejunction.com/hipaa-training-signup,,,,28743539149,,,,,,,,,,,Mervin Sawayn,,,,2021-07-13 10:20:22
-No consent,Not confirmed,Sharon,Djafaripour,,,sharon@risingstarschool.org,https://www.hipaaguide.net/hipaa-online-training,,,,5104078048,,,,,,,,,,,Sharon Djafaripour,,,,2021-07-11 20:10:56
-No consent,Not confirmed,PAULA,WILLIAMS,,,PWILLIAMS@GENESISDOCTORS.COM,https://www.hipaaguide.net/hipaa-compliance-guide/,,,,2814405300,,,,,,,,,,,PAULA WILLIAMS,,,,2021-06-23 15:41:41
-No consent,Not confirmed,Julia,,,,jewing@garlandisd.net,https://www.compliancejunction.com/training-signup,,,,972-475-3711,,,,,,,,,,,Julia,,,,2021-05-14 18:59:08
-No consent,Not confirmed,Patricia,Zavala,,,paza1955@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Patricia Zavala,,,,2021-03-03 19:44:10
-No consent,Not confirmed,Estella,Zaragoza,,,esza1871@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Estella Zaragoza,,,,2021-03-03 19:43:24
-No consent,Not confirmed,Dianna,Zagal-Zagal,,,diza1954@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Dianna Zagal-Zagal,,,,2021-03-03 19:42:46
-No consent,Not confirmed,Amaya,Rodriguez,,,amro1937@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Amaya Rodriguez,,,,2021-03-03 19:41:55
-No consent,Not confirmed,Limbania,Moreno,,,limo1926@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Limbania Moreno,,,,2021-03-03 19:41:08
-No consent,Not confirmed,Guadalupe,Mercado-Sandoval,,,gume1923@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Guadalupe Mercado-Sandoval,,,,2021-03-03 19:40:20
-No consent,Not confirmed,Lizett,Marinez-Gallardo,,,lima1917@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Lizett Marinez-Gallardo,,,,2021-03-03 19:39:13
-No consent,Not confirmed,Ashley,Martinez,,,asma1913@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Ashley Martinez,,,,2021-03-03 19:35:27
-No consent,Not confirmed,Marsol,Herrera,,,mahe1904@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Marsol Herrera,,,,2021-03-03 19:33:19
-No consent,Not confirmed,Veronica,Garcia,,,vega1893@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Veronica Garcia,,,,2021-03-03 19:31:56
-No consent,Not confirmed,Aracelli,Gama,,,arga1892@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Aracelli Gama,,,,2021-03-03 19:29:44
-No consent,Not confirmed,Elisabeth,Escamilla,,,eles1890@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Elisabeth Escamilla,,,,2021-03-03 19:28:10
-No consent,Not confirmed,Johnni,Cowie,,,joco1889@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Johnni Cowie,,,,2021-03-03 19:27:04
-No consent,Not confirmed,Jasmin,Bustos,,,jabu1880@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Jasmin Bustos,,,,2021-03-03 19:25:57
-No consent,Not confirmed,Alondra,Barajas,,,alba1878@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Alondra Barajas,,,,2021-03-03 19:25:05
-No consent,Not confirmed,Nadia,Avelos,,,naav1876@lghs.k12.ca.us,https://www.compliancejunction.com/training-signup,,,,2093899400,,,,,,,,,,,Nadia Avelos,,,,2021-03-03 19:23:52
-No consent,Not confirmed,Charley,Marshall,,,cmarshall@lghs.k12.ca.us,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,2097567281,,,,,,,,,,,Charley Marshall,,,,2021-03-03 19:17:25
-No consent,Not confirmed,Judy,Powell,,,judy.powell@decaturschools.org,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,731-733-2145,,,,,,,,,,,Judy Powell,,,,2020-11-18 20:42:25
-No consent,Not confirmed,Austin,Glenn,,,austin-glenn@lambdastudents.com,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,8016683608,,,,,,,,,,,Austin Glenn,,,,2020-10-11 01:53:57
-No consent,Not confirmed,Michael,Cipriani,,,mcipriani@obenschools.org,https://www.hipaajournal.com/gdpr-data-breach-reporting-requirements#popup,,,,6317577555,,,,,,,,,,,Michael Cipriani,,,,2020-08-19 21:02:41
+ &gt;&gt;&gt; https://nnmhg.page.link/a?",,,,2023-01-01 19:06:20,224524524@fmisdm.cpom,fmisdm.cpom,fmisdm.cpom,,,False,high,student
+No consent,Not confirmed,Gracie,Crain,,,crain3842@vanisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,9039638908,,,,,,,,,,,Gracie Crain,,,,2022-12-22 19:21:30,crain3842@vanisd.net,vanisd.net,vanisd.net,,,False,high,student
+No consent,Not confirmed,William,Neiss,,,bneiss@district16.org,https://www.hipaajournal.com/free-hipaa-training/,,,,7636005147,,,,,,,,,,,William Neiss,,,,2022-12-21 14:52:36,bneiss@district16.org,district16.org,district16.org,,,False,high,student
+No consent,Not confirmed,Karrah,Sanders,,,karrahsanders@stewartcountyschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,9312325179,,,,,,,,,,,Karrah Sanders,,,,2022-12-13 20:59:11,karrahsanders@stewartcountyschools.org,stewartcountyschools.org,stewartcountyschools.org,,,False,high,student
+No consent,Not confirmed,Anna,Wiemken,,,wiemkea1@fargoschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,7018660561,,,,,,,,,,,Anna Wiemken,,,,2022-12-08 15:41:08,wiemkea1@fargoschools.org,fargoschools.org,fargoschools.org,,,False,high,student
+No consent,Not confirmed,Yolanda,Ortega,,,yortega@ccaisd.net,https://www.hipaajournal.com/hipaa-training-for-students,,,,4322840461,,,,,,,,,,,Yolanda Ortega,,,,2022-11-10 21:34:39,yortega@ccaisd.net,ccaisd.net,ccaisd.net,,,False,high,student
+No consent,Not confirmed,Mallory,Evilsizer,,,mallory.evilsizer@bisdmail.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8172239175,,,,,,,,,,,Mallory Evilsizer,,,,2022-11-09 03:25:13,mallory.evilsizer@bisdmail.net,bisdmail.net,bisdmail.net,,,False,high,student
+No consent,Not confirmed,Rashunda,Mendy,,,rmendy@dallasisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2145346447,,,,,,,,,,,Rashunda Mendy,,,,2022-11-04 20:11:05,rmendy@dallasisd.org,dallasisd.org,dallasisd.org,,,False,high,student
+No consent,Not confirmed,Clifford,Attaglo,,,cattaglo@amherstschools.org,https://www.hipaajournal.com/hipaa-training-requirements,,,,7163623026,,,,,,,,,,,Clifford Attaglo,,,,2022-10-31 19:00:40,cattaglo@amherstschools.org,amherstschools.org,amherstschools.org,,,False,high,student
+No consent,Not confirmed,jessie,,,,jessie@nelisdds.com,https://www.hipaajournal.com/hipaa-training-requirements,,,,616-399-1500,,,,,,,,,,,jessie,,,,2022-10-27 14:26:27,jessie@nelisdds.com,nelisdds.com,nelisdds.com,,,False,high,student
+No consent,Not confirmed,Carol,Barton,,,cbarton@rvaschools.net,https://www.hipaaguide.net/hipaa-training-for-students,,,,8049223862,,,,,,,,,,,Carol Barton,,,,2022-10-10 20:45:18,cbarton@rvaschools.net,rvaschools.net,rvaschools.net,,,False,high,student
+No consent,Not confirmed,Mayra,Tovar,,,cistarrantkjh@kisdtx.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8177196878,,,,,,,,,,,Mayra Tovar,,,,2022-10-10 19:39:32,cistarrantkjh@kisdtx.net,kisdtx.net,kisdtx.net,,,False,high,student
+No consent,Not confirmed,Lindsey,Miller-Boyd,,,lindseymillerboyd@melissaisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,2817986575,,,,,,,,,,,Lindsey Miller-Boyd,,,,2022-09-30 21:23:37,lindseymillerboyd@melissaisd.org,melissaisd.org,melissaisd.org,,,False,high,student
+No consent,Not confirmed,Sherri Bono,RN,,,bonos@friscoisd.org,https://www.hipaajournal.com/,,,,14693710380,,,,,,,,,,,Sherri Bono RN,,,,2022-09-15 03:17:44,bonos@friscoisd.org,friscoisd.org,friscoisd.org,,,False,high,student
+No consent,Not confirmed,brittney,liebig,,,23_liebig.brittney@k12coffee.net,https://www.compliancejunction.com/,,,,9315816862,,,,,,,,,,,brittney liebig,,,,2022-08-31 15:09:43,23_liebig.brittney@k12coffee.net,k12coffee.net,k12coffee.net,,,False,high,student
+No consent,Not confirmed,Robin,Duckett,,,robin.duckett@bhisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,8329848659,,,,,,,,,,,Robin Duckett,,,,2022-08-30 21:17:33,robin.duckett@bhisd.net,bhisd.net,bhisd.net,,,False,high,student
+No consent,Not confirmed,Sara Lynn,WIllis,,,swillis@csisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,9792556458,,,,,,,,,,,Sara Lynn WIllis,,,,2022-08-24 22:15:59,swillis@csisd.org,csisd.org,csisd.org,,,False,high,student
+No consent,Not confirmed,chuying,pan,,,chuyingp@nycstudents.net,https://www.hipaajournal.com/free-hipaa-training/,,,,917-831-9186,,,,,,,,,,,chuying pan,,,,2022-08-11 19:34:20,chuyingp@nycstudents.net,nycstudents.net,nycstudents.net,,,False,high,student
+No consent,Not confirmed,kendall,,,,kendallm4496@aurorak12.org,https://www.compliancejunction.com/,,,,3039166469,,,,,,,,,,,kendall,,,,2022-08-11 17:47:06,kendallm4496@aurorak12.org,aurorak12.org,aurorak12.org,,,False,high,student
+No consent,Not confirmed,Regina,Toliver,,,rtoliver@genesisdoctors.com,https://www.hipaajournal.com/free-hipaa-training/,,,,2814444444,,,,,,,,,,,Regina Toliver,,,,2022-08-09 19:57:03,rtoliver@genesisdoctors.com,genesisdoctors.com,genesisdoctors.com,,,False,high,student
+No consent,Not confirmed,Franceen Shelby,Knowles,,,fknowles1@kleinisd.net,https://www.compliancejunction.com/,,,,2102597973,,,,,,,,,,,Franceen Shelby Knowles,,,,2022-08-01 00:11:52,fknowles1@kleinisd.net,kleinisd.net,kleinisd.net,,,False,high,student
+No consent,Not confirmed,Deanna,Oleen,,,deanna@williamscommunityschool.org,https://www.hipaajournal.com/free-hipaa-training/,,,,5122505700,,,,,,,,,,,Deanna Oleen,,,,2022-07-26 23:16:14,deanna@williamscommunityschool.org,williamscommunityschool.org,williamscommunityschool.org,,,False,high,student
+No consent,Not confirmed,Carol,Grider,,,pgrider@nbschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,903-733-6523,,,,,,,,,,,Carol Grider,,,,2022-07-21 00:38:57,pgrider@nbschools.net,nbschools.net,nbschools.net,,,False,high,student
+No consent,Not confirmed,Carol,Thomison,,,Carolthomison@walkerschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,4233559681,,,,,,,,,,,Carol Thomison,,,,2022-06-02 23:32:19,carolthomison@walkerschools.org,walkerschools.org,walkerschools.org,,,False,high,student
+No consent,Not confirmed,Mike,Quiery,,,mike.quiery@plainedgeschools.org,https://www.compliancejunction.com/,,,,6313353034,,,,,,,,,,,Mike Quiery,,,,2022-05-25 16:06:12,mike.quiery@plainedgeschools.org,plainedgeschools.org,plainedgeschools.org,,,False,high,student
+No consent,Not confirmed,Kristin,Ferguson,,,kristin.ferguson@knoxschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,8657122304,,,,,,,,,,,Kristin Ferguson,,,,2022-05-19 14:25:33,kristin.ferguson@knoxschools.org,knoxschools.org,knoxschools.org,,,False,high,student
+No consent,Not confirmed,Darla,Carter,,,carterd@oldfieldsschool.org,https://www.hipaajournal.com/free-hipaa-training/,,,,4436621031,,,,,,,,,,,Darla Carter,,,,2022-05-05 19:43:59,carterd@oldfieldsschool.org,oldfieldsschool.org,oldfieldsschool.org,,,False,high,student
+No consent,Not confirmed,Ashley,Linkous,,,ashley.linkous@hck12.net,https://www.hipaajournal.com/free-hipaa-training/,,,,4239140985,,,,,,,,,,,Ashley Linkous,,,,2022-05-05 17:45:45,ashley.linkous@hck12.net,hck12.net,hck12.net,,,False,high,student
+No consent,Not confirmed,Lakisha,,,,lbarzar@royal-isd.net,https://www.hipaajournal.com/,,,,2819342215,,,,,,,,,,,Lakisha,,,,2022-04-19 14:54:38,lbarzar@royal-isd.net,royal-isd.net,royal-isd.net,,,False,high,student
+No consent,Not confirmed,John,Smith,,,bill@walllakeschools.com,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,7126418745,,,,,,,,,,,John Smith,,,,2022-03-27 19:16:50,bill@walllakeschools.com,walllakeschools.com,walllakeschools.com,,,False,high,student
+No consent,Not confirmed,Wendy,LILES,,,lilesw@joshuaisd.org,https://www.compliancejunction.com/,,,,81720225001135,,,,,,,,,,,Wendy LILES,,,,2022-02-16 00:09:21,lilesw@joshuaisd.org,joshuaisd.org,joshuaisd.org,,,False,high,student
+No consent,Not confirmed,susan,hawkins,,,susanhawkins@averyschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,828-260-1832,,,,,,,,,,,susan hawkins,,,,2022-01-26 20:19:30,susanhawkins@averyschools.net,averyschools.net,averyschools.net,,,False,high,student
+No consent,Not confirmed,Olivia,Holly,,,oliviag.holly@ecschools.org,https://www.compliancejunction.com/,,,,423707843,,,,,,,,,,,Olivia Holly,,,,2022-01-20 13:54:23,oliviag.holly@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Emily,Shepherd,,,emilyg.shepherd@ecschools.org,https://www.compliancejunction.com/,,,,4233354244,,,,,,Elizabethon City Schools,,,,,Emily Shepherd,,,,2022-01-20 03:54:44,emilyg.shepherd@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Maggie,Rowland,,,maggiel.rowland@ecschools.org,https://www.compliancejunction.com/,,,,4232973090,,,,,,,,,,,Maggie Rowland,,,,2022-01-15 04:00:25,maggiel.rowland@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Angelina,Lyon,,,angelinal.lyon@ecschools.org,https://www.compliancejunction.com/,,,,4238951694,,,,,Student,Elizabethon City Schools,,,,,Angelina Lyon,,,,2022-01-14 19:36:32,angelinal.lyon@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Kaden,Street,,,kadenc.street@ecschools.org,https://www.compliancejunction.com/,,,,4232134206,,,,,,,,,,,Kaden Street,,,,2022-01-14 15:16:53,kadenc.street@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Caitlin Victoria,Darling,,,caitlinv.darling@ecschools.org,https://www.compliancejunction.com/,,,,(423) 491-3338,,,,,Student,,,,,,Caitlin Victoria Darling,,,,2022-01-13 20:19:27,caitlinv.darling@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Hannah,Reese,,,hannahj.reese@ecschools.org,"https://www.compliancejunction.com/, https://www.compliancejunction.com/training-signup, https://www.compliancejunction.com/",,,,4237730498,,,,,,Elizabethon City Schools,,,,,Hannah Reese,,,,2022-01-12 16:23:38,hannahj.reese@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Grayson,Hatfield,,,graysonc.hatfield@ecschools.org,https://www.compliancejunction.com/,,,,423-297-6495,,,,,,Elizabethon City Schools,,,,,Grayson Hatfield,,,,2022-01-12 16:23:01,graysonc.hatfield@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Isaiah Jerome Walter,King,,,isaiahj.king@ecschools.org,https://www.compliancejunction.com/,,,,4235575243,,,,,,Elizabethon City Schools,,,,,Isaiah Jerome Walter King,,,,2022-01-12 16:22:40,isaiahj.king@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Caden Kendall,Miller,,,cadenk.miller@ecschools.org,https://www.compliancejunction.com/,,,,4236760371,,,,,,Elizabethon City Schools,,,,,Caden Kendall Miller,,,,2022-01-12 16:22:27,cadenk.miller@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Abigaile,Tolley,,,abigailem.tolley@ecschools.org,https://www.compliancejunction.com/,,,,(423)297-4826,,,,,,Elizabethon City Schools,,,,,Abigaile Tolley,,,,2022-01-12 16:21:35,abigailem.tolley@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Maely,Ingram,,,maelyg.ingram@ecschools.org,https://www.compliancejunction.com/,,,,4232139680,,,,,,Elizabethon City Schools,,,,,Maely Ingram,,,,2022-01-12 16:21:34,maelyg.ingram@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Rosie,Granados,,,rosalbar.granados@ecschools.org,https://www.compliancejunction.com/,,,,4232976128,,,,,,Elizabethon City Schools,,,,,Rosie Granados,,,,2022-01-12 16:21:23,rosalbar.granados@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Elizabeth,Thomas,,,elizabethk.thomas@ecschools.org,https://www.compliancejunction.com/,,,,4232972957,,,,,,Elizabethon City Schools,,,,,Elizabeth Thomas,,,,2022-01-12 16:20:50,elizabethk.thomas@ecschools.org,ecschools.org,ecschools.org,,,False,high,student
+No consent,Not confirmed,Sarah,Dean,,,sdean@shepherdisd.net,https://www.hipaajournal.com/free-hipaa-training/,,,,77777777,,,,,,,,,,,Sarah Dean,,,,2022-01-04 23:55:20,sdean@shepherdisd.net,shepherdisd.net,shepherdisd.net,,,False,high,student
+No consent,Not confirmed,Lauren,Meier,,,lauren.meier@ecschools.net,https://www.hipaajournal.com/free-hipaa-training/,,,,4233669559,,,,,Teacher,Elizabethon City Schools,,,,,Lauren Meier,,,,2022-01-03 17:36:31,lauren.meier@ecschools.net,ecschools.net,ecschools.net,,,False,high,student
+No consent,Not confirmed,Angela,Pattillo,,,angela.pattillo@districtgov.org,https://www.hipaaguide.net/#popup,,,,3526741905,,,,,"Manager, Training & Instructional Design",,,,,,Angela Pattillo,,,,2022-01-03 13:58:34,angela.pattillo@districtgov.org,districtgov.org,districtgov.org,,,False,high,student
+No consent,Not confirmed,Tanika,Clayton-Henry,,,tanika.clayton-henry@districtgov.org,https://www.hipaaguide.net/hipaa-compliance-guide/,,,,3526741905,,,,,,,,,,,Tanika Clayton-Henry,,,,2021-12-30 19:28:19,tanika.clayton-henry@districtgov.org,districtgov.org,districtgov.org,,,False,high,student
+No consent,Not confirmed,Brenda Elizabeth,Gatica,,,bg0286926@pasadenaisd.org,https://www.compliancejunction.com/training-signup,,,,8324552535,,,,,,,,,,,Brenda Elizabeth Gatica,,,,2021-12-20 19:52:14,bg0286926@pasadenaisd.org,pasadenaisd.org,pasadenaisd.org,,,False,high,student
+No consent,Not confirmed,Tiffany,Pierce,,,tpierce2@rvaschools.net,https://www.compliancejunction.com/,,,,8047806237,,,,,,,,,,,Tiffany Pierce,,,,2021-12-14 15:17:28,tpierce2@rvaschools.net,rvaschools.net,rvaschools.net,,,False,high,student
+No consent,Not confirmed,Magdalena,Espinoza,,,mespinoza1@pasadenaisd.org,"https://www.hipaajournal.com/free-hipaa-training/, https://www.compliancejunction.com/",,,,"8322729461, 2818842631",,,,,Health Science Instructor,Pasadena School District,,,,,Magdalena Espinoza,,,,2021-11-29 17:38:19,mespinoza1@pasadenaisd.org,pasadenaisd.org,pasadenaisd.org,,,False,high,student
+No consent,Not confirmed,Thania,Molina,,,thania.molina@cherokeek12.net,https://www.hipaajournal.com/free-hipaa-training/,,,,6783275182,,,,,,,,,,,Thania Molina,,,,2021-11-18 18:39:34,thania.molina@cherokeek12.net,cherokeek12.net,cherokeek12.net,,,False,high,student
+No consent,Not confirmed,ILNISE,MATHIEU,,,opsmgr@thespeechschoolmiami.com,https://www.hipaajournal.com/free-hipaa-training/,,,,3057493692,,,,,Director Of Operations,,,,,,ILNISE MATHIEU,,,,2021-10-13 18:46:23,opsmgr@thespeechschoolmiami.com,thespeechschoolmiami.com,thespeechschoolmiami.com,,,False,high,student
+No consent,Not confirmed,Heather,Regan,,,hregan@psdschools.org,https://www.hipaajournal.com/hipaa-training-requirements,,,,7194654504,,,,,,,,,,,Heather Regan,,,,2021-10-05 22:50:48,hregan@psdschools.org,psdschools.org,psdschools.org,,,False,high,student
+No consent,Not confirmed,kristin,sikes,,,sikesk@stratk12.org,https://www.hipaajournal.com/free-hipaa-training/,,,,203-254-3458,,,,,,,,,,,kristin sikes,,,,2021-10-05 17:29:38,sikesk@stratk12.org,stratk12.org,stratk12.org,,,False,high,student
+No consent,Not confirmed,Rebecca,Anthony,,,anthonyr@chapelhillisd.org,https://www.hipaajournal.com/free-hipaa-training/,,,,903-566-2441 Ext. 1805,,,,,,,,,,,Rebecca Anthony,,,,2021-10-03 23:32:46,anthonyr@chapelhillisd.org,chapelhillisd.org,chapelhillisd.org,,,False,high,student
+No consent,Not confirmed,Katlyn,Fults,,,22_fults.katlyn@k12coffee.net,https://www.compliancejunction.com/,,,,9414098671,,,,,,,,,,,Katlyn Fults,,,,2021-09-21 16:09:54,22_fults.katlyn@k12coffee.net,k12coffee.net,k12coffee.net,,,False,high,student
+No consent,Not confirmed,Olivia,Hinojosa,,,olivia.hinojosa@sfisd.org,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,4097951468,,,,,,,,,,,Olivia Hinojosa,,,,2021-09-20 16:04:23,olivia.hinojosa@sfisd.org,sfisd.org,sfisd.org,,,False,high,student
+No consent,Not confirmed,John,Arnold,,,arnoldj@davenportschools.org,https://www.hipaajournal.com/free-hipaa-training/,,,,6183190215,,,,,,,,,,,John Arnold,,,,2021-08-22 04:41:22,arnoldj@davenportschools.org,davenportschools.org,davenportschools.org,,,False,high,student
+No consent,Not confirmed,Orlando,,,,orlandoc0599@aurorak12.org,https://www.compliancejunction.com/,,,,8083216254,,,,,,,,,,,Orlando,,,,2021-08-13 21:01:13,orlandoc0599@aurorak12.org,aurorak12.org,aurorak12.org,,,False,high,student
+No consent,Not confirmed,Nevaeh,,,,nevaehs7648@aurorak12.org,https://www.compliancejunction.com/,,,,7202248038,,,,,,,,,,,Nevaeh,,,,2021-08-13 20:49:20,nevaehs7648@aurorak12.org,aurorak12.org,aurorak12.org,,,False,high,student
+No consent,Not confirmed,David,Benedict,,,dabenedict@aurorak12.org,https://www.compliancejunction.com/,,,,3033400121,,,,,,,,,,,David  Benedict,,,,2021-08-12 18:21:20,dabenedict@aurorak12.org,aurorak12.org,aurorak12.org,,,False,high,student
+No consent,Not confirmed,Tana,Brancato,,,tjbrancato@aurorak12.org,https://www.hipaaguide.net/#popup,,,,3033400121,,,,,,,,,,,Tana Brancato,,,,2021-08-12 18:09:26,tjbrancato@aurorak12.org,aurorak12.org,aurorak12.org,,,False,high,student
+No consent,Not confirmed,joni,chandler,,,jchandler@martinsvilleisd.com,https://www.hipaajournal.com/free-hipaa-training/,,,,9365649999,,,,,,,,,,,joni chandler,,,,2021-08-10 19:25:33,jchandler@martinsvilleisd.com,martinsvilleisd.com,martinsvilleisd.com,,,False,high,student
+No consent,Not confirmed,Karla,Weishalla,,,karla.weishalla@isd786.org,https://www.hipaajournal.com/,,,,2186391200,,,,,,,,,,,Karla Weishalla,,,,2021-07-19 21:57:19,karla.weishalla@isd786.org,isd786.org,isd786.org,,,False,high,student
+No consent,Not confirmed,Jaclyn,Franecki,,,kbrayman@hamburgschools.org,https://www.hipaaguide.net/nist-seeks-feedback-on-hipaa-security-rule-implementation-guidance,,,,80998595834,,,,,,,,,,,Jaclyn Franecki,,,,2021-07-13 10:20:30,kbrayman@hamburgschools.org,hamburgschools.org,hamburgschools.org,,,False,high,student
+No consent,Not confirmed,Sharon,Djafaripour,,,sharon@risingstarschool.org,https://www.hipaaguide.net/hipaa-online-training,,,,5104078048,,,,,,,,,,,Sharon Djafaripour,,,,2021-07-11 20:10:56,sharon@risingstarschool.org,risingstarschool.org,risingstarschool.org,,,False,high,student
+No consent,Not confirmed,PAULA,WILLIAMS,,,PWILLIAMS@GENESISDOCTORS.COM,https://www.hipaaguide.net/hipaa-compliance-guide/,,,,2814405300,,,,,,,,,,,PAULA WILLIAMS,,,,2021-06-23 15:41:41,pwilliams@genesisdoctors.com,genesisdoctors.com,genesisdoctors.com,,,False,high,student
+No consent,Not confirmed,Julia,,,,jewing@garlandisd.net,https://www.compliancejunction.com/training-signup,,,,972-475-3711,,,,,,,,,,,Julia,,,,2021-05-14 18:59:08,jewing@garlandisd.net,garlandisd.net,garlandisd.net,,,False,high,student
+No consent,Not confirmed,Judy,Powell,,,judy.powell@decaturschools.org,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,731-733-2145,,,,,,,,,,,Judy Powell,,,,2020-11-18 20:42:25,judy.powell@decaturschools.org,decaturschools.org,decaturschools.org,,,False,high,student
+No consent,Not confirmed,Austin,Glenn,,,austin-glenn@lambdastudents.com,https://www.hipaajournal.com/hipaa-training-requirements/#popup,,,,8016683608,,,,,,,,,,,Austin Glenn,,,,2020-10-11 01:53:57,austin-glenn@lambdastudents.com,lambdastudents.com,lambdastudents.com,,,False,high,student
+No consent,Not confirmed,Michael,Cipriani,,,mcipriani@obenschools.org,https://www.hipaajournal.com/gdpr-data-breach-reporting-requirements#popup,,,,6317577555,,,,,,,,,,,Michael Cipriani,,,,2020-08-19 21:02:41,mcipriani@obenschools.org,obenschools.org,obenschools.org,,,False,high,student

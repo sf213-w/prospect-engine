@@ -1,0 +1,92 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,category,category_confidence,category_source,contact_quality
+TRACIE,SIMMONS,admin@desertfamilyeyes.com,,,Desert Family Eye Care and Reed Family Vision Center,,,,www.desertfamilyeyes.com,desert family eye care and reed family vision center,desertfamilyeyes.com,Vision / Optometry,0.98,rules,medium
+Vicki,Foster,admin@eyesoncentral.com,,,,,,,,,eyesoncentral.com,Vision / Optometry,0.98,rules,medium
+Deniz,Haddad,admin@txeyepro.com,,,,,,,,,txeyepro.com,Vision / Optometry,0.98,rules,medium
+Bryce,Humphrey,info@precisioneyemd.com,,,,,,,,,precisioneyemd.com,Vision / Optometry,0.98,rules,medium
+O.D.,Randal M Cox,info@familyeyecareclinic.net,,,,,,,,,familyeyecareclinic.net,Vision / Optometry,0.98,rules,medium
+Kyle,Gilbert,admin@elevatedeyecare.com,,,,,,,,,elevatedeyecare.com,Vision / Optometry,0.98,rules,medium
+Levi,Snyder,info@daviefamilyeyecare.com,,,,Davie Family Eye Care,,,,,daviefamilyeyecare.com,Vision / Optometry,0.98,rules,medium
+Janie,Yoo,info@kauaieye.com,,,,,,,,,kauaieye.com,Vision / Optometry,0.98,rules,medium
+Anthony,Ketron,aketron@johnsoncityeye.com,,,Johnson City Eye Clinic,,,,www.johnsoncityeye.com,johnson city eye clinic,johnsoncityeye.com,Vision / Optometry,0.98,rules,high
+Lindsay,Christian,lchristian@envisionradiology.com,Compliance Officer,(719) 388-2588,Colorado Springs,,Colorado Springs,Colorado,www.coloradospringstophomes.com,colorado springs,envisionradiology.com,Vision / Optometry,0.98,rules,high
+Andreina,Gonzalez,andreina@eyecareswfl.com,Specialists of SWFL,(239) 597-5700,Eye Care Of Southwest Florida,,,Florida,www.eyecareofswfl.com,eye care of southwest florida,eyecareswfl.com,Vision / Optometry,0.98,rules,high
+Susie,Grantham,susie_g@eyedraz.com,,,,,,,,,eyedraz.com,Vision / Optometry,0.98,rules,high
+Pam,Benjamin,pambenjamin@norwichlasik.com,,,Norwich Ophthalmology Group,,,,www.norwichlasik.com,norwich ophthalmology group,norwichlasik.com,Vision / Optometry,0.98,rules,high
+Thomas,Carozza,tcarozza@carozzaeyecare.com,Business Owner,,Carozza Eye Care,,Boston,Massachusetts,www.carozzaeyecare.com,carozza eye care,carozzaeyecare.com,Vision / Optometry,0.98,rules,high
+Samantha,Hood,samanthahood@eyestl.com,Practice Administrator,,Complete Eye Care,,Caseyville,Illinois,www.eyestl.com,complete eye care,eyestl.com,Vision / Optometry,0.98,rules,high
+Amber,Okuly,amber@vwvision.com,,,Van Wert Vision,,,,www.visionsource-vwvision.com,van wert vision,vwvision.com,Vision / Optometry,0.98,rules,high
+Brandi,Poplin,bpoplin@graystone-eye.com,"Director, Quality & Risk Management",,Graystone Eye,,Lenoir,North Carolina,www.graystone-eye.com,graystone eye,graystone-eye.com,Vision / Optometry,0.98,rules,high
+basya,kin,bkin@spareeyecorp.com,,,SpareEye,,,,www.spareeyecorp.com,spareeye,spareeyecorp.com,Vision / Optometry,0.98,rules,high
+Priscilla,Park,ppark@visionradiology.com,"Manager, People Operations",,Imagen Technologies,,Ganges,British Columbia,www.imagen.net,imagen technologies,visionradiology.com,Vision / Optometry,0.98,rules,high
+lmkm,meide,l.meide@universityeyeyecare.com,,,,,,,,,universityeyeyecare.com,Vision / Optometry,0.98,rules,high
+Linda,Huffman,lindah@eyegal.com,,,Baseline Vision Clinic,,,,www.eyegal.com,baseline vision clinic,eyegal.com,Vision / Optometry,0.98,rules,high
+Susan,Bugg,optical@eyeqfrisco.com,,,Eyeq Vision,,,,www.eyeqfrisco.com,eyeq vision,eyeqfrisco.com,Vision / Optometry,0.98,rules,high
+Justina,Bergeron,bergeron@bostonvision.com,,,Boston Vision,,,Massachusetts,www.bostonvision.com,boston vision,bostonvision.com,Vision / Optometry,0.98,rules,high
+Brianda,Gonzalez,brianda@helmvision.com,,,Helm Vision Group,,,,,helm vision group,helmvision.com,Vision / Optometry,0.98,rules,high
+Sherry,Franklin,sherry@envisionyourwellness.com,,,,,,,,,envisionyourwellness.com,Vision / Optometry,0.98,rules,high
+Kaitlyn,Hartigan,kaitlyn@glaciereye.com,,,Glacier Eye Clinic,,,,www.glaciereye.com,glacier eye clinic,glaciereye.com,Vision / Optometry,0.98,rules,high
+Stephanie,Reyes,sreyes@beacheyecare.com,HR Generalist,,Beach Eye Care,,Virginia Beach,Virginia,www.beacheyecare.com,beach eye care,beacheyecare.com,Vision / Optometry,0.98,rules,high
+Alicia,Friedman,afriedman@bixbyeyecenter.com,,,Bixby Eye Center,,,,www.bixbyeyecenter.com,bixby eye center,bixbyeyecenter.com,Vision / Optometry,0.98,rules,high
+Sabah,Shah,sshah@theeyescribe.com,,,,,,,,,theeyescribe.com,Vision / Optometry,0.98,rules,high
+Jennifer,Bryant,manager@ascendeye.com,,,,,,,,,ascendeye.com,Vision / Optometry,0.98,rules,high
+Jeanne,Anderson,janderson@afsvision.com,Valet,,Scott Honda,,,,,scott honda,afsvision.com,Vision / Optometry,0.98,rules,high
+Christina,Stetson,christina@moderneyesnorwood.com,,,,,,,,,moderneyesnorwood.com,Vision / Optometry,0.98,rules,high
+Heather,Goozey,heather.goozey@centralmassvisionsource.com,,,,,,,,,centralmassvisionsource.com,Vision / Optometry,0.98,rules,high
+Vita Ana Maria Ferraro,Sanchez,vmferraro@reyescabeza.com,,,,,,,,,reyescabeza.com,Vision / Optometry,0.98,rules,high
+TyQuan,Cummings,officemanager@elitevisioneyecare.com,,,,,,,,,elitevisioneyecare.com,Vision / Optometry,0.98,rules,high
+Melania E,Austin,maustin@envueeye.com,,,,,,,,,envueeye.com,Vision / Optometry,0.98,rules,high
+Denise,,dryan@envueeye.con,,,,,,,,,envueeye.con,Vision / Optometry,0.98,rules,high
+Yasmyne,Ronquillo,yronquillo@hoopesvision.com,,,,,,,,,hoopesvision.com,Vision / Optometry,0.98,rules,high
+Gabriella,,training@redbluffvision.com,,,,,,,,,redbluffvision.com,Vision / Optometry,0.98,rules,high
+Karen,Schmiedeke,karenschmiedeke@premiereeye.com,,,,,,,,,premiereeye.com,Vision / Optometry,0.98,rules,high
+Heather,Solesky,hsolesky@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Linda,Greth,lgreth@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+valerie,pyle,vpyle@poconoeye.com,,,,,,,,,poconoeye.com,Vision / Optometry,0.98,rules,high
+Malya,Walkenfeld,mwalkenfeld@spareeyecorp.com,,,,,,,,,spareeyecorp.com,Vision / Optometry,0.98,rules,high
+Donnelle,Hale,dhale@loweryeyeclinic.com,,,,,,,,,loweryeyeclinic.com,Vision / Optometry,0.98,rules,high
+Scott,Dunbar,scott.dunbar@cellavision.com,,,,,,,,,cellavision.com,Vision / Optometry,0.98,rules,high
+Stormy,Moock,optical@universaleyecenter.com,,,,,,,,,universaleyecenter.com,Vision / Optometry,0.98,rules,high
+Abby,,technician@elevatedeyecare.com,,,,,,,,,elevatedeyecare.com,Vision / Optometry,0.98,rules,high
+,leslie Baldridge,leslie@bridgevisioninc.com,,,,,,,,,bridgevisioninc.com,Vision / Optometry,0.98,rules,high
+Jennifer,Tedmon,jennifer@eyecareaol.com,,,,,,,,,eyecareaol.com,Vision / Optometry,0.98,rules,high
+Elisa,Gaffney,egaffney@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Benjamin,Brenya,bbrenya@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Whitney,Head-Burgess,whitneyhb@oc-eyecare.com,,,,,,,,,oc-eyecare.com,Vision / Optometry,0.98,rules,high
+Susan,Miller,smiller@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Jessica,Fluck,jfluck@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Donna,Garcia,dgarcia@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Chris,Ament,cament@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Natalie,Dayton,natalie@eyeonos.com,,,,,,,,,eyeonos.com,Vision / Optometry,0.98,rules,high
+Steve,Schafebook,sschafebook@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Katarina,Eller,keller@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Miranda,Golden,mgolden@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Sarah,Timmcke,stimmcke@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Mary Lou,Kubicki,mkubicki@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Stacie,Doan,sdoan@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Taylor,Newswanger,tnewswanger@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Erika,Rothermel,erothermel@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Dawn,Deppe,ddeppe@restoreeyecare.com,,,,,,,,,restoreeyecare.com,Vision / Optometry,0.98,rules,high
+Jennifer,Eaton,jeaton@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Brooke,Schlaline,bschlaline@visioncorps.net,,,,,,,,,visioncorps.net,Vision / Optometry,0.98,rules,high
+Philippe,Kapfer,philippe.kapfer@nextday.vision,,,,,,,,,nextday.vision,Vision / Optometry,0.98,rules,high
+Chris,McNealey,lab@wyovision.com,,,,,,,,,wyovision.com,Vision / Optometry,0.98,rules,high
+stacey,preston,stacey.preston@adveyecare.net,,,,Advanced Eyecare Professionals,,,,,adveyecare.net,Vision / Optometry,0.98,rules,high
+Mike,Stephens,mike.stephens@techvisiongroup.com,,,,,,,,,techvisiongroup.com,Vision / Optometry,0.98,rules,high
+Pauline,Moragne,pmoragne@elkinsparkeye.com,,,,Eye Associates of Elkins Park,,,,,elkinsparkeye.com,Vision / Optometry,0.98,rules,high
+Stephanie,Ochabillo,optician@elkinsparkeye.com,,,,,,,,,elkinsparkeye.com,Vision / Optometry,0.98,rules,high
+Shelby,Beverly,bright@brighteyesfamilyeyecare.com,,,,,,,,,brighteyesfamilyeyecare.com,Vision / Optometry,0.98,rules,high
+Jaren,Olsen,jarenolsen@wyovision.com,,,,,,,,,wyovision.com,Vision / Optometry,0.98,rules,high
+Tina,,tina@visionarycaresd.com,,,,,,,,,visionarycaresd.com,Vision / Optometry,0.98,rules,high
+Sarah,,sprovancher@brighteyesfamilyeyecare.com,,,,,,,,,brighteyesfamilyeyecare.com,Vision / Optometry,0.98,rules,high
+Ben,Martin,ben@joneseyecenter.com,,,,,,,,,joneseyecenter.com,Vision / Optometry,0.98,rules,high
+Meiyi,,mcl@bellevueeye.com,,,,,,,,,bellevueeye.com,Vision / Optometry,0.98,rules,high
+Kelly,Sigers,ksigers@rockymounteye.com,,,,,,,,,rockymounteye.com,Vision / Optometry,0.98,rules,high
+Adrian,Katschke,akatschke@wyovision.com,,,,,,,,,wyovision.com,Vision / Optometry,0.98,rules,high
+Rachel,Zachry,rachel@mitchelleyecare.com,,,,,,,,,mitchelleyecare.com,Vision / Optometry,0.98,rules,high
+Brenda,Hinds,brenda.hinds@covenanteyes.com,,,,,,,,,covenanteyes.com,Vision / Optometry,0.98,rules,high
+Danielle,Munoz,danielle@drhernandezoptometry.com,,,,,,,,,drhernandezoptometry.com,Vision / Optometry,0.98,rules,high
+David,Khorram,david@marianaseye.com,,,,,,,,,marianaseye.com,Vision / Optometry,0.98,rules,high
+Nancy,Ware,nancy@careaccessvision.com,,,,,,,,,careaccessvision.com,Vision / Optometry,0.98,rules,high
+Lisa,Morin,lisa.morin@thurmondeye.com,,,,,,,,,thurmondeye.com,Vision / Optometry,0.98,rules,high
+DIANA,SEGREST,diana@milamseye.com,,,,,,,,,milamseye.com,Vision / Optometry,0.98,rules,high
+Jill,Apel,jill@doctoryoureyes.com,,,,,,,,,doctoryoureyes.com,Vision / Optometry,0.98,rules,high

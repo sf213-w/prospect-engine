@@ -1,0 +1,152 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,category,category_confidence,category_source,contact_quality
+Danica,Geronimo,admin@jvx.tech,,,,,,,,,jvx.tech,Healthcare IT / SaaS,0.98,rules,medium
+Ashley,DeHerrera,hr@colfaxhealth.org,,,South Central Colfax County Special Hospital District,,,,www.colfaxhealth.org,south central colfax county special hospitalital district,colfaxhealth.org,Hospital / Health System,0.98,rules,medium
+Philip,Konkel,philip.konkel@wear-tech.com,Chief Medical Officer,,Wearable Technologies,,Hartland,Wisconsin,www.wear-tech.com,wearable technologies,wear-tech.com,Healthcare IT / SaaS,0.98,rules,high
+Nichole,Hunt,nhunt@codingconcepts.com,Chief Executive Officer,(480) 525-8450,Coding Concepts,,Gilbert,Arizona,www.codingconcepts.com,coding concepts,codingconcepts.com,Billing / Revenue Cycle,0.98,rules,high
+Bobbi,Jones,bjones@wbrhely.org,"Manager, HIM",,William Bee Ririe Hospital,,Ely,Nevada,www.wbrhely.org,william bee ririe hospitalital,wbrhely.org,Hospital / Health System,0.98,rules,high
+David,Moreno,officemanager@newagemedicalcenter.com,,352-596-9095,Newage Medical Center,,,,,newage medical center,newagemedicalcenter.com,Hospital / Health System,0.98,rules,high
+Jill,Alfrey,jalfrey@ecommunity.com,"Manager, Inpatient Coding",(317) 355-5887,Community Health Network,,Ingalls,Indiana,www.ecommunity.com,community health network,ecommunity.com,Billing / Revenue Cycle,0.98,rules,high
+Marra,Schmierer,maschmierer@earh.org,,5096591200,East Adams Rural Hospital,,,,www.earh.org,east adams rural hospitalital,earh.org,Hospital / Health System,0.98,rules,high
+Erin,Walker,erin.walker@aah.org,Rad Tech,(262) 532-1375,Aurora Health Care,,Menomonee Falls,Wisconsin,www.aurorahealthcare.org,aurora health care,aah.org,Healthcare IT / SaaS,0.98,rules,high
+Sally,Tenney,stenney@patientshospital.com,"Manager, Health Information",,Patients' Hospital of Redding,,Redding,California,www.patientshospital.com,patients hospitalital of redding,patientshospital.com,Hospital / Health System,0.98,rules,high
+Sierra,Ball,sierra.ball@lhshealth.com,"Director, Medical Records & Coding",(440) 944-9400  230,Legacy Health Services,,Parma,Ohio,www.lhshealth.com,legacy health services,lhshealth.com,Billing / Revenue Cycle,0.98,rules,high
+G.,Vanwoerkom,pvanwoerkom@grokker.com,Senior Software Engineer,,Grokker,,San Jose,California,www.grokker.com,grokker,grokker.com,Healthcare IT / SaaS,0.98,rules,high
+Shandon,Fowler,shandon@red-balloon.tech,,,,,,,,,red-balloon.tech,Healthcare IT / SaaS,0.98,rules,high
+Kayla,Hill,kayla.hill@acmconline.org,"Director, Health Information Department & Privacy Officer",(870) 364-1242,Ashley County Medical Center,,Crossett,Arkansas,www.acmconline.org,ashley county medical center,acmconline.org,Hospital / Health System,0.98,rules,high
+Russell Billie,Jo,billiejo.russell@icmedcenter.org,"Director, Surgical & Clinical Services",,Iron County Medical Center,,Pilot Knob,Missouri,www.icmedcenter.org,iron county medical center,icmedcenter.org,Hospital / Health System,0.98,rules,high
+Hannah,Johnson,hjohnson@sjcphd1.org,Public Information Officer & Website Administrator,,San Juan County Public Hospital District,,,,www.sjcphd.org,san juan county public hospitalital district,sjcphd1.org,Hospital / Health System,0.98,rules,high
+Tammy,Bauknight,tammy.bauknight@bmhsc.org,Approved Instructor,(843) 522-7865,Beaufort Memorial Hospital,,Beaufort,South Carolina,www.bmhsc.org,beaufort memorial hospitalital,bmhsc.org,Hospital / Health System,0.98,rules,high
+Rocio,Flores,rflores@matagordaregional.org,,,Matagorda Regional Medical Center,,,,www.matagordaregional.org,matagorda regional medical center,matagordaregional.org,Hospital / Health System,0.98,rules,high
+Tiffany,Bays,tbays@stillwater-medical.org,Office Manager,,Stillwater Medical Center,,Stillwater,Oklahoma,www.stillwater-medical.org,stillwater medical center,stillwater-medical.org,Hospital / Health System,0.98,rules,high
+Cherrie,Murphy,cherrie.murphy@smrmc.com,"Director, Information Technology",(601) 249-5589,Southwest Mississippi Regional Medical Center,,McComb,Mississippi,www.smrmc.com,southwest mississippi regional medical center,smrmc.com,Hospital / Health System,0.98,rules,high
+Lucretia,Williams,lwilliams1231@lgh-jena.org,,,LaSalle General Hospital,,,,www.lasallegeneralhospital.com,lasalle general hospitalital,lgh-jena.org,Hospital / Health System,0.98,rules,high
+Anna,Stout,astout@haskellregionalhospital.com,,,Haskell Regional Hospital,,Fort Smith,Arkansas,www.haskellregionalhospital.com,haskell regional hospitalital,haskellregionalhospital.com,Hospital / Health System,0.98,rules,high
+Kelly,Drake,kdrake@brylin.com,,,BryLin Hospital,,,,www.brylin.com,brylin hospitalital,brylin.com,Hospital / Health System,0.98,rules,high
+Natalie,Ritenour,natalie.ritenour@baycare.org,"Manager, Billing Operations",(727) 394-6609,BayCare,,New Port Richey,Florida,www.baycare.org,baycare,baycare.org,Billing / Revenue Cycle,0.98,rules,high
+Tara,McLellan,tmclellan@lakeregional.com,"Manager, HIM & Privacy Officer",,Lake Regional Health System,,Osage Beach,Missouri,www.lakeregional.com,lake regional health system,lakeregional.com,Hospital / Health System,0.98,rules,high
+Mai,Milan,mai.milan@lawrencemedicalcenter.net,Board-Certified Family Nurse Practitioner,,Lawrence Medical Center,,,,www.lawrencemedicalcenter.net,lawrence medical center,lawrencemedicalcenter.net,Hospital / Health System,0.98,rules,high
+Christi,Morris,christi.morris@umc.healthsystem.com,,,Health Systems,,,,www.healthsystemsllc.com,health systems,healthsystem.com,Hospital / Health System,0.98,rules,high
+Parry,Qualls,pqualls@paragonanesthesia.com,Chief Operating Officer,(423) 328-3873,Johnson City Specialty Hospital,,Johnson City,Tennessee,www.apcjc.com,johnson city specialty hospitalital,paragonanesthesia.com,Hospital / Health System,0.98,rules,high
+Gail,Moorehead,gmoorehead@bartletthospital.org,,,Bartlett Regional Hospital,,,,www.bartletthospital.org,bartlett regional hospitalital,bartletthospital.org,Hospital / Health System,0.98,rules,high
+Alyssa,Duhigg,alyssa@dbtlawrence.com,Billing & Practice Specialist,,DBT Center of Lawrence,,Lawrence,Kansas,www.dbtlawrence.com,dbt center of lawrence,dbtlawrence.com,Billing / Revenue Cycle,0.98,rules,high
+Matilda,Paeper,mpaeper@ccmhosp.com,,,Carroll County Memorial Hospital,,,,www.ccmhosp.com,carroll county memorial hospitalital,ccmhosp.com,Hospital / Health System,0.98,rules,high
+Kelly,Colton-Emke,kcolton-emke@senecahealth.org,Registered Nurse Health Information Manager Privacy Officer,,Seneca Nation Health System,,Kill Buck,New York,www.senecahealth.org,seneca nation health system,senecahealth.org,Hospital / Health System,0.98,rules,high
+Joy,Guinday,jguinday@randmedicalcenter.com,Surgery Coordinator,,Rand Medical Center,,Arlington Heights,Illinois,www.randmedicalcenter.com,rand medical center,randmedicalcenter.com,Hospital / Health System,0.98,rules,high
+Miranda,Forbes,miranda.forbes@willettstech.com,"Team Leader, Software",(240) 455-3325,Willetts Tech,,Cumberland,Maryland,www.willettstech.com,willetts tech,willettstech.com,Healthcare IT / SaaS,0.98,rules,high
+Michelle,Lue,mlue@gottsche.org,House Recruiting Specialist,(307) 864-2146,Gottsche Therapy,,Thermopolis,Wyoming,www.gottsche.org,gottsche therapy,gottsche.org,Staffing / Recruiting,0.98,rules,high
+Ezra,Schwartz,ezra@artandtech.com,,,Art & Tech,,,,www.artandtech.com,art and tech,artandtech.com,Healthcare IT / SaaS,0.98,rules,high
+Justin,Alexander,justin@csgroup.tech,,,,,,,,,csgroup.tech,Healthcare IT / SaaS,0.98,rules,high
+Judy,Potvin,judy.potvin@northmemorial.com,Privacy Specialist,(763) 581-4448,North Memorial Health Hospital,,Chicago,Illinois,www.northmemorial.com,north memorial health hospitalital,northmemorial.com,Hospital / Health System,0.98,rules,high
+Mary,Pizzino,marpizz@libertyregional.org,"Director, Him & Informatics",,Liberty Regional Medical Center,,Hinesville,Georgia,www.libertyregional.org,liberty regional medical center,libertyregional.org,Hospital / Health System,0.98,rules,high
+Andy,Leffler,andy.leffler@nashvilleha.org,"Director, Information Security",,Nashville General Hospital,,Nashville,Tennessee,www.nashvillegeneral.org,nashville general hospitalital,nashvilleha.org,Hospital / Health System,0.98,rules,high
+Heidi,Ouellette,heidi.ouellette@nmmc.org,"Team Lead, Health Information Services",(207) 834-1443,Northern Maine Medical Center,,Fort Kent,Maine,www.nmmc.org,northern maine medical center,nmmc.org,Hospital / Health System,0.98,rules,high
+Galina,Kaplun,gkaplun@rumcsi.org,"Manager, Retail Pharmacy",,Richmond University Medical Center,,Staten Island,New York,www.rumcsi.org,richmond university medical center,rumcsi.org,Hospital / Health System,0.98,rules,high
+Joanne,Read,joanne.read@rochesterregional.org,HIM Tech,(585) 442-5320,Rochester Regional Health,,,New York,www.rochesterregionalhealth.org,rochester regional health,rochesterregional.org,Healthcare IT / SaaS,0.98,rules,high
+Annie,Frickson,africkson@wchc.org,Health Information Clerk,,Washington County Hospital and Clinics,,Washington,Iowa,www.wchc.org,washington county hospitalital and clinics,wchc.org,Hospital / Health System,0.98,rules,high
+Muhammad Tauseef,Afzal,tauseef@mtmglobal.tech,,,MTM Global,,,,,mtm global,mtmglobal.tech,Healthcare IT / SaaS,0.98,rules,high
+Elizabeth,Hopkins,elizabeth@betterwaybilling.com,Operations Coordinator,,Better Way Billing,,Sylvan Lake,Michigan,www.betterwaybilling.com,better way billing,betterwaybilling.com,Billing / Revenue Cycle,0.98,rules,high
+Nivia,harris,nivia.adamsharris@hmhn.org,,,JFK Hospital,,,,,jfk hospitalital,hmhn.org,Hospital / Health System,0.98,rules,high
+Alaina,Jeane,alaina.jeane@womans.org,Hipaa Compliance Specialist,,Woman's Hospital,,,,,woman s hospitalital,womans.org,Hospital / Health System,0.98,rules,high
+Colleen,Adler,cadler@stlukehealthcare.org,Health Information Management,(406) 528-5216,St. Luke Community Hospital,,,Montana,www.stlukehealthcare.org,saint luke community hospitalital,stlukehealthcare.org,Hospital / Health System,0.98,rules,high
+Jennifer,Roy,jennifer@kunesh.com,"Manager, Billing",,Kunesh Eye Center,,Oakwood,Ohio,www.kunesh.com,kunesh eye center,kunesh.com,Billing / Revenue Cycle,0.98,rules,high
+Debra,Randolph,debra.randolph@baycare.org,"Supervisor, Him Transcription",,BayCare Health System,,,,www.baycare.org,baycare health system,baycare.org,Hospital / Health System,0.98,rules,high
+Carol,Bartek,cbartek@obmc.org,"Director, Health Information Management",(281) 341-2803,OakBend Medical Center,,Richmond,Texas,www.oakbendmedcenter.org,oakbend medical center,obmc.org,Hospital / Health System,0.98,rules,high
+Deborah,Driggers,ddriggers@emanuelmedical.org,"Manager, Medical Records",(478) 289-1303,Emanuel Medical Center,,Swainsboro,Georgia,www.emanuelmedical.org,emanuel medical center,emanuelmedical.org,Hospital / Health System,0.98,rules,high
+Sharon,Boyle,sboyle@mvhealthsystem.org,Coordinator,(315) 801-3191,Mohawk Valley Health System,,Utica,New York,www.mvhealthsystem.org,mohawk valley health system,mvhealthsystem.org,Hospital / Health System,0.98,rules,high
+Leticia,Torres,leticia.torres@gmha.org,,6716472176,Guam Memorial Hospital Authority,,,,www.gmha.org,guam memorial hospitalital authority,gmha.org,Hospital / Health System,0.98,rules,high
+Carla,Wagner,cswagner@beaconhealthsystem.org,Hcispp Privacy Officer,(574) 647-7751,Beacon Health System,,South Bend,Indiana,www.beaconhealthsystem.org,beacon health system,beaconhealthsystem.org,Hospital / Health System,0.98,rules,high
+Stephanie,Turner,stephanie.turner@troymedicalcenter.com,"Manager, Him Department IP Coder",(334) 670-5561,Troy Regional Medical Center,,Troy,Alabama,www.troymedicalcenter.com,troy regional medical center,troymedicalcenter.com,Hospital / Health System,0.98,rules,high
+Joan,Feliciano,jfeliciano@hospitalconcepcion.org,Him,(787) 892-1860 x 2536,Hospital De La Concepcion,,,Puerto Rico,www.hospitaldelaconcepcion.com,hospitalital de la concepcion,hospitalconcepcion.org,Hospital / Health System,0.98,rules,high
+Anmarie,Masters,anmarie.masters@uhsinc.com,"Director, Health Information Management & Facility Privacy Officer",(303) 666-2046,Centennial Peaks Hospital,,Denver,Colorado,www.centennialpeaks.com,centennial peaks hospitalital,uhsinc.com,Hospital / Health System,0.98,rules,high
+Lori,Hagen,lorihagen@jcmh.com,Director Corporate Compliance and Privacy Officer,(580) 379-5522,Jackson County Memorial Hospital,,Altus,Oklahoma,www.jcmh.com,jackson county memorial hospitalital,jcmh.com,Hospital / Health System,0.98,rules,high
+Kathryn,Skalecki,kathryn.skalecki@aah.org,Med Assistant II,(920) 468-8288,Aurora Health Care,,Green Bay,Wisconsin,www.aurorahealthcare.org,aurora health care,aah.org,Healthcare IT / SaaS,0.98,rules,high
+Tara,Bowin,tbowin@girardmedicalcenter.com,,,Girard Medical Center,,,,www.girardmedicalcenter.com,girard medical center,girardmedicalcenter.com,Hospital / Health System,0.98,rules,high
+,ashlyn Ramos zabala,arzabala@centralozarks.org,,,Central Ozarks Medical Center,,,,www.centralozarks.org,central ozarks medical center,centralozarks.org,Hospital / Health System,0.98,rules,high
+Dr. Phyllis,Miller,phmiller@columbiamemorial.org,,,Columbia Memorial Hospital,,,,www.columbiamemorial.org,columbia memorial hospitalital,columbiamemorial.org,Hospital / Health System,0.98,rules,high
+Melissa,Miles,melissa.miles@vumc.org,Clinical & Tran Research Coordinator IV,,Vanderbilt University Medical Center,,,Tennessee,www.vanderbilthealth.com,vanderbilt university medical center,vumc.org,Hospital / Health System,0.98,rules,high
+Donna,Walker-Thomas,dwalkerthomas@hospitalforbehavioralmedicine.com,,774-314-3488,,,,,,,hospitalforbehavioralmedicine.com,Hospital / Health System,0.98,rules,high
+Brett,Spafford,spaffordb@brmh.net,Information Security Specialist,(715) 284-3614,Black River Memorial Hospital,,Black River Falls,Wisconsin,www.brmh.net,black river memorial hospitalital,brmh.net,Hospital / Health System,0.98,rules,high
+Susan,Borden,susan.borden@cullmanregional.com,"Director, Medical Staff Services & Health Information Management",(256) 737-2515,Cullman Regional Medical Center,,Vinemont,Alabama,www.cullmanregional.com,cullman regional medical center,cullmanregional.com,Hospital / Health System,0.98,rules,high
+Harsh,Patel,harsh.patel@slkgroup.com,"Deputy Manager, Client Solutions",,SLK Software,,Bengaluru,Karnataka,www.slksoftware.com,slk software,slkgroup.com,Healthcare IT / SaaS,0.98,rules,high
+Melinda,Graves,mgraves@pcmhmo.org,Medical Coder,,Pike County Memorial Hospital,,Springfield,Illinois,www.pcmh-mo.org,pike county memorial hospitalital,pcmhmo.org,Hospital / Health System,0.98,rules,high
+Joe,Montez,joe.montez@electrahospital.com,,,Electra Memorial Hospital,,,,www.electrahospital.com,elecentera memorial hospitalital,electrahospital.com,Hospital / Health System,0.98,rules,high
+Beth,Aaron,baaron@pcmhfs.com,Registered Health Information Administrator,,Pecos County Memorial Hospital,,,,,pecos county memorial hospitalital,pcmhfs.com,Hospital / Health System,0.98,rules,high
+Shannon,Rowe,srowe@indianarmc.org,"Supervisor, Health Information Management",(724) 357-7298,Indiana Regional Medical Center,,Indiana,Pennsylvania,www.indianarmc.org,indiana regional medical center,indianarmc.org,Hospital / Health System,0.98,rules,high
+Missy,Bell,mbell@rch-lyons.com,,,Rice County District Hospital Noble Place,,,,www.ricecountyhospital.com,rice county district hospitalital noble place,rch-lyons.com,Hospital / Health System,0.98,rules,high
+Perry,Bev,bev.perry@clayhosp.org,"Director, Quality Risk Management & Compliance",,Clay County Hospital,,Ashland,Alabama,www.claycountyhospital.com,clay county hospitalital,clayhosp.org,Hospital / Health System,0.98,rules,high
+Amy,Strosnider,astrosnider@limitlessmale.com,Recruiting Specialist,,Limitless Male,,Omaha,Nebraska,www.limitlessmale.com,limitless male,limitlessmale.com,Staffing / Recruiting,0.98,rules,high
+Chantel,Underwood,chantel.underwood@rochesterregional.org,"Registered Nurse, Chemical Dependency",,Rochester Regional Health,,Rochester,New York,www.rochesterregional.org,rochester regional health,rochesterregional.org,Healthcare IT / SaaS,0.98,rules,high
+David,Crawford,david.crawford@henryschein.com,"Acquistion Vice President, Talent",,Presbyterian Hospital,,Albuquerque,New Mexico,www.phs.org/presbyterian-hospital,presbyterian hospitalital,henryschein.com,Hospital / Health System,0.98,rules,high
+Taylor,Porter,taylor.porter@northsunflower.com,Nurse Manager,(662) 756-9910,North Sunflower Medical Center,,,Mississippi,www.northsunflower.com,north sunflower medical center,northsunflower.com,Hospital / Health System,0.98,rules,high
+Roman,Ivette,iroman@hospitaldamas.com,Directora Información De Salud,(787) 840-8686 x 6263,Hospital Damas,,,Puerto Rico,www.hospitaldamas.com,hospitalital damas,hospitaldamas.com,Hospital / Health System,0.98,rules,high
+Gwen,C.,gwen@sawtoothsoftware.com,Corporate Counsel & Compliance Officer,,Sawtooth Software,,,,www.sawtoothsoftware.com,sawtooth software,sawtoothsoftware.com,Healthcare IT / SaaS,0.98,rules,high
+Jackie,Schad,jackie.schad@bhsh.com,Executive Assistant & Compliance Coordinator,(605) 721-4921,Black Hills Surgical Hospital,,Rapid City,South Dakota,www.bhsh.com,black hills surgical hospitalital,bhsh.com,Hospital / Health System,0.98,rules,high
+Molly,Riley,mriley@swcwc.net,Information Technology Software Support and Process Improvement,,Southwest Contemporary Women's Care,,Phoenix,Arizona,www.swcwc.net,southwest contemporary women s care,swcwc.net,Healthcare IT / SaaS,0.98,rules,high
+Donna Crew,Crew,dcrew@rmccares.org,Director,(256) 235-5373,RMC Health System,,Anniston,Alabama,www.rmccares.org,rmc health system,rmccares.org,Hospital / Health System,0.98,rules,high
+Renee,Levine,rlevine@integritybillingco.com,"Vice President, Utilization Management",(561) 355-5640 x 304,Integrity Billing,,Palm Springs,Florida,www.integritybillingco.com,integrity billing,integritybillingco.com,Billing / Revenue Cycle,0.98,rules,high
+Janice,Nelsen,jnelsen@marylanning.org,Medical Records Specialist,(402) 834-0453,Mary Lanning Memorial Hospital,,Hastings,Nebraska,www.marylanning.org,mary lanning memorial hospitalital,marylanning.org,Hospital / Health System,0.98,rules,high
+Anna,Fullmer,fullma@gritman.org,"Director, Compliance & Risk Management",(208) 883-6250,Gritman Medical Center,,Moscow,Idaho,www.gritman.org,gritman medical center,gritman.org,Hospital / Health System,0.98,rules,high
+Susan,Moore,srmoore@riverview.org,,,Riverview Health Hospital,,,,www.riverview.org,riverview health hospitalital,riverview.org,Hospital / Health System,0.98,rules,high
+Warren,Chappell,derek@dctechit.com,,,DC Tech,,,,www.dctechnicalsolutions.com,dc tech,dctechit.com,Healthcare IT / SaaS,0.98,rules,high
+Nancy,Edwards,nancye@howardmemorial.com,"Manager, HIM",(870) 845-0718,Howard Memorial Hospital,,Nashville,Arkansas,www.howardmemorial.com,howard memorial hospitalital,howardmemorial.com,Hospital / Health System,0.98,rules,high
+April,McDannell,amcdannell@vvgmc.com,Compliance & Privacy Officer,(760) 245-8691 x 4322,Victor Valley Global Medical Center,,Victorville,California,www.victorvalleyglobalmedicalcenter.com,victor valley global medical center,vvgmc.com,Hospital / Health System,0.98,rules,high
+Tammy,Dixon,tdixon@dallascountymedicalcenter.com,Administrative Assistant & Medical Staff Coordinator,(870) 352-6363,Dallas County Medical Center,,Rison,Arkansas,www.dallascountymedicalcenter.com,dallas county medical center,dallascountymedicalcenter.com,Hospital / Health System,0.98,rules,high
+Louise,Loprieato,lloprieato@fairchildmed.org,"Director, HIM",,Fairchild Medical Center,,Seattle,Washington,www.fairchildmed.org,fairchild medical center,fairchildmed.org,Hospital / Health System,0.98,rules,high
+Veronica De,Leon,veronica.deleon@harrishealth.org,"Manager, HIM",(713) 566-2157,Harris Health System,,Bellaire,Texas,www.harrishealth.org,harris health system,harrishealth.org,Hospital / Health System,0.98,rules,high
+Heather,Justes,heather.justes@morgancountymedical.com,,,Morgan County Medical Center,,,,www.morgancountymedical.com,morgan county medical center,morgancountymedical.com,Hospital / Health System,0.98,rules,high
+joan,fox,joan.fox@dcmedical.org,,,Door County Medical Center,,,,www.dcmedical.org,door county medical center,dcmedical.org,Hospital / Health System,0.98,rules,high
+Olesia,Antiushenia,olesiaantiushenia@vippracticegrowth.com,,17707226186,ON Digital Agency / VIP Software,,,,www.vippracticegrowth.com,on digital agency vip software,vippracticegrowth.com,Healthcare IT / SaaS,0.98,rules,high
+Lisa,Mochan,lisa@elementmedicalbilling.com,,,Element Medical Billing,,,,www.elementmedicalbilling.com,element medical billing,elementmedicalbilling.com,Billing / Revenue Cycle,0.98,rules,high
+Taylor,Bishop,taylor.b@physiciansmedicalbilling.net,,,Physicians Medical Billing,,,,www.physiciansmedicalbilling.net,physicians medical billing,physiciansmedicalbilling.net,Billing / Revenue Cycle,0.98,rules,high
+Courtney,Meche,cmeche@libertydaytonrmc.com,"Director, HIM",(936) 336-7316 x 144,Liberty Dayton Regional Medical Center,,Liberty,Texas,www.libertydaytonrmc.com,liberty dayton regional medical center,libertydaytonrmc.com,Hospital / Health System,0.98,rules,high
+Maria,Koslosky,mkoslosky@barretthospital.org,Quality Chief & Compliance Officer,(406) 683-3190,Barrett Hospital & HealthCare,,Dillon,Montana,www.barretthospital.org,barrett hospitalital and healthcare,barretthospital.org,Hospital / Health System,0.98,rules,high
+Yurii,Prykhodko,yurii.prykhodko@solid.software,,,Solid Software,,,,solid.software,solid software,solid.software,Healthcare IT / SaaS,0.98,rules,high
+vishnu,santhakumary,vishnu.santhakumary@burjeel.com,,,Burjeel Hospital,,,,www.burjeel.com,burjeel hospitalital,burjeel.com,Hospital / Health System,0.98,rules,high
+Cheryl,Cunningham,ccunningham@fitzgibbon.org,Corporate Compliance Officer,(660) 831-3767,Fitzgibbon Hospital,,Marshall,Missouri,www.fitzgibbon.org,fitzgibbon hospitalital,fitzgibbon.org,Hospital / Health System,0.98,rules,high
+Amanda,Gebhardt,agebhardt@logansportmemorial.org,Corporate Compliance & Risk Officer,(574) 753-1700,Logansport Memorial Hospital,,Logansport,Indiana,www.logansportmemorial.org,logansport memorial hospitalital,logansportmemorial.org,Hospital / Health System,0.98,rules,high
+mark,brewer,mbrewer@3crossesrh.com,,4323865858,Three Crosses Regional Hospital,,,,www.3crossesrh.com,three crosses regional hospitalital,3crossesrh.com,Hospital / Health System,0.98,rules,high
+Martin,Kristen,martin@ecareindia.com,Deputy General Manager,(813) 579-1248,Medical Billing,,,Florida,www.medical-billing.com,medical billing,ecareindia.com,Billing / Revenue Cycle,0.98,rules,high
+Rachel,Nissen,rachelb@cdphospital.com,Him Specialist,(605) 698-6412,Coteau Health Care System Hospital,,Sisseton,South Dakota,www.cdphealth.com,coteau health care system hospitalital,cdphospital.com,Hospital / Health System,0.98,rules,high
+Amy,Kelsey,amyh@greaterregional.org,Director Of Hims,(641) 782-3651,Greater Regional Medical Center,,Diagonal,Iowa,www.greaterregional.org,greater regional medical center,greaterregional.org,Hospital / Health System,0.98,rules,high
+Andrea,Love,andrealove@cvhospital.org,"Manager, HIM",,Coquille Valley Hospital,,,,www.cvhospital.org,coquille valley hospitalital,cvhospital.org,Hospital / Health System,0.98,rules,high
+Jim,Freeman,jfreeman@ambulancebill.us,President,,Ambulance Billing Services,,Elkhart,Indiana,www.ambulancebill.us,ambulance billing services,ambulancebill.us,Billing / Revenue Cycle,0.98,rules,high
+Sarah,Davey,sarah.davey@rrh.org,Hipaa Privacy Officer & Compliance Coordinator,(760) 499-3676,Ridgecrest Regional Hospital,,Ridgecrest,California,www.rrh.org,ridgecrest regional hospitalital,rrh.org,Hospital / Health System,0.98,rules,high
+Shannon,Smith,smsmith2@lexhealth.org,,,Lexington Medical Center,,,,,lexington medical center,lexhealth.org,Hospital / Health System,0.98,rules,high
+Rhodora,Cruz,rcruz@amc.clinic,,,American Medical Center,,,,amc.clinic,american medical center,amc.clinic,Hospital / Health System,0.98,rules,high
+Deanna,Read,deread@roselandhospital.org,,,,,,,,,roselandhospital.org,Hospital / Health System,0.98,rules,high
+Edward,Wadieh,edward.wadieh@ijnhealthsystems.com,,,,,,,,,ijnhealthsystems.com,Hospital / Health System,0.98,rules,high
+Sonja,Hall,sonja.hall@nrmchospital.org,,,,,,,,,nrmchospital.org,Hospital / Health System,0.98,rules,high
+Shivan,Jaff,shivan.jaff@swedish-hospital.com,,,,,,,,,swedish-hospital.com,Hospital / Health System,0.98,rules,high
+Randee,Moore,randee.moore@nrmchospital.org,,,,,,,,,nrmchospital.org,Hospital / Health System,0.98,rules,high
+Craig,Burchfiel,craig.burchfiel@jcf-hospital.com,,,,,,,,,jcf-hospital.com,Hospital / Health System,0.98,rules,high
+Migdalia,Valdovinos,mvaldovinos@orchardhospital.com,,,,,,,,,orchardhospital.com,Hospital / Health System,0.98,rules,high
+Sandra Jane Yamat,Pinili,pinilis@ahlihospital.com,,,,,,,,,ahlihospital.com,Hospital / Health System,0.98,rules,high
+Lisa,Lopez,lisa.lopez@umchealthsystem.com,,,,,,,,,umchealthsystem.com,Hospital / Health System,0.98,rules,high
+Anita,McCoy,amccoy@islandhospital.org,,,,,,,,,islandhospital.org,Hospital / Health System,0.98,rules,high
+Allyson,Belknap,ally.belknap@strive.tech,,,,,,,,,strive.tech,Healthcare IT / SaaS,0.98,rules,high
+Karl,Roberts,karl@sense.tech,,,,,,,,,sense.tech,Healthcare IT / SaaS,0.98,rules,high
+Anna,Pineda,apineda@altushealthsystem.com,,,,,,,,,altushealthsystem.com,Hospital / Health System,0.98,rules,high
+KENIA,ESPINOZA,kespinoza@hospitalsanfernando.com,,,,,,,,,hospitalsanfernando.com,Hospital / Health System,0.98,rules,high
+Tarina,Jansen,tjansen@beaconhealthsystem.org,,,,,,,,,beaconhealthsystem.org,Hospital / Health System,0.98,rules,high
+Lovey,Archie,larchie@sabinecountyhospital.com,,,,,,,,,sabinecountyhospital.com,Hospital / Health System,0.98,rules,high
+Adil,,adil.nasim@m-hospital.com,,,,,,,,,m-hospital.com,Hospital / Health System,0.98,rules,high
+Patrice,Jackson,patrice.jackson@rehabhospital.org,,,,,,,,,rehabhospital.org,Hospital / Health System,0.98,rules,high
+Amanda,Myers,amyers@prague.hospital,,,,,,,,,prague.hospital,Hospital / Health System,0.98,rules,high
+Terrie,Lorey,tlorey@knoxvillehospital.org,,,,,,,,,knoxvillehospital.org,Hospital / Health System,0.98,rules,high
+Sasan,Akhavan,sasan@bioconscious.tech,,,,Pharmavite,,,,,bioconscious.tech,Healthcare IT / SaaS,0.98,rules,high
+Lorie,Enders,lorie.enders@franklinhospital.net,,,,,,,,,franklinhospital.net,Hospital / Health System,0.98,rules,high
+Debra M,Morgan,dmorgan@levihospital.com,,,,,,,,,levihospital.com,Hospital / Health System,0.98,rules,high
+Karen,Faulk,faulkk@woodcountyhospital.org,,,,,,,,,woodcountyhospital.org,Hospital / Health System,0.98,rules,high
+Ariana Hernandez,Sanchez,ahernandez@hospitalmetrocaborojo.com,,,,,,,,,hospitalmetrocaborojo.com,Hospital / Health System,0.98,rules,high
+Bismarck,Morales,bismarck.morales@hospitalvivianpellas.com,,,,,,,,,hospitalvivianpellas.com,Hospital / Health System,0.98,rules,high
+AMANDA,GOMEZ,agomez@cuerohospital.org,,,,,,,,,cuerohospital.org,Hospital / Health System,0.98,rules,high
+Samuel David,Rees,samr@phi-tech.net,,,,,,,,,phi-tech.net,Healthcare IT / SaaS,0.98,rules,high
+manon,gouse,mgouse@romehospital.org,,,,,,,,,romehospital.org,Hospital / Health System,0.98,rules,high
+Tequila,Hunter,thunter@seacoasthealthsystems.com,,,,,,,,,seacoasthealthsystems.com,Hospital / Health System,0.98,rules,high
+Rebecca,Lujan,rlujan@westchesterhospital.com,,,,,,,,,westchesterhospital.com,Hospital / Health System,0.98,rules,high
+Bart,Fielder,bart@uscomnet.tech,,,,,,,,,uscomnet.tech,Healthcare IT / SaaS,0.98,rules,high
+Chuol N,Juay,juayc@northfieldhospital.org,,,,,,,,,northfieldhospital.org,Hospital / Health System,0.98,rules,high
+Teri,Moses,tmoses@mitchellcountyhospital.com,,,,,,,,,mitchellcountyhospital.com,Hospital / Health System,0.98,rules,high
+Duke,Warburton,duke@tech-ie.net,,,,,,,,,tech-ie.net,Healthcare IT / SaaS,0.98,rules,high
+Johnatan M.,Serrano,madeline.matos@hospitalperea.com,,,,,,,,,hospitalperea.com,Hospital / Health System,0.98,rules,high
+Melva,Cancel,melva@cloudspaandhospitality.com,,,,,,,,,cloudspaandhospitality.com,Hospital / Health System,0.98,rules,high

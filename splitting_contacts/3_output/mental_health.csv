@@ -1,0 +1,415 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,category,category_confidence,category_source,contact_quality
+Paula,Boros,support@mftbeyond.com,,,Moving Forward Therapy and Beyond,,,,www.mftbeyond.com,moving forward therapy and beyond,mftbeyond.com,Mental Health / Counseling,0.98,rules,medium
+Julie,Nowery,billing@premierementalhealth.com,,,,,,,,,premierementalhealth.com,Mental Health / Counseling,0.98,rules,medium
+Amy,Levy,hello@thebridgetherapy.org,,,,,,,,,thebridgetherapy.org,Mental Health / Counseling,0.98,rules,medium
+Sarah,Chase,office@therapyco.org,,,TherapyCo,,,,,therapyco,therapyco.org,Mental Health / Counseling,0.98,rules,medium
+Caitlin,OKeefe,info@austinfamilycounseling.com,,512-298-3381,Austin Family Counseling,,,,www.austinfamilycounseling.com,austin family counseling,austinfamilycounseling.com,Mental Health / Counseling,0.98,rules,medium
+Courtney,Hughey,info@roarinspeechtherapy.com,,,,,,,,,roarinspeechtherapy.com,Mental Health / Counseling,0.98,rules,medium
+Susan,Schwendener,info@flourishcounselingcenters.com,,,,,,,,,flourishcounselingcenters.com,Mental Health / Counseling,0.98,rules,medium
+Stephanie,King,info@beautifulbeginningscounselingllc.org,,,,,,,,,beautifulbeginningscounselingllc.org,Mental Health / Counseling,0.98,rules,medium
+Shanna,Sanders,info@sereniccounselingservices.com,,,Serenic Counseling Services,,,,www.sereniccounselingservices.com,serenic counseling services,sereniccounselingservices.com,Mental Health / Counseling,0.98,rules,medium
+Margaree,Nadler,hello@bwellcounselingservices.com,,443-718-0496,B-well Counseling,,,,www.bwellcounselingservices.com,b well counseling,bwellcounselingservices.com,Mental Health / Counseling,0.98,rules,medium
+Jonquil,Fonseca,contact@therapywalkinnovativecounseling.com,,,,,,,,,therapywalkinnovativecounseling.com,Mental Health / Counseling,0.98,rules,medium
+Jonquil,Fonseca,contact@therapywalkinnovativecounseling.coom,,,TherapyWalk LLC,,,,,therapywalk llc,therapywalkinnovativecounseling.coom,Mental Health / Counseling,0.98,rules,medium
+Leva,Psychiatry,admin@levapsych.com,,,Leva Psychiatry,,,,www.levapsych.com,leva psychiatry,levapsych.com,Mental Health / Counseling,0.98,rules,medium
+Patti,Moore,billing@heartlandcounselingcenter.org,,,Heartland Counseling Center,,,,www.heartlandcounselingcenter.org,heartland counseling center,heartlandcounselingcenter.org,Mental Health / Counseling,0.98,rules,medium
+Tscharner,Kasey,admin@peculiarcounseling.com,,,Peculiar Counseling & Consulting,,,,www.peculiarcounseling.com,peculiar counseling and consulting,peculiarcounseling.com,Mental Health / Counseling,0.98,rules,medium
+jess,biv,admin@supertalkerstherapy.com,,,Supertalkers,,,,www.supertalkerstherapy.com,supertalkers,supertalkerstherapy.com,Mental Health / Counseling,0.98,rules,medium
+Jody,Petzoldt,info@greatoakcounseling.com,,,Great Oak Counseling,,,,www.greatoakcounseling.com,great oak counseling,greatoakcounseling.com,Mental Health / Counseling,0.98,rules,medium
+Sharon,Gerald,admin@simplythrivetherapy.com,,,,,,,,,simplythrivetherapy.com,Mental Health / Counseling,0.98,rules,medium
+SHELLY,SIMS,admin@elitecarephysicaltherapy.com,,,,,,,,,elitecarephysicaltherapy.com,Mental Health / Counseling,0.98,rules,medium
+Logan,Roberts,admin@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,medium
+Candice,Townzen,info@pearlandcounselingcenter.com,,,,,,,,,pearlandcounselingcenter.com,Mental Health / Counseling,0.98,rules,medium
+Ke'Ausha,Warren,support@peacefulinsightcounseling.com,,,,,,,,,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,medium
+Aswanth,V,info@cubetherapybilling.com,,,,,,,,,cubetherapybilling.com,Mental Health / Counseling,0.98,rules,medium
+Brandi,White,admin@trutherapylpc.com,,,,,,,,,trutherapylpc.com,Mental Health / Counseling,0.98,rules,medium
+Breena,Tafoya,info@kidscounselingnm.com,,,,,,,,,kidscounselingnm.com,Mental Health / Counseling,0.98,rules,medium
+Desi,Black,info@gjcounseling.com,,,,,,,,,gjcounseling.com,Mental Health / Counseling,0.98,rules,medium
+Grigoria,Tsigas,info@musictherapyfund.ca,,,,,,,,,musictherapyfund.ca,Mental Health / Counseling,0.98,rules,medium
+Miriam,Ahmad,billing@highhopestherapy.com,,,,,,,,,highhopestherapy.com,Mental Health / Counseling,0.98,rules,medium
+Marcie,,billing@riverviewcounselingservices.com,,,,Riverview Counseling Services,,,,,riverviewcounselingservices.com,Mental Health / Counseling,0.98,rules,medium
+LaToya,Williams,info@twtspeechtherapy.com,,,,,,,,,twtspeechtherapy.com,Mental Health / Counseling,0.98,rules,medium
+ANITA,LITTELIELD,info@aspenphysicaltherapy.com,,,,,,,,,aspenphysicaltherapy.com,Mental Health / Counseling,0.98,rules,medium
+Ashleigh,Rippee,info@minimittentherapy.com,,,,,,,,,minimittentherapy.com,Mental Health / Counseling,0.98,rules,medium
+Charles,Zoll,info@griefrelieftherapy.com,,,,,,,,,griefrelieftherapy.com,Mental Health / Counseling,0.98,rules,medium
+Stephanie,,admin@citycenterpsychotherapy.com,,,,,,,,,citycenterpsychotherapy.com,Mental Health / Counseling,0.98,rules,medium
+Erin,Pitchford,erin@alphacounseling.net,,435-730-2970,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Kassie,Spens,kassie@alphacounseling.net,,8017105495,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Brian,Bassett,brian@alphacounseling.net,,8016239775,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Aimee,Martin,aimee@alphacounseling.net,,2076192160,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+angelica,castillo,angelica@cultivationboise.com,,,Cultivation Counseling Boise,,,,www.cultivationboise.com,cultivation counseling boise,cultivationboise.com,Mental Health / Counseling,0.98,rules,high
+Yvonne,Ceballos,yceballos@ccs-cares.org,HR Administrator & Assistant,,Citrus Counseling Services,,Redlands,California,www.ccs-cares.org,citrus counseling services,ccs-cares.org,Mental Health / Counseling,0.98,rules,high
+Jeffrey,Walters,jeffrey.walters@psychologyandcounseling.net,,,Psychology & Counseling Associates,,,,www.psychologyandcounseling.net,psychology and counseling associates,psychologyandcounseling.net,Mental Health / Counseling,0.98,rules,high
+Cassandra,Burchfield,sandi@familylife.group,Owner,,Family Life Counseling Center,,Clermont,Florida,www.familylifecounselingcenter.com,family life counseling center,familylife.group,Mental Health / Counseling,0.98,rules,high
+Stuart,Kaplowitz,stuartkaplowitz@serenepathways.com,,,Serene Pathways Counseling,,,,www.serenepathways.com,serene pathways counseling,serenepathways.com,Mental Health / Counseling,0.98,rules,high
+Michelle,Curtis,michelle.curtis@uhsinc.com,"Director, Him Credentialing & Contracts",,Springwoods Behavioral Health,,Fayetteville,Arkansas,www.springwoodsbehavioral.com,springwoods behavioral health,uhsinc.com,Mental Health / Counseling,0.98,rules,high
+Tanya,Medina,tanya@ravencounseling.com,,,Raven Counseling And Wellness,,,New Mexico,www.ravencounseling.com,raven counseling and wellness,ravencounseling.com,Mental Health / Counseling,0.98,rules,high
+Latonia,Harrison,lharrison@renuwellnessgroup.com,Cypress Operational Manager,7134087551,Kinghaven Counseling Group,,Houston,Texas,www.kinghavencounseling.com,kinghaven counseling group,renuwellnessgroup.com,Mental Health / Counseling,0.98,rules,high
+Cecilia,Faust,cfaust@blueridgementalhealth.com,"Manager, Clinical Outreach & Co Owner",(336) 515-0693,"Blue Ridge Mental Health, PLLC",,,North Carolina,,blue ridge mental health pllc,blueridgementalhealth.com,Mental Health / Counseling,0.98,rules,high
+Angela,Pidala,angela@amptherapycenter.com,,,,,,,,,amptherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Nashina,Woods,nashina.woods@omh.ny.gov,,,New York State - Office of Mental Health,,,,omh.ny.gov,new york state office of mental health,ny.gov,Mental Health / Counseling,0.98,rules,high
+Aimee,Kenworthy,aimee@andrewsinc.net,"Director, Administration",,Andrews & Associates Counseling,,Manhattan,Kansas,www.andrewsinc.net,andrews and associates counseling,andrewsinc.net,Mental Health / Counseling,0.98,rules,high
+Irene,Wald,irene@wavelengthsmusictherapy.com,,,,,,,,,wavelengthsmusictherapy.com,Mental Health / Counseling,0.98,rules,high
+Rozlyn,Newman,rozlyn@bridgemindbody.com,"Director, Operations",,Academy of Integrative Mental Health,,Las Vegas,Nevada,www.holisticmentalhealthschool.com,academy of integrative mental health,bridgemindbody.com,Mental Health / Counseling,0.98,rules,high
+Brandon,Westholm,bdwestholm@downbeatmusictherapyservices.com,,,Downbeat Music Therapy,,,,,downbeat music therapy,downbeatmusictherapyservices.com,Mental Health / Counseling,0.98,rules,high
+Jen,Braman,jenbraman@illuminatenewaygo.com,,,Illuminate Counseling & Wellness,,,,www.illuminatenewaygo.com,illuminate counseling and wellness,illuminatenewaygo.com,Mental Health / Counseling,0.98,rules,high
+Curt,Haworth,chaworth@elliementalhealth.com,,,Ellie Mental Health,,,,www.elliementalhealth.com,ellie mental health,elliementalhealth.com,Mental Health / Counseling,0.98,rules,high
+Michelle Brooten,Brooks,michelle@relationshiptherapy.us,,,,,,,,,relationshiptherapy.us,Mental Health / Counseling,0.98,rules,high
+Tiffany,Leveille,tiffany@mcscounseling.org,"Director, Operations",,MCS Counseling Group,,Poulsbo,Washington,www.mcscounseling.com,mcs counseling group,mcscounseling.org,Mental Health / Counseling,0.98,rules,high
+Christine,Bowers,christine@skylinefamilytherapy.com,"Position, Region Ten CSB",,Region Ten,,,,www.regionten.org,region ten,skylinefamilytherapy.com,Mental Health / Counseling,0.98,rules,high
+Rick,Monique,monique@realconnectionscounseling.com,"Couples and Family Therapist, Entrepreneur, Owner",,Real Connections Counseling,,Urbandale,Iowa,www.realconnectionscounseling.com,real connections counseling,realconnectionscounseling.com,Mental Health / Counseling,0.98,rules,high
+Brent,Crowson,brent@bwcounseling.net,,,,,,,,,bwcounseling.net,Mental Health / Counseling,0.98,rules,high
+Tyler,Belt,tyler.belt@mmtherapystaff.com,,,,,,,,,mmtherapystaff.com,Mental Health / Counseling,0.98,rules,high
+Chelsea,Kading,villagetherapy@villagetherapy.co,,,,,,,,,villagetherapy.co,Mental Health / Counseling,0.98,rules,high
+Vanessa,Rebecca,vanessa@livewellboston.com,,,Livewell Therapy Associates,,,,,livewell therapy associates,livewellboston.com,Mental Health / Counseling,0.98,rules,high
+Leisha,Ristau,lristau@nurturingtherapyservices.com,,,,,,,,,nurturingtherapyservices.com,Mental Health / Counseling,0.98,rules,high
+Rachael,Severtson,rsevertson@seattlerehabpt.com,,,,,,,,,seattlerehabpt.com,Mental Health / Counseling,0.98,rules,high
+Heather,Wiszczur-Johnson,heatherwj@daretobecounseling.com,,,Dare To Be Counseling,,,,www.daretobecounseling.com,dare to be counseling,daretobecounseling.com,Mental Health / Counseling,0.98,rules,high
+Katie,Shannon,katie.shannon@connectustherapy.org,Clinical Director & Mental Health Therapist,,ConnectUs Therapy,,Williston,North Dakota,www.connectustherapy.org,connectus therapy,connectustherapy.org,Mental Health / Counseling,0.98,rules,high
+Lisa,Griffith,lgriffith@amespsych.com,,,Ames Counseling,,,,www.amespsych.com,ames counseling,amespsych.com,Mental Health / Counseling,0.98,rules,high
+Kristina,Rundell,krundell@mindfuljourneysllc.org,Mental Health Counselor,,Mindful Journeys LLC,,,,,mindful journeys llc,mindfuljourneysllc.org,Mental Health / Counseling,0.98,rules,high
+Mary,Aragon,mary@therapybyegc.com,,,,,,,,,therapybyegc.com,Mental Health / Counseling,0.98,rules,high
+Susan,Chamberlin,schamberlin@pacificrehabilitation.com,,,,,,,,,pacificrehabilitation.com,Mental Health / Counseling,0.98,rules,high
+Shirleen,Sando,shirleens@fccinc.org,,,FCC Behavioral Health,,,,www.fccinc.org,fcc behavioral health,fccinc.org,Mental Health / Counseling,0.98,rules,high
+Leann,Couch,lcouch@turnbhs.org,"Manager, Information Technology",(858) 573-5144,Mental Health Systems,,San Diego,California,www.mentalwellnesscenter.org,mental health systems,turnbhs.org,Mental Health / Counseling,0.98,rules,high
+Susan,Coraluzzi,susan.coraluzzi@rehabwithoutwalls.com,"Manager, Business",,Rehab Without Walls,,,,www.rehabwithoutwalls.com,rehab without walls,rehabwithoutwalls.com,Mental Health / Counseling,0.98,rules,high
+Jennifer,Johnson,jennifer.johnson@alabamacc.org,,,Alabama Center for Counseling,,,,www.alabamacc.org,alabama center for counseling,alabamacc.org,Mental Health / Counseling,0.98,rules,high
+Lisa,HARPER,lharper@perrybhc.org,,,Perry Behavioral Health Choices,,,,www.perrybhc.org,perry behavioral health choices,perrybhc.org,Mental Health / Counseling,0.98,rules,high
+Diana,Chacon,dchacon@lessconflict.org,,,CORC Family Counseling Cooperation,,,,www.lessconflict.org,corc family counseling cooperation,lessconflict.org,Mental Health / Counseling,0.98,rules,high
+Kristine,Clark,kclark@counselingmail.com,,,,,,,,,counselingmail.com,Mental Health / Counseling,0.98,rules,high
+Zoe,Solorzano,zoe@zdhgcounseling.com,,,,,,,,,zdhgcounseling.com,Mental Health / Counseling,0.98,rules,high
+Denise,Dietz,ddietz@serenitymentalhealth.org,Marriage And Family Therapist,,Serenity Mental Health,,Laughlin,Nevada,www.serenitymentalhealth.org,serenity mental health,serenitymentalhealth.org,Mental Health / Counseling,0.98,rules,high
+Marianne,Coad,marianne@synergycounselingllc.com,Clinical Director,,Synergy Counseling,,Fairfax,Virginia,www.synergycounselingllc.com,synergy counseling,synergycounselingllc.com,Mental Health / Counseling,0.98,rules,high
+Jacqueline,Baer,counseling@jackiebaer.com,,,Jacqueline Baer Mental Health Counseling Services,,,,www.jackiebaer.com,jacqueline baer mental health counseling services,jackiebaer.com,Mental Health / Counseling,0.98,rules,high
+Lauren,Long,llong@mentalhealthmattersllc.com,,,,,,,,,mentalhealthmattersllc.com,Mental Health / Counseling,0.98,rules,high
+Kimberly,Kellum,kkellum@revelationtreecounseling.com,Owner and Clinical Director and Therapist,,Revelation Tree Counseling and Wellness,,Burlison,Tennessee,www.revelationtreecounseling.com,revelation tree counseling and wellness,revelationtreecounseling.com,Mental Health / Counseling,0.98,rules,high
+Ryan,Aquilina,ryan@bodhicounselingservices.com,,,,,,,,,bodhicounselingservices.com,Mental Health / Counseling,0.98,rules,high
+Amy,Fedor,amyfedor@clvpsych.com,,,Cleveland Psychiatry Associates,,,,www.clvpsych.com,cleveland psychiatry associates,clvpsych.com,Mental Health / Counseling,0.98,rules,high
+Mike,McCord,mike@mccordrehab.com,Process,,Mccordrehab.com,,Atlanta,Georgia,www.mccordrehab.com,mccordrehab com,mccordrehab.com,Mental Health / Counseling,0.98,rules,high
+Lauren,DeVlieger,drlaake@forwardthinkingtherapy.org,,,,,,,,,forwardthinkingtherapy.org,Mental Health / Counseling,0.98,rules,high
+Maria,Jones,mariajones@bluetreebh.com,Psychologist,,Bluetree Behavioral Health,,Saint Clair Shores,Michigan,www.bluetreebh.com,bluetree behavioral health,bluetreebh.com,Mental Health / Counseling,0.98,rules,high
+Jan,Hollerbach,j.hollerbach@rehabassocinc.com,Privacy Officer,,Rehabilitation Associates,,Fairfield,Connecticut,www.rehabilitationassociatesinc.com,rehabilitation associates,rehabassocinc.com,Mental Health / Counseling,0.98,rules,high
+Kennedy,Rivera,krivera@shorkey.org,Behavioral Health Technician,,Shorkey Center,,Beaumont,Texas,www.shorkey.org,shorkey center,shorkey.org,Mental Health / Counseling,0.98,rules,high
+Alexis,Tew,alexis@rivannatherapyservices.com,,,,,,,,,rivannatherapyservices.com,Mental Health / Counseling,0.98,rules,high
+Marilyn,Constantine-layne,maconstantine@broward.org,Mental Health Specialist,(954) 357-7940,"Broward County, Florida",,,Florida,www.broward.org,broward county florida,broward.org,Mental Health / Counseling,0.98,rules,high
+Allison,Ray,allison@apexptmemphis.com,"Manager, Business",,Apex Physical Therapy,,Germantown,Tennessee,www.apexptmemphis.com,apex physical therapy,apexptmemphis.com,Mental Health / Counseling,0.98,rules,high
+Bridget,Green,bridget@noramentalhealth.com,,,Nora Mental Health,,,,www.noramentalhealth.com,nora mental health,noramentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Sarah,Adams,sadams@mhpcolorado.org,Compliance & Privacy Officer,(303) 247-8791,Mental Health Partners,,Lafayette,Colorado,www.mhpcolorado.org,mental health partners,mhpcolorado.org,Mental Health / Counseling,0.98,rules,high
+Elizabeth,Tankel,liz@bettercounselingservices.com,,,,,,,,,bettercounselingservices.com,Mental Health / Counseling,0.98,rules,high
+Phyllis,Reischmann,thetherapyspot@optonline.net,"Licensed Physical Therapist, Executive Director",,The Therapy SPOT,,Hauppauge,New York,www.thetherapyspot.net,the therapy spot,optonline.net,Mental Health / Counseling,0.98,rules,high
+Jason,Stechele,jason.stechele@hamptonproton.org,"Director, Information Technology",(757) 251-6880,Hampton University Proton Therapy Institute,,Hampton,Virginia,www.hamptonproton.org,hampton university proton therapy institute,hamptonproton.org,Mental Health / Counseling,0.98,rules,high
+Jaleh,ger,jgerdemann-keene@renewnmtherapy.com,,,,,,,,,renewnmtherapy.com,Mental Health / Counseling,0.98,rules,high
+Amy,West,amy@alpediatrictherapy.com,"Director, Operations",(256) 459-5051,Alabama Pediatric Therapy Services,,Gadsden,Alabama,www.alpediatrictherapy.com,alabama pediatric therapy services,alpediatrictherapy.com,Mental Health / Counseling,0.98,rules,high
+Anna Louise,Throm,athrom@mentalhealthmonmouth.org,,,Mental Health Association,,,,www.mentalhealthmonmouth.org,mental health association,mentalhealthmonmouth.org,Mental Health / Counseling,0.98,rules,high
+Karen,Giaquinto,kgiaquinto@discoverybh.com,Regional HR Business Partner,,Discovery Behavioral Health,,Mount Pocono,Pennsylvania,www.discoverybh.com,discovery behavioral health,discoverybh.com,Mental Health / Counseling,0.98,rules,high
+Stephanie,Allen,sallen@newstridept.com,Doctor of Physical Therapy,,New Stride Physical Therapy,,,,www.newstridept.com,new stride physical therapy,newstridept.com,Mental Health / Counseling,0.98,rules,high
+Tracy,Crudup,tracy@vanpeltcounselingcenter.com,,,Van Pelt Counseling Center,,Germantown,Tennessee,www.vanpeltcounselingcenter.com,van pelt counseling center,vanpeltcounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+Nate,Cohen,ncohen@empowermh.co,"Director, Business Development",(602) 730-5307,Empower Mental Health,,,Arizona,www.empowermh.co,empower mental health,empowermh.co,Mental Health / Counseling,0.98,rules,high
+Meghan,Roberson,meghan@anchorabatherapy.com,,,,,,,,,anchorabatherapy.com,Mental Health / Counseling,0.98,rules,high
+Marissa,Magro,marissa@magrospeechtherapy.com,,,,,,,,,magrospeechtherapy.com,Mental Health / Counseling,0.98,rules,high
+Michele,DeLeon,drdeleon@aspiretherapy.health,,,,,,,,,aspiretherapy.health,Mental Health / Counseling,0.98,rules,high
+Dayna,Gurley,dayna@ahealingpathcounseling.com,,,Healing Path Counseling,,,,www.ahealingpathcounseling.com,healing path counseling,ahealingpathcounseling.com,Mental Health / Counseling,0.98,rules,high
+Amber,Hernandez,amberhernandez@apibhs.com,,,Alvarado Parkway Institute Behavioral Health System Outpatient Services,,,,www.apibhs.com,alvarado parkway institute behavioral health system outpatient services,apibhs.com,Mental Health / Counseling,0.98,rules,high
+Rick,Affolter,rick.affolter@pedtherapycolorado.com,"Vice President, Operations & Finance",,Pediatric Therapy of Colorado,,Arvada,Colorado,www.pedtherapycolorado.com,pediatric therapy of colorado,pedtherapycolorado.com,Mental Health / Counseling,0.98,rules,high
+Doris,,insurance@alphacounseling.net,,3854294886,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Katie,Pearson,katie@kindredhearttherapy.org,,,Kindred Heart Therapy Group,,,,,kindred heart therapy group,kindredhearttherapy.org,Mental Health / Counseling,0.98,rules,high
+Jenna,Whitfield,jenna@ahacounseling.com,,,Aha,,,,www.ahacounseling.com,aha,ahacounseling.com,Mental Health / Counseling,0.98,rules,high
+Melissa,Bailey,melissa@strivementalhealthllc.com,,,Strive Mental Health,,,,www.strivementalhealthllc.com,strive mental health,strivementalhealthllc.com,Mental Health / Counseling,0.98,rules,high
+kristine,mitchell,frontdesk@saladocreekmentalhealth.com,,,Salado creek mental health,,,,,salado creek mental health,saladocreekmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Casey,Gayhart,cgayhart@seasonscounselingllc.org,Outpatient Clinic Office Manager,,Seasons Counseling,,Baraboo,Wisconsin,www.seasonscounselingllc.org,seasons counseling,seasonscounselingllc.org,Mental Health / Counseling,0.98,rules,high
+Richard,Tyler-Walker,richard@nourcounseling.com,,,,,,,,,nourcounseling.com,Mental Health / Counseling,0.98,rules,high
+Rich,Dixon,rich@mosaictreecounseling.com,,,Mosaic Tree Counseling,,,,www.mosaictreecounseling.com,mosaic tree counseling,mosaictreecounseling.com,Mental Health / Counseling,0.98,rules,high
+Jessica,Flores,jessica.flores@lamoille.org,Administrative Support Coordinator,,Lamoille County Mental Health Services,,Morrisville,Vermont,www.lamoille.org,lamoille county mental health services,lamoille.org,Mental Health / Counseling,0.98,rules,high
+Virgilio,Caraballo,vcaraballo@rehab-specialists.com,President,,Rehabilitation Specialists,,Surry Hills,New South Wales,www.rehabilitationspecialists.com.au,rehabilitation specialists,rehab-specialists.com,Mental Health / Counseling,0.98,rules,high
+Stepfanie,Morse,stepfanie@freedomcounselingusa.com,,,Freedom Counseling Center,,,,www.freedomcounselingusa.com,freedom counseling center,freedomcounselingusa.com,Mental Health / Counseling,0.98,rules,high
+Kaitlin,Tollison,kaitlin.tollison@psalm46counseling.com,,,,,,,,,psalm46counseling.com,Mental Health / Counseling,0.98,rules,high
+Rozina,Fonyo,rozinafonyo@joyscapetherapy.com,Executive Assistant,,Joyscape Therapy,,,,www.joyscapetherapy.com,joyscape therapy,joyscapetherapy.com,Mental Health / Counseling,0.98,rules,high
+Tiffany,Lepa,tiffany@autonomytherapyatx.com,Clinical Therapist,,Autonomy Therapy,,Austin,Texas,www.autonomymovement.com,autonomy therapy,autonomytherapyatx.com,Mental Health / Counseling,0.98,rules,high
+Kelly,Farley,kelly@noramentalhealth.com,,,Nora Mental Health,,,,www.noramentalhealth.com,nora mental health,noramentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Kelly,Fletcher,k.fletcher@cobbpsychotherapy.com,Psychotherapist,,Cobb Psychotherapy LCSW,,,,www.cobbpsychotherapy.com,cobb psychotherapy lcsw,cobbpsychotherapy.com,Mental Health / Counseling,0.98,rules,high
+Tammy,Stephens,tammy.stephens@river-edge.org,,,River Edge Behavioral Health,,,,www.river-edge.org,river edge behavioral health,river-edge.org,Mental Health / Counseling,0.98,rules,high
+Melanie,Roudkovski,melanie@etxcounseling.com,Professor of Counseling,,Liberty University,,,,www.liberty.edu,liberty university,etxcounseling.com,Mental Health / Counseling,0.98,rules,high
+Shaelynn,Nolan,shaelynn@neurotherapynw.com,,,Neurotherapy Northwest,,,,www.neurotherapynw.com,neurotherapy northwest,neurotherapynw.com,Mental Health / Counseling,0.98,rules,high
+Tara,Warner,tara@lifetreecounseling.org,,,,,,,,,lifetreecounseling.org,Mental Health / Counseling,0.98,rules,high
+Dana,Helstowski,dana@synergyptandpilates.com,"Owner, Physical Therapist and Pilates Instructor",(214) 579-9673,Synergy Physical Therapy and Pilates,,Dallas,Texas,www.synergyptandpilates.com,synergy physical therapy and pilates,synergyptandpilates.com,Mental Health / Counseling,0.98,rules,high
+Michelle,Strazzeri,michelle@psychotherapyforyou.ca,Clinical Director,,Psychotherapy For You,,London,Greater London,www.psychotherapyforyou.co.uk,psychotherapy for you,psychotherapyforyou.ca,Mental Health / Counseling,0.98,rules,high
+Maryann,Iannaci,miannaci@nhcc.us,"Director, Quality Assurance & Corporate Compliance",(516) 569-7890,New Horizon Counseling Center,,Lynbrook,New York,www.nhcc.us,new horizon counseling center,nhcc.us,Mental Health / Counseling,0.98,rules,high
+Cicely,Hooten,chooten@completebehavioralhealthpllc.com,,,,,,,,,completebehavioralhealthpllc.com,Mental Health / Counseling,0.98,rules,high
+Marie,Baker,marie@craniorehab.com,,(303) 455-2655,CranioMandibular Rehab,,Denver,Colorado,www.craniorehab.com,craniomandibular rehab,craniorehab.com,Mental Health / Counseling,0.98,rules,high
+Ericka,Jenifer,ejenifer@kimanimentalhealth.com,,,"Kimani Mental Health Services, LLC",,,,,kimani mental health services llc,kimanimentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Jodie,Davenport,jdavenport@kidsourcetherapy.com,,,Kidsource,,,,www.kidsourcetherapy.com,kidsource,kidsourcetherapy.com,Mental Health / Counseling,0.98,rules,high
+Shawn,Haymaker,shawnh@shaymakercounseling.com,,,,,,,,,shaymakercounseling.com,Mental Health / Counseling,0.98,rules,high
+Katie,Kenney,katie@oakgrovetherapy.org,,,,,,,,,oakgrovetherapy.org,Mental Health / Counseling,0.98,rules,high
+Christine,Irwin,cirwin@cirwintherapy.com,,,Christine Irwin Therapy Services,,,,,christine irwin therapy services,cirwintherapy.com,Mental Health / Counseling,0.98,rules,high
+Kerry,Rollins,kerry-rollins@rollinscounselingcenter.com,Course Facilitator,,Trauma Recovery HAP Store,,Hamden,Connecticut,www.traumarecoveryhapstore.com,trauma recovery hap store,rollinscounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+Shawn,Heiger,sheiger@upperbay.org,"Manager, Health Information",(410) 996-5104 x 1096,Upper Bay Counseling & Support Services,,Elkton,Maryland,www.upperbay.org,upper bay counseling and support services,upperbay.org,Mental Health / Counseling,0.98,rules,high
+Najuka,Anderson,najukasmith@takingchargecounselingpllc.com,,,,,,,,,takingchargecounselingpllc.com,Mental Health / Counseling,0.98,rules,high
+Paul,Borda,paul@abatherapypartners.com,,,,,,,,,abatherapypartners.com,Mental Health / Counseling,0.98,rules,high
+Chelsey,Brown,cbrown@cultivatefarms.org,Mental Health Clinician,,Cultivate Care Farms,,Groton,Massachusetts,www.cultivatefarms.org,cultivate care farms,cultivatefarms.org,Mental Health / Counseling,0.98,rules,high
+Stephanie,Miller,stephanie@elementcounseling.com,,,Element Counseling,,,,www.elementcounseling.com,element counseling,elementcounseling.com,Mental Health / Counseling,0.98,rules,high
+C.,Donaghey,cdonaghey@cornerstoneok.org,Office Manager,,Cornerstone Behavioral Health Pediatric Therapies,,,,www.cornerstoneok.org,cornerstone behavioral health pediatric therapies,cornerstoneok.org,Mental Health / Counseling,0.98,rules,high
+KATHY,VILLAFAN-BYERS,katherine.villafan@mindrenewalbhs.org,,7194652582,Mind Renewal Behavioral Health Services,,,,www.mindrenewalbhs.org,mind renewal behavioral health services,mindrenewalbhs.org,Mental Health / Counseling,0.98,rules,high
+Benjamin,Crawford,bcrawford@capesidepsychiatry.com,,,Capeside Psychiatry,,,,www.capesidepsychiatry.com,capeside psychiatry,capesidepsychiatry.com,Mental Health / Counseling,0.98,rules,high
+Nicole,Nelson,nnelson@crossroadcounseling.org,Group Home Director,,Crossroads Counseling and Training Services,,Fairbanks,Alaska,www.crossroadscounselingak.org,crossroads counseling and training services,crossroadcounseling.org,Mental Health / Counseling,0.98,rules,high
+Emily,Picou,epicou@connectabatherapy.com,,,,,,,,,connectabatherapy.com,Mental Health / Counseling,0.98,rules,high
+Ravi,Singareddy,rsingareddy@psychiatrysleep.org,Physician Owner,,Empower Psychiatry and Sleep,,Suwanee,Georgia,www.tmspsychiatrysleep.com,empower psychiatry and sleep,psychiatrysleep.org,Mental Health / Counseling,0.98,rules,high
+Robert,Baumert,rob@play-steps.com,,,Fourt Therapy Center,,,,www.play-steps.com,fourt therapy center,play-steps.com,Mental Health / Counseling,0.98,rules,high
+Courtney,Vilaca,courtney.vilaca@abhealthnetwork.com,"Director, Human Resources",,Advantage Behavioral Health,,Boynton Beach,Florida,,advantage behavioral health,abhealthnetwork.com,Mental Health / Counseling,0.98,rules,high
+Jessica,Carter,jess@jcartercounseling.com,Primary Contact,,Jcarter Counseling,,Gilbert,Arizona,www.jcartercounseling.com,jcarter counseling,jcartercounseling.com,Mental Health / Counseling,0.98,rules,high
+Austin,Kopas,austin@kopasmentalhealth.com,,,,,,,,,kopasmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Yani,O,leyana.opriano@bhsva.net,,,Behavioral Health Services of Virginia,,,,www.bhsva.net,behavioral health services of virginia,bhsva.net,Mental Health / Counseling,0.98,rules,high
+Julie,Rexroat,julie@welldonept.com,,,Well+Done Physical Therapy,,,,www.welldonept.com,well done physical therapy,welldonept.com,Mental Health / Counseling,0.98,rules,high
+Jeana,Johnston,jjohnston@onondagapt.com,Office Manager and Coach,(315) 635-5000,Onondaga Physical Therapy,,Baldwinsville,New York,www.onondagapt.com,onondaga physical therapy,onondagapt.com,Mental Health / Counseling,0.98,rules,high
+David,Reynolds,david@integratedinsighttherapy.com,,,Integrated Insight Therapy,,,,www.integratedinsighttherapy.com,integrated insight therapy,integratedinsighttherapy.com,Mental Health / Counseling,0.98,rules,high
+Anthony,Burger,beau@integratedinsighttherapy.com,,,Integrated Insight Therapy,,,,www.integratedinsighttherapy.com,integrated insight therapy,integratedinsighttherapy.com,Mental Health / Counseling,0.98,rules,high
+Jacquie,Kirkbride,jacquie@lifesupporttherapyservices.com,Behavioral Health Therapist,,Life Support Therapy Services,,Zanesville,Ohio,www.lifesupporttherapyservices.com,life support therapy services,lifesupporttherapyservices.com,Mental Health / Counseling,0.98,rules,high
+Mia,Edwards,healingservices@harmonictherapy.info,,,,,,,,,harmonictherapy.info,Mental Health / Counseling,0.98,rules,high
+Silvana,Espinoza,silvana@seventhselfcounseling.com,,,,,,,,,seventhselfcounseling.com,Mental Health / Counseling,0.98,rules,high
+Karla,Levering,karla@advancedtherapysolutions.com,Occupational Therapist,,Advanced Therapy Solutions,,,,www.advancedtherapysolutions.com,advanced therapy solutions,advancedtherapysolutions.com,Mental Health / Counseling,0.98,rules,high
+Kristie,Wayward,kristie@integratedinsighttherapy.com,,,Integrated Insight Therapy,,,,www.integratedinsighttherapy.com,integrated insight therapy,integratedinsighttherapy.com,Mental Health / Counseling,0.98,rules,high
+Steven,French,stevenfrench@integratedinsighttherapy.com,,,Integrated Insight Therapy,,,,www.integratedinsighttherapy.com,integrated insight therapy,integratedinsighttherapy.com,Mental Health / Counseling,0.98,rules,high
+Amanda,Lake,alake@practicalrehab.com,"Director, Services",,Practical Rehabilitation Services,,Okemos,Michigan,www.practicalrehab.com,practical rehabilitation services,practicalrehab.com,Mental Health / Counseling,0.98,rules,high
+Columbus,Oh,columbus@thriveworks.com,,,Thriveworks Counseling,,,,www.thriveworks.com,thriveworks counseling,thriveworks.com,Mental Health / Counseling,0.98,rules,high
+Jennifer,Schackner,jennifer@supportivesolutions.org,,,Supportive Solutions Behavioral Health & Wellness,,,,www.supportivesolutions.org,supportive solutions behavioral health and wellness,supportivesolutions.org,Mental Health / Counseling,0.98,rules,high
+Kim,Venable,kvenable@ktvpsychiatry.com,Psychiatrist,,KTV Psychiatry,,Atlanta,Georgia,www.ktv-psychiatry.com,ktv psychiatry,ktvpsychiatry.com,Mental Health / Counseling,0.98,rules,high
+Danielle,mcgregor,dmcgregor@therapyinsync.com,,,,,,,,,therapyinsync.com,Mental Health / Counseling,0.98,rules,high
+Kimberly,Gilliland,kgilliland@therapyworkstulsa.com,,,TherapyWorks,,,,www.therapyworkstulsa.com,therapyworks,therapyworkstulsa.com,Mental Health / Counseling,0.98,rules,high
+Erica,Cavin,erica@hopehealingtherapy.com,,3016908404,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+samantha,pugh,spugh@msstherapy.net,,,Medical Support Services,,,,www.msstherapy.net,medical support services,msstherapy.net,Mental Health / Counseling,0.98,rules,high
+Megan,Conrad,mconrad@guidinglightcr.com,,5155230297,Guiding Light Christian Counseling Center,,,,www.guidinglightcr.com,guiding light christian counseling center,guidinglightcr.com,Mental Health / Counseling,0.98,rules,high
+Amanda,Dudding,accounting@victorytherapy.org,,,Victory Therapy Center,,,,www.victorytherapy.org,victory therapy center,victorytherapy.org,Mental Health / Counseling,0.98,rules,high
+Dr LaShondrea,Nixon,drlnixon@uvmentalhealth.com,,,Ultra Violet Mental Health,,,,www.uvmentalhealth.com,ultra violet mental health,uvmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Rasand,Riggin,rriggin@ccgcare.com,,,Community Counseling Group,,,,www.ccgcare.com,community counseling group,ccgcare.com,Mental Health / Counseling,0.98,rules,high
+Jennifer,Stoute,jennifer@laluzcounseling.com,Executive Administrative Assistant,,La Luz Counseling,,San Antonio,Texas,www.laluzcounseling.com,la luz counseling,laluzcounseling.com,Mental Health / Counseling,0.98,rules,high
+Leah,McCasland,abom@acute-rehab.com,,,,,,,,,acute-rehab.com,Mental Health / Counseling,0.98,rules,high
+Leslie,Gonzalez,lgonzalez@lgcounselingcenter.com,,,,,,,,,lgcounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+Jillian,Meyer,jillian@ncphysicaltherapy.com,Owner,,North Carolina Physical Therapy,,,,www.ncphysicaltherapy.com,north carolina physical therapy,ncphysicaltherapy.com,Mental Health / Counseling,0.98,rules,high
+Andrea,Russell,andrea@hopehealingtherapy.com,,7852075529,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Carolyn,Harrison,carolyn@hopehealingtherapy.com,,3016908404,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Tina,Glinski,tinag@crowncounseling.org,,,Crown counseling,,,,,crown counseling,crowncounseling.org,Mental Health / Counseling,0.98,rules,high
+TRISHA,EASTLICK,trisha@madronementalhealth.com,,,Madrone Mental Health Services,,,,,madrone mental health services,madronementalhealth.com,Mental Health / Counseling,0.98,rules,high
+Jenifer,Edelen,j.edelen@hopehealingtherapy.com,,3015426480,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Joel,Rauser,joel@cornerstonept.com,,,Cornerstone Physical Therapy,,,,,cornerstone physical therapy,cornerstonept.com,Mental Health / Counseling,0.98,rules,high
+Amber,Noegel,amber@hopehealingtherapy.com,,7576361005,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Vanessa,Aligam,vanessa@televinetherapy.com,,,TeleVine Therapy,,,,,televine therapy,televinetherapy.com,Mental Health / Counseling,0.98,rules,high
+Mystal,Axtman,maxtman@702com.net,Business Owner & Therapist,,Inner Light Counseling Services,,Horace,North Dakota,www.innerlightcounselingservices.com,inner light counseling services,702com.net,Mental Health / Counseling,0.98,rules,high
+Leanne,Roberts,leanne.roberts@bhninc.org,Lead Preschool Teacher,4139674046,Behavioral Health Network,,Springfield,Massachusetts,www.bhninc.org,behavioral health network,bhninc.org,Mental Health / Counseling,0.98,rules,high
+John,Rawcliffe,tech@littlestarstherapyks.com,,,Little Stars Therapy Services,,,,www.littlestarstherapyks.com,little stars therapy services,littlestarstherapyks.com,Mental Health / Counseling,0.98,rules,high
+Joycelyn,Haverlock,jremy-havelock@twinboro.com,,9083478256,Twin Boro Physical Therapy,,,,www.twinboro.com,twin boro physical therapy,twinboro.com,Mental Health / Counseling,0.98,rules,high
+Amanda,McDonald,amcdonald@shoreneuropsych.com,,17329480754,Shore Neuropsychology & Behavioral Health,,,,www.shoreneuropsych.com,shore neuropsychology and behavioral health,shoreneuropsych.com,Mental Health / Counseling,0.98,rules,high
+Tiauna,Schneider,tiauna.schneider2@srpmic-nsn.gov,Behavioral Health Consultant,(480) 362-6844,Srpmic,,,Arizona,www.srpmic-nsn.gov,srpmic,srpmic-nsn.gov,Mental Health / Counseling,0.98,rules,high
+Harram,Mehmood,harram@insighttherapy.us,,,,,,,,,insighttherapy.us,Mental Health / Counseling,0.98,rules,high
+Jenifer,Gonzalez,jen@onetherapync.com,,,,,,,,,onetherapync.com,Mental Health / Counseling,0.98,rules,high
+Robin,Texeira,rtexeira@cibhs.org,Associate.,(916) 379-5325,California Institute for Behavioral Health Solutions,,Sacramento,California,www.cibhs.org,california institute for behavioral health solutions,cibhs.org,Mental Health / Counseling,0.98,rules,high
+Shepard Wiley,Stephenson,shepard@hopehealingtherapy.com,,804-929-7669,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Shepard Wiley,Stephenson,shepard@hopehealingtherapy.co,,8049297669,,,,,,,hopehealingtherapy.co,Mental Health / Counseling,0.98,rules,high
+Justin,LaPilusa,drlap@auxiliummentalhealth.com,,,Tiny Frog Technologies,,,,www.tinyfrog.com,tiny frog technologies,auxiliummentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Lindsay,Garfield,lgarfield@sbcmh.org,,,Benito County Behavioral Health,,,,www.sbcmh.org,benito county behavioral health,sbcmh.org,Mental Health / Counseling,0.98,rules,high
+Erica,Thomason,erica.thomason@pthc-pt.com,,,Physical Therapy and Hand Centers,,,,www.pthc-pt.com,physical therapy and hand centers,pthc-pt.com,Mental Health / Counseling,0.98,rules,high
+Keegan,Crocker,kcrocker@adjustmentalhealth.com,,,,,,,,,adjustmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Devesea,Tatum,dtatum@peacefulinsightcounseling.com,,,Peaceful Insight Counseling,,,,www.peacefulinsightcounseling.com,peaceful insight counseling,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,high
+Kay,Becca,becca@improvinglivescounseling.com,,,Improving Lives Counseling Services,,,,www.improvinglivescounseling.com,improving lives counseling services,improvinglivescounseling.com,Mental Health / Counseling,0.98,rules,high
+Louise,Eitelberg,louise@highfallsspeechtherapycenter.com,,,,,,,,,highfallsspeechtherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Kelsey,Dominicis,kelsey@mymindmatterscounseling.com,,,Mind Matters Coaching,,,,www.mymindmatterscounseling.com,mind matters coaching,mymindmatterscounseling.com,Mental Health / Counseling,0.98,rules,high
+Gabrielle,Gatto,ggatto@shoreneuropsych.com,,,Shore Neuropsychology and Behavioral Health,,,,,shore neuropsychology and behavioral health,shoreneuropsych.com,Mental Health / Counseling,0.98,rules,high
+Ashley,Garrett,garrett@garrettcounseling.com,Executive Director,,Garrett Counseling,,Jacksonville,Alabama,www.garrettcounseling.com,garrett counseling,garrettcounseling.com,Mental Health / Counseling,0.98,rules,high
+Angela Rita,Farias,arflp@telementalhealth.company,,,,,,,,,telementalhealth.company,Mental Health / Counseling,0.98,rules,high
+Jaye,Kosciuszko,foley@gulfcoasttherapy.com,,,,,,,,,gulfcoasttherapy.com,Mental Health / Counseling,0.98,rules,high
+Sara E,Smith,sara@hopehealingtherapy.com,,12405386500,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Anastasia,Brodka,abrodka@nationalmentalhealth.com,,,,,,,,,nationalmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Arianna,Tarver,arianna@resiliencecounseling20.com,,8145728990,,,,,,,resiliencecounseling20.com,Mental Health / Counseling,0.98,rules,high
+,william Grayson,william.grayson@healingheartcounselingllc.com,,,,,,,,,healingheartcounselingllc.com,Mental Health / Counseling,0.98,rules,high
+Shawynque W,Shankin,sshankin@focustherapyclinic.com,,,,,,,,,focustherapyclinic.com,Mental Health / Counseling,0.98,rules,high
+Meredith,Drumm,meredith@hopehealingtherapy.com,,3016908404,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Timothy J,Turner,tim@strousecounseling.com,,,,,,,,,strousecounseling.com,Mental Health / Counseling,0.98,rules,high
+Blaire,Melius,blairemelius@blairemeliuscounseling.com,,,,,,,,,blairemeliuscounseling.com,Mental Health / Counseling,0.98,rules,high
+Jenna,,jenna@poudretherapy.com,,,,,,,,,poudretherapy.com,Mental Health / Counseling,0.98,rules,high
+De'Zha,Cushman,dezha@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Terri,Dodge,terrid@tuellercounseling.org,,,,,,,,,tuellercounseling.org,Mental Health / Counseling,0.98,rules,high
+Maureen,Czaykowsky,maureen@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Kaniya,Jackson,kaniya@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Tony,Veronee,tveronee@alfreyandpruittcounseling.com,,,,,,,,,alfreyandpruittcounseling.com,Mental Health / Counseling,0.98,rules,high
+Kelli,Beck,kelli@beckbehaviortherapy.com,,,,,,,,,beckbehaviortherapy.com,Mental Health / Counseling,0.98,rules,high
+Christine,Bishop-Edkins,christine@sagecounselingpa.com,,,,,,,,,sagecounselingpa.com,Mental Health / Counseling,0.98,rules,high
+Leslie,Wells,leslie@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Kristen,Wilson,kristen@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Courtney,Bunch,courtney.bunch@therapytree.com,,,,,,,,,therapytree.com,Mental Health / Counseling,0.98,rules,high
+Alison,Thir,alison@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Pamela,Van Ocker,pvanocker@therapycenter.org,,,,,,,,,therapycenter.org,Mental Health / Counseling,0.98,rules,high
+Jessica,Bradfield,jessica@autonomytherapyatx.com,,,,,,,,,autonomytherapyatx.com,Mental Health / Counseling,0.98,rules,high
+Jennifer,Fifield,jennifer.fifield@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Amy,Ripley,amy@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Jenn,Geryol,jgeryol@fromtheashescounseling.com,,,,,,,,,fromtheashescounseling.com,Mental Health / Counseling,0.98,rules,high
+Molly,Noterman,mnoterman@nystromcounseling.com,,,,,,,,,nystromcounseling.com,Mental Health / Counseling,0.98,rules,high
+Jenny,Maguire,jenny@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Jade,Graver,jade@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Lindsey,Foss,lindsey@forwardtogethercounseling.com,,,,,,,,,forwardtogethercounseling.com,Mental Health / Counseling,0.98,rules,high
+Carrie,Bearden,carrie.bearden@cahabamentalhealth.com,,,,,,,,,cahabamentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Anna,Guy,anna@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Diane,Brandon,diane@peacefulinsightcounseling.com,,,,,,,,,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,high
+sharady,ricahrdson,sharady.ricahrdson@sunshineabatherapy.org,,,,,,,,,sunshineabatherapy.org,Mental Health / Counseling,0.98,rules,high
+Shannon,Hafterson,shannon@autonomytherapyatx.com,,,,,,,,,autonomytherapyatx.com,Mental Health / Counseling,0.98,rules,high
+Steven,Zuniga,stevenzuniga@heightsfamilycounseling.com,,,,,,,,,heightsfamilycounseling.com,Mental Health / Counseling,0.98,rules,high
+carina,c,carina@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Deana,Flynn,dflynn@fortisbehavioralhealthnc.com,,,,,,,,,fortisbehavioralhealthnc.com,Mental Health / Counseling,0.98,rules,high
+Jessica,Roberson,jessica@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+christine,h,christine@serenitychristiancounseling.com,,,,,,,,,serenitychristiancounseling.com,Mental Health / Counseling,0.98,rules,high
+,dorys E Esquilin Figueroa,dorys.esquilin@carrouseltherapycenter.com,,,,,,,,,carrouseltherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Sanderica,Hutto,sanderica.hutto@knrtherapy.com,,,,,,,,,knrtherapy.com,Mental Health / Counseling,0.98,rules,high
+Courtney,Badilla,courtney@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Anastasia,Newberry,anastasia@hopehealingtherapy.com,,,,,,,,,hopehealingtherapy.com,Mental Health / Counseling,0.98,rules,high
+Kolbe,Huffman,kolbehuffman@counseling4lifellc.com,,,,,,,,,counseling4lifellc.com,Mental Health / Counseling,0.98,rules,high
+Beverly Joy T.,Cendaña,bcendana@newutherapy.com,,,,,,,,,newutherapy.com,Mental Health / Counseling,0.98,rules,high
+Katie Alexis,Heinold,katie@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Carla,,carla@riverbirchcounseling.com,,,,,,,,,riverbirchcounseling.com,Mental Health / Counseling,0.98,rules,high
+Evelyn,Hunt,evelyn@alphacounseling.net,,,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Doris,Robinson,doris@alphacounseling.net,,,,,,,,,alphacounseling.net,Mental Health / Counseling,0.98,rules,high
+Diana,,diana@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Autumn,Hill,autumn@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Brittany,Harford,brittany@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Rachel,Crump,rachelc@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Atarah,Walker,atarah@peacefulinsightcounseling.com,,,,,,,,,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,high
+Theodore,Masino,tmasino@masinomentalhealth.com,,,,,,,,,masinomentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Ariel,Taylor,ariel.taylor@andersonrehabinstitute.com,,,,,,,,,andersonrehabinstitute.com,Mental Health / Counseling,0.98,rules,high
+Hayim,Pinson,hayim@crowncounselingassociates.com,,,,,,,,,crowncounselingassociates.com,Mental Health / Counseling,0.98,rules,high
+Taylor,Detherow,tdetherow@ababehavioralhealth.com,,,,,,,,,ababehavioralhealth.com,Mental Health / Counseling,0.98,rules,high
+Breanna,Blumer,blumer@milestonestherapygroup.com,,,,,,,,,milestonestherapygroup.com,Mental Health / Counseling,0.98,rules,high
+Jasmine,Price,jasmine@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Alexandra,Grobicki,owners@cotenacioustherapy.com,,,,,,,,,cotenacioustherapy.com,Mental Health / Counseling,0.98,rules,high
+Emmie,Mai,emmie@newmorningcounseling.com,,,,,,,,,newmorningcounseling.com,Mental Health / Counseling,0.98,rules,high
+Becky,Grumet,bgrumet@renewinghopecounseling.com,,,,,,,,,renewinghopecounseling.com,Mental Health / Counseling,0.98,rules,high
+Mary,Rollins,mary.rollins@heartstringsmentalhealth.com,,,,,,,,,heartstringsmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+ELAINE,,eboyd@kinghavencounseling.com,,,,,,,,,kinghavencounseling.com,Mental Health / Counseling,0.98,rules,high
+Melissa,Bowlin,melissa@wishingwellcounselingcenter.com,,,,,,,,,wishingwellcounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+Janie,Webb,jwebb@jcbtherapy.com,,,,,,,,,jcbtherapy.com,Mental Health / Counseling,0.98,rules,high
+Kamilah,Thomas,kamilah@kbtcounseling.com,,,,,,,,,kbtcounseling.com,Mental Health / Counseling,0.98,rules,high
+Julia,Sherrill,julia@growwiththeflowtherapy.com,,,,,,,,,growwiththeflowtherapy.com,Mental Health / Counseling,0.98,rules,high
+Trisha,,trisha@trishaswintoncounseling.com,,,,,,,,,trishaswintoncounseling.com,Mental Health / Counseling,0.98,rules,high
+Jessica,Buck,jbuck@stcroixtherapy.org,,,,,,,,,stcroixtherapy.org,Mental Health / Counseling,0.98,rules,high
+Lorrette,Ayers,lorrette@integratedcounselingservices.org,,,,,,,,,integratedcounselingservices.org,Mental Health / Counseling,0.98,rules,high
+Virginia,Konz,virginia@bostonbiblicalcounseling.org,,,,,,,,,bostonbiblicalcounseling.org,Mental Health / Counseling,0.98,rules,high
+Maria,Nakis,operations@expansivetherapy.com,,,,,,,,,expansivetherapy.com,Mental Health / Counseling,0.98,rules,high
+Veneschia,,veneschia@peacefulinsightcounseling.com,,,,,,,,,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,high
+timmira,payne,tpayne@danielrehabma.com,,,,,,,,,danielrehabma.com,Mental Health / Counseling,0.98,rules,high
+Marquita,Sams,marquita@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Autumn S,Asebedo,autumn@mindyourselfcounseling.com,,,,,,,,,mindyourselfcounseling.com,Mental Health / Counseling,0.98,rules,high
+Abreana,Spicer,abreana@peacefulinsightcounseling.com,,,,,,,,,peacefulinsightcounseling.com,Mental Health / Counseling,0.98,rules,high
+Sarah,Sailer,sarah@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Breanne,Valsamis,bvalsamis@sunrisecounselingcenter.com,,,,,,,,,sunrisecounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+Kelly,Forrester,kelly@healingartscounseling.com,,,,,,,,,healingartscounseling.com,Mental Health / Counseling,0.98,rules,high
+Tres,Adames,tres@arizonachristiancounseling.com,,,,,,,,,arizonachristiancounseling.com,Mental Health / Counseling,0.98,rules,high
+Marianne,Carr,tonicarr@therapyassist.org,,,,,,,,,therapyassist.org,Mental Health / Counseling,0.98,rules,high
+Tara,Hendrix,thendrix@sensationallifetherapy.com,,,,,,,,,sensationallifetherapy.com,Mental Health / Counseling,0.98,rules,high
+Ryne,Zuzinec,ryne@mindfulway-therapy.com,,,,,,,,,mindfulway-therapy.com,Mental Health / Counseling,0.98,rules,high
+Jordan,Six,supervisor@etownrehab.com,,,,,,,,,etownrehab.com,Mental Health / Counseling,0.98,rules,high
+Steve,Monte,steve@rocklifecounseling.com,,,,,,,,,rocklifecounseling.com,Mental Health / Counseling,0.98,rules,high
+Jessica,Yelle,jessica@hillcitycounseling.com,,,,,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Liz,Kelly,liz@monarchcounselingservice.com,,,,,,,,,monarchcounselingservice.com,Mental Health / Counseling,0.98,rules,high
+Rosario,ACcardi,rosario@activemotionrehab.com,,,,,,,,,activemotionrehab.com,Mental Health / Counseling,0.98,rules,high
+Amy,Kohlbusch,akohlbusch@renewedmentalhealth.com,,,,,,,,,renewedmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+janet,staub,janet.staub@legacynursingrehab.com,,,,,,,,,legacynursingrehab.com,Mental Health / Counseling,0.98,rules,high
+Tanya,Hargrove,hargtanya@tanyachargrovecounseling.com,,,,,,,,,tanyachargrovecounseling.com,Mental Health / Counseling,0.98,rules,high
+Kristen,Moehrle,kristen@flagtowntherapy.com,,,,,,,,,flagtowntherapy.com,Mental Health / Counseling,0.98,rules,high
+Lindsay,Knez,lindsay@kctherapy.com,,,,,,,,,kctherapy.com,Mental Health / Counseling,0.98,rules,high
+Tammy,Kothe-Ramsey,tammy@tkrcounselingservices.com,,,,,,,,,tkrcounselingservices.com,Mental Health / Counseling,0.98,rules,high
+Hannah,Elliott,hannah.elliott@alpinelakescounselingcenter.com,,,,,,,,,alpinelakescounselingcenter.com,Mental Health / Counseling,0.98,rules,high
+tina,avila,tavila@blueoakcounselingservices.com,,,,,,,,,blueoakcounselingservices.com,Mental Health / Counseling,0.98,rules,high
+Ebony,Holland,eholland@infinitycounselinggroup.com,,,,,,,,,infinitycounselinggroup.com,Mental Health / Counseling,0.98,rules,high
+Angela,Winters,awinters@cpcounsel.net,,,,,,,,,cpcounsel.net,Mental Health / Counseling,0.98,rules,high
+Kristen,Celeski,kristenc@anotherlevelaz.com,,,,Another Level of Community Services,,,,,anotherlevelaz.com,Mental Health / Counseling,0.98,rules,high
+Kela,Mason,kmason@gtcounseling.com,,,,,,,,,gtcounseling.com,Mental Health / Counseling,0.98,rules,high
+Christine,Russo,crusso@resilientrootstherapy.org,,,,,,,,,resilientrootstherapy.org,Mental Health / Counseling,0.98,rules,high
+Princess,Santos,welcome@hanfordonyxcounseling.com,,,,,,,,,hanfordonyxcounseling.com,Mental Health / Counseling,0.98,rules,high
+William Earl,Ezzelle,william.ezzelle@mentalhealthclinician.com,,,,,,,,,mentalhealthclinician.com,Mental Health / Counseling,0.98,rules,high
+Monya,Satterfield,monya@denton-therapy.com,,,,Denton Therapy,,,,,denton-therapy.com,Mental Health / Counseling,0.98,rules,high
+Michelle,Sheppard,trhr@timberridgerehab.com,,,,,,,,,timberridgerehab.com,Mental Health / Counseling,0.98,rules,high
+Tina,LeBlanc,tina@counselorsoftexas.com,,,,Counselors of Texas,,,,,counselorsoftexas.com,Mental Health / Counseling,0.98,rules,high
+Heather,Hajek,hhajek@dynamiclifetherapy.com,,,,,,,,,dynamiclifetherapy.com,Mental Health / Counseling,0.98,rules,high
+Robert,RIpley,robert@tinyplanetcounseling.com,,,,,,,,,tinyplanetcounseling.com,Mental Health / Counseling,0.98,rules,high
+Carrie,Richards,carrie@generalcounselwest.com,,,,,,,,,generalcounselwest.com,Mental Health / Counseling,0.98,rules,high
+Jodi,Merritt,jodi@reverencecounseling.com,,,,,,,,,reverencecounseling.com,Mental Health / Counseling,0.98,rules,high
+Rachel,Wesely,rachel.wesely@fremontne.gov,,,,City of Fremont Nebraska,,,,,fremontne.gov,Mental Health / Counseling,0.98,rules,high
+LLC,Forbes Behavioral Services,kathleen@knrtherapy.com,,,,,,,,,knrtherapy.com,Mental Health / Counseling,0.98,rules,high
+Stephanie,Messerly,stephanie@hillcitycounseling.com,,,,,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Makenna,Limon,makenna@hillcitycounseling.com,,,,,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Kris,Fant,kris@progrehab.com,,,,Progressive Rehabilitation Associates,,,,,progrehab.com,Mental Health / Counseling,0.98,rules,high
+Willow,Henry,willow.henry@rightsteptherapynh.com,,,,Franklin Pierce University,,,,,rightsteptherapynh.com,Mental Health / Counseling,0.98,rules,high
+Judy,Lin,jlin@straighttalkcounseling.org,,,,Straight Talk Counselling,,,,,straighttalkcounseling.org,Mental Health / Counseling,0.98,rules,high
+Linnae,,linnae@sierratherapycenter.com,,,,Sierra Therapy Center,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Stephanie,Ellis,sellis@wbccounseling.com,,,,,,,,,wbccounseling.com,Mental Health / Counseling,0.98,rules,high
+Josee,Tareski,josee@inlandnorthwesttherapy.org,,,,,,,,,inlandnorthwesttherapy.org,Mental Health / Counseling,0.98,rules,high
+Trinity,Ellis,trinity@thebinduinstitute.com,,,,The Bindu Institute,,,,,thebinduinstitute.com,Mental Health / Counseling,0.98,rules,high
+Terry,Rudd,trudd@reliant-rehab.com,,,,,,,,,reliant-rehab.com,Mental Health / Counseling,0.98,rules,high
+Victoria,Clark,victoria@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Brooke,Tackett,brooke@corecryotherapy.net,,,,,,,,,corecryotherapy.net,Mental Health / Counseling,0.98,rules,high
+K.,Edens,kedens@faithandhealingcounseling.com,,,,,,,,,faithandhealingcounseling.com,Mental Health / Counseling,0.98,rules,high
+Susie,Lee,susie@eaglemountaincounseling.org,,,,,,,,,eaglemountaincounseling.org,Mental Health / Counseling,0.98,rules,high
+Kaitln,Battaglia,kaitlinb@integratedrehab.net,,,,,,,,,integratedrehab.net,Mental Health / Counseling,0.98,rules,high
+DEBORAH,D MAGERS,debmagers@deckertherapyservices.org,,,,,,,,,deckertherapyservices.org,Mental Health / Counseling,0.98,rules,high
+Greer,Brieaddy,greer@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Ellie,Karle,ellie@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Khalil,Karl,khalil@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Olivia,Acree,olivia@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Rachel,Birkeland,rachel@hillcitycounseling.com,,,,,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+RHONDA,SPENCER,rhonda.spencer@carnahantherapy.com,,,,,,,,,carnahantherapy.com,Mental Health / Counseling,0.98,rules,high
+Faith Solutions,too Mental Health,scheduling@faithsolutions2mentalhealth.org,,,,,,,,,faithsolutions2mentalhealth.org,Mental Health / Counseling,0.98,rules,high
+Kelly,Carapezza,kelly@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Joseph,Strasshofer,joseph@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Matthew,Hammond,matthew@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Sadie,Herts,sadie@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Maddison,Stewart,maddi@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Suzanne,Mikkelson,suzanne@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+David P,Mikkelson,david@hillcitycounseling.com,,,,Hill City Counselling,,,,,hillcitycounseling.com,Mental Health / Counseling,0.98,rules,high
+Hillary,Hall,hhall@southernbridgecounseling.com,,,,,,,,,southernbridgecounseling.com,Mental Health / Counseling,0.98,rules,high
+Maggie,Block,maggie@metroeasttherapy.com,,,,,,,,,metroeasttherapy.com,Mental Health / Counseling,0.98,rules,high
+Fabiana,Alvarado,fabianaa@nutritionastherapy.net,,,,,,,,,nutritionastherapy.net,Mental Health / Counseling,0.98,rules,high
+David,Gunzburg,dgunzburg@walgrencounseling.com,,,,,,,,,walgrencounseling.com,Mental Health / Counseling,0.98,rules,high
+David,Rifkind,david.rifkind@therapynotes.com,,,,,,,,,therapynotes.com,Mental Health / Counseling,0.98,rules,high
+Francisca,Duenas,ines.duenas@sierratherapy.com,,,,,,,,,sierratherapy.com,Mental Health / Counseling,0.98,rules,high
+Bobby,Owens,bobby@frontporchcounseling.com,,,,,,,,,frontporchcounseling.com,Mental Health / Counseling,0.98,rules,high
+Taleah,Rule,trule@perspectivestherapyservices.com,,,,,,,,,perspectivestherapyservices.com,Mental Health / Counseling,0.98,rules,high
+Sierra,Sparks,sierra@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Emily,Poole,emily@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Samantha,Rasmusen,samantharasmusen@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Brian,Allen,brianallen@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Jacquelyn,,jacquelyn@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Christine,McCallum,chris@mccallumphysicaltherapy.com,,,,,,,,,mccallumphysicaltherapy.com,Mental Health / Counseling,0.98,rules,high
+Tyrone,Staples,tstaples@wbccounseling.com,,,,,,,,,wbccounseling.com,Mental Health / Counseling,0.98,rules,high
+Gigi,Oleson,gigi.oleson@rainbowrehab.com,,,,,,,,,rainbowrehab.com,Mental Health / Counseling,0.98,rules,high
+leslie,chaundy,dr.chaundy@mymindmatterscounseling.com,,,,,,,,,mymindmatterscounseling.com,Mental Health / Counseling,0.98,rules,high
+Pier,Franzen,pete@portlandhumanistictherapy.com,,,,,,,,,portlandhumanistictherapy.com,Mental Health / Counseling,0.98,rules,high
+Rosa,Rubino-Frye,rrubino-frye@innovative-rehab.com,,,,,,,,,innovative-rehab.com,Mental Health / Counseling,0.98,rules,high
+Michelle,,mowens@monumentrehab.com,,,,,,,,,monumentrehab.com,Mental Health / Counseling,0.98,rules,high
+Tando,Goduka,tando@mentalhealthsf.org,,,,,,,,,mentalhealthsf.org,Mental Health / Counseling,0.98,rules,high
+Tina,Walker,tina@tiltonstherapy.com,,,,,,,,,tiltonstherapy.com,Mental Health / Counseling,0.98,rules,high
+BreeAnnda,Melvin,bree.melvin@tiltonstherapy.com,,,,,,,,,tiltonstherapy.com,Mental Health / Counseling,0.98,rules,high
+Maria Gabriela,Miller,gaby.miller@ajcancerrehab.org,,,,,,,,,ajcancerrehab.org,Mental Health / Counseling,0.98,rules,high
+Nicole,Hornef,nicole@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Courtney,Martin,courtneymartin@sierratherapycenter.com,,,,,,,,,sierratherapycenter.com,Mental Health / Counseling,0.98,rules,high
+Emily,,emily@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Katie E,Maldonado,katie@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Brian,Cass,brian@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Kevin,Bosin,kevin@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Marcie,Owens,marcie@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Kate,Coutherut,kate@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Sara,Carafello,sara@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Catherine,Dilger,catherine@therapyaustin.com,,,,,,,,,therapyaustin.com,Mental Health / Counseling,0.98,rules,high
+Vilma,Matthews,vmatthews@chicagochristiancounseling.org,,,,,,,,,chicagochristiancounseling.org,Mental Health / Counseling,0.98,rules,high
+Jasen,Eberz,jasen@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Korrin,Vanderhoof,korrin@vbmentalhealth.com,,,,,,,,,vbmentalhealth.com,Mental Health / Counseling,0.98,rules,high
+Tammie,Johnson,tammie@ourplacecounseling.com,,,,,,,,,ourplacecounseling.com,Mental Health / Counseling,0.98,rules,high
+Olivia,Wilson,olivia@empowercounseling.net,,,,,,,,,empowercounseling.net,Mental Health / Counseling,0.98,rules,high
+Meredith,Skidmore,mskidmore@kcsportsrehab.com,,,,,,,,,kcsportsrehab.com,Mental Health / Counseling,0.98,rules,high
+Nicole,Zelinka,nicole@traumatherapyca.com,,,,,,,,,traumatherapyca.com,Mental Health / Counseling,0.98,rules,high
+Lisa,Ottenhoff,lisa@comfortsofhomecounseling.com,,,,,,,,,comfortsofhomecounseling.com,Mental Health / Counseling,0.98,rules,high
+Dr. Shandra,Wilson,shandrawb@restorecounselingms.com,,,,,,,,,restorecounselingms.com,Mental Health / Counseling,0.98,rules,high
+Douglas,Chandler,dchandler@counselingnps.com,,,,,,,,,counselingnps.com,Mental Health / Counseling,0.98,rules,high
+Diana,Spadea,diana@spadeacounsel.com,,,,,,,,,spadeacounsel.com,Mental Health / Counseling,0.98,rules,high
+Shawn,Lambert,shawn@mvp-therapy.com,,,,,,,,,mvp-therapy.com,Mental Health / Counseling,0.98,rules,high
+Ben,McCauley,ben@denovotherapy.com,,,,,,,,,denovotherapy.com,Mental Health / Counseling,0.98,rules,high
+Logan,Brown,logan@jointeffortrehab.com,,,,,,,,,jointeffortrehab.com,Mental Health / Counseling,0.98,rules,high
+Julie,Behrman,julie@purplecowtherapy.com,,,,,,,,,purplecowtherapy.com,Mental Health / Counseling,0.98,rules,high
+Micah,G,micah@capitalpsychotherapy.com,,,,,,,,,capitalpsychotherapy.com,Mental Health / Counseling,0.98,rules,high
+Nia,Taylor,conatct@rapidpsychotherapy.com,,,,,,,,,rapidpsychotherapy.com,Mental Health / Counseling,0.98,rules,high
+Tressa,Ryan,tressa@tressaryancounseling.com,,,,,,,,,tressaryancounseling.com,Mental Health / Counseling,0.98,rules,high
+Sasha,Cook,sashac@rehabrocky.com,,,,,,,,,rehabrocky.com,Mental Health / Counseling,0.98,rules,high

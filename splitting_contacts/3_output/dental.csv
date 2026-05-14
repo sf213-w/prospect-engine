@@ -1,0 +1,124 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,category,category_confidence,category_source,contact_quality
+Richard,Lee,team@mpfamilydental.com,,,,,,,,,mpfamilydental.com,Dental,0.98,rules,medium
+Taylor,Browning,office@inwoodvillagedental.com,,,Todd Brownlee DDS,,,,www.inwoodvillagedental.com,todd brownlee dds,inwoodvillagedental.com,Dental,0.98,rules,medium
+Joyce,Weeks,contact@dentaledinc.com,,,Dental Ed,,,,www.dentaledinc.com,dental ed,dentaledinc.com,Dental,0.98,rules,medium
+Alina,Katanov,admin@diamonddentalgro.com,,,,,,,,,diamonddentalgro.com,Dental,0.98,rules,medium
+Amanda,Bernardo,billing@coastfamilyortho.com,,8054898232,Coast Family Orthodontics,,,,www.coastfamilyortho.com,coast family orthodontics,coastfamilyortho.com,Dental,0.98,rules,medium
+Jeanna,Robledo,billing@creekroaddentalcare.com,,,Creek Road Dental Care,,,,www.creekroaddentalcare.com,creek road dental care,creekroaddentalcare.com,Dental,0.98,rules,medium
+Diane,Anderson,info@centraliowaendo.com,,,Central Iowa Endodontics,,,,www.centraliowaendo.com,central iowa endodontics,centraliowaendo.com,Dental,0.98,rules,medium
+Verutzka,Soza,info@sozafamilydentistry.com,,,Soza Family Dentistry,,,,www.sozafamilydentistry.com,soza family dentistry,sozafamilydentistry.com,Dental,0.98,rules,medium
+Lori,Soren,info@drlusmiles.com,,,Serafimov Dental,,,,www.drlusmiles.com,serafimov dental,drlusmiles.com,Dental,0.98,rules,medium
+Carrie,Irwin,info@brunodentistry.com,,,Candace Bruno,,,,www.brunodentistry.com,candace bruno,brunodentistry.com,Dental,0.98,rules,medium
+DANA,BANDELL,info@gumsolutions.com,,,Periodontal & Implant Center of York,,,,www.gumsolutions.com,periodontal and implant center of york,gumsolutions.com,Dental,0.98,rules,medium
+Gary,Sengbusch,info@sengbuschdentistry.com,,,Spicewood Hill Country Dental,,,,www.sengbuschdentistry.com,spicewood hill country dental,sengbuschdentistry.com,Dental,0.98,rules,medium
+Kris,Thompson,info@goremotedentalsolutions.com,,,Go Remote Dental Solutions,,,,www.goremotedentalsolutions.com,go remote dental solutions,goremotedentalsolutions.com,Dental,0.98,rules,medium
+Denise,Martinez,info@bluejayfamilydental.com,,7122566263,,,,,,,bluejayfamilydental.com,Dental,0.98,rules,medium
+Cammielle,,office@anantunidental.com,,,,,,,,,anantunidental.com,Dental,0.98,rules,medium
+Olivia,Hennessy,info@midwest-family-dentistry.com,,,,,,,,,midwest-family-dentistry.com,Dental,0.98,rules,medium
+Rachel N,Matta,info@mattafamilydental.com,,,,,,,,,mattafamilydental.com,Dental,0.98,rules,medium
+Jenny,Lu,info@greshamstationdental.com,,,,,,,,,greshamstationdental.com,Dental,0.98,rules,medium
+Jaime,Acuna,team@dentalartsofplamave.com,,,,,,,,,dentalartsofplamave.com,Dental,0.98,rules,medium
+Hannah,Latham,office@homestreetdental.com,,,,,,,,,homestreetdental.com,Dental,0.98,rules,medium
+Jacalyn,Ames,info@blissfamilydental.com,,,,,,,,,blissfamilydental.com,Dental,0.98,rules,medium
+STACY,TARAKOFSKY,billing@applemobiledental.com,,,,,,,,,applemobiledental.com,Dental,0.98,rules,medium
+Katelin,DeGroot,marketing@lakeviewmoderndentistry.com,,,,,,,,,lakeviewmoderndentistry.com,Dental,0.98,rules,medium
+Kristine,,office@dentalcareofspokane.com,,,,,,,,,dentalcareofspokane.com,Dental,0.98,rules,medium
+Melanie,Sullivan,info@yuhprosthodontics.com,,,,Yuh Prosthodontics,,,,,yuhprosthodontics.com,Dental,0.98,rules,medium
+Alexis,Gunter,contact@johngreifperiodontics.com,,,,Dr. John C. Greif - Periodontist,,,,,johngreifperiodontics.com,Dental,0.98,rules,medium
+yubisey,gomez,info@nikfarfamilydental.com,,,,,,,,,nikfarfamilydental.com,Dental,0.98,rules,medium
+Alex,A,info@eggertfamilydentistry.com,,,,,,,,,eggertfamilydentistry.com,Dental,0.98,rules,medium
+Alison,Lee,info@murraydental.com,,,,,,,,,murraydental.com,Dental,0.98,rules,medium
+Monica,Hoselton,monicah@puckettdental.com,,8702735607,Ridge Kids Dental,,,,,ridge kids dental,puckettdental.com,Dental,0.98,rules,high
+Cindy,Castillo,ccastillo@toothday.com,,956-461-2424,Toothday family dentistry,,,,,toothday family dentistry,toothday.com,Dental,0.98,rules,high
+Nativita,Vital,queenvita77@myyahoo.com,,,Pearl dental group,,,,,pearl dental group,myyahoo.com,Dental,0.98,rules,high
+Karina Del,Moral,kdm@portofinodental.org,,,Porto Fino Dental,,,,www.portofinodental.org,porto fino dental,portofinodental.org,Dental,0.98,rules,high
+JAN,BUDENZ,officemanager@fremauxdental.com,,,Fremaux Dental Care,,,,www.fremauxdental.com,fremaux dental care,fremauxdental.com,Dental,0.98,rules,high
+hiba,mughal,manager@artisticfamilydental.com,,,Artistic Family Dental,,,,www.artisticfamilydental.com,artistic family dental,artisticfamilydental.com,Dental,0.98,rules,high
+Suzette,Cullins,suzette@lakesidedentalmanagement.com,HR Professional,(904) 395-7772,Lakeside Dental Management,,Jacksonville,Florida,www.lakesidedentalmanagement.com,lakeside dental management,lakesidedentalmanagement.com,Dental,0.98,rules,high
+Connie,Marks,connie@remotebadentalbilling.com,,,,,,,,,remotebadentalbilling.com,Dental,0.98,rules,high
+Caitlin,Rosemann,dr.rosemann@rosemanndental.com,,,,,,,,,rosemanndental.com,Dental,0.98,rules,high
+Tosha,Gurley,tosha@allaboutsmilesfamilydental.com,Tx and Accept,,All About Smiles Family Dental,,Ash Flat,Arkansas,www.allaboutsmilesfamilydental.com,all about smiles family dental,allaboutsmilesfamilydental.com,Dental,0.98,rules,high
+Natalie,Marquardt,natalie@bruceortho.com,,,Bruce Orthodontics,,,,www.bruceortho.com,bruce orthodontics,bruceortho.com,Dental,0.98,rules,high
+Kerstin,Whitten,kerstin@zunigafamilydentistry.com,,,,,,,,,zunigafamilydentistry.com,Dental,0.98,rules,high
+Tallie,Bolin,officemanager@redmonddental.org,,,,,,,,,redmonddental.org,Dental,0.98,rules,high
+Holly,Green,hollyg@twincreeksfamilydentistry.com,,,Twin Creeks Family Dentistry,,,,www.twincreeksfamilydentistry.com,twin creeks family dentistry,twincreeksfamilydentistry.com,Dental,0.98,rules,high
+Lindsay,Patterson,smiles@smartmouthdentalcare.com,,,,,,,,,smartmouthdentalcare.com,Dental,0.98,rules,high
+Vlad,Pun,manager@progressivedentistryomaha.com,,,,,,,,,progressivedentistryomaha.com,Dental,0.98,rules,high
+Michael,Mancuso,michae.mancuso@phase3.dental,,,,,,,,,phase3.dental,Dental,0.98,rules,high
+Holly,Drummonds,holly@heritagehill.dental,Practice Manager,,Heritage Hill Dental,,,,heritagehill.dental,heritage hill dental,heritagehill.dental,Dental,0.98,rules,high
+Kristine,Garcia,kristine@danvilledentistry.com,Office Administrator,,Danville Dentistry,,Danville,California,www.danvilledentistry.com,danville dentistry,danvilledentistry.com,Dental,0.98,rules,high
+Peggy,Reilly,peggy@gershenzondental.com,,,Gershenzon Dental,,Chicago,Illinois,www.gershenzondental.com,gershenzon dental,gershenzondental.com,Dental,0.98,rules,high
+Charles,Crowl,crowl@magnoliadentalky.com,Owner,,Magnolia Dental,,Louisville,Kentucky,www.magnoliadentalky.com,magnolia dental,magnoliadentalky.com,Dental,0.98,rules,high
+louis,scibelli,mail@brookdental.net,,,Brook Dental Associates,,,,www.brook-dental.com,brook dental associates,brookdental.net,Dental,0.98,rules,high
+Kathleen,Szabo,kathleen.bellszabo@42northdental.com,"Manager, Compliance",,42 North Dental,,Waltham,Massachusetts,www.42northdental.com,42 north dental,42northdental.com,Dental,0.98,rules,high
+Herbert SAINT,JEAN,drstjean@charlottemidtowndentistry.com,,,,,,,,,charlottemidtowndentistry.com,Dental,0.98,rules,high
+Mimi,Chan,receptionist@ingersollfamilydentistry.com,,,Ingersoll Family Dentistry,,,,,ingersoll family dentistry,ingersollfamilydentistry.com,Dental,0.98,rules,high
+Emily,Hutt,emily@huttasmiles.com,Dental Assistant,,"Brandon Cook, DDS - Hutta & Cook Orthodontics",,Worthington,Ohio,www.huttasmiles.com,brandon cook dds hutta and cook orthodontics,huttasmiles.com,Dental,0.98,rules,high
+Angela,Cravens,angie@smilesourcespokane.com,,,Ellingsen / Henneberg Dentistry,,,,www.smilesourcespokane.com,ellingsen henneberg dentistry,smilesourcespokane.com,Dental,0.98,rules,high
+Johaly,Vega,jvega@vistahillsfamilydental.com,"Director, Human Resources",,Vista Hills Family Dental,,El Paso,Texas,www.vistahillsfamilydental.com,vista hills family dental,vistahillsfamilydental.com,Dental,0.98,rules,high
+Theresa,Veazey,tveazey@mysagedental.com,"Director, Healthcare Privacy & Quality Assurance",(561) 999-9650 x 6411,Sage Dental,,Boca Raton,Florida,www.mysagedental.com,sage dental,mysagedental.com,Dental,0.98,rules,high
+Jodie,Conner,auroradwom@auroradentalwellness.net,,,Aurora Dental Wellness,,,,www.auroradentalwellness.net,aurora dental wellness,auroradentalwellness.net,Dental,0.98,rules,high
+Epris,Harrison,epris@centerforendodontics.com,,,Center for Endodontics,,,,www.centerforendodontics.com,center for endodontics,centerforendodontics.com,Dental,0.98,rules,high
+Emma,Elwood,frontdesk@hawksforddental.com,,,,,,,,,hawksforddental.com,Dental,0.98,rules,high
+Alli,Hatfield,alli@deanortho.com,,,Dean Orthodontics,,,,www.deanortho.com,dean orthodontics,deanortho.com,Dental,0.98,rules,high
+Amber,McClain,amber@legacydentalpc.com,,,Brigden Tracy DDS,,,,www.legacydentalpc.com,brigden tracy dds,legacydentalpc.com,Dental,0.98,rules,high
+Jessica,Ezzell,jezzell@cfhcnc.org,Registered Dental Hygienist,,Carolina Family Health Centers,,Rocky Mount,North Carolina,www.cfhcnc.org,carolina family health centers,cfhcnc.org,Dental,0.98,rules,high
+Samantha,Potter,s.potter@wellsfamilydentalgroup.com,,,,,,,,,wellsfamilydentalgroup.com,Dental,0.98,rules,high
+Maria,Santos,mjay@flossdental.com,,,FLOSS Kingwood,,,,,floss kingwood,flossdental.com,Dental,0.98,rules,high
+connie,townsend,ctownsend@smilemn.com,,,Gentle Dentistry,,,,www.gentledentalforestlake.com,gentle dentistry,smilemn.com,Dental,0.98,rules,high
+Lisa,Blazer,lisablazer@singingriverdentistry.net,Administrator,,Singing River Dentistry,,Tuscumbia,Alabama,www.singingriverdentistry.com,singing river dentistry,singingriverdentistry.net,Dental,0.98,rules,high
+Zhan Kache,Parohinog,zparohinog@cdp.dental,,,,,,,,,cdp.dental,Dental,0.98,rules,high
+Karen,McEntyre,txcoordinator@brookhavendentalassociates.com,,,Brookhaven Dental Associates,,,,www.brookhavendentalassociates.com,brookhaven dental associates,brookhavendentalassociates.com,Dental,0.98,rules,high
+Robert,Schutrum,rschutrum@greatlakesdentaltech.com,"Director, Compliance",(716) 871-1161 x 321,Great Lakes Orthodontics,,Tonawanda,New York,www.greatlakesdentaltech.com,great lakes orthodontics,greatlakesdentaltech.com,Dental,0.98,rules,high
+brandie,coleman,brandie@camelotdentalgroup.com,,,Camelot Dental Group,,,,www.camelotdentalgroup.com,camelot dental group,camelotdentalgroup.com,Dental,0.98,rules,high
+Puja,Agarwal,smiles@dentistbethesda.com,,,Complete Family Dental Care,,,,www.dentistbethesda.com,complete family dental care,dentistbethesda.com,Dental,0.98,rules,high
+Tanya,Smejkal,tsmejkal@osgb.com,Scheduling Coordinator,,Orthodontic Specialists of Green Bay,,Suamico,Wisconsin,www.osgb.com,orthodontic specialists of green bay,osgb.com,Dental,0.98,rules,high
+Carla,Hamilton,katie@hamiltonortho.net,,,Hamilton Orthodontics,,,,,hamilton orthodontics,hamiltonortho.net,Dental,0.98,rules,high
+Lynne,Calender,lynne@kurtcalenderdentistry.com,,,Kurt Calender,,,,www.kurtcalenderdentistry.com,kurt calender,kurtcalenderdentistry.com,Dental,0.98,rules,high
+Bethany,Griffith,bethany@peacestreetdental.com,,,Peace Street Dental,,,,www.peacestreetdental.com,peace street dental,peacestreetdental.com,Dental,0.98,rules,high
+,lauren Gillis,lauren.gillis@42northdental.com,,,42North Dental,,,,,42north dental,42northdental.com,Dental,0.98,rules,high
+Marty,Klein,mklein@lanap.com,"Manager, Training & Marketing Department",(562) 860-2908 x 222,Millennium Dental Technologies,,Orlando,Florida,www.lanap.com,millennium dental technologies,lanap.com,Dental,0.98,rules,high
+Renee,,clinical@mphdental.com,,,,,,,,,mphdental.com,Dental,0.98,rules,high
+Whitney,Bates,wbates@lumiodental.com,,,,,,,,,lumiodental.com,Dental,0.98,rules,high
+Danna,Emmons,accounting@bagnelldental.com,,,,,,,,,bagnelldental.com,Dental,0.98,rules,high
+Tiffany,Dean,drdean@eastviewfamilydentistry.com,,,,,,,,,eastviewfamilydentistry.com,Dental,0.98,rules,high
+Kendra,Turner,kendra@woodcreekdental.com,,,,,,,,,woodcreekdental.com,Dental,0.98,rules,high
+Kenny,Su,kenny@aplusdental.us,,,,,,,,,aplusdental.us,Dental,0.98,rules,high
+Cathe,Zindel,cathe@legacydentalpc.com,,,,,,,,,legacydentalpc.com,Dental,0.98,rules,high
+Debbie,Sills,om@radiantdentistryfl.com,,,,,,,,,radiantdentistryfl.com,Dental,0.98,rules,high
+Shaye,Berry,shaye@bighornfamilydental.com,,,,,,,,,bighornfamilydental.com,Dental,0.98,rules,high
+Rhonda,Williams,corpoffice@floridadentalcenters.com,,,,,,,,,floridadentalcenters.com,Dental,0.98,rules,high
+Lisa,Appelquist,lappelquist@midtowndentalvision.com,,,,,,,,,midtowndentalvision.com,Dental,0.98,rules,high
+Sophia,Prince,sprince@gaorthodontics.org,,,,,,,,,gaorthodontics.org,Dental,0.98,rules,high
+emina,,eomerovic@3020dental.com,,,,,,,,,3020dental.com,Dental,0.98,rules,high
+Kristin,Fixmer,tc@kingwoodorthodontics.com,,,,,,,,,kingwoodorthodontics.com,Dental,0.98,rules,high
+Jill,Ragan,jragan@sealydental.com,,,,,,,,,sealydental.com,Dental,0.98,rules,high
+Jill,Shue,jill@customdentalsolutions.com,,,,,,,,,customdentalsolutions.com,Dental,0.98,rules,high
+Radhika,Atla,dentist@atladental.com,,,,,,,,,atladental.com,Dental,0.98,rules,high
+Andria,Kim,reception@lynnwoodfamilydentistry.com,,,,,,,,,lynnwoodfamilydentistry.com,Dental,0.98,rules,high
+BRUCE,GOPMAN,dentist@applemobiledental.com,,,,,,,,,applemobiledental.com,Dental,0.98,rules,high
+April,Bane,aprilcao@applemobiledental.com,,,,,,,,,applemobiledental.com,Dental,0.98,rules,high
+LACY,RUSSELL,lacyrussell@applemobiledental.com,,,,,,,,,applemobiledental.com,Dental,0.98,rules,high
+JODI,USHMAN,jodi.ushmanrdh@applemobiledental.com,,,,,,,,,applemobiledental.com,Dental,0.98,rules,high
+Dr.Shaya,,drshaya@chambersfamilydentistry.com,,,,,,,,,chambersfamilydentistry.com,Dental,0.98,rules,high
+Mary,Dunlap,mary@hometown-dentistry.com,,,,,,,,,hometown-dentistry.com,Dental,0.98,rules,high
+Viola,Potter,viola@windcrestpediatricdentistry.com,,,,,,,,,windcrestpediatricdentistry.com,Dental,0.98,rules,high
+Rosy,Chavez,rosy@txkidsdental.com,,,,,,,,,txkidsdental.com,Dental,0.98,rules,high
+Steven,Palmer,spalmer@hmidental.com,,,,DENCAP Dental Plans,,,,,hmidental.com,Dental,0.98,rules,high
+Kristen,Farmer,kristen@goorthodontics.com,,,,,,,,,goorthodontics.com,Dental,0.98,rules,high
+Jenny,Bernhard,jenny.bernhard@deltadentalsd.com,,,,South Dakota Dental Network,,,,,deltadentalsd.com,Dental,0.98,rules,high
+Jennifer,Lyman,jennifer@alpenglowdentalbend.com,,,,,,,,,alpenglowdentalbend.com,Dental,0.98,rules,high
+Sonya,Marcos,smile@dentalcitypark.com,,,,,,,,,dentalcitypark.com,Dental,0.98,rules,high
+Luke,Griffin,luke@studiodental.com,,,,,,,,,studiodental.com,Dental,0.98,rules,high
+Sonya,Marcos,smile@cityparkdental.com,,,,,,,,,cityparkdental.com,Dental,0.98,rules,high
+Mikayla,Hansford,mikayla@goedental.com,,,,,,,,,goedental.com,Dental,0.98,rules,high
+Linna,Vega,linna.vega@dentalnow14.com,,,,,,,,,dentalnow14.com,Dental,0.98,rules,high
+Lynette,Willis,lynette@fallsgrovedentistry.com,,,,,,,,,fallsgrovedentistry.com,Dental,0.98,rules,high
+Andrii,Sidash,andrii@britedental.org,,,,,,,,,britedental.org,Dental,0.98,rules,high
+Jennifer,Reyes,jreyes@communitysmilesdental.com,,,,,,,,,communitysmilesdental.com,Dental,0.98,rules,high
+Brenda,,brenda@andoverfamilydentistrymn.com,,,,,,,,,andoverfamilydentistrymn.com,Dental,0.98,rules,high
+Amanda,Conyer,aconyer@deltadentaltn.com,,,,,,,,,deltadentaltn.com,Dental,0.98,rules,high
+Erica,Shirck,erica.shirck@emergencydental.com,,,,,,,,,emergencydental.com,Dental,0.98,rules,high
+The,Barnish's,joyce@cosmeticrestorativedental.net,,,,,,,,,cosmeticrestorativedental.net,Dental,0.98,rules,high
+JENNA,BRADY,jbrady@signaturedentalpartners.com,,,,,,,,,signaturedentalpartners.com,Dental,0.98,rules,high
+Liz,Schmidt,liz.schmidt@samedaydental.com,,,,,,,,,samedaydental.com,Dental,0.98,rules,high
