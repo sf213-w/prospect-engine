@@ -7,3 +7,12 @@
 n4j/*
 
 breach_reports/*
+
+# Ignore private files
+pipeline/*.csv
+splitting_contacts/1_output/*.csv
+splitting_contacts/2_output/*.csv
+splitting_contacts/3_output/*.csv
+
+# Ignore temporary files
+splitting_contacts/temp.txt

@@ -1,15 +1,1 @@
-first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,category,category_confidence,category_source,contact_quality
-Ashley,Winter,billing@absolutebalancechiropractic.com,,,Absolute Balance Chiropractic,,,,www.absolutebalancechiropractic.com,absolute balance chiropractic,absolutebalancechiropractic.com,Chiropractic,0.9,domain_hint,medium
-tera,,billing@creeksidechiropracticcenter.com,,,,,,,,,creeksidechiropracticcenter.com,Chiropractic,0.9,domain_hint,medium
-Stephanie,Sanders,info@fountainchiropractic.com,,,,,,,,,fountainchiropractic.com,Chiropractic,0.9,domain_hint,medium
-Courtney,Genest,info@straterchiropractic.com,,,,,,,,,straterchiropractic.com,Chiropractic,0.9,domain_hint,medium
-Molly,Lengyel,mlengyel@creeksidechiropracticcenter.com,Office Coordinator,,Creekside Chiropractic Center,,Gahanna,Ohio,www.creeksidechiropracticcenter.com,creekside chiropractic center,creeksidechiropracticcenter.com,Chiropractic,0.9,domain_hint,high
-Katie,Kanda,drkatie@jewellchiropractic.com,,,Jewell Chiropractic,,,,www.jewellchiropractic.com,jewell chiropractic,jewellchiropractic.com,Chiropractic,0.9,domain_hint,high
-Kathryn,Stiffey,vickimiller@redefinedchiropractic.com,,,Redefined Chiropractic,,,,www.redefinedchiropractic.com,redefined chiropractic,redefinedchiropractic.com,Chiropractic,0.9,domain_hint,high
-Meghann,Reimondo,meghann@hudsonvalleychiropractic.com,,,Dr Emily Bobson,,,,www.hudsonvalleychiropractic.com,dr emily bobson,hudsonvalleychiropractic.com,Chiropractic,0.9,domain_hint,high
-Jennifer,Habchi,drjen@thenaturalpathchiropractic.com,,,,,,,,,thenaturalpathchiropractic.com,Chiropractic,0.9,domain_hint,high
-Joseph,Colasuonno,drjoe@familycirclechiropractic.com,,,,,,,,,familycirclechiropractic.com,Chiropractic,0.9,domain_hint,high
-Kurt,Pepperell,drpepperell@pepperellchiropractic.com,,,,,,,,,pepperellchiropractic.com,Chiropractic,0.9,domain_hint,high
-patti,bryan,patti@pepperellchiropractic.com,,,,,,,,,pepperellchiropractic.com,Chiropractic,0.9,domain_hint,high
-Tiffany,Bratcher,kelli@bratcherchiropractic.com,,,,,,,,,bratcherchiropractic.com,Chiropractic,0.9,domain_hint,high
-amanda,hayward,amanda@eriksenchiropractic.com,,,,,,,,,eriksenchiropractic.com,Chiropractic,0.9,domain_hint,high
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,likely_provider,contact_type,category,category_confidence,category_source,contact_quality

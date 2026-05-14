@@ -1,356 +1,227 @@
-"""
-2_categorize_companies.py
-=========================
-
-Stage 2:
-- Categorizes healthcare companies
-- Uses:
-	1. Rules
-	2. Domain hints
-	3. Ollama fallback
-- Adds confidence scores
-"""
-
+import pandas as pd
+import re
 import sys
 import os
-import re
-import time
-import pandas as pd
-import requests
 
 DEFAULT_INPUT = "1_output/company_contacts.csv"
-
 DEFAULT_OUTPUT = "2_output/company_contacts_categorized.csv"
-
-OLLAMA_URL = "http://localhost:11434/api/generate"
-
-OLLAMA_MODEL = "qwen2.5:7b"
-
-REQUEST_TIMEOUT = 90
 
 VALID_CATEGORIES = {
 	"Dental",
 	"Mental Health / Counseling",
 	"Family Medicine / Primary Care",
 	"Pediatrics",
+	"Vision / Optometry",
 	"Chiropractic",
 	"Physical Therapy / Rehab",
-	"Home Health / Hospice",
 	"Hospital / Health System",
-	"Specialty Clinic",
 	"Urgent Care",
-	"Vision / Optometry",
-	"Pharmacy / Compounding",
-	"Veterinary",
-
 	"Healthcare IT / SaaS",
 	"Billing / Revenue Cycle",
-	"Staffing / Recruiting",
 	"Consulting / Compliance",
-
-	"Non-Profit / Government Health",
-	"Wellness / Integrative / Alternative",
-	"Substance Abuse / Addiction Recovery",
-
+	"Insurance / Network",
+	"Dental Management Group",
+	"Dental Manufacturer / Supplier",
+	"Medical Education",
 	"Other Healthcare",
 	"Non-Healthcare",
-
 	"Ambiguous / Needs Review",
 }
 
-RULES = [
-
-	# Vendors FIRST
-
-	{
-		"category": "Healthcare IT / SaaS",
-		"keywords": [
-			r"\behr\b",
-			r"\bemr\b",
-			r"\bsoftware\b",
-			r"\bplatform\b",
-			r"\bsaas\b",
-			r"\btech\b",
-			r"\bit services\b",
-		]
-	},
-
+NON_PROVIDER_RULES = [
 	{
 		"category": "Billing / Revenue Cycle",
-		"keywords": [
-			r"\bbilling\b",
-			r"\brevenue cycle\b",
-			r"\bcoding\b",
-			r"\bmedical billing\b",
-		]
+		"patterns": [
+			r"billing",
+			r"revenue cycle",
+			r"claims",
+		],
 	},
 
 	{
-		"category": "Staffing / Recruiting",
-		"keywords": [
-			r"\bstaffing\b",
-			r"\brecruiting\b",
-			r"\bplacement\b",
-		]
+		"category": "Insurance / Network",
+		"patterns": [
+			r"insurance",
+			r"network",
+			r"dental plans",
+		],
 	},
 
-	# Providers SECOND
+	{
+		"category": "Dental Management Group",
+		"patterns": [
+			r"management",
+			r"partners",
+			r"dso",
+			r"group",
+		],
+	},
 
+	{
+		"category": "Dental Manufacturer / Supplier",
+		"patterns": [
+			r"technologies",
+			r"supplier",
+			r"manufacturer",
+		],
+	},
+
+	{
+		"category": "Medical Education",
+		"patterns": [
+			r"education",
+			r"academy",
+			r"training",
+		],
+	},
+]
+
+PROVIDER_RULES = [
 	{
 		"category": "Dental",
-		"keywords": [
-			r"\bdental\b",
-			r"\bdentistry\b",
-			r"\borthodont",
-			r"\bendodont",
-			r"\bperiodont",
-		]
+		"patterns": [
+			r"dental",
+			r"dentistry",
+			r"orthodont",
+			r"endodont",
+			r"periodont",
+			r"prosthodont",
+		],
 	},
 
 	{
 		"category": "Mental Health / Counseling",
-		"keywords": [
-			r"\bbehavioral health\b",
-			r"\bmental health\b",
-			r"\btherapy\b",
-			r"\bcounseling\b",
-			r"\bpsychiatry\b",
-		]
-	},
-
-	{
-		"category": "Hospital / Health System",
-		"keywords": [
-			r"\bhospital\b",
-			r"\bmedical center\b",
-			r"\bhealth system\b",
-		]
+		"patterns": [
+			r"mental health",
+			r"therapy",
+			r"counseling",
+		],
 	},
 
 	{
 		"category": "Vision / Optometry",
-		"keywords": [
-			r"\bvision\b",
-			r"\boptometry\b",
-			r"\bophthalmology\b",
-			r"\beye care\b",
-		]
+		"patterns": [
+			r"optometry",
+			r"vision",
+			r"eye care",
+		],
 	},
 ]
 
 
-def safe_str(value):
+# ------------------------------------------------------------------
+# Helpers
+# ------------------------------------------------------------------
 
-	if pd.isna(value):
+def safe_str(v):
+	if pd.isna(v):
 		return ""
+	return str(v).strip()
 
-	return str(value).strip()
-
-
-def classify_by_rules(text):
-
-	text = text.lower()
-
-	for rule in RULES:
-
-		for kw in rule["keywords"]:
-
-			if re.search(kw, text, re.IGNORECASE):
-				return rule["category"], 0.98, "rules"
-
-	return None, 0.0, None
 
 
 def build_context(row):
 
-	parts = []
-
 	fields = [
-		("Organization", row.get("company_name")),
-		("Domain", row.get("root_domain")),
-		("Title", row.get("title")),
-		("Role", row.get("role")),
-		("Hint", row.get("domain_category_hint")),
+		row.get("company_name"),
+		row.get("organization"),
+		row.get("website"),
+		row.get("title"),
+		row.get("root_domain"),
 	]
 
-	for label, value in fields:
-
-		value = safe_str(value)
-
-		if value:
-			parts.append(f"{label}: {value}")
-
-	return " | ".join(parts)
-
-
-def call_ollama(prompt):
-
-	payload = {
-		"model": OLLAMA_MODEL,
-		"prompt": prompt,
-		"stream": False,
-		"options": {
-			"temperature": 0,
-			"num_predict": 50,
-		},
-	}
-
-	resp = requests.post(
-		OLLAMA_URL,
-		json=payload,
-		timeout=REQUEST_TIMEOUT
+	return " | ".join(
+		safe_str(f)
+		for f in fields
+		if safe_str(f)
 	)
 
-	resp.raise_for_status()
-
-	return resp.json()["response"].strip()
 
 
-def classify_with_llm(context):
+def classify_non_provider(text):
 
-	prompt = f"""
-Classify this healthcare-related organization.
+	text = text.lower()
 
-Context:
-{context}
+	for rule in NON_PROVIDER_RULES:
 
-Allowed Categories:
-Dental
-Mental Health / Counseling
-Family Medicine / Primary Care
-Pediatrics
-Chiropractic
-Physical Therapy / Rehab
-Home Health / Hospice
-Hospital / Health System
-Specialty Clinic
-Urgent Care
-Vision / Optometry
-Pharmacy / Compounding
-Veterinary
-Healthcare IT / SaaS
-Billing / Revenue Cycle
-Staffing / Recruiting
-Consulting / Compliance
-Non-Profit / Government Health
-Wellness / Integrative / Alternative
-Substance Abuse / Addiction Recovery
-Other Healthcare
-Non-Healthcare
-Ambiguous / Needs Review
+		for pattern in rule["patterns"]:
 
-Reply ONLY with the category name.
-"""
+			if re.search(pattern, text, re.IGNORECASE):
+				return rule["category"], 0.99, "rules"
 
-	try:
+	return None, 0.0, None
 
-		resp = call_ollama(prompt)
 
-		resp = resp.strip()
 
-		if resp in VALID_CATEGORIES:
-			return resp, 0.80, "llm"
+def classify_provider(text):
 
-	except Exception:
-		pass
+	text = text.lower()
 
-	return "Ambiguous / Needs Review", 0.40, "llm"
+	for rule in PROVIDER_RULES:
 
+		for pattern in rule["patterns"]:
+
+			if re.search(pattern, text, re.IGNORECASE):
+				return rule["category"], 0.98, "rules"
+
+	return "Ambiguous / Needs Review", 0.50, "fallback"
+
+
+# ------------------------------------------------------------------
+# Main
+# ------------------------------------------------------------------
 
 def main():
 
-	input_file = (
-		sys.argv[1]
-		if len(sys.argv) > 1
-		else DEFAULT_INPUT
-	)
+	input_file = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_INPUT
 
-	output_dir = (
-		sys.argv[2]
-		if len(sys.argv) > 2
-		else DEFAULT_OUTPUT
-	)
+	output_file = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_OUTPUT
 
-	os.makedirs(output_dir, exist_ok=True)
-
-	outfile = os.path.join(
-		output_dir,
-		"company_contacts_categorized.csv"
-	)
-
-	df = pd.read_csv(input_file, low_memory=False)
-
-	print(f"Loaded {len(df):,} rows")
-
-	cache = {}
+	df = pd.read_csv(input_file, dtype=str)
 
 	categories = []
 	confidences = []
 	sources = []
 
-	start = time.time()
+	for _, row in df.iterrows():
 
-	for idx, row in df.iterrows():
+		context = build_context(row)
 
-		cache_key = (
-			safe_str(row.get("normalized_org")),
-			safe_str(row.get("root_domain")),
-		)
+		category, confidence, source = classify_non_provider(context)
 
-		if cache_key in cache:
-
-			category, confidence, source = cache[cache_key]
-
-		else:
-
-			context = build_context(row)
-
-			category, confidence, source = (
-				classify_by_rules(context)
-			)
-
-			if not category:
-
-				hint = safe_str(
-					row.get("domain_category_hint")
-				)
-
-				if hint:
-
-					category = hint
-					confidence = 0.90
-					source = "domain_hint"
-
-			if not category:
-
-				category, confidence, source = (
-					classify_with_llm(context)
-				)
-
-			cache[cache_key] = (
-				category,
-				confidence,
-				source,
-			)
+		if not category:
+			category, confidence, source = classify_provider(context)
 
 		categories.append(category)
 		confidences.append(confidence)
 		sources.append(source)
 
-		if idx % 100 == 0:
-			print(f"{idx:,}/{len(df):,}")
-
 	df["category"] = categories
 	df["category_confidence"] = confidences
 	df["category_source"] = sources
 
-	df.to_csv(outfile, index=False)
+	# --------------------------------------------------------------
+	# Contact quality
+	# --------------------------------------------------------------
 
-	print(f"Saved: {outfile}")
+	def quality(row):
 
-	elapsed = time.time() - start
+		if row["email"] and row["company_name"]:
+			return "high"
 
-	print(f"Completed in {elapsed/60:.1f} minutes")
+		if row["email"]:
+			return "medium"
+
+		return "low"
+
+	df["contact_quality"] = df.apply(quality, axis=1)
+
+	df.to_csv(output_file, index=False)
+
+	print(f"Saved: {output_file}")
+
+	print()
+	print(df["category"].value_counts())
 
 
 if __name__ == "__main__":

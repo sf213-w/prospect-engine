@@ -1,0 +1,367 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,likely_provider,contact_type,category,category_confidence,category_source,contact_quality
+Shannon,Rowe,srowe@indianarmc.org,"Supervisor, Health Information Management",(724) 357-7298,Indiana Regional Medical Center,,Indiana,Pennsylvania,www.indianarmc.org,indiana regional medical center,indianarmc.org,False,company,Dental Management Group,0.99,rules,high
+Joy,DenHouter,joy.denhouter@sourceoneinsurance.com,Managing Member,(260) 918-6126,SourceOne Insurance,,Fort Wayne,Indiana,www.sourceoneinsurance.com,sourceone insurance,sourceoneinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Naomi,Greenberg,ngreenberg@ucpnyc.org,School Social Worker,(212) 420-0510 x 3532,ADAPT Community Network,,New York City,New York,www.adaptcommunitynetwork.org,adapt community network,ucpnyc.org,False,company,Insurance / Network,0.99,rules,high
+Susan,Walitschek,swalitschek@aaic.com,Payroll Specialist,(847) 969-2717,American Agricultural Insurance,,Schaumburg,Illinois,www.aaic.com,american agricultural insurance,aaic.com,False,company,Insurance / Network,0.99,rules,high
+Laura,Beegle,laura@valleyinsurancepro.com,"Manager, Operations",(503) 480-7596,Valley Insurance Professionals,,Salem,Oregon,www.valleyinsurancepro.com,valley insurance professionals,valleyinsurancepro.com,False,company,Insurance / Network,0.99,rules,high
+Cathy,Petrak,cpetrak@carecompassnetwork.org,"Program Manager, Compliance",(607) 240-2578,Care Compass Network,,Binghamton,New York,www.carecompassnetwork.org,care compass network,carecompassnetwork.org,False,company,Insurance / Network,0.99,rules,high
+Natalie,Ritenour,natalie.ritenour@baycare.org,"Manager, Billing Operations",(727) 394-6609,BayCare,,New Port Richey,Florida,www.baycare.org,baycare,baycare.org,False,company,Billing / Revenue Cycle,0.99,rules,high
+Lori,Kennedy,lkennedy@canetwork.org,"Director, Health Services",(817) 632-6035,Cornerstone Assistance Network,,Fort Worth,Texas,www.canetwork.org,cornerstone assistance network,canetwork.org,False,company,Insurance / Network,0.99,rules,high
+Diana,Williamson,dianawilliamson@ozinga.com,Workers' Compensation Claims Specialist,(708) 326-3769,Ozinga,,Mokena,Illinois,www.ozinga.com,ozinga,ozinga.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Nicole,Sterling,nsterling@arguscommunity.org,"Director, Quality Management",(718) 489-1068,Argus Community,,The Bronx,New York,www.arguscommunity.org,argus community,arguscommunity.org,False,company,Dental Management Group,0.99,rules,high
+Leanne,Roberts,leanne.roberts@bhninc.org,Lead Preschool Teacher,4139674046,Behavioral Health Network,,Springfield,Massachusetts,www.bhninc.org,behavioral health network,bhninc.org,False,company,Insurance / Network,0.99,rules,high
+David,Setzler,david.setzler@ondemandgroup.com,Consultant Manager,(612) 299-2607,On-Demand Group,,Minneapolis,Minnesota,www.ondemandgroup.com,on demand,ondemandgroup.com,False,company,Dental Management Group,0.99,rules,high
+Dawn,Middleton,dmiddleton@caiglobal.org,"Vice President, Performance Management & Continuous Quality Improvement",(212) 594-7741,CAI,,New York City,New York,www.caiglobal.org,cai,caiglobal.org,False,company,Dental Management Group,0.99,rules,high
+Marty,Klein,mklein@lanap.com,"Manager, Training & Marketing Department",(562) 860-2908 x 222,Millennium Dental Technologies,,Orlando,Florida,www.lanap.com,millennium dental technologies,lanap.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Teri,Gursky,teri.gursky@dor.org,Quality Management Compliance Officer,(607) 734-9784  2110,Roman Catholic Diocese of Rochester,,Rochester,New York,www.dor.org,roman catholic diocese of rochester,dor.org,False,company,Dental Management Group,0.99,rules,high
+Cathy,Lutzkanin,clutzkanin@primowater.com,"Director, Risk Management",(813) 544-8512,Primo Water Corporation,,Tampa,Florida,www.primowatercorp.com,primo water,primowater.com,False,company,Dental Management Group,0.99,rules,high
+Timothy,Humphreys,tim.humphreys@crystalclearrx.com,Managing Director,(720) 414-2744,Rogue Edge Technologies,,Sarasota,Florida,www.rogueedgetech.com,rogue edge technologies,crystalclearrx.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Matthew,Terchick,mterchick@cscinsurance.com,"Life & Medicare, Sales Agent",(724) 243-1005,Health Insurance Options,,Belle Vernon,Pennsylvania,www.healthinsuranceopts.com,health insurance options,cscinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Suzette,Cullins,suzette@lakesidedentalmanagement.com,HR Professional,(904) 395-7772,Lakeside Dental Management,,Jacksonville,Florida,www.lakesidedentalmanagement.com,lakeside dental management,lakesidedentalmanagement.com,False,company,Dental Management Group,0.99,rules,high
+Laura,Bolton,lbolton@calcasieu.gov,"Director, Risk Management",(337) 721-3536,Calcasieu Parish Police Jury,,Lake Charles,Louisiana,www.cppj.net,calcasieu parish police jury,calcasieu.gov,False,company,Dental Management Group,0.99,rules,high
+Kathi,Reilley,kreilley@pinkertonacademy.org,Benefits Specialist,(603) 437-5200 x 3116,Pinkerton Academy,,Goffstown,New Hampshire,www.pinkertonacademy.org,pinkerton academy,pinkertonacademy.org,False,company,Medical Education,0.99,rules,high
+John,Anto,janto@bmgiweb.com,Chief Information Officer,(630) 230-3905,Benefits Management Group,,Oak Brook,Illinois,www.bmgiweb.com,benefits management,bmgiweb.com,False,company,Dental Management Group,0.99,rules,high
+Sarah,Adams,sadams@mhpcolorado.org,Compliance & Privacy Officer,(303) 247-8791,Mental Health Partners,,Lafayette,Colorado,www.mhpcolorado.org,mental health partners,mhpcolorado.org,False,company,Dental Management Group,0.99,rules,high
+Kristen,Sullivan,kristen.sullivan@cumming-group.com,"Manager, Benefits",(858) 217-3584,Cumming,,San Diego,California,www.cumming-group.com,cumming,cumming-group.com,False,company,Dental Management Group,0.99,rules,high
+Miguel,Saravia,m.saravia@dana-group.org,Chief Executive Officer,(781) 429-7755,Dana Group Associates,,Needham Heights,Massachusetts,www.dana-group.com,dana associates,dana-group.org,False,company,Dental Management Group,0.99,rules,high
+Abigail,McVeigh,abigail.mcveigh@natixis.com,HR Administrator,(617) 449-2506,Groupe BPCE,,Boston,Massachusetts,www.groupebpce.com,groupe bpce,natixis.com,False,company,Dental Management Group,0.99,rules,high
+Sarah,Emmerling,semmerling@bcbsm.com,Case Management Nurse,(313) 448-8598,Blue Cross Blue Shield of Michigan,,Detroit,Michigan,www.bcbsm.com,blue cross blue shield of michigan,bcbsm.com,False,company,Dental Management Group,0.99,rules,high
+Darlene,Skinner,daskinne@lifebridgehealth.org,"Corporate Director, Enterprise Risk & Insurance",(410) 601-0973,LifeBridge Health,,Baltimore,Maryland,www.lifebridgehealth.org,lifebridge health,lifebridgehealth.org,False,company,Insurance / Network,0.99,rules,high
+Kimberly,Maier,kim.maier@gulfside.org,"Director, Health Informatics & Information Management",727-359-1648,Gulfside Healthcare Services,,Land O Lakes,Florida,www.gulfside.org,gulfside healthcare services,gulfside.org,False,company,Dental Management Group,0.99,rules,high
+Joanne,Curran,joanne.curran@glfhc.org,"Director, Health Information Management",(978) 686-2497  8531,Greater Lawrence Family Health Center,,Derry,New Hampshire,www.glfhc.org,greater lawrence family health center,glfhc.org,False,company,Dental Management Group,0.99,rules,high
+Jill,Alfrey,jalfrey@ecommunity.com,"Manager, Inpatient Coding",(317) 355-5887,Community Health Network,,Ingalls,Indiana,www.ecommunity.com,community health network,ecommunity.com,False,company,Insurance / Network,0.99,rules,high
+Cyndee,Simpson-Sugar,cyndee.simpson-sugar@network180.org,Quality & Compliance Specialist,(616) 825-5078,Network180,,Grand Rapids,Michigan,www.network180.org,network180,network180.org,False,company,Insurance / Network,0.99,rules,high
+Gia,Ching,gia@gccconsultinggroup.com,Managing Director,(949) 556-3937,GCC Consulting,,Irvine,California,www.gccconsultinggroup.com,gcc consulting,gccconsultinggroup.com,False,company,Dental Management Group,0.99,rules,high
+Latonia,Harrison,lharrison@renuwellnessgroup.com,Cypress Operational Manager,7134087551,Kinghaven Counseling Group,,Houston,Texas,www.kinghavencounseling.com,kinghaven counseling,renuwellnessgroup.com,False,company,Dental Management Group,0.99,rules,high
+Mary,Daulong,daulongm@bcmscomp.com,President & Chief Executive Officer,(281) 866-9505,Business & Clinical Management Services,,Spring,Texas,www.bcmscomp.com,business clinical management services,bcmscomp.com,False,company,Dental Management Group,0.99,rules,high
+Anmarie,Masters,anmarie.masters@uhsinc.com,"Director, Health Information Management & Facility Privacy Officer",(303) 666-2046,Centennial Peaks Hospital,,Denver,Colorado,www.centennialpeaks.com,centennial peaks hospital,uhsinc.com,False,company,Dental Management Group,0.99,rules,high
+Claudia,Aguirre,claudia.aguirre@theworkloop.com,"Senior Supervisor, Training",#ERROR!,Workloop,,Las Honduras,Francisco Morazan,www.theworkloop.com,workloop,theworkloop.com,False,company,Medical Education,0.99,rules,high
+Ashley,Crossman,ashley@medminder.com,"Manager, Process Implementation & Training",(781) 429-0062,Medminder Systems,,Boston,Massachusetts,www.medminder.com,medminder systems,medminder.com,False,company,Medical Education,0.99,rules,high
+Brian,Powell,bpowell@pcatg.com,"Manager, Network Engineering",(716) 632-5881 x 308,PCA Technology Group,,Buffalo,New York,www.pcatg.com,pca technology,pcatg.com,False,company,Insurance / Network,0.99,rules,high
+Sandra,Thompson,sandrathompson@bhcpartners.org,CQI Specialist and Corporate Compliance Officer,(740) 468-8600,Behavioral Healthcare Partners,,Newark,Ohio,www.bhcpartners.org,behavioral healthcare partners,bhcpartners.org,False,company,Dental Management Group,0.99,rules,high
+Carol,Bartek,cbartek@obmc.org,"Director, Health Information Management",(281) 341-2803,OakBend Medical Center,,Richmond,Texas,www.oakbendmedcenter.org,oakbend medical center,obmc.org,False,company,Dental Management Group,0.99,rules,high
+Dania,Bledsoe,dania@bledsoepremierhomehealthcare.com,Administrator,(901) 368-3339,Bledsoe Premier Home Health Care,,Memphis,Tennessee,www.bledsoepremierhomehealthcare.com,bledsoe premier home health care,bledsoepremierhomehealthcare.com,False,company,Dental Management Group,0.99,rules,high
+Anna,Fullmer,fullma@gritman.org,"Director, Compliance & Risk Management",(208) 883-6250,Gritman Medical Center,,Moscow,Idaho,www.gritman.org,gritman medical center,gritman.org,False,company,Dental Management Group,0.99,rules,high
+Brenda,Williams,brenda.williams@ensemblehp.com,Remote Outpatient Coder,(330) 759-8664,Ensemble Health Partners,,Blue Ash,Ohio,www.ensemblehp.com,ensemble health partners,ensemblehp.com,False,company,Dental Management Group,0.99,rules,high
+Tom,Mentzer,tmentzer@ocalafmc.com,"Manager, Information Technology & Systems Network Administrator",(352) 237-4133 x 214,Ocala Health and Rehabilitation Center,,Ocala,Florida,www.ocalahealthandrehab.com,ocala health and rehabilitation center,ocalafmc.com,False,company,Insurance / Network,0.99,rules,high
+Christine,Damon,cdamon2@schools.nyc.gov,Teacher,(718) 330-9280,New York City Department of Education,,Brooklyn,New York,schools.nyc.gov,new york city department of education,nyc.gov,False,company,Medical Education,0.99,rules,high
+Matt,Nelson,mnelson@crestins.com,"Chief Operating Officer, Employee Benefits (Crest Insurance Group)",(520) 784-7636,Crest Insurance Group,,Tucson,Arizona,www.crestins.com,crest insurance,crestins.com,False,company,Insurance / Network,0.99,rules,high
+Renee,Ruggles,rruggles@windsorhouseinc.com,MDS Nurse,(330) 366-2836,Windsor House,,Girard,Ohio,www.windsorhouseinc.com,windsor house,windsorhouseinc.com,False,company,Dental Management Group,0.99,rules,high
+Kimberly,Shepard,k.shepard@novanthealth.org,Patient Partnership Specialist,(910) 667-9237,Novant Health,,Greensboro,North Carolina,www.novanthealth.org,novant health,novanthealth.org,False,company,Dental Management Group,0.99,rules,high
+Susan,Borden,susan.borden@cullmanregional.com,"Director, Medical Staff Services & Health Information Management",(256) 737-2515,Cullman Regional Medical Center,,Vinemont,Alabama,www.cullmanregional.com,cullman regional medical center,cullmanregional.com,False,company,Dental Management Group,0.99,rules,high
+Holly,Sharma,hsharma@intercoastalmedical.com,"Director, Human Resources",(941) 955-1108 x 1011,Intercoastal Medical Group,,Bradenton,Florida,www.intercoastalmedical.com,intercoastal medical,intercoastalmedical.com,False,company,Dental Management Group,0.99,rules,high
+Mary,Parks,parksm@sjchs.org,"Director, Health Information Management",(912) 819-8268,St. Joseph's/Candler,,Savannah,Georgia,www.sjchs.org,st joseph s candler,sjchs.org,False,company,Dental Management Group,0.99,rules,high
+Renee,Levine,rlevine@integritybillingco.com,"Vice President, Utilization Management",(561) 355-5640 x 304,Integrity Billing,,Palm Springs,Florida,www.integritybillingco.com,integrity billing,integritybillingco.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Micki,Greenberg,micki@themohr.group,"Director, Operations",(813) 675-6488,Mohr Financial Group,,San Diego,California,www.mohrgroup.com,mohr financial,themohr.group,False,company,Dental Management Group,0.99,rules,high
+Katie,Pearson,katie.pearson@motivustech.com,"IT Education Manager, Project Management",,Motivus Technologies,,Bel Air,Maryland,www.motivustech.com,motivus technologies,motivustech.com,False,company,Dental Management Group,0.99,rules,high
+Johnny,Burton,johnny@casechek.com,"Manager, Network Security",,Casechek,,Chicago,Illinois,www.casechek.com,casechek,casechek.com,False,company,Insurance / Network,0.99,rules,high
+Yvette,Griffin,ygriffin@odessa-tx.gov,"Managing Director, Risk Management & Human Resources",(432) 335-3880,CITY OF ODESSA,,,Texas,www.odessa-tx.gov,city of odessa,odessa-tx.gov,False,company,Dental Management Group,0.99,rules,high
+Or,Lomnitz,orl@identimedical.com,"Global Chief Marketing Officer, Business Development & Partnerships",,Identi Medical,,Bethpage,New York,www.identimedical.com,identi medical,identimedical.com,False,company,Dental Management Group,0.99,rules,high
+Kelly,Long,klong@joriehc.com,"Director, Compliance",,Jorie Healthcare Partners,,Oak Brook,Illinois,www.jorie.ai,jorie healthcare partners,joriehc.com,False,company,Dental Management Group,0.99,rules,high
+Jill,Bentler,jill.bentler@wagstaff.com,HR Training Specialist,,Wagstaff,,Spokane,Washington,www.wagstaff.com,wagstaff,wagstaff.com,False,company,Medical Education,0.99,rules,high
+Alyssa,Duhigg,alyssa@dbtlawrence.com,Billing & Practice Specialist,,DBT Center of Lawrence,,Lawrence,Kansas,www.dbtlawrence.com,dbt center of lawrence,dbtlawrence.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Elizabeth,Hopkins,elizabeth@betterwaybilling.com,Operations Coordinator,,Better Way Billing,,Sylvan Lake,Michigan,www.betterwaybilling.com,better way billing,betterwaybilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Tiffany,Jones,tjones@capwn.org,Medical Records Specialist,,Community Action Partnership of Western Nebraska,,Gering,Nebraska,www.capwn.org,community action partnership of western nebraska,capwn.org,False,company,Dental Management Group,0.99,rules,high
+Colleen,Adler,cadler@stlukehealthcare.org,Health Information Management,(406) 528-5216,St. Luke Community Hospital,,,Montana,www.stlukehealthcare.org,st luke community hospital,stlukehealthcare.org,False,company,Dental Management Group,0.99,rules,high
+Michelle,Whittemore,michelle.whittemore@mainehealth.org,"Regional Director, Health Information Management",,MaineHealth,,Portland,Maine,www.mainehealth.org,mainehealth,mainehealth.org,False,company,Dental Management Group,0.99,rules,high
+Harsh,Patel,harsh.patel@slkgroup.com,"Deputy Manager, Client Solutions",,SLK Software,,Bengaluru,Karnataka,www.slksoftware.com,slk software,slkgroup.com,False,company,Dental Management Group,0.99,rules,high
+Jenilee,Rodriguez,jrodriguez@yourfacemd.com,Office Supervisor,,Laser & Cosmetic Surgery Specialists,,Newburgh,New York,www.hudsonvalleysinuscenter.com,laser cosmetic surgery specialists,yourfacemd.com,False,company,Dental Management Group,0.99,rules,high
+Dean,Prince,dprince@rayoncity.com,Dean,,Rayon City Technologies,,Old Hickory,Tennessee,www.rayoncity.com,rayon city technologies,rayoncity.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Magda,Hoffman,magda.hoffman@sevitahealth.com,"Manager, Training & Development",,Sevita,,Sarasota,Florida,www.sevitahealth.com,sevita,sevitahealth.com,False,company,Medical Education,0.99,rules,high
+Priscilla,Park,ppark@visionradiology.com,"Manager, People Operations",,Imagen Technologies,,Ganges,British Columbia,www.imagen.net,imagen technologies,visionradiology.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Jenny,Sumner,jenny_sumner@yakama.com,HR Training& Development Specialist,(509) 865-5121 x 4387,Yakama Nation,,,Washington,www.yakamanation.info,yakama nation,yakama.com,False,company,Medical Education,0.99,rules,high
+Pamela,Haglund,phaglund@medsolsupplier.com,"Manager, Compliance",(484) 842-4909,Medical Solutions Supplier,,,Pennsylvania,www.medsolsupplier.com,medical solutions supplier,medsolsupplier.com,False,company,Dental Management Group,0.99,rules,high
+Erin,Owen,eowen@usmagnesium.com,"Senior A and P, A and R and Expense Management",,US Magnesium,,Salt Lake City,Utah,www.usmagnesium.com,us magnesium,usmagnesium.com,False,company,Dental Management Group,0.99,rules,high
+Jennifer,Roy,jennifer@kunesh.com,"Manager, Billing",,Kunesh Eye Center,,Oakwood,Ohio,www.kunesh.com,kunesh eye center,kunesh.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Adriana,Souza,asouza@solmax.com,Talent Management Senior Advisor (Americas),,Solmax,,Varennes,Quebec,www.solmax.com,solmax,solmax.com,False,company,Dental Management Group,0.99,rules,high
+Nicole,Boisvere,nboisvere@shrinenet.org,"Corporate Director, Health Information Management",,Shriners Children's,,Springfield,Massachusetts,www.shrinersslc.org,shriners children s,shrinenet.org,False,company,Dental Management Group,0.99,rules,high
+Cortez,Chandler,cortez@timelistgroup.org,Vice President,,Timelist Group,,Los Angeles,California,www.timelistgroup.org,timelist,timelistgroup.org,False,company,Dental Management Group,0.99,rules,high
+Kristine,Bouthillier,kbouthillier@childandfamilyri.org,Training Coordinator,,Child & Family,,Middletown,Rhode Island,www.childandfamilyri.org,child family,childandfamilyri.org,False,company,Medical Education,0.99,rules,high
+Sydney,Rathjens,srathjens@pancan.org,"Senior Manager, Case, Patient Services Operations",,Pancreatic Cancer Action Network,,Manhattan Beach,California,www.pancan.org,pancreatic cancer action network,pancan.org,False,company,Insurance / Network,0.99,rules,high
+Jan,Widmer,jwidmer@cnswfl.org,"Director, Utilization Management",(239) 425-6330,CNSWFL,,Fort Myers,Florida,,cnswfl,cnswfl.org,False,company,Dental Management Group,0.99,rules,high
+Nicole,Nelson,nnelson@crossroadcounseling.org,Group Home Director,,Crossroads Counseling and Training Services,,Fairbanks,Alaska,www.crossroadscounselingak.org,crossroads counseling and training services,crossroadcounseling.org,False,company,Dental Management Group,0.99,rules,high
+Robert,Squire,rob@aprexis.com,Co-Founder & Partnership Chief & Officer,,Aprexis Health Solutions,,Montpelier,Vermont,www.aprexis.com,aprexis health solutions,aprexis.com,False,company,Dental Management Group,0.99,rules,high
+Irene,McCall,imccall@montanahealthnetwork.com,"Manager, Risk",,Montana State University,,Billings,Montana,www.montana.edu,montana state university,montanahealthnetwork.com,False,company,Insurance / Network,0.99,rules,high
+Marvin,Titlow,marvint@mbicompanies.com,"Chief Information Officer, Managed Solutions Provider",,MBI Technologies,,Knoxville,Tennessee,www.mbitechnologies.com,mbi technologies,mbicompanies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Christie,Levesque,clevesque@texasneurologyinstitute.com,Insurance Coordinator,(903) 893-5141  4337,Texas Institute for Neurological Disorders,,,Texas,www.texasinstituteforneurologicaldisorders.com,texas institute for neurological disorders,texasneurologyinstitute.com,False,company,Insurance / Network,0.99,rules,high
+Vivianed,Aponte,vivianed.aponte@inhealthmd.com,Manager,,IMA Medical Group,,Orlando,Florida,www.imamedicalgroup.com,ima medical,inhealthmd.com,False,company,Dental Management Group,0.99,rules,high
+Muhammad,Ali,muhammad.ali@vaivaltech.com,L & D Officer,,Vaival Technologies,,Karachi,Sindh,www.vaival.com,vaival technologies,vaivaltech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Sarah,Kinder,skinder@kittleproperties.com,"Manager, Human Resources Operations",,"Kittle Property Group, Inc.",,Indianapolis,Indiana,kittleproperties.com,kittle property,kittleproperties.com,False,company,Dental Management Group,0.99,rules,high
+Perry,Bev,bev.perry@clayhosp.org,"Director, Quality Risk Management & Compliance",,Clay County Hospital,,Ashland,Alabama,www.claycountyhospital.com,clay county hospital,clayhosp.org,False,company,Dental Management Group,0.99,rules,high
+Brandi,Poplin,bpoplin@graystone-eye.com,"Director, Quality & Risk Management",,Graystone Eye,,Lenoir,North Carolina,www.graystone-eye.com,graystone eye,graystone-eye.com,False,company,Dental Management Group,0.99,rules,high
+Margo,Morganti,mamorganti@daymarkrecovery.org,"Director, Medical Records, Vaya Partners & Cardinal Regions",,Daymark Recovery Services,,Statesville,North Carolina,www.daymarkrecovery.org,daymark recovery services,daymarkrecovery.org,False,company,Dental Management Group,0.99,rules,high
+Wayne,Lester,jacksontransportation@roadrunner.com,Owner,,Jackson Transportation Group,,Ray,Ohio,jackson.osu.edu,jackson transportation,roadrunner.com,False,company,Dental Management Group,0.99,rules,high
+Lacy,Alviar,lacy@cnrtech.com,Executive Assistant,,Computer & Network Repair,,Marietta,Georgia,www.cnrtech.com,computer network repair,cnrtech.com,False,company,Insurance / Network,0.99,rules,high
+Jim,Freeman,jfreeman@ambulancebill.us,President,,Ambulance Billing Services,,Elkhart,Indiana,www.ambulancebill.us,ambulance billing services,ambulancebill.us,False,company,Billing / Revenue Cycle,0.99,rules,high
+Tiffany,Leveille,tiffany@mcscounseling.org,"Director, Operations",,MCS Counseling Group,,Poulsbo,Washington,www.mcscounseling.com,mcs counseling,mcscounseling.org,False,company,Dental Management Group,0.99,rules,high
+Lacey,Herrera,lherrera@sswtechnologies.com,"Regional Director, Human Resources",,SSW Holding,,Lexington,Kentucky,www.sswtechnologies.com,ssw holding,sswtechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Rozlyn,Newman,rozlyn@bridgemindbody.com,"Director, Operations",,Academy of Integrative Mental Health,,Las Vegas,Nevada,www.holisticmentalhealthschool.com,academy of integrative mental health,bridgemindbody.com,False,company,Medical Education,0.99,rules,high
+Eric,Newman,eric.newman@lydoniatech.com,Healthcare Senior Account Executive,,Lydonia Technologies,,Indianapolis,Indiana,www.lydoniatech.com,lydonia technologies,lydoniatech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Heather,Blank,hblank@wellmed.net,Senior Case Manager Registered Nurse,,Ingram Park Medical Group,,San Antonio,Texas,www.wellmed.net,ingram park medical,wellmed.net,False,company,Dental Management Group,0.99,rules,high
+Donna,Haley,dbhaley@mentormm.com,Chief Executive Officer,,Mentor Medical Management,,North Kingstown,Rhode Island,www.mentormm.com,mentor medical management,mentormm.com,False,company,Dental Management Group,0.99,rules,high
+Vicky,Huang,vicky@cordx.com,"Associate Director, Product Management, Regulatory Team Lead",,CorDx,,San Diego,California,www.cordx.com,cordx,cordx.com,False,company,Dental Management Group,0.99,rules,high
+Mellissa,Barajas,mbarajas@therkgroup.com,"Manager, Corporate Human Resources",,The RK Group,,San Antonio,Texas,www.therkgroup.com,the rk,therkgroup.com,False,company,Dental Management Group,0.99,rules,high
+Martin,Kristen,martin@ecareindia.com,Deputy General Manager,(813) 579-1248,Medical Billing,,,Florida,www.medical-billing.com,medical billing,ecareindia.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Alice,Cobb,alicecobb@rocketmail.com,"Director, Benefits Administration",,RISE Partnership,,Portland,Oregon,www.risepartnership.com,rise partnership,rocketmail.com,False,company,Dental Management Group,0.99,rules,high
+Michelle,Huft,mhuft@afs4kids.org,"Director, Quality Management",,Alternative Family Services,,Oakland,California,www.afs4kids.org,alternative family services,afs4kids.org,False,company,Dental Management Group,0.99,rules,high
+Philip,Konkel,philip.konkel@wear-tech.com,Chief Medical Officer,,Wearable Technologies,,Hartland,Wisconsin,www.wear-tech.com,wearable technologies,wear-tech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Denise,Brummett,deniseb@superiorsault.com,Employee Benefits Sales Agent,,Superior Insurance Agency of Sault Ste Marie,,Sault Ste. Marie,Michigan,www.superiorsault.com,superior insurance agency of sault ste marie,superiorsault.com,False,company,Insurance / Network,0.99,rules,high
+Cassandra,Burchfield,sandi@familylife.group,Owner,,Family Life Counseling Center,,Clermont,Florida,www.familylifecounselingcenter.com,family life counseling center,familylife.group,False,company,Dental Management Group,0.99,rules,high
+Chris,Brown,christopher.brown@fanduel.com,Staff Accountant,(702) 792-7200,FanDuel Group,,,Georgia,www.fanduel.com,fanduel,fanduel.com,False,company,Dental Management Group,0.99,rules,high
+Cynthia,Salgado,cynthia.salgado@humangood.org,"Vice President, Information Technology Projects, Applications & Business Management",,HumanGood,,Duarte,California,www.humangood.org,humangood,humangood.org,False,company,Dental Management Group,0.99,rules,high
+April,Mansur,amansur@intercoastalmedical.com,"Director, Medical Records",,Intercoastal Medical Group,,Sarasota,Florida,www.intercoastalmedical.com,intercoastal medical,intercoastalmedical.com,False,company,Dental Management Group,0.99,rules,high
+Balaji,Murala,balaji.murala@alight.com,"Lead, Party Risk Management Specialist",,Alight,,Hyderabad,Telangana,www.alight.com,alight,alight.com,False,company,Dental Management Group,0.99,rules,high
+Melissa,Sims,msims@scomm.com,Insurance and Medicare Coordinator DME Lead At sComm Makers of the UbiDuo,,sComm,,Kansas City,Missouri,www.scomm.com,scomm,scomm.com,False,company,Insurance / Network,0.99,rules,high
+Sarah,Martin,sara@martinbillingsolutions.com,Head of Business Development & Partnerships,,Art Gallery of New South Wales,,Sydney,New South Wales,artgallery.nsw.gov.au,art gallery of new south wales,martinbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Jael,Alcantara,j.alcantara@advensus.com,Senior Training & Development Specialist,,Advensus,,Santo Domingo Este,Santo Domingo,www.advensus.com,advensus,advensus.com,False,company,Medical Education,0.99,rules,high
+Holly,Riley,holly@ehg.health,General Manager,,Equality Health Group,,Oklahoma City,Oklahoma,ehg.health,equality health,ehg.health,False,company,Dental Management Group,0.99,rules,high
+Deborah,Roy,deborah.roy@nttdata.com,"Services Governance, Risk, Compliance Practice Senior Manager, Security",,NTT Data Group,,Tokyo,Tokyo,www.nttdata.com,ntt data,nttdata.com,False,company,Dental Management Group,0.99,rules,high
+Dianna,Kujawski,dianna.kujawski@servicealternatives.com,"Area Manager, Service Alternatives Training Institute",,Service Alternatives,,Coupeville,Washington,www.servicealternatives.com,service alternatives,servicealternatives.com,False,company,Medical Education,0.99,rules,high
+Courtney,Vilaca,courtney.vilaca@abhealthnetwork.com,"Director, Human Resources",,Advantage Behavioral Health,,Boynton Beach,Florida,,advantage behavioral health,abhealthnetwork.com,False,company,Insurance / Network,0.99,rules,high
+Gary,Bannister,gary@gssgrouponline.com,,,Global Success Systems FZ,,Dubai,Dubai,www.gssgrouponline.com,global success systems fz,gssgrouponline.com,False,company,Dental Management Group,0.99,rules,high
+Nicholas,Bichsel,nicholas.bichsel@froedtertsouth.com,Network Engineer,2626563506,Froedtert & The Medical College of Wisconsin,,,,www.froedtert.com,froedtert the medical college of wisconsin,froedtertsouth.com,False,company,Insurance / Network,0.99,rules,high
+Alex,Peter,alex@medmaxtechnologies.com,,,MEDMAX Technologies,,Warren,Michigan,www.medmaxtechnologies.com,medmax technologies,medmaxtechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Jennifer,Bierdeman,jbierdeman@pdmi.com,Paralegal,3302677849,Pharmacy Data Management,,,,www.pdmi.com,pharmacy data management,pdmi.com,False,company,Dental Management Group,0.99,rules,high
+Carolyn,Mann,carolyn.mann@gce.com,"Director, K12 Special Projects",,Grand Canyon Education,,,Arizona,www.gce.com,grand canyon education,gce.com,False,company,Medical Education,0.99,rules,high
+April,Smith,asmith@jtshealthpartners.com,,,JTS Health Partners,,Norcross,Georgia,www.jtshealthpartners.com,jts health partners,jtshealthpartners.com,False,company,Dental Management Group,0.99,rules,high
+Kelly,Foster,kfoster@midsouthspineandpain.com,Administrator,,Midsouth Spine & Pain Associates,,Corinth,Mississippi,,midsouth spine pain associates,midsouthspineandpain.com,False,company,Dental Management Group,0.99,rules,high
+Victoria,Pinette,vpinette@pmcmedicalgroup.org,HR Generalist,,PMC Medical Group,,,,www.pmcmedicalgroup.org,pmc medical,pmcmedicalgroup.org,False,company,Dental Management Group,0.99,rules,high
+Meghan,McClendon,meghan.mcclendon@mitchell.com,Senior Medical Claims Consultant,,Mitchell International,,,,www.mitchell.com,mitchell international,mitchell.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Sumeet,Ikhankar,sumeet@calibretalentgroup.com,,(737) 279-5009,Calibre Talent Group,,,,www.calibretalentgroup.com,calibre talent,calibretalentgroup.com,False,company,Dental Management Group,0.99,rules,high
+Heather,Hart,hhart@fhcp.com,"Training & Development Specialist & Manager, Florida Healthcare Plans",,Florida Health Care Plans,,,,www.fhcp.com,florida health care plans,fhcp.com,False,company,Medical Education,0.99,rules,high
+Renee,Smith,smithr83@michigan.gov,"Director, Health Information Management",,Family Independence Agency,,,,www.mfia.state.mi.us,family independence agency,michigan.gov,False,company,Dental Management Group,0.99,rules,high
+Paula,Biggs,pbiggs@hotmangroup.com,Grc Security Analyst,,Hotman Group,,,,www.hotmangroup.com,hotman,hotmangroup.com,False,company,Dental Management Group,0.99,rules,high
+David,Strigel,dstrigel@agilian.com,"Vice President, Program Management",,Agilian,,,,www.agilian.com,agilian,agilian.com,False,company,Dental Management Group,0.99,rules,high
+Julia,Wilson,jwilson@sfahp.com,"Director, Education Compliance & Services Student",,School for Allied Health Professionals,,,,www.sfahp.com,school for allied health professionals,sfahp.com,False,company,Medical Education,0.99,rules,high
+Scott,Wilbur,scott.wilbur@wellbe.com,"Supervisor, Health Information Management & Education",,WellBe Senior Medical,,,,www.wellbe.com,wellbe senior medical,wellbe.com,False,company,Dental Management Group,0.99,rules,high
+Sonya,Newell,sonya.newell@tylertech.com,"Team Lead, Cybersecurity",,Tyler Technologies,,,,www.tylertech.com,tyler technologies,tylertech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Melanie,Cundey,melanie.cundey@zotecpartners.com,"Director, Process Improvement",,Zotec Partners,,,,www.zotecpartners.com,zotec partners,zotecpartners.com,False,company,Dental Management Group,0.99,rules,high
+marilyn,roark,mroark@alphaacademy.net,,,Alpha Academy,,,,www.alphaacademy.net,alpha academy,alphaacademy.net,False,company,Medical Education,0.99,rules,high
+Mary Grace,Bridges,gracebridgesmd@whppermianbasin.com,,,Women's Health Partners of the Permian Basin,,,,www.whppermianbasin.com,women s health partners of the permian basin,whppermianbasin.com,False,company,Dental Management Group,0.99,rules,high
+Sangeetha,Panigrahi,spanigrahi@prosomnus.com,,,ProSomnus Sleep Technologies,,,,www.prosomnus.com,prosomnus sleep technologies,prosomnus.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Service,Desk,service.desk@completecaremanagement.com,,,Complete CAre Management,,,,www.completecaremanagement.com,complete care management,completecaremanagement.com,False,company,Dental Management Group,0.99,rules,high
+Vikram,Pallepati,vikram@csatsolutions.com,,,CSAT Management Solutions,,,,www.csatsolutions.com,csat management solutions,csatsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Mark,Bernhard,mark.bernhard@richardgroupllc.com,,,Richard Group,,,,www.richardgroupllc.com,richard,richardgroupllc.com,False,company,Dental Management Group,0.99,rules,high
+Justin,LaPilusa,drlap@auxiliummentalhealth.com,,,Tiny Frog Technologies,,,,www.tinyfrog.com,tiny frog technologies,auxiliummentalhealth.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Tobin,Birney,tobin.birney@educationismedicine.com,,,Education is Medicine,,,,www.educationismedicine.com,education is medicine,educationismedicine.com,False,company,Medical Education,0.99,rules,high
+jamilia,barnes,jbarnes@andersgroup.org,,,Anders Group,,,,www.andersgroup.org,anders,andersgroup.org,False,company,Dental Management Group,0.99,rules,high
+Manthan,Vaidya,mvaidya@aldermedsolutions.com,,,Alder Medical Solutions,,,,www.aldermedsolutions.com,alder medical solutions,aldermedsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Sarah,L'Hommedieu,sarah@lmlegalgroup.com,,,L'Hommedieu & McGrievy,,,,www.lmlegalgroup.com,l hommedieu mcgrievy,lmlegalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Paula,Gilbert,mis@itaffordable.com,,,Affordable Group,,,,www.itaffordable.com,affordable,itaffordable.com,False,company,Dental Management Group,0.99,rules,high
+Jamie,Guerrera,jguerrera@ascpm.com,,,Albany & Saratoga Centers for Pain Management,,,,www.saratogacenterforpainmanagement.com,albany saratoga centers for pain management,ascpm.com,False,company,Dental Management Group,0.99,rules,high
+Smita,N,smita.phansekar1@rangtech.com,,,Rang Technologies,,,,www.rangtech.com,rang technologies,rangtech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Caleb,Lewis,caleb@hudsondermatology.com,,,Hudson Dermatology,,,,www.hudsondermatology.com,hudson dermatology,hudsondermatology.com,False,company,Dental Management Group,0.99,rules,high
+Abolanle,salami,asalami2@schools.nyc.gov,,,New York City Department of Education,,,,schools.nyc.gov,new york city department of education,nyc.gov,False,company,Medical Education,0.99,rules,high
+brandie,coleman,brandie@camelotdentalgroup.com,,,Camelot Dental Group,,,,www.camelotdentalgroup.com,camelot dental,camelotdentalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Taylor,Bishop,taylor.b@physiciansmedicalbilling.net,,,Physicians Medical Billing,,,,www.physiciansmedicalbilling.net,physicians medical billing,physiciansmedicalbilling.net,False,company,Billing / Revenue Cycle,0.99,rules,high
+Tiffany,Leveille,operations_director@mcscounseling.org,,,MCS Counseling Group,,,,www.mcscounseling.com,mcs counseling,mcscounseling.org,False,company,Dental Management Group,0.99,rules,high
+Theresa,Bollas,theresa.bollas@lydoniatech.com,,,Lydonia Technologies,,,,www.lydoniatech.com,lydonia technologies,lydoniatech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Rasand,Riggin,rriggin@ccgcare.com,,,Community Counseling Group,,,,www.ccgcare.com,community counseling,ccgcare.com,False,company,Dental Management Group,0.99,rules,high
+Theresa,Willis,thwillis@pcgus.com,,,Public Consulting Group,,,,www.pcgus.com,public consulting,pcgus.com,False,company,Dental Management Group,0.99,rules,high
+Lisa,Mochan,lisa@elementmedicalbilling.com,,,Element Medical Billing,,,,www.elementmedicalbilling.com,element medical billing,elementmedicalbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Meghann,Reimondo,meghann@hudsonvalleychiropractic.com,,,Dr Emily Bobson,,,,www.hudsonvalleychiropractic.com,dr emily bobson,hudsonvalleychiropractic.com,False,company,Dental Management Group,0.99,rules,high
+Hannah,Williams,hannahw@maxumgrp.com,,,Maxum Group,,,,www.maxumgrp.com,maxum,maxumgrp.com,False,company,Dental Management Group,0.99,rules,high
+Jodie,Davenport,jdavenport@kidsourcetherapy.com,,,Kidsource,,,,www.kidsourcetherapy.com,kidsource,kidsourcetherapy.com,False,company,Dental Management Group,0.99,rules,high
+Samantha,Saldukas,sam@trainingleader.com,,,Healthcare Training Leader,,,,www.trainingleader.com,healthcare training leader,trainingleader.com,False,company,Medical Education,0.99,rules,high
+Pam,Benjamin,pambenjamin@norwichlasik.com,,,Norwich Ophthalmology Group,,,,www.norwichlasik.com,norwich ophthalmology,norwichlasik.com,False,company,Dental Management Group,0.99,rules,high
+John,Bergmann,johnb@2mfg.com,,602-437-4940,,The Bergmann Group,,,,the bergmann,2mfg.com,False,company,Dental Management Group,0.99,rules,high
+Pam,Post,papos@southern-med.com,,,Southern Medical Group,,,,www.southern-med.com,southern medical,southern-med.com,False,company,Dental Management Group,0.99,rules,high
+Hope,Basralian,hope@cnshealthgroup.com,,,Cns Scrips,,,,www.cnshealthgroup.com,cns scrips,cnshealthgroup.com,False,company,Dental Management Group,0.99,rules,high
+Nicole,Blough,nicole.blough@alleganyco.gov,Senior Employment and Training Counselor,,"Allegany County, New York",,,,,allegany county new york,alleganyco.gov,False,company,Medical Education,0.99,rules,high
+Bonnie,Gray-Mauldin,bonnie@themauldingroup.com,,,The Mauldin Group,,,,www.themauldingroup.com,the mauldin,themauldingroup.com,False,company,Dental Management Group,0.99,rules,high
+Byron,Howell,byron.howell+hipaa@healthpilot.com,,,Healthpilot Technologies,,,,www.healthpilot.com,healthpilot technologies,healthpilot.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Amy,Thompson,thompson@elmanretina.com,,,Elman Retina Group,,,,www.elmanretina.com,elman retina,elmanretina.com,False,company,Dental Management Group,0.99,rules,high
+Wanda,Culley,culleyw@zybsmedicalgroup.com,"Executive Director, Operations",,Zybs Medical Group,,,,,zybs medical,zybsmedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Brittany,Schroeder,bschroeder@hotmangroup.com,,,Hotman Group,,,,www.hotmangroup.com,hotman,hotmangroup.com,False,company,Dental Management Group,0.99,rules,high
+Andrea,Hering,ahering@crisiscanines.org,Managing Partner,,Animal Assist Canine Academy,,,,,animal assist canine academy,crisiscanines.org,False,company,Medical Education,0.99,rules,high
+Melissa,Beach,melissa@clearviewma.com,,,Clearview Health and Wellness Group,,,,www.clearviewma.com,clearview health and wellness,clearviewma.com,False,company,Dental Management Group,0.99,rules,high
+Welmoed De,Boer,welmoed@geekiegroup.com,,,Fasyg,,,,www.geekiegroup.com,fasyg,geekiegroup.com,False,company,Dental Management Group,0.99,rules,high
+Michael,Perusich,drmichael@katsconsultants.com,Managing General Partner,,ChiroVest Partners LLC,,,,,chirovest partners,katsconsultants.com,False,company,Dental Management Group,0.99,rules,high
+Praveen,Raj,praveen.raj@cigniti.com,,,Cigniti Technologies,,,,www.cigniti.com,cigniti technologies,cigniti.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+juanita,jarrett,jjarrett@gahealthpartners.com,,,Georgia Health Partners,,,,www.gahealthpartners.com,georgia health partners,gahealthpartners.com,False,company,Dental Management Group,0.99,rules,high
+Veronica,Tarin,veronica@roseavemed.com,,,Rose Avenue Family Medical Group,,,,www.roseavemed.com,rose avenue family medical,roseavemed.com,False,company,Dental Management Group,0.99,rules,high
+LISA,HANSEN,clintlisa@landsolutions.biz,,,Land Solutions,,,,www.landsolutions.biz,land solutions,landsolutions.biz,False,company,Dental Management Group,0.99,rules,high
+Ronald,Kuaana-Edwards,ronald.ke@hexbytech.com,,5038828700,Hex Byte Technologies LLC,,,,,hex byte technologies,hexbytech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Nirav,Shah,nshah@lkc.com,,,LKC Technologies,,,,www.lkc.com,lkc technologies,lkc.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+amel,sai,saia@uwindsor.ca,,,University of Windsor,,,,www.uwindsor.ca,university of windsor,uwindsor.ca,False,company,Dental Management Group,0.99,rules,high
+jorge,viracacha,jviracacha@crinsurancegroupllc.com,,,CR Insurance Group,,,,www.crinsurancegroupllc.com,cr insurance,crinsurancegroupllc.com,False,company,Insurance / Network,0.99,rules,high
+alexander,fear,alex@fearlawgroup.com,,9143554464,alexander m. fear pc,,,,,alexander m fear,fearlawgroup.com,False,company,Dental Management Group,0.99,rules,high
+cc,aa,ccc@msn.com,,,Man Group,,,,www.man.com,man,msn.com,False,company,Dental Management Group,0.99,rules,high
+Tariq,Hafeez,tariq.hafeez@certivialab.com,,,,"Worlwide Technologies, Inc.",,,,worlwide technologies,certivialab.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Agha,Jan,wajahat@wisemedsolutions.com,,,WiseMed Solutions,,,,,wisemed solutions,wisemedsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Sheena,Gasner,sgasner@smec.k12.mn.us,,,Southern Minnesota Education Consortium,,,,,southern minnesota education consortium,mn.us,False,company,Medical Education,0.99,rules,high
+Anita,Thomas-Guynn,anita.tg@aprofessionalms.net,,,Assurance Professional Management Services (APMS),,,,,assurance professional management services apms,aprofessionalms.net,False,company,Dental Management Group,0.99,rules,high
+Feng,Liang,grace.liang@germinateducation.co.uk,,,Germinate Global,,,,,germinate global,germinateducation.co.uk,False,company,Medical Education,0.99,rules,high
+Rebecca,Finck,rgfinck@praxismedicalgroup.com,,,,Praxis Medical Group,,,,praxis medical,praxismedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+kaye,cyrus,kaye.cyrus@burgessgroup.com,,,,Burgess,,,,burgess,burgessgroup.com,False,company,Dental Management Group,0.99,rules,high
+Naomi,Kinney,naomi.kinney@religroupinc.com,,,,Reli Group,,,,reli,religroupinc.com,False,company,Dental Management Group,0.99,rules,high
+Jenny,Bernhard,jenny.bernhard@deltadentalsd.com,,,,South Dakota Dental Network,,,,south dakota dental network,deltadentalsd.com,False,company,Insurance / Network,0.99,rules,high
+Christina,Geer,christina@keysahec.org,,,"Florida Keys Area Health Education Center, Inc.",,,,,florida keys area health education center,keysahec.org,False,company,Medical Education,0.99,rules,high
+Mary,Elbarbary,mary.e@tajtech.com,,,"TAJ Technologies, Inc.",,,,,taj technologies,tajtech.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Nativita,Vital,queenvita77@myyahoo.com,,,Pearl dental group,,,,,pearl dental,myyahoo.com,False,company,Dental Management Group,0.99,rules,high
+Jon,Uchiyama,juchiyama@crosswalktechnologies.com,,,,Crosswalk Technologies,,,,crosswalk technologies,crosswalktechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Katie,Pearson,katie@kindredhearttherapy.org,,,Kindred Heart Therapy Group,,,,,kindred heart therapy,kindredhearttherapy.org,False,company,Dental Management Group,0.99,rules,high
+marie,bakhtiari,advancepbilling@att.net,,,advance precision billing,,,,,advance precision billing,att.net,False,company,Billing / Revenue Cycle,0.99,rules,high
+Lorna,MIles,lornamiles@rcccpmo.org,,,Randolph County Caring Community Partnership,,,,,randolph county caring community partnership,rcccpmo.org,False,company,Dental Management Group,0.99,rules,high
+Ranee,Madison,rmadison@corridorgroup.com,,,,Corridor Group,,,,corridor,corridorgroup.com,False,company,Dental Management Group,0.99,rules,high
+Enoch,Gunatilleke,enoch.gunatilleke@medkpo.com,,,MedSource Healthcare LLC,,,,,medsource healthcare,medkpo.com,False,company,Dental Management Group,0.99,rules,high
+Ann,Paicos,ap@hmamass.com,,,,Health Management Associates,,,,health management associates,hmamass.com,False,company,Dental Management Group,0.99,rules,high
+Macie,Young,macie.young@valleyrdn.com,,,Valley Registered Dietitian Network,,,,,valley registered dietitian network,valleyrdn.com,False,company,Insurance / Network,0.99,rules,high
+Steven,Palmer,spalmer@hmidental.com,,,,DENCAP Dental Plans,,,,dencap dental plans,hmidental.com,False,company,Insurance / Network,0.99,rules,high
+Tammie,Womack,tammie@resolvemedbilling.com,,,,Resolve Medical Billing,,,,resolve medical billing,resolvemedbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Nancy,Madden,nancym@cmspecial.com,,,"Care Management Solutions, Inc.",,,,,care management solutions,cmspecial.com,False,company,Dental Management Group,0.99,rules,high
+Stefani,Piacentine,spiaceneint@npgbrain.com,,,Neurologic Performance Group,,,,,neurologic performance,npgbrain.com,False,company,Dental Management Group,0.99,rules,high
+Sophie,Lebail,sophie.lebail@iba-group.com,,,,IBA,,,,iba,iba-group.com,False,company,Dental Management Group,0.99,rules,high
+Anjana,Sreedharan,anjana.sreedharan@isiclaims.com,,,Inspectre Solutions,,,,,inspectre solutions,isiclaims.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Brianda,Gonzalez,brianda@helmvision.com,,,Helm Vision Group,,,,,helm vision,helmvision.com,False,company,Dental Management Group,0.99,rules,high
+,cynthia Olalde,ceoassistant@lvdg.us,,,,DermCare Management,,,,dermcare management,lvdg.us,False,company,Dental Management Group,0.99,rules,high
+Catherine,Barnes,cbarnes@shaferinsurance.com,,,,,,,,,shaferinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Jessica,Schloss,jschloss@omni-wellness-group.com,,,,,,,,,omni-wellness-group.com,False,company,Dental Management Group,0.99,rules,high
+katherine,solari,katherine.solari@thementornetwork.com,,,,,,,,,thementornetwork.com,False,company,Insurance / Network,0.99,rules,high
+Cricket,Beem,reception@valleyinsurancepro.com,,,,,,,,,valleyinsurancepro.com,False,company,Insurance / Network,0.99,rules,high
+Irma,Valdez,irma@rtxpartnersllc.com,,,,,,,,,rtxpartnersllc.com,False,company,Dental Management Group,0.99,rules,high
+Kali,Beatty,kalib@altacaregroup.org,,,,,,,,,altacaregroup.org,False,company,Dental Management Group,0.99,rules,high
+Debra,Desmond,debra@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Kimmi,Smith,ksmith@thrivemedicalpartners.com,,,,,,,,,thrivemedicalpartners.com,False,company,Dental Management Group,0.99,rules,high
+Michelle,Hill,michelle@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Raymonde,vixamar,speliosorientation@sunrisegroup.org,,,,,,,,,sunrisegroup.org,False,company,Dental Management Group,0.99,rules,high
+Dawn,Cole,dawnc@tdgroupmail.com,,,,,,,,,tdgroupmail.com,False,company,Dental Management Group,0.99,rules,high
+DIANA,HAGMANN,diane@emeraldmedicalgroup.com,,,,,,,,,emeraldmedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Nicole R.,Lee,nlee@tmmmedicalgroup.com,,,,,,,,,tmmmedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Andrew M,Garlick,amgarlick@garlickgroup.com,,,,,,,,,garlickgroup.com,False,company,Dental Management Group,0.99,rules,high
+Chase,Haley,chaley@fulcrumgroup.net,,,,,,,,,fulcrumgroup.net,False,company,Dental Management Group,0.99,rules,high
+Jamie,Kalina,jamie@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Greig,Ferguson,greig.ferguson@bsigroup.com,,,,,,,,,bsigroup.com,False,company,Dental Management Group,0.99,rules,high
+Tabitha,Crosby,tabitha@tclegacygroup.com,,,,,,,,,tclegacygroup.com,False,company,Dental Management Group,0.99,rules,high
+Abagail,Smith,abagail.smith@betterlifepartners.com,,,,,,,,,betterlifepartners.com,False,company,Dental Management Group,0.99,rules,high
+Swetha,Ballyamanda,sballyamanda@matergroveacademy.com,,,,,,,,,matergroveacademy.com,False,company,Medical Education,0.99,rules,high
+Prince Kumar,Sipayya,princesi@etalentnetwork.com,,,,,,,,,etalentnetwork.com,False,company,Insurance / Network,0.99,rules,high
+Clayton,Revels,clayr@revmedgroup.com,,,,,,,,,revmedgroup.com,False,company,Dental Management Group,0.99,rules,high
+Mike,Stephens,mike.stephens@techvisiongroup.com,,,,,,,,,techvisiongroup.com,False,company,Dental Management Group,0.99,rules,high
+Kenneth,Fax,kfax@alexandernetworks.net,,,,,,,,,alexandernetworks.net,False,company,Insurance / Network,0.99,rules,high
+Ebony,Holland,eholland@infinitycounselinggroup.com,,,,,,,,,infinitycounselinggroup.com,False,company,Dental Management Group,0.99,rules,high
+Ervin S,Batchelor,ebatchelor@thebridgeconsultinggroupllc.com,,,,,,,,,thebridgeconsultinggroupllc.com,False,company,Dental Management Group,0.99,rules,high
+David,Smith,david.smith@codebluenetworks.com,,,,,,,,,codebluenetworks.com,False,company,Insurance / Network,0.99,rules,high
+Shobhit,Mehta,shobhit.mehta@abirnetworks.com,,,,,,,,,abirnetworks.com,False,company,Insurance / Network,0.99,rules,high
+Shahar,Nordia,shahar.nordia@eitangroup.com,,,,,,,,,eitangroup.com,False,company,Dental Management Group,0.99,rules,high
+JENNA,BRADY,jbrady@signaturedentalpartners.com,,,,,,,,,signaturedentalpartners.com,False,company,Dental Management Group,0.99,rules,high
+De,Yates,dy@abillingsolution.com,,,,,,,,,abillingsolution.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Tomasina,Dewalt,tdewalt@vmhealthgroup.com,,,,,,,,,vmhealthgroup.com,False,company,Dental Management Group,0.99,rules,high
+Jamie,Combs,jamiec@pedsone.com,,,,,,,,,pedsone.com,False,company,Dental Management Group,0.99,rules,high
+ATX,Dev,atxdev@1230group.com,,,,,,,,,1230group.com,False,company,Dental Management Group,0.99,rules,high
+Cynthia,Meyer,cindym.countryside@midconetwork.com,,,,,,,,,midconetwork.com,False,company,Insurance / Network,0.99,rules,high
+Kathryn,Hatfield,kathy@almosthomegroup.com,,,,,,,,,almosthomegroup.com,False,company,Dental Management Group,0.99,rules,high
+Elda,Sierra,elda@therichardsonfirm.com,,,,,,,,,therichardsonfirm.com,False,company,Dental Management Group,0.99,rules,high
+Julie,Nemeth,jnemeth@hopenetwork.org,,,,,,,,,hopenetwork.org,False,company,Insurance / Network,0.99,rules,high
+Tom,Mililli,tom.mililli@hitsconsultinggroup.com,,,,,,,,,hitsconsultinggroup.com,False,company,Dental Management Group,0.99,rules,high
+Daniela,Capraru,daniela.capraru@prbilling.com,,,,,,,,,prbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Claudia,Koontz,claudia@landrichgroup.com,,,,,,,,,landrichgroup.com,False,company,Dental Management Group,0.99,rules,high
+Michael,Madix,mmadix@atlasinsurance.com,,,,,,,,,atlasinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Betsy,Dyke,betsyd@autumninsurance.com,,,,,,,,,autumninsurance.com,False,company,Insurance / Network,0.99,rules,high
+Rhett,Hintze,hintze@thebravogroup.com,,,,,,,,,thebravogroup.com,False,company,Dental Management Group,0.99,rules,high
+Carolyn,James,carolyn@dcracademy.com,,,,,,,,,dcracademy.com,False,company,Medical Education,0.99,rules,high
+Valencia,Church-Williams,vchurchwilliams@thebridgeconsultinggroupllc.com,,,,,,,,,thebridgeconsultinggroupllc.com,False,company,Dental Management Group,0.99,rules,high
+Beverly,Joseph,bjoseph@thebridgeconsultinggroupllc.com,,,,,,,,,thebridgeconsultinggroupllc.com,False,company,Dental Management Group,0.99,rules,high
+Jeff,Abrams,jabrams@pahpartners.com,,,,,,,,,pahpartners.com,False,company,Dental Management Group,0.99,rules,high
+Grace,Sterling,gsterling@renaissancemedgroup.com,,,,,,,,,renaissancemedgroup.com,False,company,Dental Management Group,0.99,rules,high
+LISA,Hill_Ellis,lellis@sunrisegroup.org,,,,,,,,,sunrisegroup.org,False,company,Dental Management Group,0.99,rules,high
+Dori,Mashburn,dmashburn@hollandamericagroup.com,,,,,,,,,hollandamericagroup.com,False,company,Dental Management Group,0.99,rules,high
+Tameika Hall,Fulton,thall@hagroup.com,,,,,,,,,hagroup.com,False,company,Dental Management Group,0.99,rules,high
+Becki,Robb,brobb@hagroup.com,,,,,,,,,hagroup.com,False,company,Dental Management Group,0.99,rules,high
+Maria Ana,Komprath,makomrath@hcnetwork.org,,,,,,,,,hcnetwork.org,False,company,Insurance / Network,0.99,rules,high
+Laura,Tuazon,laura.tuazon@partnersmgu.com,,,,,,,,,partnersmgu.com,False,company,Dental Management Group,0.99,rules,high
+Connor,Smith,csmith@consensusnetworks.com,,,,,,,,,consensusnetworks.com,False,company,Insurance / Network,0.99,rules,high
+Tara,Frederick,taraf@wareinsurance.com,,,,,,,,,wareinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Kelly,Bartels,supins@supinsurance.com,,,,,,,,,supinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Heather,Islami,heather@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Alexandria,Gangler,alexandria@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Leticia,Carreno,lety@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+liz,young,liz@consensusnetworks.com,,,,,,,,,consensusnetworks.com,False,company,Insurance / Network,0.99,rules,high
+Pradeep,Veldi,pveldi@swifttechnologies.net,,,,,,,,,swifttechnologies.net,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Shannon,Weber,shannon@dasbillingsolutions.com,,,,,,,,,dasbillingsolutions.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Linda,Quartaro,linda.quartaro@ihcgroup.com,,,,,,,,,ihcgroup.com,False,company,Dental Management Group,0.99,rules,high
+April,Emory,aemory@primecaremanagementservices.com,,,,,,,,,primecaremanagementservices.com,False,company,Dental Management Group,0.99,rules,high
+Jay,Ahuja,jahuja@dptechgroup.com,,,,,,,,,dptechgroup.com,False,company,Dental Management Group,0.99,rules,high
+Wilfrido,Mata,wmata@centretechnologies.com,,,,,,,,,centretechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+BETTY,GATES,bettyg@maxcompbilling.com,,,,,,,,,maxcompbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Sarah,Johnson,sarahjohnson@gsmmedicalbilling.com,,,,,,,,,gsmmedicalbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Angela,Powell,angela.powell@connectionswellnessgroup.com,,,,,,,,,connectionswellnessgroup.com,False,company,Dental Management Group,0.99,rules,high
+Stephanie,Limon,stephanie@texaslaseracademy.com,,,,,,,,,texaslaseracademy.com,False,company,Medical Education,0.99,rules,high
+Robert,Williams,robertw@richardsonmed.org,,,,,,,,,richardsonmed.org,False,company,Dental Management Group,0.99,rules,high
+Vanessa,Henderson,vchenderson@pekininsurance.com,,,,,,,,,pekininsurance.com,False,company,Insurance / Network,0.99,rules,high
+Joni,Smith,joni.smith@birdsonghearing.com,,,,,,,,,birdsonghearing.com,False,company,Dental Management Group,0.99,rules,high
+Christine,Klam,christine.klam@priviamedicalgroup.com,,,,,,,,,priviamedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Rose,Carver,rose@cardinalmedsolutions.com,,,,,,,,,cardinalmedsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Rose,Carver,rosecarver@cardinalmedsolutions.com,,,,,,,,,cardinalmedsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Arden,Schwenker,arden@gmbillingrecovery.com,,,,,,,,,gmbillingrecovery.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Michelle Ward,Hughes,michelle.ward@safeandsoundrecovery.com,,,,,,,,,safeandsoundrecovery.com,False,company,Dental Management Group,0.99,rules,high
+Brandy,Denton,hr@sfdpartners.com,,,,,,,,,sfdpartners.com,False,company,Dental Management Group,0.99,rules,high
+Mindy,Kendall,mkendall@hopenetwork.org,,,,,,,,,hopenetwork.org,False,company,Insurance / Network,0.99,rules,high
+Breanna,Blumer,blumer@milestonestherapygroup.com,,,,,,,,,milestonestherapygroup.com,False,company,Dental Management Group,0.99,rules,high
+Mark Pettus,MD,mpettus@preventiagroup.com,,,,,,,,,preventiagroup.com,False,company,Dental Management Group,0.99,rules,high
+Kerry J,Dukes,kdukes@michiganprimarycarepartners.com,,,,,,,,,michiganprimarycarepartners.com,False,company,Dental Management Group,0.99,rules,high
+Kristina,Knudsen,kkknudsen@praxismedicalgroup.com,,,,,,,,,praxismedicalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Jesse,Pearlstein,jessepearlstein@thewestwoodgroup.org,,,,,,,,,thewestwoodgroup.org,False,company,Dental Management Group,0.99,rules,high
+Samantha,Mahon,sam@peakprofessionalgroup.com,,,,,,,,,peakprofessionalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Robert,Lamont,jlamont@uplifteducation.org,,,,,,,,,uplifteducation.org,False,company,Medical Education,0.99,rules,high
+Vikram,Dundigalla,vdundigalla@waypointtechnologies.com,,,,,,,,,waypointtechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+Aparna,Prakash,aparna@handsofhopeny.com,,,,,,,,,handsofhopeny.com,False,company,Dental Management Group,0.99,rules,high
+Karmen,Kabat,kkabat@uehgroup.com,,,,,,,,,uehgroup.com,False,company,Dental Management Group,0.99,rules,high
+Mr. Paul B.,Redding,paul@compliancygroup.com,,,,,,,,,compliancygroup.com,False,company,Dental Management Group,0.99,rules,high
+Kim Lee,Wilkins,klee-wilkins@partnersinabortioncare.com,,,,,,,,,partnersinabortioncare.com,False,company,Dental Management Group,0.99,rules,high
+Linda,Simonton,linda.simonton@ls-insurance.com,,,,,,,,,ls-insurance.com,False,company,Insurance / Network,0.99,rules,high
+justin,cavenaugh,justin@cavenaughinsurance.com,,,,,,,,,cavenaughinsurance.com,False,company,Insurance / Network,0.99,rules,high
+Daniel,Bjornson,dan@sansara-group.com,,,,,,,,,sansara-group.com,False,company,Dental Management Group,0.99,rules,high
+Alexander,Byrne,abyrne@thrivenetworks.com,,,,,,,,,thrivenetworks.com,False,company,Insurance / Network,0.99,rules,high
+April A,Flanner,a.flanner@godslighthouseacademy.org,,,,,,,,,godslighthouseacademy.org,False,company,Medical Education,0.99,rules,high
+Elizabeth,Jones,ejones@wholehealthpartners.org,,,,,,,,,wholehealthpartners.org,False,company,Dental Management Group,0.99,rules,high
+Justin,Alexander,justin@csgroup.tech,,,,,,,,,csgroup.tech,False,company,Dental Management Group,0.99,rules,high
+Myrna,Fletchall,mfletchall@thebillingdoc.org,,,,,,,,,thebillingdoc.org,False,company,Billing / Revenue Cycle,0.99,rules,high
+Britton,Fletchall,bfletchall@thebillingdoc.org,,,,,,,,,thebillingdoc.org,False,company,Billing / Revenue Cycle,0.99,rules,high
+Sarah,Lyons,sarahlyons@billingforlittles.com,,,,,,,,,billingforlittles.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Lercia D,Collins,l.collins@shimanagement.com,,,,,,,,,shimanagement.com,False,company,Dental Management Group,0.99,rules,high
+Tamika,Amahdi,tamahdi@medicalprobilling.com,,,,,,,,,medicalprobilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Robbyn,Lessig,robbyn@preferredcompliancepartners.com,,,,,,,,,preferredcompliancepartners.com,False,company,Dental Management Group,0.99,rules,high
+brian,strother,brian@strotherinsuranceservices.com,,,,,,,,,strotherinsuranceservices.com,False,company,Insurance / Network,0.99,rules,high
+KEVIN,ELZIA,kelzia@brighthealthgroup.com,,,,,,,,,brighthealthgroup.com,False,company,Dental Management Group,0.99,rules,high
+Crystal,Gruenewaldt,crystal.gruenewaldt@healthcarenetwork.org,,,,,,,,,healthcarenetwork.org,False,company,Insurance / Network,0.99,rules,high
+Crystall,Davis,crystalldavis@drbgroup.com,,,,,,,,,drbgroup.com,False,company,Dental Management Group,0.99,rules,high
+Christina,Hernandez,christy@hernandez7management.com,,,,,,,,,hernandez7management.com,False,company,Dental Management Group,0.99,rules,high
+Daniel,Ingersoll,dan@lacovidpartners.com,,,,,,,,,lacovidpartners.com,False,company,Dental Management Group,0.99,rules,high
+Connie,Marks,connie@remotebadentalbilling.com,,,,,,,,,remotebadentalbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Eddie Molina,Gonzalez,emolina@insightgrouppr.com,,,,,,,,,insightgrouppr.com,False,company,Dental Management Group,0.99,rules,high
+Kim,Jensen,kim@choicedso.com,,,,,,,,,choicedso.com,False,company,Dental Management Group,0.99,rules,high
+halley,crumb,halleycrumb@retrainingthevillage.org,,,,,,,,,retrainingthevillage.org,False,company,Medical Education,0.99,rules,high
+Duane,Harmon,duane@nutrendsolutions.com,,,,,,,,,nutrendsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Tengam,Maps,tengammaps@artseducatorsgroup.org,,,,,,,,,artseducatorsgroup.org,False,company,Dental Management Group,0.99,rules,high
+Emilie,Douglass,emilie@familyresourcenetworkco.com,,,,,,,,,familyresourcenetworkco.com,False,company,Insurance / Network,0.99,rules,high
+eve,crowell,ycrowell@perspectivepartnersinc.com,,,,,,,,,perspectivepartnersinc.com,False,company,Dental Management Group,0.99,rules,high
+Don,Gerdts,don@tplclaims.com,,,,,,,,,tplclaims.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+brian,polinsky,brian.polinsky@smithgroup.com,,,,,,,,,smithgroup.com,False,company,Dental Management Group,0.99,rules,high
+holly,dunlap,hdunlap@unitechtrainingacademy.com,,,,,,,,,unitechtrainingacademy.com,False,company,Medical Education,0.99,rules,high
+jameka,elliott,linda.jackson@thementornetwork.com,,,,,,,,,thementornetwork.com,False,company,Insurance / Network,0.99,rules,high
+Paul,Borda,paul@abatherapypartners.com,,,,,,,,,abatherapypartners.com,False,company,Dental Management Group,0.99,rules,high
+lisa,woodworth,lwoodworth@partnersinintegrativehealing.com,,,,,,,,,partnersinintegrativehealing.com,False,company,Dental Management Group,0.99,rules,high
+Samuel,Hairston,shairston@communitypartnersinc.org,,,,,,,,,communitypartnersinc.org,False,company,Dental Management Group,0.99,rules,high
+Deborah,Hoohuli,debi@mauilearningacademy.com,,,,,,,,,mauilearningacademy.com,False,company,Medical Education,0.99,rules,high
+Hend,Farouk,hend.farouk@future-group.com,,,,,,,,,future-group.com,False,company,Dental Management Group,0.99,rules,high
+Thaveewat,Vasavakul,thaveewat@kvsnetworksystem.com,,,,,,,,,kvsnetworksystem.com,False,company,Insurance / Network,0.99,rules,high
+Danielle,Darby,danielle@coastalbillingservices.com,,,,,,,,,coastalbillingservices.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Advanced,Eyecare,advancedeyecare@midconetwork.com,,,,,,,,,midconetwork.com,False,company,Insurance / Network,0.99,rules,high
+Samantha,Potter,s.potter@wellsfamilydentalgroup.com,,,,,,,,,wellsfamilydentalgroup.com,False,company,Dental Management Group,0.99,rules,high
+Alexandria,,alexandria@johnsonsmedicalbilling.com,,,,,,,,,johnsonsmedicalbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+indira,,indira@grmtechnologies.com,,,,,,,,,grmtechnologies.com,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+,isaias Medina,isaias@burstbilling.com,,,,,,,,,burstbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Julie,,julie@billingexerts.org,,,,,,,,,billingexerts.org,False,company,Billing / Revenue Cycle,0.99,rules,high
+stephanie,,sbenoit@groupe-optimum.com,,,,,,,,,groupe-optimum.com,False,company,Dental Management Group,0.99,rules,high
+mayling,,mayling@norlandgroup.com,,,,,,,,,norlandgroup.com,False,company,Dental Management Group,0.99,rules,high
+jessica,,jmunoz@nationalenrollmentpartners.com,,,,,,,,,nationalenrollmentpartners.com,False,company,Dental Management Group,0.99,rules,high
+Penny,,penny.mazariegos@psymedsolutions.com,,,,,,,,,psymedsolutions.com,False,company,Dental Management Group,0.99,rules,high
+Praveen,,praveen@pixelonictechnologies.net,,,,,,,,,pixelonictechnologies.net,False,company,Dental Manufacturer / Supplier,0.99,rules,high
+juliana,,juliana@onwardgroups.com,,,,,,,,,onwardgroups.com,False,company,Dental Management Group,0.99,rules,high
+Jillian,,jillian.concepcion@farragutsquaregroup.com,,,,,,,,,farragutsquaregroup.com,False,company,Dental Management Group,0.99,rules,high
+mquintos,,mquintos@dreamhomesmanagement.com,,,,,,,,,dreamhomesmanagement.com,False,company,Dental Management Group,0.99,rules,high
+,landry cesard WAMBO,l.wambo@sevenadvancedacademy.com,,,,,,,,,sevenadvancedacademy.com,False,company,Medical Education,0.99,rules,high
+Victor,,vmattoo@maxmedbilling.com,,,,,,,,,maxmedbilling.com,False,company,Billing / Revenue Cycle,0.99,rules,high
+Melinda,,melinda@mindsolutionsusa.com,,,,,,,,,mindsolutionsusa.com,False,company,Dental Management Group,0.99,rules,high
+j.albertetti,,j.albertetti@groupemcda.fr,,,,,,,,,groupemcda.fr,False,company,Dental Management Group,0.99,rules,high

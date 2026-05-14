@@ -1,242 +1,271 @@
-"""
-3_split_by_market.py
-====================
-
-Stage 3:
-- Removes junk
-- Removes low-confidence classifications
-- Deduplicates
-- Splits into market datasets
-"""
-
+import pandas as pd
 import os
 import re
-import pandas as pd
+
+# ------------------------------------------------------------------
+# Configuration
+# ------------------------------------------------------------------
 
 INPUT_FILE = "2_output/company_contacts_categorized.csv"
-
 OUTPUT_DIR = "3_output"
 
-MIN_CONFIDENCE = 0.50
+CATEGORY_COLUMN = "category"
+CONFIDENCE_COLUMN = "category_confidence"
 
-KEEP_COLUMNS = [
-	"first_name",
-	"last_name",
-	"email",
-	"title",
-	"phone",
+LOW_CONFIDENCE_THRESHOLD = 0.55
 
-	"company_name",
-	"organization",
-	"city",
-	"state",
-	"website",
-
-	"normalized_org",
-	"root_domain",
-
-	"category",
-	"category_confidence",
-	"category_source",
-
-	"contact_quality",
-]
-
-MARKET_SEGMENTS = {
-	"dental.csv": {
-		"Dental",
-	},
-
-	"mental_health.csv": {
+CATEGORY_MAP = {
+	"mental_health.csv": [
 		"Mental Health / Counseling",
 		"Substance Abuse / Addiction Recovery",
-	},
+	],
 
-	"wellness.csv": {
-		"Wellness / Integrative / Alternative",
+	"dental.csv": [
+		"Dental",
+	],
+
+	"eye_care.csv": [
+		"Vision / Optometry",
+	],
+
+	"wellness.csv": [
 		"Chiropractic",
 		"Physical Therapy / Rehab",
-		"Home Health / Hospice",
-	},
-
-	"eye_care.csv": {
-		"Vision / Optometry",
-	},
+		"Wellness / Integrative / Alternative",
+	],
 }
 
-VALID_EMAIL_PATTERN = re.compile(
-	r"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-	re.IGNORECASE
-)
-
-SPAM_DOMAINS = {
-	"example.com",
-	"mailinator.com",
-	"guerrillamail.com",
-	"trashmail.com",
-	"yopmail.com",
+EXCLUDED_PROVIDER_CATEGORIES = {
+	"Healthcare IT / SaaS",
+	"Billing / Revenue Cycle",
+	"Insurance / Network",
+	"Dental Management Group",
+	"Dental Manufacturer / Supplier",
+	"Medical Education",
+	"Consulting / Compliance",
 }
 
+SPAM_PATTERNS = [
+	r"test",
+	r"example\.com",
+	r"fake",
+	r"spam",
+	r"noreply",
+	r"no-reply",
+	r"mailinator",
+	r"asdf",
+	r"qwerty",
+]
 
-def safe_str(value):
+# ------------------------------------------------------------------
+# Helpers
+# ------------------------------------------------------------------
 
-	if pd.isna(value):
+def safe_str(v):
+
+	if pd.isna(v):
 		return ""
 
-	return str(value).strip()
+	return str(v).strip()
 
 
-def is_invalid_email(email):
+def normalize_confidence(v):
 
-	email = safe_str(email).lower()
+	if pd.isna(v):
+		return 0.5
 
-	if not email:
-		return True
+	v = str(v).strip().lower()
 
-	if not VALID_EMAIL_PATTERN.match(email):
-		return True
+	mapping = {
+		"high": 0.95,
+		"medium": 0.75,
+		"low": 0.40,
+		"rules": 0.95,
+		"llm": 0.70,
+	}
 
-	domain = email.split("@")[-1]
+	if v in mapping:
+		return mapping[v]
 
-	if domain in SPAM_DOMAINS:
-		return True
+	try:
+		return float(v)
+	except:
+		return 0.5
 
-	return False
 
+def is_spam_row(row):
 
-def is_junk_row(row):
+	text = " | ".join([
+		safe_str(row.get("first_name")),
+		safe_str(row.get("last_name")),
+		safe_str(row.get("email")),
+		safe_str(row.get("company_name")),
+		safe_str(row.get("organization")),
+	])
 
-	email = row.get("email")
+	text = text.lower()
 
-	if is_invalid_email(email):
-		return True
+	for pattern in SPAM_PATTERNS:
+		if re.search(pattern, text, re.IGNORECASE):
+			return True
 
 	return False
 
 
 def deduplicate(df):
 
-	df = df.drop_duplicates()
+	before = len(df)
+
+	df = df.drop_duplicates().copy()
+
+	# Prefer rows with more populated fields
+	df["_filled"] = df.notna().sum(axis=1)
 
 	df = (
 		df
-		.sort_values(
-			[
-				"category_confidence",
-				"contact_quality",
-			],
-			ascending=False
-		)
+		.sort_values("_filled", ascending=False)
+		.drop_duplicates(subset=["email"], keep="first")
+		.drop(columns=["_filled"])
+		.copy()
 	)
 
-	df = df.drop_duplicates(
-		subset=["email"],
-		keep="first"
-	)
+	removed = before - len(df)
 
-	df = df.drop_duplicates(
-		subset=[
-			"normalized_org",
-			"root_domain",
-			"first_name",
-			"last_name",
-		],
-		keep="first"
-	)
+	print(f"Removed {removed:,} duplicate rows")
 
 	return df
 
 
-def trim_columns(df):
-
-	available = [
-		col
-		for col in KEEP_COLUMNS
-		if col in df.columns
-	]
-
-	return df[available]
-
-
-def save(df, filename):
+def save_subset(df, filename):
 
 	path = os.path.join(OUTPUT_DIR, filename)
 
 	df.to_csv(path, index=False)
 
-	print(f"{filename:<30} {len(df):>8,} rows")
+	print(f"{filename:<28} {len(df):>8,} rows")
 
+
+# ------------------------------------------------------------------
+# Main
+# ------------------------------------------------------------------
 
 def main():
 
 	os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-	df = pd.read_csv(INPUT_FILE, low_memory=False)
+	print(f"Loading: {INPUT_FILE}")
+
+	df = pd.read_csv(INPUT_FILE, dtype=str)
 
 	print(f"Loaded {len(df):,} rows")
 
-	df = trim_columns(df)
+	# --------------------------------------------------------------
+	# Normalize confidence
+	# --------------------------------------------------------------
 
-	junk_mask = df.apply(is_junk_row, axis=1)
-
-	df = df[~junk_mask].copy()
-
-	print(f"Removed {junk_mask.sum():,} junk rows")
-
-	review_mask = (
-		(df["category_confidence"] < MIN_CONFIDENCE)
-		|
-		(df["category"] == "Ambiguous / Needs Review")
+	df[CONFIDENCE_COLUMN] = (
+		df[CONFIDENCE_COLUMN]
+		.apply(normalize_confidence)
 	)
 
-	review = df[review_mask].copy()
+	# --------------------------------------------------------------
+	# Remove spam
+	# --------------------------------------------------------------
 
-	save(review, "needs_review.csv")
+	spam_mask = df.apply(is_spam_row, axis=1)
 
-	df = df[~review_mask].copy()
+	spam = df[spam_mask].copy()
 
-	before = len(df)
+	df = df[~spam_mask].copy()
+
+	save_subset(spam, "spam.csv")
+
+	print(f"Removed {len(spam):,} spam rows")
+
+	# --------------------------------------------------------------
+	# Deduplicate
+	# --------------------------------------------------------------
 
 	df = deduplicate(df)
 
-	print(f"Removed {before - len(df):,} duplicates")
+	# --------------------------------------------------------------
+	# Vendor/Admin split
+	# --------------------------------------------------------------
 
-	assigned = pd.Series(False, index=df.index)
+	vendors = df[
+		df[CATEGORY_COLUMN].isin(EXCLUDED_PROVIDER_CATEGORIES)
+	].copy()
 
-	for filename, categories in MARKET_SEGMENTS.items():
+	save_subset(vendors, "vendors_admins.csv")
 
-		mask = df["category"].isin(categories)
+	# Remove vendors/admins from provider targeting
+	df = df[
+		~df[CATEGORY_COLUMN].isin(EXCLUDED_PROVIDER_CATEGORIES)
+	].copy()
 
-		subset = df[mask].copy()
+	# --------------------------------------------------------------
+	# Needs review bucket
+	# --------------------------------------------------------------
 
-		assigned |= mask
+	review = df[
+		(df[CATEGORY_COLUMN] == "Ambiguous / Needs Review") |
+		(df[CONFIDENCE_COLUMN] < LOW_CONFIDENCE_THRESHOLD)
+	].copy()
 
-		save(subset, filename)
+	save_subset(review, "needs_review.csv")
 
-	other = df[~assigned].copy()
+	# Remove review rows from targeting
+	df = df.drop(review.index)
 
-	save(other, "other.csv")
+	# --------------------------------------------------------------
+	# Market segmentation
+	# --------------------------------------------------------------
 
-	report = (
-		df.groupby("category")
-		.agg(
-			contacts=("category", "count"),
-			companies=("company_name", "nunique"),
-			avg_confidence=(
-				"category_confidence",
-				"mean"
-			),
-		)
-		.reset_index()
-		.sort_values(
-			"contacts",
-			ascending=False
-		)
+	used_categories = set()
+
+	for filename, categories in CATEGORY_MAP.items():
+
+		used_categories.update(categories)
+
+		subset = df[
+			df[CATEGORY_COLUMN].isin(categories)
+		].copy()
+
+		save_subset(subset, filename)
+
+	# --------------------------------------------------------------
+	# Other bucket
+	# --------------------------------------------------------------
+
+	other = df[
+		~df[CATEGORY_COLUMN].isin(used_categories)
+	].copy()
+
+	save_subset(other, "other.csv")
+
+	# --------------------------------------------------------------
+	# Summary
+	# --------------------------------------------------------------
+
+	print()
+	print("Category Breakdown")
+	print("-" * 60)
+
+	counts = (
+		df[CATEGORY_COLUMN]
+		.value_counts()
+		.sort_values(ascending=False)
 	)
 
-	save(report, "market_report.csv")
+	for category, count in counts.items():
+		print(f"{category:<40} {count:>8,}")
 
-	print("\nDone.")
+	print("-" * 60)
+
+	print(f"Final Targetable Rows: {len(df):,}")
+
+	print()
+	print(f"Done -> {os.path.abspath(OUTPUT_DIR)}")
 
 
 if __name__ == "__main__":

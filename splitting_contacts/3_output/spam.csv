@@ -1,0 +1,183 @@
+first_name,last_name,email,title,phone,company_name,organization,city,state,website,normalized_org,root_domain,likely_provider,contact_type,category,category_confidence,category_source,contact_quality
+Test,Ignore,iansnipper@hipaajournal.com,,860203588,HJ Test,,,,,hj test,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,test 5 Murray,pjmurray@greengalileo.com,,,Greengalileo Media,,,,www.greengalileo.com,greengalileo media,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,test 3 murray,pjmurray@scale-tone.com,,,Scaletone,,,,www.scaletone.net,scaletone,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,test 2 Murray,pjmurray@scale-tone.com,,,Scaletone,,,,www.scaletone.net,scaletone,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,test 1 - - universities form Murray,pjmurray@scale-tone.com,,,Scaletone,,,,www.scaletone.net,scaletone,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+John,Doe,user@example.com,,,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+asdfa,asdf,reyeryewy2@sadfsdf.asdfa,,,,,,,,,sadfsdf.asdfa,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Becky,Smith,becky.smith@mailinator.com,,,Police Department,,,,,police department,mailinator.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+LASDFJ,adsfj,adsf@b.co,,,,,,,,,b.co,False,company,Ambiguous / Needs Review,0.5,fallback,high
+test,test,tomdo@mailintor.com,,,,,,,,,mailintor.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+dfgh,asdfghjkl,wool.grouser@norton.me,,,,,,,,,norton.me,False,company,Ambiguous / Needs Review,0.5,fallback,high
+dfk,asdfgkl,complianceofficer@norton.me,,,,,,,,,norton.me,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Fake,Fake,fake@fake.com,,,,,,,,,fake.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Testing,pHqghUme,testing@example.com,,,pHqghUme,,,,,phqghume,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+David,Adeyeye,david+spam@immunogeno.com,,,Immunogenomics,,,,www.immunogeno.com,immunogenomics,immunogeno.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Ignore,iansnipper@hipaajournal.com,,860203588,HIPAA Journal,,,,www.hipaajournal.com,hipaa journal,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+QlqzzNwr,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+JYupWMLW,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+JYupWMLW,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+JYupWMLW,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+QPbmCRVM,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+tGhYxqFm,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+mulOMpUR,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+TWSfSopc,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+TWSfSopc,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+CpjJwWHV,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+LMiReReb,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+MBWUpmEH,,testing@example.com,,555-666-0606,,,,,,,example.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Tara,Gonzales,tara@kalamazoo-therapist.com,Practice Manager,(269) 459-1818,Meredith Psychological & Testing Services,,Wyoming,Michigan,www.meredithpsychologicalandtesting.com,meredith psychological testing services,kalamazoo-therapist.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Pam,Guess,gsspam@comcast.net,Psychologist,,The Private Practice,,Sydney,New South Wales,www.theprivatepractice.com.au,the private practice,comcast.net,False,company,Ambiguous / Needs Review,0.5,fallback,high
+First,Last,h4.test@compliancejunction.com,,,Test Org.,,,,,test org,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h4@compliancejunction.com,,,Test Org.,,,,,test org,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h5@compliancejunction.com,,,Test Org.,,,,,test org,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h5@compliancejunction.com,,,Test Organization,,,,,test organization,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h5@compliancejunction.com,,,Test Organization,,,,,test organization,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Matthew,Lyons,matthew@testsmartlylabs.com,,8168009699,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,HIPAA Journal,,,,,hipaa journal,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,HIPAA Journal,,,,www.hipaajournal.com,hipaa journal,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,HIPAA Journal,,,,,hipaa journal,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+IanTest2DIP,SnipTest2DIP,ianasnippofski@test2.com,,,Test 11,,,,www.test2.com,test 11,test2.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ian1DSB,Test1DSB,ian@aycya.com,,,,,,,,,aycya.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,,,,,,,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,webmaster@hipaajournal.com,,,HIPAA Journal,,,,www.hipaajournal.com,hipaa journal,hipaajournal.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Seth,Noblitt,seth@testsmartlylabs.com,,660-553-7017,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Seth,Noblitt,seth@testsmartlylabs.com,,660-553-7017,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Seth,Noblitt,seth@testsmartlylabs.com,,660-553-7017,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,james.burrage@scale-tone.com,,,,,,,,,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h5@compliancejunction.com,,5555555555,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,5555555555,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h4@compliancejunction.com,,5555555555,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Clarence Sutton,Jr,dr.csutton@atlantamedicaltestingservices.com,,,,,,,,,atlantamedicaltestingservices.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ryan,COYNE - MODULES TEST,ryancoyne@scaling-insights.com,,,,,,,,,scaling-insights.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,h4.test@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h4@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h4@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ryan - FREE,TEST,ryancoyne@scaling-insights.com,,,,,,,,,scaling-insights.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h5@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h4@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h2@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ryan Modules,Test,ryan.coyne@bluwireless.com,,,,,,,,,bluwireless.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ryan - Sample,Test (1),ryancoyne@scaling-insights.com,,,,,,,,,scaling-insights.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Matthew,Hall,test@testingtimes.com,,,,,,,,,testingtimes.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ryan Senior,Test,ryancoyne@scaling-insights.com,,,,,,,,,scaling-insights.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jeanette,Stalnaker,jeanettestalnaker@comcast.net,,,,,,,,,comcast.net,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Kate,Hull,kate@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Dominique,Jones,dominique@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+quierra,,quierra@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Michelle,Mayes,michelle@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Andres,Salgado,andres@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Andres,Salgado,andres@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jade-Lauren Mechelle,Meskie,jade-lauren@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jacinda Lea,Chavez,jacinda@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Brittney,Jonese,brittney@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Dominique,Jones,dominique@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Malynsia,Mason,malynsia@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Shelby,Johnson,shelby@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jafet,Carrasco,jafet@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jafet,Carrasco,jafet@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Alisha,Palmer,alisha@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Malynsia,Mason,malynsia@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Kaitlin,Culbertson,kaitlin@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+dominique,,dominique@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+,samantha Devne,samantha@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+,samantha Devne,samantha@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+William,Buckhannan,buck@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+William,Buckhannan,buck@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Kate,Hull,kate@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h10@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h10@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h9@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jacinda Lea,Chavez,jacinda@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Brittney,Jones,brittney@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jacinda Lea,Chavez,jacinda@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jacinda Lea,Chavez,jacinda@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jacinda Lea,Chavez,jacinda@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Carlos,Portillo-Barahona,carlos@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Sara,Winter,sara@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Dominique,Jones,dominique@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Samantha,Devine,samantha@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Matthew Glenn,Lyons,matthew@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Jafet,Carrasco,jafet@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Andres,Salgado,andres@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Marilyn,Rebori,marilynr@testsmartlylabs.com,,,,,,,,,testsmartlylabs.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form 6,editeur@tironem.fr,,,,,,,,,tironem.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Ammishaddai,Grand-Jean,mgr@freecovidtestga.com,,,,,,,,,freecovidtestga.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 5,stanislasduhau@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 4,stanislasduhau@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 3,editeur@alternance-professionnelle.fr,,,,,,,,,alternance-professionnelle.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 4,stanislasduhau@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 3,editeur@alternance-professionnelle.fr,,,,,,,,,alternance-professionnelle.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal 2,editeur@alternance-professionnelle.fr,,,,,,,,,alternance-professionnelle.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,form journal,stanislasduhau@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+TestName,B,test.h10@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,NameA,test.h9@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h2@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h8@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h7@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h6@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h2@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Five,test.h5@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Four,test.h4@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Third,Test,test.h3@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Second,Test,test.h2@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Test,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Person,test.h1@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,testing,pjmurray@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Abdul,Nameer,anellengara@fakeeh.care,,,,,,,,,fakeeh.care,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Julia,Testa,juliat@aplacetobehealthy.org,,,,,,,,,aplacetobehealthy.org,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,testing process,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,testing social media 3,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,testing social media leads 2,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+pj -,retesting netsec hb300,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,testing HJ HB300,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,test HB300 defensorum,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,testing HB300 on HIPAAguide,pjmurray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Nicole,Pauley,npauley@phytest.com,,,,,,,,,phytest.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Mathew,Jimmerson,mjimmerson@phytest.com,,,,,,,,,phytest.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ -,second automation test,pj.murray@greengalileo.com,,,,,,,,,greengalileo.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Fname,Lname,test@tester.com,,,,,,,,,tester.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,3rd test - - scale-tone.com,pjmurray@scale-tone.com,,,,,,,,,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,testing,pjmurray@scale-tone.com,,,,,,,,,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,test CJ CTA,pjmurray@scale-tone.com,,,,,,,,,scale-tone.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test Stan,2,editeur@tironem.fr,,,,,,,,,tironem.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Stan,editeur@alternance-professionnelle.fr,,,,,,,,,alternance-professionnelle.fr,False,company,Ambiguous / Needs Review,0.5,fallback,high
+PJ,testing,pjmurray@dominerbp.com,,,,,,,,,dominerbp.com,False,company,Ambiguous / Needs Review,0.5,fallback,high
+Test,Name,test9@compliancejunction.com,,,,,,,,,compliancejunction.com,False,company,Ambiguous / Needs Review,0.5,fallback,high

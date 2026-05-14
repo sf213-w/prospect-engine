@@ -1,32 +1,11 @@
-"""
-1_split_contacts.py
-===================
-
-Stage 1:
-- Simplifies headers
-- Chooses a single canonical email
-- Extracts domains
-- Normalizes organizations
-- Scores contact quality
-- Adds healthcare hints
-- Deduplicates contacts
-- Splits into datasets
-
-Outputs:
-  - company_contacts.csv
-  - personal_contacts.csv
-  - edu_contacts.csv
-  - student_contacts.csv
-  - invalid_contacts.csv
-"""
-
 import sys
 import os
 import re
 import pandas as pd
+from urllib.parse import urlparse
 
 DEFAULT_INPUT = "../pipeline/raw_data.csv"
-DEFAULT_OUTPUT = "1_output"
+DEFAULT_OUTPUT = "1_output/"
 
 EMAIL_PRIORITY = [
 	"Person - Email - Work",
@@ -34,115 +13,99 @@ EMAIL_PRIORITY = [
 	"Person - Email - Other",
 ]
 
-COLUMN_MAP = {
-	"Person - Marketing status": "marketing_status",
-	"Person - Double opt-in": "double_opt_in",
+HEADER_MAP = {
 	"Person - First name": "first_name",
 	"Person - Last name": "last_name",
-	"Person - ReferralURL": "referral_url",
-	"Person - Phone - Work": "phone",
-	"Person - Website": "website",
 	"Person - Title": "title",
-	"Person - State": "state",
-	"Person - Role": "role",
-	"Person - Organization": "organization",
-	"Person - LinkedInCompany": "linkedin_company",
-	"Person - Employees": "employees",
+	"Person - Phone - Work": "phone",
 	"Person - CompanyName": "company_name",
+	"Person - Organization": "organization",
 	"Person - City": "city",
-	"Person - Name": "full_name",
-	"Person - Sweet Spot": "sweet_spot",
-	"Person - Sales Process Stage": "sales_process_stage",
-	"Person - Sample Modules": "sample_modules",
-	"Person - Person created": "date_created",
+	"Person - State": "state",
+	"Person - Website": "website",
+	"Person - Role": "role",
+	"Person - Marketing status": "marketing_status",
+	"Person - LinkedInCompany": "linkedin_company",
 }
 
 PERSONAL_DOMAINS = {
-	"gmail.com",
-	"googlemail.com",
-	"yahoo.com",
-	"hotmail.com",
-	"outlook.com",
-	"live.com",
-	"icloud.com",
-	"me.com",
-	"aol.com",
-	"protonmail.com",
-	"gmx.com",
-	"comcast.net",
-	"att.net",
+	"gmail.com", "googlemail.com", "yahoo.com", "hotmail.com",
+	"outlook.com", "live.com", "icloud.com", "me.com",
+	"aol.com", "protonmail.com",
 }
 
 GENERIC_PREFIXES = {
-	"info",
-	"support",
-	"admin",
-	"contact",
-	"hello",
-	"office",
-	"sales",
-	"billing",
-	"team",
-	"marketing",
-	"privacy",
-	"compliance",
-	"careers",
-	"hr",
-	"help",
+	"info", "hello", "support", "admin", "office",
+	"contact", "sales", "billing", "team",
 }
 
-STUDENT_KEYWORDS = {
-	"student",
-	"students",
-	"school",
-	"district",
-	"isd",
-	"k12",
-}
+COMMON_SECOND_LEVEL_TLDS = {"co.uk", "org.uk", "com.au"}
 
-HEALTHCARE_KEYWORDS = {
-	"dental": "Dental",
-	"dentistry": "Dental",
-	"orthodont": "Dental",
-	"endodont": "Dental",
+# --------------------------------------------------------------
+# SPAM DETECTION
+# --------------------------------------------------------------
 
-	"behavioralhealth": "Mental Health / Counseling",
-	"mentalhealth": "Mental Health / Counseling",
-	"therapy": "Mental Health / Counseling",
-	"counsel": "Mental Health / Counseling",
+SPAM_URL_PATTERNS = [
+	r"https?://\S+",
+	r"bit\.ly",
+	r"t\.co",
+	r"page\.link",
+	r"goo\.gl",
+]
 
-	"vision": "Vision / Optometry",
-	"optometry": "Vision / Optometry",
-	"eye": "Vision / Optometry",
+SPAM_KEYWORDS = [
+	"want to be my bf",
+	"sup!",
+	"click here",
+	"make money",
+	"free money",
+	"urgent",
+	"crypto",
+	"investment opportunity",
+	"dear",
+]
 
-	"hospital": "Hospital / Health System",
-	"healthsystem": "Hospital / Health System",
+# --------------------------------------------------------------
+# EMAIL HANDLING (STRICT)
+# --------------------------------------------------------------
 
-	"chiropractic": "Chiropractic",
+EMAIL_REGEX = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
 
-	"rehab": "Physical Therapy / Rehab",
-	"physicaltherapy": "Physical Therapy / Rehab",
-}
-
-VALID_EMAIL_PATTERN = re.compile(
-	r"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-	re.IGNORECASE
-)
-
-
-def safe_str(value):
-
-	if pd.isna(value):
+def extract_primary_email(value):
+	"""
+	Extract ONLY the first valid email from a noisy field.
+	Guarantees NeverBounce-safe single email output.
+	"""
+	if not value:
 		return ""
 
-	return str(value).strip()
+	emails = EMAIL_REGEX.findall(str(value).lower())
+
+	if not emails:
+		return ""
+
+	return emails[0].strip()
 
 
-def choose_email(row):
+def is_valid_email(email):
+	"""Strict validation for final output"""
+	return bool(email and EMAIL_REGEX.fullmatch(email))
 
+
+def safe_str(v):
+	if pd.isna(v):
+		return ""
+	return str(v).strip()
+
+
+def get_primary_email(row):
+	"""
+	Priority-based email selection:
+	Work > Home > Other
+	"""
 	for col in EMAIL_PRIORITY:
-
-		email = safe_str(row.get(col)).lower()
+		value = safe_str(row.get(col))
+		email = extract_primary_email(value)
 
 		if email:
 			return email
@@ -150,198 +113,231 @@ def choose_email(row):
 	return ""
 
 
-def extract_domain(email):
+# --------------------------------------------------------------
+# DOMAIN HELPERS
+# --------------------------------------------------------------
 
+def extract_domain(email):
 	if "@" not in email:
 		return ""
+	return email.split("@", 1)[1].lower()
 
-	return email.split("@", 1)[1].lower().strip()
 
-
-def root_domain(domain):
-
+def extract_root_domain(domain):
 	if not domain:
 		return ""
 
 	parts = domain.split(".")
+	if len(parts) < 2:
+		return domain
 
-	if len(parts) >= 2:
-		return ".".join(parts[-2:])
+	joined = ".".join(parts[-2:])
+	if joined in COMMON_SECOND_LEVEL_TLDS and len(parts) >= 3:
+		return ".".join(parts[-3:])
 
-	return domain
-
-
-def normalize_org(org):
-
-	org = safe_str(org).lower()
-
-	replacements = {
-		"&": "and",
-		"st.": "saint",
-		"hosp": "hospital",
-		"ctr": "center",
-	}
-
-	for k, v in replacements.items():
-		org = org.replace(k, v)
-
-	org = re.sub(r"[^a-z0-9 ]", " ", org)
-	org = re.sub(r"\s+", " ", org)
-
-	return org.strip()
+	return joined
 
 
-def infer_domain_category(domain):
+# --------------------------------------------------------------
+# BUSINESS LOGIC
+# --------------------------------------------------------------
 
-	if not domain:
-		return ""
+def normalize_org(text):
+	text = safe_str(text).lower()
+	text = re.sub(r"[^a-z0-9\s]", " ", text)
 
-	domain = domain.replace("-", "").replace(".", "")
+	text = re.sub(
+		r"\b(llc|inc|corp|corporation|ltd|pllc|pc|pa|group|company)\b",
+		"",
+		text,
+	)
 
-	for keyword, category in HEALTHCARE_KEYWORDS.items():
+	text = re.sub(r"\s+", " ", text).strip()
+	return text
 
-		if keyword in domain:
-			return category
 
-	return ""
+def infer_provider_signal(text):
+	text = safe_str(text).lower()
+
+	provider_words = [
+		"dds", "dmd", "orthodontics",
+		"family dentistry", "endodontics",
+		"periodontics", "prosthodontics",
+		"pediatric dental",
+	]
+
+	return any(w in text for w in provider_words)
 
 
 def classify_contact(email, domain):
-
-	if not email:
-		return "invalid"
-
-	if not VALID_EMAIL_PATTERN.match(email):
-		return "invalid"
-
 	if not domain:
 		return "invalid"
-
-	if domain in PERSONAL_DOMAINS:
-		return "personal"
 
 	if domain.endswith(".edu") or ".edu." in domain:
 		return "edu"
 
-	for kw in STUDENT_KEYWORDS:
-		if kw in domain:
-			return "student"
+	if domain in PERSONAL_DOMAINS:
+		return "personal"
+
+	local = email.split("@", 1)[0].lower() if "@" in email else ""
+
+	if local in GENERIC_PREFIXES:
+		return "generic_inbox"
 
 	return "company"
 
 
-def detect_generic_inbox(email):
+# --------------------------------------------------------------
+# SPAM FILTERS
+# --------------------------------------------------------------
 
-	if "@" not in email:
-		return False
+def is_spam_row(row):
+	fields = [
+		"first_name", "last_name",
+		"title", "organization",
+		"company_name", "email",
+	]
 
-	local = email.split("@", 1)[0].lower().strip()
+	blob = " ".join(
+		safe_str(row.get(f)).lower()
+		for f in fields
+	)
 
-	return local in GENERIC_PREFIXES
+	if any(re.search(p, blob) for p in SPAM_URL_PATTERNS):
+		return True
+
+	if any(k in blob for k in SPAM_KEYWORDS):
+		return True
+
+	email = safe_str(row.get("email")).lower()
+	if email and any(x in email for x in ["ffrty", "click", "promo", "offer"]):
+		return True
+
+	if blob:
+		alpha_ratio = sum(c.isalpha() for c in blob) / max(len(blob), 1)
+		if alpha_ratio < 0.5:
+			return True
+
+	return False
 
 
-def score_contact(email, generic):
+def is_low_quality_contact(row):
+	has_identity = any([
+		safe_str(row.get("first_name")),
+		safe_str(row.get("last_name")),
+		safe_str(row.get("organization")),
+		safe_str(row.get("company_name")),
+	])
 
-	if not email:
-		return "low"
+	has_email = bool(safe_str(row.get("email")))
 
-	if generic:
-		return "medium"
-
-	return "high"
+	return has_email and not has_identity
 
 
-def save(df, path):
-
-	df.to_csv(path, index=False)
-
-	print(f"Saved: {path:<40} {len(df):>8,} rows")
-
+# --------------------------------------------------------------
+# MAIN
+# --------------------------------------------------------------
 
 def main():
 
-	input_file = (
-		sys.argv[1]
-		if len(sys.argv) > 1
-		else DEFAULT_INPUT
-	)
-
-	output_dir = (
-		sys.argv[2]
-		if len(sys.argv) > 2
-		else DEFAULT_OUTPUT
-	)
+	input_file = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_INPUT
+	output_dir = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_OUTPUT
 
 	os.makedirs(output_dir, exist_ok=True)
 
 	print(f"Loading: {input_file}")
 
-	df = pd.read_csv(input_file, low_memory=False)
+	df = pd.read_csv(input_file, dtype=str, low_memory=False)
 
 	print(f"Loaded {len(df):,} rows")
 
-	df = df.rename(columns=COLUMN_MAP)
+	# ----------------------------------------------------------
+	# Rename headers
+	# ----------------------------------------------------------
+	df = df.rename(columns=HEADER_MAP)
 
-	df["email"] = df.apply(choose_email, axis=1)
+	# ----------------------------------------------------------
+	# DROP SPAM EARLY
+	# ----------------------------------------------------------
+	before = len(df)
 
+	df = df[
+		~df.apply(is_spam_row, axis=1) &
+		~df.apply(is_low_quality_contact, axis=1)
+	]
+
+	print(f"Removed rows: {before - len(df):,}")
+
+	# ----------------------------------------------------------
+	# EMAIL (STRICT SINGLE VALUE ENFORCEMENT)
+	# ----------------------------------------------------------
+	df["email"] = df.apply(get_primary_email, axis=1)
+
+	# FINAL SAFETY PASS (CRITICAL FOR NEVERBOUNCE)
+	df["email"] = df["email"].apply(extract_primary_email)
+
+	# DROP INVALID EMAILS
+	before = len(df)
+	df = df[df["email"].apply(is_valid_email)]
+	print(f"Dropped invalid emails: {before - len(df):,}")
+
+	# ----------------------------------------------------------
+	# DOMAIN FIELDS
+	# ----------------------------------------------------------
 	df["domain"] = df["email"].apply(extract_domain)
+	df["root_domain"] = df["domain"].apply(extract_root_domain)
 
-	df["root_domain"] = df["domain"].apply(root_domain)
-
+	# ----------------------------------------------------------
+	# NORMALIZATION
+	# ----------------------------------------------------------
 	df["normalized_org"] = (
 		df["company_name"]
+		.fillna(df["organization"])
 		.apply(normalize_org)
 	)
 
-	df["domain_category_hint"] = (
-		df["root_domain"]
-		.apply(infer_domain_category)
+	df["likely_provider"] = (
+		df["company_name"]
+		.fillna(df["organization"])
+		.apply(infer_provider_signal)
 	)
 
-	df["is_generic_inbox"] = (
-		df["email"]
-		.apply(detect_generic_inbox)
-	)
-
-	df["contact_quality"] = df.apply(
-		lambda row: score_contact(
-			row["email"],
-			row["is_generic_inbox"]
-		),
-		axis=1
-	)
-
+	# ----------------------------------------------------------
+	# CONTACT TYPE
+	# ----------------------------------------------------------
 	df["contact_type"] = df.apply(
-		lambda row: classify_contact(
-			row["email"],
-			row["root_domain"]
-		),
-		axis=1
+		lambda row: classify_contact(row["email"], row["domain"]),
+		axis=1,
 	)
 
-	df = df.drop_duplicates(
-		subset=["email"],
-		keep="first"
-	)
+	# ----------------------------------------------------------
+	# FINAL COLUMNS
+	# ----------------------------------------------------------
+	final_columns = [
+		"first_name", "last_name", "email",
+		"title", "phone",
+		"company_name", "organization",
+		"city", "state", "website",
+		"normalized_org",
+		"root_domain",
+		"likely_provider",
+		"contact_type",
+	]
 
-	categories = {
-		"company": "company_contacts.csv",
-		"personal": "personal_contacts.csv",
-		"edu": "edu_contacts.csv",
-		"student": "student_contacts.csv",
-		"invalid": "invalid_contacts.csv",
-	}
+	df = df[final_columns]
 
-	for category, filename in categories.items():
+	# ----------------------------------------------------------
+	# SAVE OUTPUTS
+	# ----------------------------------------------------------
+	for category in ["company", "personal", "edu", "generic_inbox"]:
 
 		subset = df[df["contact_type"] == category]
 
-		save(
-			subset,
-			os.path.join(output_dir, filename)
-		)
+		outfile = os.path.join(output_dir, f"{category}_contacts.csv")
 
-	print("\nDone.")
+		subset.to_csv(outfile, index=False)
+
+		print(f"Saved: {outfile} ({len(subset):,} rows)")
 
 
 if __name__ == "__main__":
