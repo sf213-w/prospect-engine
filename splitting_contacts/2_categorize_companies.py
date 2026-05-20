@@ -1,3 +1,5 @@
+# 2_categorize_companies.py
+
 import pandas as pd
 import re
 import sys
