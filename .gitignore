@@ -1,5 +1,6 @@
 # Ignore temporary files for open Word documents
 ~$*.doc*
+*.docx
 
 # Ignore temporary files for open Excel spreadsheets
 ~$*.xls*
@@ -13,6 +14,8 @@ pipeline/*.csv
 splitting_contacts/1_output/*.csv
 splitting_contacts/2_output/*.csv
 splitting_contacts/3_output/*.csv
+splitting_contacts/hhs-data
+neverbounce_data/
 
 # Ignore temporary files
 splitting_contacts/temp.txt

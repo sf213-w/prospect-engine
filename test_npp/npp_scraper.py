@@ -24,6 +24,7 @@ CSV_FIELDS = [
     "source_url",
     "context_snippet",
     "found_via",
+    "date_scraped",
 ]
 
 
@@ -52,6 +53,7 @@ def write_not_found(provider_name, website=""):
         "source_url": "",
         "context_snippet": "",
         "found_via": "not found",
+        "date_scraped": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     })
 
 
@@ -384,6 +386,7 @@ def main():
         print(f"  🌐 Website: {site}")
 
         found_anything = False
+        scrape_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         # Step 2: Check known privacy-related paths on the site
         contacts = find_privacy_contact(site)
@@ -406,6 +409,7 @@ def main():
                     "source_url": c["source"],
                     "context_snippet": c["snippet"][:300],
                     "found_via": "site crawl",
+                    "date_scraped": scrape_time,
                 })
 
         # Step 3: If nothing found on-site, try a targeted web search
@@ -425,6 +429,7 @@ def main():
                     "source_url": source,
                     "context_snippet": "",
                     "found_via": "web search",
+                    "date_scraped": scrape_time,
                 })
             else:
                 print(f"  ❌ No privacy officer contact found")
