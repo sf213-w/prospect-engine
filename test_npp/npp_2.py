@@ -9,10 +9,14 @@ from urllib.parse import urlparse
 from datetime import datetime
 import io
 import os
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+from openpyxl.utils import get_column_letter
 
 URL = "https://ocrportal.hhs.gov/ocr/breach/breach_report_hip.jsf"
 
 TARGET_COUNT = 100
+HHS_CSV_PATH = "hhs_breach_report.csv"  # updated by get_healthcare_providers()
 
 CSV_FILE = f"privacy_contacts_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 CSV_FIELDS = [
@@ -294,6 +298,9 @@ def get_healthcare_providers(hhs_csv_path="hhs_breach_report.csv"):
     Downloads the HHS breach CSV (or reuses an existing file) and returns
     up to TARGET_COUNT unique Healthcare Provider names.
     """
+    global HHS_CSV_PATH
+    HHS_CSV_PATH = hhs_csv_path
+
     # Re-use a previously downloaded file if it exists and is fresh (< 1 day old)
     if os.path.exists(hhs_csv_path):
         age_hours = (time.time() - os.path.getmtime(hhs_csv_path)) / 3600
@@ -658,6 +665,237 @@ def search_for_privacy_officer(company):
     return [], None, "", ""
 
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EXCEL REPORT BUILDER
+# ─────────────────────────────────────────────────────────────────────────────
+
+JUNK_DOMAINS = {
+    "zoominfo.com","signalhire.com","va.gov","hhs.gov","dhs.gov",
+    "jointcommission.org","pnc.com","molinahealthcare.com","bluebeam.com",
+    "prnewswire.com","tiktok.com","leadiq.com","npino.com","mass.gov",
+    "nytimes.com","businesslist.co.ke","causeiq.com","podchaser.com",
+    "web.archive.org","pittmandutton.com","classlawdc.com","federmanlaw.com",
+    "caffertyclobes.com","recovered.org","simplyhired.com",
+}
+
+_EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
+
+def _is_valid_email(email_str):
+    if not email_str or not email_str.strip():
+        return False
+    for addr in re.split(r"[;,\s]+", email_str):
+        addr = addr.strip()
+        if _EMAIL_RE.match(addr):
+            domain = addr.split("@")[-1].lower()
+            if domain not in JUNK_DOMAINS:
+                return True
+    return False
+
+def _scrape_summary(row):
+    found_via = (row.get("found_via") or "").strip().lower()
+    has_email = _is_valid_email(row.get("emails", ""))
+    has_phone = bool((row.get("phones") or "").strip())
+    has_site  = bool((row.get("website") or "").strip())
+    has_name  = bool((row.get("first_name") or "").strip())
+
+    if found_via == "not found":
+        return "Could not find organization" if not has_site else "Found organization — no contact info retrieved"
+
+    parts = []
+    if has_site:  parts.append("org website found")
+    if has_name:  parts.append("contact name identified")
+    if has_email: parts.append("email found")
+    if has_phone: parts.append("phone found")
+    return ("Found: " + ", ".join(parts)) if parts else "Site found — no usable contact info"
+
+def _row_score(r):
+    score = 0
+    if _is_valid_email(r.get("emails", "")): score += 100
+    if r.get("phones", "").strip():           score += 10
+    if r.get("found_via", "") == "site crawl": score += 5
+    if r.get("first_name", "").strip():       score += 2
+    return score
+
+# Style constants
+_NAVY      = "1F3864"; _STEEL     = "2E75B6"; _LGRAY    = "F2F2F2"
+_WHITE     = "FFFFFF"; _GRN_HDR   = "375623"; _GRN_BG   = "E2EFDA"
+_AMB_BG    = "FFF2CC"; _RED_HDR   = "843C0C"; _RED_BG   = "FCE4D6"
+
+def _fill(h):   return PatternFill("solid", fgColor=h)
+def _thin():
+    s = Side(style="thin", color="BFBFBF")
+    return Border(left=s, right=s, top=s, bottom=s)
+def _hfont(c=_WHITE): return Font(name="Arial", bold=True, color=c, size=10)
+def _bfont():         return Font(name="Arial", size=10)
+def _ctr():   return Alignment(horizontal="center", vertical="center", wrap_text=True)
+def _lft():   return Alignment(horizontal="left",   vertical="center", wrap_text=True)
+
+def _style_hdr(ws, row, ncols, bg, fg=_WHITE):
+    for c in range(1, ncols + 1):
+        cell = ws.cell(row=row, column=c)
+        cell.font = _hfont(fg); cell.fill = _fill(bg)
+        cell.alignment = _ctr(); cell.border = _thin()
+
+def _style_data(ws, row, ncols, bg=_WHITE):
+    for c in range(1, ncols + 1):
+        cell = ws.cell(row=row, column=c)
+        cell.font = _bfont(); cell.fill = _fill(bg)
+        cell.alignment = _lft(); cell.border = _thin()
+
+def _banner(ws, text, ncols, bg, fg=_WHITE):
+    ws.merge_cells(f"A1:{get_column_letter(ncols)}1")
+    c = ws["A1"]
+    c.value = text; c.font = Font(name="Arial", bold=True, size=13, color=fg)
+    c.fill = _fill(bg); c.alignment = _ctr()
+    ws.row_dimensions[1].height = 22
+
+def _footer(ws, text, row, ncols, color):
+    ws.merge_cells(f"A{row}:{get_column_letter(ncols)}{row}")
+    c = ws[f"A{row}"]
+    c.value = text; c.font = Font(name="Arial", bold=True, size=10, color=color)
+    c.alignment = _lft()
+
+def _widths(ws, w_list):
+    for i, w in enumerate(w_list, 1):
+        ws.column_dimensions[get_column_letter(i)].width = w
+
+def build_excel_report(hhs_csv_path, scraped_csv_path):
+    """
+    Build a three-sheet Excel workbook from the HHS source CSV and the
+    scraped privacy-contacts CSV, then save it alongside the scraped CSV.
+
+    Sheet 1 – HHS source data in full (with ID column)
+    Sheet 2 – All processed / deduplicated results + search summary
+    Sheet 3 – Actionable rows: valid email addresses only
+    """
+    # ── derive output path from scraped CSV name ───────────────────────────
+    base     = os.path.splitext(scraped_csv_path)[0]
+    out_path = base + ".xlsx"
+
+    # ── load data ──────────────────────────────────────────────────────────
+    hhs_rows, hhs_fields = [], []
+    if os.path.exists(hhs_csv_path):
+        with open(hhs_csv_path, newline="", encoding="utf-8-sig") as f:
+            reader = csv.reader(f)
+            raw_headers = next(reader, [])
+            # Replace garbled JSF component IDs with readable labels
+            CLEAN = {
+                0: "Name of Covered Entity",
+                7: "Business Associate Present",
+            }
+            hhs_fields = [CLEAN.get(i, h) for i, h in enumerate(raw_headers)]
+            hhs_rows   = [dict(zip(hhs_fields, row)) for row in reader]
+
+    with open(scraped_csv_path, newline="", encoding="utf-8-sig") as f:
+        scraped_rows = list(csv.DictReader(f))
+
+    # Deduplicate: one row per provider, keep highest-scoring
+    best = {}
+    for r in scraped_rows:
+        key = r["provider_name"]
+        if key not in best or _row_score(r) > _row_score(best[key]):
+            best[key] = r
+    deduped    = list(best.values())
+    actionable = [r for r in deduped if _is_valid_email(r.get("emails", ""))]
+    no_contact = [r for r in deduped if not _is_valid_email(r.get("emails", ""))]
+
+    wb = Workbook()
+
+    # ── Sheet 1: HHS source ────────────────────────────────────────────────
+    ws1 = wb.active
+    ws1.title = "1 - HHS Source Data"
+    ws1.sheet_properties.tabColor = _STEEL
+
+    hdr1 = ["ID"] + hhs_fields
+    _banner(ws1, "HHS Breach Portal — Downloaded Source Data", len(hdr1), _NAVY)
+    for c, h in enumerate(hdr1, 1):
+        ws1.cell(row=2, column=c).value = h
+    _style_hdr(ws1, 2, len(hdr1), _STEEL)
+    ws1.row_dimensions[2].height = 30
+
+    for i, row in enumerate(hhs_rows, 1):
+        r  = i + 2
+        bg = _WHITE if i % 2 else _LGRAY
+        ws1.cell(row=r, column=1).value = i
+        for c, field in enumerate(hhs_fields, 2):
+            ws1.cell(row=r, column=c).value = row.get(field, "")
+        _style_data(ws1, r, len(hdr1), bg)
+        ws1.cell(row=r, column=1).alignment = _ctr()
+
+    foot1 = len(hhs_rows) + 3
+    _footer(ws1, f"Total records: {len(hhs_rows)}", foot1, len(hdr1), _NAVY)
+    _widths(ws1, [5] + [max(14, min(len(f) + 2, 32)) for f in hhs_fields])
+    ws1.freeze_panes = "A3"
+
+    # ── Sheet 2: all processed results ────────────────────────────────────
+    ws2 = wb.create_sheet("2 - Processed Results")
+    ws2.sheet_properties.tabColor = _GRN_HDR
+
+    S2 = [
+        ("ID", 5), ("Provider Name", 32), ("Breach Date", 13),
+        ("First Name", 12), ("Last Name", 12), ("Email(s)", 34),
+        ("Phone(s)", 22), ("Website", 28), ("Source URL", 36),
+        ("Found Via", 13), ("Search Summary", 42), ("Date Scraped", 18),
+    ]
+    _banner(ws2, "Breach Providers — Processed Contact Search Results", len(S2), _GRN_HDR)
+    for c, (h, _) in enumerate(S2, 1):
+        ws2.cell(row=2, column=c).value = h
+    _style_hdr(ws2, 2, len(S2), _GRN_HDR)
+    ws2.row_dimensions[2].height = 30
+
+    for i, row in enumerate(deduped, 1):
+        r  = i + 2
+        bg = _GRN_BG if _is_valid_email(row.get("emails", "")) else _AMB_BG
+        vals = [i, row.get("provider_name",""), row.get("breach_submission_date",""),
+                row.get("first_name",""), row.get("last_name",""),
+                row.get("emails",""), row.get("phones",""),
+                row.get("website",""), row.get("source_url",""),
+                row.get("found_via",""), _scrape_summary(row), row.get("date_scraped","")]
+        for c, v in enumerate(vals, 1):
+            ws2.cell(row=r, column=c).value = v
+        _style_data(ws2, r, len(S2), bg)
+        ws2.cell(row=r, column=1).alignment = _ctr()
+
+    foot2 = len(deduped) + 3
+    _footer(ws2,
+        f"Unique providers: {len(deduped)}   |   With valid email: {len(actionable)}   |   No contact: {len(no_contact)}",
+        foot2, len(S2), _GRN_HDR)
+    _widths(ws2, [w for _, w in S2])
+    ws2.freeze_panes = "A3"
+
+    # ── Sheet 3: actionable — valid email only ─────────────────────────────
+    ws3 = wb.create_sheet("3 - Valid Email Contacts")
+    ws3.sheet_properties.tabColor = "C00000"
+
+    S3 = S2  # same columns
+    _banner(ws3, "Actionable Contacts — Valid Email Addresses Found", len(S3), _RED_HDR)
+    for c, (h, _) in enumerate(S3, 1):
+        ws3.cell(row=2, column=c).value = h
+    _style_hdr(ws3, 2, len(S3), _RED_HDR)
+    ws3.row_dimensions[2].height = 30
+
+    for i, row in enumerate(actionable, 1):
+        r  = i + 2
+        bg = _WHITE if i % 2 else _RED_BG
+        vals = [i, row.get("provider_name",""), row.get("breach_submission_date",""),
+                row.get("first_name",""), row.get("last_name",""),
+                row.get("emails",""), row.get("phones",""),
+                row.get("website",""), row.get("source_url",""),
+                row.get("found_via",""), _scrape_summary(row), row.get("date_scraped","")]
+        for c, v in enumerate(vals, 1):
+            ws3.cell(row=r, column=c).value = v
+        _style_data(ws3, r, len(S3), bg)
+        ws3.cell(row=r, column=1).alignment = _ctr()
+
+    foot3 = len(actionable) + 3
+    _footer(ws3, f"Actionable records with valid email: {len(actionable)}", foot3, len(S3), _RED_HDR)
+    _widths(ws3, [w for _, w in S3])
+    ws3.freeze_panes = "A3"
+
+    wb.save(out_path)
+    return out_path
+
 # -----------------------------
 # MAIN PIPELINE
 # -----------------------------
@@ -757,6 +995,14 @@ def main():
                 write_not_found(provider, breach_date, site)
 
     print(f"\n✅ Done. Results saved to: {CSV_FILE}")
+
+    # Build Excel report automatically
+    print("\n📊 Building Excel report...")
+    try:
+        xlsx_path = build_excel_report(HHS_CSV_PATH, CSV_FILE)
+        print(f"📗 Excel report saved to: {xlsx_path}")
+    except Exception as e:
+        print(f"⚠️  Excel report failed: {e}")
 
 
 if __name__ == "__main__":
