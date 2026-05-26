@@ -16,6 +16,7 @@ splitting_contacts/2_output/*.csv
 splitting_contacts/3_output/*.csv
 splitting_contacts/hhs-data
 neverbounce_data/
+campaign_analysis/
 
 # Ignore temporary files
 splitting_contacts/temp.txt
