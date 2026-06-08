@@ -18,5 +18,8 @@ splitting_contacts/hhs-data
 neverbounce_data/
 campaign_analysis/
 
+news-searcher/*.md
+news-searcher/*.xlsx
+
 # Ignore temporary files
 splitting_contacts/temp.txt
