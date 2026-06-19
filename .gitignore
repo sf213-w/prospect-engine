@@ -1,3 +1,5 @@
+# Ignore Python bytecode files
+news-searcher/__pycache__/
 # Ignore temporary files for open Word documents
 ~$*.doc*
 *.docx
@@ -20,6 +22,9 @@ campaign_analysis/
 
 news-searcher/*.md
 news-searcher/*.xlsx
+news-searcher/*.txt
 
 # Ignore temporary files
 splitting_contacts/temp.txt
+
+appendix/breach-monitoring-system-guide.md
