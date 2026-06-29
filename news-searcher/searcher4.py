@@ -192,7 +192,7 @@ SOURCES = {
         },
         {
             "name": "California Medical Board Actions",
-            "url": "https://www.mbc.ca.gov/About/News/Press_Releases/",
+            "url": "https://www.mbc.ca.gov/News/News-Releases/",
             "strategy": "html",
             "domain": "ethics",
             "category": "news",

@@ -1,0 +1,21 @@
+# RSS feeds to scan for cybersecurity / HIPAA breach news.
+# Add or remove feeds here -- no code changes needed.
+#
+# name: human-readable label, stored as source_name
+# url: the RSS/Atom feed URL
+
+feeds:
+  - name: "Krebs on Security"
+    url: "https://krebsonsecurity.com/feed/"
+
+  - name: "HIPAA Journal"
+    url: "https://www.hipaajournal.com/feed/"
+
+  - name: "Bleeping Computer"
+    url: "https://www.bleepingcomputer.com/feed/"
+
+  - name: "The Hacker News"
+    url: "https://feeds.feedburner.com/TheHackersNews"
+
+  - name: "Dark Reading"
+    url: "https://www.darkreading.com/rss.xml"

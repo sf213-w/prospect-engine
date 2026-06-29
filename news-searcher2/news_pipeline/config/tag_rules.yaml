@@ -1,0 +1,100 @@
+# Tag rules for the categorizer.
+#
+# Each top-level key is a tag name. Its value is a list of keywords/phrases.
+# An article gets a tag if ANY keyword for that tag appears anywhere in its
+# title or text (case-insensitive). An article can receive multiple tags.
+#
+# Edit this file freely to tune results -- no code changes needed.
+# After editing, re-run categorize.py to apply the new rules (it's safe to
+# re-run; it recomputes tags for every article each time).
+
+# --- Incident type ---
+ransomware:
+  - "ransomware"
+  - "ransom demand"
+  - "encrypted files"
+  - "double extortion"
+
+phishing:
+  - "phishing"
+  - "business email compromise"
+  - " bec "
+  - "spear-phishing"
+  - "spear phishing"
+
+data_breach:
+  - "data breach"
+  - "data leak"
+  - "exposed database"
+  - "unauthorized access"
+
+malware:
+  - "malware"
+  - "trojan"
+  - "spyware"
+  - "rootkit"
+  - "remote access trojan"
+
+vulnerability:
+  - "vulnerability"
+  - "zero-day"
+  - "zero day"
+  - "exploit"
+  - "patch"
+  - "cve-"
+
+vendor_third_party:
+  - "third-party vendor"
+  - "third party vendor"
+  - "supply chain attack"
+  - "vendor breach"
+
+# --- Sector / relevance ---
+hipaa:
+  - "hipaa"
+  - "protected health information"
+  - " phi "
+  - "health insurance portability"
+
+healthcare:
+  - "hospital"
+  - "clinic"
+  - "health system"
+  - "medical group"
+  - "healthcare provider"
+  - "patient records"
+
+small_business:
+  - "small business"
+  - "smb"
+  - "small-business"
+  - "mom-and-pop"
+  - "main street business"
+
+financial_services:
+  - "bank"
+  - "credit union"
+  - "financial institution"
+  - "payment processor"
+
+education:
+  - "school district"
+  - "university"
+  - "higher education"
+  - "k-12"
+
+# --- Outcome / impact ---
+regulatory_action:
+  - "fine"
+  - "settlement"
+  - "ftc"
+  - "office for civil rights"
+  - " ocr "
+  - "lawsuit"
+  - "class action"
+
+operational_impact:
+  - "shut down operations"
+  - "took systems offline"
+  - "disrupted operations"
+  - "forced to close"
