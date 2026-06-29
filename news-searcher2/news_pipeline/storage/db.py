@@ -33,6 +33,16 @@ CREATE TABLE IF NOT EXISTS articles (
 
 CREATE INDEX IF NOT EXISTS idx_articles_content_hash ON articles(content_hash);
 CREATE INDEX IF NOT EXISTS idx_articles_status ON articles(status);
+
+CREATE TABLE IF NOT EXISTS tags (
+    article_id INTEGER NOT NULL,
+    tag TEXT NOT NULL,
+    FOREIGN KEY(article_id) REFERENCES articles(id),
+    UNIQUE(article_id, tag)
+);
+
+CREATE INDEX IF NOT EXISTS idx_tags_tag ON tags(tag);
+CREATE INDEX IF NOT EXISTS idx_tags_article_id ON tags(article_id);
 """
 
 
@@ -43,12 +53,46 @@ def get_connection(db_path: Path = DB_PATH) -> sqlite3.Connection:
 
 
 def init_db(db_path: Path = DB_PATH) -> None:
+    """
+    Create any tables/indexes that don't exist yet, and migrate older
+    articles tables that predate the content_hash/status columns.
+    """
     conn = get_connection(db_path)
     try:
-        conn.executescript(SCHEMA)
+        _migrate_articles_table(conn)
+
+        for statement in SCHEMA.strip().split(";"):
+            statement = statement.strip()
+            if not statement:
+                continue
+            try:
+                conn.execute(statement)
+            except sqlite3.OperationalError as e:
+                print(f"Warning: skipping schema statement due to: {e}\n  {statement[:80]}...")
         conn.commit()
     finally:
         conn.close()
+
+
+def _migrate_articles_table(conn: sqlite3.Connection) -> None:
+    """Add columns to an existing articles table if an older version of
+    this database predates them. Safe to call even if articles doesn't
+    exist yet (the check just finds no columns and does nothing)."""
+    existing_cols = {
+        row[1] for row in conn.execute("PRAGMA table_info(articles)").fetchall()
+    }
+    if not existing_cols:
+        return  # table doesn't exist yet; CREATE TABLE in SCHEMA will make it fresh
+
+    if "content_hash" not in existing_cols:
+        conn.execute("ALTER TABLE articles ADD COLUMN content_hash TEXT")
+        print("Migrated: added content_hash column to articles")
+
+    if "status" not in existing_cols:
+        conn.execute("ALTER TABLE articles ADD COLUMN status TEXT DEFAULT 'new'")
+        print("Migrated: added status column to articles")
+
+    conn.commit()
 
 
 def _normalize_text_for_hash(text: str) -> str:
@@ -109,3 +153,50 @@ def insert_articles(conn: sqlite3.Connection, articles: list[Article]) -> dict:
         _, reason = insert_article(conn, article)
         summary[reason] += 1
     return summary
+
+
+def get_uncategorized_articles(conn: sqlite3.Connection) -> list[sqlite3.Row]:
+    """Articles that haven't been run through the categorizer yet."""
+    return conn.execute(
+        "SELECT id, title, text FROM articles WHERE status = 'new'"
+    ).fetchall()
+
+
+def set_article_tags(conn: sqlite3.Connection, article_id: int, tags: list[str]) -> None:
+    """Replace this article's tags with the given list, and mark it
+    categorized. Safe to re-run: clears old tags first so re-categorizing
+    after a rule change doesn't leave stale tags behind."""
+    conn.execute("DELETE FROM tags WHERE article_id = ?", (article_id,))
+    for tag in tags:
+        conn.execute(
+            "INSERT OR IGNORE INTO tags (article_id, tag) VALUES (?, ?)",
+            (article_id, tag),
+        )
+    new_status = "categorized" if tags else "categorized_no_match"
+    conn.execute(
+        "UPDATE articles SET status = ? WHERE id = ?", (new_status, article_id)
+    )
+    conn.commit()
+
+
+def get_articles_by_tag(conn: sqlite3.Connection, tag: str) -> list[sqlite3.Row]:
+    """All articles carrying a given tag, most recent first."""
+    return conn.execute(
+        """
+        SELECT a.* FROM articles a
+        JOIN tags t ON a.id = t.article_id
+        WHERE t.tag = ?
+        ORDER BY a.fetched_at DESC
+        """,
+        (tag,),
+    ).fetchall()
+
+
+def get_all_tags_with_counts(conn: sqlite3.Connection) -> list[sqlite3.Row]:
+    """Every tag currently in use and how many articles carry it."""
+    return conn.execute(
+        """
+        SELECT tag, COUNT(*) as count FROM tags
+        GROUP BY tag ORDER BY count DESC
+        """
+    ).fetchall()
