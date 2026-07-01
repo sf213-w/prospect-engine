@@ -1,5 +1,6 @@
 # Ignore Python bytecode files
 news-searcher/__pycache__/
+news-searcher2/news_pipeline/__pycache__/
 
 .vscode/
 venv/

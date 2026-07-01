@@ -43,6 +43,14 @@ CREATE TABLE IF NOT EXISTS tags (
 
 CREATE INDEX IF NOT EXISTS idx_tags_tag ON tags(tag);
 CREATE INDEX IF NOT EXISTS idx_tags_article_id ON tags(article_id);
+
+CREATE TABLE IF NOT EXISTS story_runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TEXT,
+    article_ids TEXT,      -- JSON list of source article ids used
+    parameters TEXT,       -- JSON: topic, title, length, tone, model, etc.
+    output_text TEXT
+);
 """
 
 
@@ -199,4 +207,55 @@ def get_all_tags_with_counts(conn: sqlite3.Connection) -> list[sqlite3.Row]:
         SELECT tag, COUNT(*) as count FROM tags
         GROUP BY tag ORDER BY count DESC
         """
+    ).fetchall()
+
+
+def get_articles_by_ids(conn: sqlite3.Connection, article_ids: list[int]) -> list[sqlite3.Row]:
+    """Fetch specific articles by id, preserving no particular order
+    (caller can re-sort if needed). Skips ids that don't exist rather
+    than raising, so a typo in one id doesn't kill the whole selection."""
+    if not article_ids:
+        return []
+    placeholders = ",".join("?" for _ in article_ids)
+    return conn.execute(
+        f"SELECT * FROM articles WHERE id IN ({placeholders})", article_ids
+    ).fetchall()
+
+
+def save_story_run(
+    conn: sqlite3.Connection,
+    article_ids: list[int],
+    parameters: dict,
+    output_text: str,
+) -> int:
+    """Record a generated story and the inputs that produced it. Returns
+    the new story_run id."""
+    import json
+    from datetime import datetime, timezone
+
+    cur = conn.execute(
+        """
+        INSERT INTO story_runs (created_at, article_ids, parameters, output_text)
+        VALUES (?, ?, ?, ?)
+        """,
+        (
+            datetime.now(timezone.utc).isoformat(),
+            json.dumps(article_ids),
+            json.dumps(parameters),
+            output_text,
+        ),
+    )
+    conn.commit()
+    return cur.lastrowid
+
+
+def get_story_run(conn: sqlite3.Connection, story_run_id: int) -> sqlite3.Row | None:
+    return conn.execute(
+        "SELECT * FROM story_runs WHERE id = ?", (story_run_id,)
+    ).fetchone()
+
+
+def list_story_runs(conn: sqlite3.Connection) -> list[sqlite3.Row]:
+    return conn.execute(
+        "SELECT id, created_at, article_ids, parameters FROM story_runs ORDER BY created_at DESC"
     ).fetchall()
