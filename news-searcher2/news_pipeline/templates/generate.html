@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}Generate Story — News Pipeline{% endblock %}
+{% block content %}
+
+<div class="page-header">
+  <h1>Generate Story</h1>
+  <p>Set parameters below and click Generate. The LLM will synthesize a news article from your selected source material.</p>
+</div>
+
+{% if error %}
+  <div class="alert alert-error"><strong>Error:</strong> {{ error }}</div>
+{% endif %}
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start">
+
+  <!-- Left: source articles + params form -->
+  <div>
+    <!-- Selected articles -->
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem">
+        <h2 style="font-size:1rem;font-weight:700">Source Articles ({{ selected_articles|length }})</h2>
+        <a href="/" class="btn btn-secondary btn-sm">← Back to Browser</a>
+      </div>
+      {% if selected_articles %}
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem">
+          {% for a in selected_articles %}
+          <li style="display:flex;justify-content:space-between;align-items:flex-start;padding:0.5rem;background:#f8f9fb;border-radius:5px">
+            <div>
+              <a href="{{ a.url }}" target="_blank" rel="noopener"
+                 style="font-size:0.85rem;font-weight:500;color:#1a1a2e;text-decoration:none">
+                {{ a.title or '(no title)' }}
+              </a>
+              <span style="display:block;font-size:0.75rem;color:#888">{{ a.source_name }}</span>
+            </div>
+            <form method="post" action="/select">
+              <input type="hidden" name="action" value="remove">
+              <input type="hidden" name="ids" value="{{ a.id }}">
+              <button type="submit" class="btn btn-secondary btn-sm" style="padding:0.2rem 0.5rem;margin-left:0.5rem">✕</button>
+            </form>
+          </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="alert alert-info" style="margin-bottom:0">
+          No articles selected. <a href="/">Go to the article browser</a> and select articles to use as source material.
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Generation parameters -->
+    <div class="card">
+      <h2 style="font-size:1rem;font-weight:700;margin-bottom:1rem">Generation Parameters</h2>
+      <form method="post" action="/generate">
+        <div class="form-group">
+          <label>Topic / Focus <span style="font-weight:400;color:#999">(optional)</span></label>
+          <input type="text" name="topic" value="{{ request.form.get('topic','') }}"
+                 placeholder="e.g. what small practices should do to protect themselves">
+          <p class="form-hint">Narrows the angle of the story if you have multiple source articles.</p>
+        </div>
+
+        <div class="form-group">
+          <label>Headline <span style="font-weight:400;color:#999">(optional)</span></label>
+          <input type="text" name="title" value="{{ request.form.get('title','') }}"
+                 placeholder="e.g. Ransomware Wave Hits Small Medical Practices">
+          <p class="form-hint">Leave blank and the model will write its own headline.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div class="form-group">
+            <label>Target Length (words)</label>
+            <input type="number" name="length" value="{{ request.form.get('length','400') }}" min="100" max="2000" step="50">
+          </div>
+          <div class="form-group">
+            <label>Ollama Model</label>
+            <input type="text" name="model" value="{{ request.form.get('model', default_model) }}"
+                   placeholder="llama3.1">
+            <p class="form-hint">Must be pulled locally via <code>ollama pull</code></p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Tone <span style="font-weight:400;color:#999">(optional)</span></label>
+          <input type="text" name="tone" value="{{ request.form.get('tone','') }}"
+                 placeholder="e.g. urgent but not alarmist">
+        </div>
+
+        <div class="form-group">
+          <label>Target Audience <span style="font-weight:400;color:#999">(optional)</span></label>
+          <input type="text" name="audience" value="{{ request.form.get('audience','') }}"
+                 placeholder="e.g. small business owners with no IT staff">
+        </div>
+
+        <div class="form-group">
+          <label>Angle / Emphasis <span style="font-weight:400;color:#999">(optional)</span></label>
+          <textarea name="angle" rows="2" placeholder="e.g. focus on practical steps readers can take this week">{{ request.form.get('angle','') }}</textarea>
+        </div>
+
+        {% if selected_articles %}
+          <button type="submit" class="btn btn-success" style="width:100%;padding:0.75rem;font-size:1rem">
+            ⚡ Generate Story
+          </button>
+        {% else %}
+          <button type="submit" class="btn btn-secondary" disabled style="width:100%;padding:0.75rem;font-size:1rem;cursor:not-allowed;opacity:0.5">
+            Select articles first
+          </button>
+        {% endif %}
+      </form>
+    </div>
+  </div>
+
+  <!-- Right: generated story output -->
+  <div>
+    {% if story %}
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+        <h2 style="font-size:1rem;font-weight:700">Generated Story</h2>
+        <div style="display:flex;gap:0.5rem">
+          {% if run_id %}
+            <a href="/story/{{ run_id }}/download" class="btn btn-secondary btn-sm">⬇ Download</a>
+            <a href="/story/{{ run_id }}" class="btn btn-primary btn-sm">View Full →</a>
+          {% endif %}
+          <button class="btn btn-secondary btn-sm" onclick="copyStory()">📋 Copy</button>
+        </div>
+      </div>
+      <div class="story-text" id="story-output">{{ story }}</div>
+    </div>
+    {% else %}
+    <div class="card" style="text-align:center;padding:4rem 2rem;color:#aaa">
+      <div style="font-size:3rem;margin-bottom:1rem">📝</div>
+      <p style="font-size:1rem;font-weight:500;color:#888">Your generated story will appear here</p>
+      <p style="font-size:0.85rem;margin-top:0.4rem">Select source articles and fill in the parameters, then click Generate.</p>
+    </div>
+    {% endif %}
+  </div>
+
+</div>
+
+<script>
+function copyStory() {
+  const text = document.getElementById('story-output').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    btn.textContent = '✓ Copied';
+    setTimeout(() => btn.textContent = '📋 Copy', 2000);
+  });
+}
+</script>
+
+{% endblock %}

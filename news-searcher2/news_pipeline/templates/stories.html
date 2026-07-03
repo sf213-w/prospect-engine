@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Story History — News Pipeline{% endblock %}
+{% block content %}
+
+<div class="page-header">
+  <h1>Story History</h1>
+  <p>All previously generated stories, most recent first.</p>
+</div>
+
+<div class="card" style="padding:0;overflow:hidden">
+  {% if runs %}
+  <table>
+    <thead>
+      <tr>
+        <th style="width:50px">#</th>
+        <th>Title / Topic</th>
+        <th style="width:120px">Model</th>
+        <th style="width:100px">Sources</th>
+        <th style="width:160px">Generated</th>
+        <th style="width:120px"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in runs %}
+      <tr>
+        <td style="color:#aaa;font-size:0.8rem">{{ r.id }}</td>
+        <td style="font-weight:500">{{ r.title }}</td>
+        <td style="color:#666;font-size:0.82rem">{{ r.model }}</td>
+        <td style="color:#666;font-size:0.82rem">{{ r.article_count }} article(s)</td>
+        <td style="color:#888;font-size:0.8rem">{{ r.created_at }}</td>
+        <td>
+          <a href="/story/{{ r.id }}" class="btn btn-primary btn-sm">View</a>
+          <a href="/story/{{ r.id }}/download" class="btn btn-secondary btn-sm">⬇</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div style="padding:3rem;text-align:center;color:#888">
+    <p style="font-size:1.1rem;margin-bottom:0.5rem">No stories generated yet.</p>
+    <a href="/" class="btn btn-primary" style="margin-top:0.75rem">Browse Articles →</a>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

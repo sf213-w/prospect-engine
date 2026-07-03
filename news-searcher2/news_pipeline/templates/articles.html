@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Articles — News Pipeline{% endblock %}
+
+{% block content %}
+<h1>Articles <span class="pill">{{ total }}</span></h1>
+
+<!-- ── Filter bar ── -->
+<div class="card" style="padding: 1rem 1.5rem;">
+  <form method="get" id="filter-form" style="display:flex; gap:.75rem; align-items:flex-end; flex-wrap:wrap;">
+    <div style="flex:1; min-width:180px;">
+      <label for="q">Search title / text</label>
+      <input type="text" id="q" name="q" value="{{ q }}" placeholder="e.g. ransomware, dental…">
+    </div>
+    <div style="min-width:160px;">
+      <label for="source">Source</label>
+      <select id="source" name="source">
+        <option value="">All sources</option>
+        {% for s in sources %}
+          <option value="{{ s }}" {{ 'selected' if source == s else '' }}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div style="min-width:160px;">
+      <label for="tag">Tag</label>
+      <select id="tag" name="tag">
+        <option value="">All tags</option>
+        {% for t in all_tags %}
+          <option value="{{ t.tag }}" {{ 'selected' if tag == t.tag else '' }}>
+            {{ t.tag }} ({{ t.count }})
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Filter</button>
+      <a href="{{ url_for('articles') }}" class="btn btn-secondary">Clear</a>
+    </div>
+  </form>
+</div>
+
+<!-- ── Selection toolbar ── -->
+<div id="selection-bar" style="display:none; margin-bottom:1rem; padding:.75rem 1rem;
+     background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px;
+     display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
+  <span id="sel-count" style="font-weight:600; color:#1d4ed8;">0 articles selected</span>
+  <a id="generate-link" href="{{ url_for('generate') }}" class="btn btn-primary btn-sm">
+    Generate Story from Selected →
+  </a>
+  <button onclick="clearSelection()" class="btn btn-secondary btn-sm">Clear selection</button>
+</div>
+
+<!-- ── Articles table ── -->
+<div class="card" style="padding:0; overflow:hidden;">
+  {% if articles %}
+  <table>
+    <thead>
+      <tr>
+        <th style="width:36px;">
+          <input type="checkbox" id="select-all" title="Select all on this page"
+                 style="width:16px;height:16px;cursor:pointer;">
+        </th>
+        <th>Title</th>
+        <th>Source</th>
+        <th>Tags</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for a in articles %}
+      <tr id="row-{{ a.id }}" class="{{ 'selected' if a.id|string in selected_ids else '' }}">
+        <td>
+          <input type="checkbox" class="article-cb" data-id="{{ a.id }}"
+                 {{ 'checked' if a.id|string in selected_ids else '' }}
+                 style="width:16px;height:16px;cursor:pointer;">
+        </td>
+        <td>
+          <a href="{{ url_for('article_detail', article_id=a.id) }}"
+             style="color:#1d4ed8; text-decoration:none; font-weight:500;"
+             title="{{ a.title }}">
+            {{ a.title | truncate(90) }}
+          </a>
+        </td>
+        <td class="nowrap muted">{{ a.source_name }}</td>
+        <td>
+          {% for t in a.tags %}
+            <span class="tag">{{ t }}</span>
+          {% endfor %}
+          {% if not a.tags %}
+            <span class="muted">—</span>
+          {% endif %}
+        </td>
+        <td class="nowrap muted">
+          {{ a.published_at[:10] if a.published_at else a.fetched_at[:10] }}
+        </td>
+        <td class="nowrap">
+          <a href="{{ a.url }}" target="_blank" class="muted" style="font-size:.8rem;">↗ source</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <div class="empty">No articles found. Try adjusting your filters, or run the scanner first.</div>
+  {% endif %}
+</div>
+
+<script>
+// ── Selection state stored in sessionStorage so it persists across filter changes ──
+const SEL_KEY = "selected_article_ids";
+
+function getSelected() {
+  try { return new Set(JSON.parse(sessionStorage.getItem(SEL_KEY) || "[]")); }
+  catch { return new Set(); }
+}
+function saveSelected(set) {
+  sessionStorage.setItem(SEL_KEY, JSON.stringify([...set]));
+}
+
+function updateSelectionBar() {
+  const sel = getSelected();
+  const bar = document.getElementById("selection-bar");
+  const countEl = document.getElementById("sel-count");
+  const link = document.getElementById("generate-link");
+  bar.style.display = sel.size > 0 ? "flex" : "none";
+  countEl.textContent = sel.size + " article" + (sel.size !== 1 ? "s" : "") + " selected";
+  link.href = "{{ url_for('generate') }}?ids=" + [...sel].join(",");
+}
+
+function clearSelection() {
+  saveSelected(new Set());
+  document.querySelectorAll(".article-cb").forEach(cb => cb.checked = false);
+  document.querySelectorAll("tr.selected").forEach(tr => tr.classList.remove("selected"));
+  document.getElementById("select-all").checked = false;
+  updateSelectionBar();
+}
+
+// Initialise checkboxes from saved selection
+const sel = getSelected();
+document.querySelectorAll(".article-cb").forEach(cb => {
+  const id = cb.dataset.id;
+  cb.checked = sel.has(id);
+  if (sel.has(id)) cb.closest("tr").classList.add("selected");
+
+  cb.addEventListener("change", () => {
+    const current = getSelected();
+    if (cb.checked) { current.add(id); cb.closest("tr").classList.add("selected"); }
+    else            { current.delete(id); cb.closest("tr").classList.remove("selected"); }
+    saveSelected(current);
+    updateSelectionBar();
+  });
+});
+
+// Select-all on current page
+document.getElementById("select-all").addEventListener("change", function() {
+  const current = getSelected();
+  document.querySelectorAll(".article-cb").forEach(cb => {
+    cb.checked = this.checked;
+    if (this.checked) { current.add(cb.dataset.id); cb.closest("tr").classList.add("selected"); }
+    else              { current.delete(cb.dataset.id); cb.closest("tr").classList.remove("selected"); }
+  });
+  saveSelected(current);
+  updateSelectionBar();
+});
+
+updateSelectionBar();
+</script>
+{% endblock %}

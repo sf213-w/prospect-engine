@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block title %}Articles — News Pipeline{% endblock %}
+{% block content %}
+
+{# Helper macro: build a URL that toggles one tag in/out of active_tags #}
+{% macro tag_url(t) %}
+  {%- if t in active_tags -%}
+    {# remove it: include all active_tags except this one #}
+    /?{% for at in active_tags if at != t %}tag={{ at }}&{% endfor %}{% if active_source %}source={{ active_source }}&{% endif %}{% if active_search %}search={{ active_search }}{% endif %}
+  {%- else -%}
+    {# add it: include all current active_tags plus this one #}
+    /?{% for at in active_tags %}tag={{ at }}&{% endfor %}tag={{ t }}&{% if active_source %}source={{ active_source }}&{% endif %}{% if active_search %}search={{ active_search }}{% endif %}
+  {%- endif -%}
+{% endmacro %}
+
+{# URL that clears all tag filters but keeps source/search #}
+{% macro clear_tags_url() %}/?{% if active_source %}source={{ active_source }}&{% endif %}{% if active_search %}search={{ active_search }}{% endif %}{% endmacro %}
+
+<div class="page-header">
+  <h1>Article Browser</h1>
+  <p>{{ total_articles }} articles in the database. Select articles to use as source material for story generation.</p>
+</div>
+
+<div class="layout-sidebar">
+
+  <!-- Sidebar: tags + sources -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <h3>Filter by Tag</h3>
+      <p style="font-size:0.75rem;color:#888;margin-bottom:0.5rem">Click to add/remove. AND logic — articles must match all selected tags.</p>
+
+      {% if active_tags %}
+        <div style="margin-bottom:0.6rem">
+          <a href="{{ clear_tags_url() }}" class="tag" style="background:#fef2f2;border-color:#fca5a5;color:#991b1b">✕ Clear all tags</a>
+        </div>
+      {% endif %}
+
+      {% for t in all_tags %}
+        <a href="{{ tag_url(t.tag) }}" class="tag {{ 'active' if t.tag in active_tags else '' }}">
+          {{ '✓ ' if t.tag in active_tags else '' }}{{ t.tag }} <span style="opacity:0.6">{{ t.count }}</span>
+        </a>
+      {% endfor %}
+
+      {% if not all_tags %}
+        <p style="font-size:0.8rem;color:#888">No tags yet. Run <code>categorize_articles.py</code> first.</p>
+      {% endif %}
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Selection</h3>
+      {% if selected_ids %}
+        <p style="font-size:0.85rem;margin-bottom:0.5rem"><strong>{{ selected_ids|length }}</strong> article(s) selected</p>
+        <a href="/generate" class="btn btn-success btn-sm" style="display:block;text-align:center;margin-bottom:0.4rem">Generate Story →</a>
+        <form method="post" action="/select">
+          <input type="hidden" name="action" value="clear">
+          <button type="submit" class="btn btn-secondary btn-sm" style="width:100%">Clear Selection</button>
+        </form>
+      {% else %}
+        <p style="font-size:0.82rem;color:#888">Check boxes on the right to select articles.</p>
+      {% endif %}
+    </div>
+  </aside>
+
+  <!-- Main: filter bar + article table -->
+  <main>
+
+    <!-- Active tag pills + filter bar -->
+    {% if active_tags %}
+    <div style="display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin-bottom:0.75rem">
+      <span style="font-size:0.8rem;color:#555;font-weight:600">Filtering by:</span>
+      {% for t in active_tags %}
+        <a href="{{ tag_url(t) }}" class="tag active" style="font-size:0.8rem">✓ {{ t }} ✕</a>
+      {% endfor %}
+      <a href="{{ clear_tags_url() }}" style="font-size:0.78rem;color:#888;text-decoration:underline;margin-left:0.25rem">clear all</a>
+    </div>
+    {% endif %}
+
+    <div class="card" style="padding:1rem 1.25rem;margin-bottom:1rem">
+      <form method="get" action="/" style="display:flex;gap:0.75rem;align-items:flex-end;flex-wrap:wrap">
+        {# preserve active tags when filtering by source/search #}
+        {% for t in active_tags %}
+          <input type="hidden" name="tag" value="{{ t }}">
+        {% endfor %}
+        <div style="flex:2;min-width:180px">
+          <label style="font-size:0.78rem;font-weight:600;color:#555;display:block;margin-bottom:0.25rem">Search title / text</label>
+          <input type="text" name="search" value="{{ active_search or '' }}" placeholder="e.g. HIPAA, dental, phishing…">
+        </div>
+        <div style="flex:1;min-width:140px">
+          <label style="font-size:0.78rem;font-weight:600;color:#555;display:block;margin-bottom:0.25rem">Source</label>
+          <select name="source">
+            <option value="">All sources</option>
+            {% for s in sources %}
+              <option value="{{ s }}" {{ 'selected' if active_source == s else '' }}>{{ s }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+        {% if active_search or active_source or active_tags %}
+          <a href="/" class="btn btn-secondary">Clear All</a>
+        {% endif %}
+      </form>
+    </div>
+
+    {% if articles %}
+    <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.75rem">
+      <span style="font-size:0.85rem;color:#555">{{ articles|length }} article(s) shown</span>
+      <form method="post" action="/select" style="display:inline">
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="ids" value="{{ articles|map(attribute='id')|join(',') }}">
+        <button type="submit" class="btn btn-secondary btn-sm">Select All Shown</button>
+      </form>
+      {% if selected_ids %}
+      <form method="post" action="/select" style="display:inline">
+        <input type="hidden" name="action" value="clear">
+        <button type="submit" class="btn btn-secondary btn-sm">Clear Selection</button>
+      </form>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <div class="card" style="padding:0;overflow:hidden">
+      {% if articles %}
+      <table>
+        <thead>
+          <tr>
+            <th style="width:36px"></th>
+            <th>Title</th>
+            <th style="width:160px">Source</th>
+            <th style="width:240px">Tags</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in articles %}
+          <tr>
+            <td style="text-align:center">
+              <form method="post" action="/select">
+                {% if a.id in selected_ids %}
+                  <input type="hidden" name="action" value="remove">
+                  <input type="hidden" name="ids" value="{{ a.id }}">
+                  <button type="submit" title="Remove from selection"
+                    style="background:#4361b0;color:#fff;border:none;border-radius:4px;width:22px;height:22px;cursor:pointer;font-size:0.75rem">✓</button>
+                {% else %}
+                  <input type="hidden" name="action" value="add">
+                  <input type="hidden" name="ids" value="{{ a.id }}">
+                  <button type="submit" title="Add to selection"
+                    style="background:#e5e7eb;color:#888;border:none;border-radius:4px;width:22px;height:22px;cursor:pointer;font-size:0.75rem">+</button>
+                {% endif %}
+              </form>
+            </td>
+            <td>
+              <a href="{{ a.url }}" target="_blank" rel="noopener"
+                 style="color:#1a1a2e;text-decoration:none;font-weight:500;line-height:1.3">
+                {{ a.title or '(no title)' }}
+              </a>
+              {% if a.published_at %}
+                <span style="display:block;font-size:0.75rem;color:#999;margin-top:0.15rem">{{ a.published_at[:16] }}</span>
+              {% endif %}
+            </td>
+            <td style="color:#555;font-size:0.82rem">{{ a.source_name }}</td>
+            <td>
+              {% for t in a.tags %}
+                {# clicking a tag in the results table toggles it in the sidebar filter #}
+                <a href="{{ tag_url(t) }}" class="tag {{ 'active' if t in active_tags else '' }}">{{ t }}</a>
+              {% endfor %}
+              {% if a.status == 'categorized_no_match' %}
+                <span style="font-size:0.72rem;color:#aaa">untagged</span>
+              {% elif a.status == 'new' %}
+                <span style="font-size:0.72rem;color:#f59e0b">not categorized</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+        <div style="padding:3rem;text-align:center;color:#888">
+          <p style="font-size:1.1rem;margin-bottom:0.5rem">No articles matched.</p>
+          <p style="font-size:0.85rem">Try adjusting your filters or running <code>python run_scan.py</code>.</p>
+          {% if active_tags %}
+            <a href="{{ clear_tags_url() }}" class="btn btn-secondary" style="margin-top:1rem">Clear Tag Filters</a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

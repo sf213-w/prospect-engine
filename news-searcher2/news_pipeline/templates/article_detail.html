@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title | truncate(60) }} — News Pipeline{% endblock %}
+
+{% block content %}
+<div style="margin-bottom:1rem;">
+  <a href="{{ url_for('articles') }}" class="muted" style="text-decoration:none;">← Back to Articles</a>
+</div>
+
+<div class="card">
+  <h1 style="font-size:1.4rem; margin-bottom:.75rem;">{{ article.title }}</h1>
+
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+    <span class="muted">📰 {{ article.source_name }}</span>
+    <span class="muted">🗓 {{ article.published_at[:10] if article.published_at else article.fetched_at[:10] }}</span>
+    <a href="{{ article.url }}" target="_blank" class="muted" style="text-decoration:none;">↗ Original source</a>
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    {% for t in tags %}
+      <span class="tag">{{ t }}</span>
+    {% endfor %}
+    {% if not tags %}
+      <span class="muted">No tags — run categorize_articles.py to tag articles</span>
+    {% endif %}
+  </div>
+
+  <div style="display:flex; gap:.75rem; margin-bottom:1.5rem;">
+    <a href="{{ url_for('generate') }}?ids={{ article.id }}" class="btn btn-primary btn-sm">
+      Generate story from this article
+    </a>
+  </div>
+
+  <hr style="border:none; border-top:1px solid #e2e8f0; margin-bottom:1.5rem;">
+
+  <div style="white-space:pre-wrap; font-family:Georgia,serif; line-height:1.75; font-size:.95rem;">{{ article.text }}</div>
+</div>
+{% endblock %}

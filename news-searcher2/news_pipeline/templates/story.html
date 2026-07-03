@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Story #{{ run.id }} — News Pipeline{% endblock %}
+{% block content %}
+
+<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem">
+  <div class="page-header" style="margin-bottom:0">
+    <h1>Story #{{ run.id }}</h1>
+    <p>Generated {{ run.created_at[:19].replace('T',' ') }} using {{ parameters.get('model','') }}</p>
+  </div>
+  <div style="display:flex;gap:0.5rem">
+    <button class="btn btn-secondary btn-sm" onclick="copyStory()">📋 Copy</button>
+    <a href="/story/{{ run.id }}/download" class="btn btn-secondary btn-sm">⬇ Download</a>
+    <a href="/stories" class="btn btn-secondary btn-sm">← All Stories</a>
+  </div>
+</div>
+
+<div style="display:grid;grid-template-columns:2fr 1fr;gap:1.5rem;align-items:start">
+
+  <div>
+    <div class="card" style="padding:0">
+      <div class="story-text" id="story-output">{{ run.output_text }}</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="card">
+      <h3 style="font-size:0.85rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">Parameters Used</h3>
+      <table style="font-size:0.82rem">
+        {% for key, val in parameters.items() %}
+        {% if val %}
+        <tr>
+          <td style="color:#888;padding:0.3rem 0.5rem 0.3rem 0;white-space:nowrap;border:none;font-weight:600">{{ key.replace('_',' ').title() }}</td>
+          <td style="border:none;padding:0.3rem 0">{{ val }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </table>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:0.85rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.75rem">Source Articles ({{ articles|length }})</h3>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem">
+        {% for a in articles %}
+        <li style="padding:0.5rem;background:#f8f9fb;border-radius:5px;font-size:0.82rem">
+          <a href="{{ a.url }}" target="_blank" rel="noopener" style="color:#1a1a2e;font-weight:500;text-decoration:none">
+            {{ a.title or '(no title)' }}
+          </a>
+          <span style="display:block;color:#888;font-size:0.75rem;margin-top:0.1rem">{{ a.source_name }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+function copyStory() {
+  const text = document.getElementById('story-output').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    btn.textContent = '✓ Copied';
+    setTimeout(() => btn.textContent = '📋 Copy', 2000);
+  });
+}
+</script>
+
+{% endblock %}

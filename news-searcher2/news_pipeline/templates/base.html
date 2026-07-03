@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}News Pipeline{% endblock %}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f5f7; color: #1a1a2e; min-height: 100vh; }
+
+    nav { background: #1a1a2e; padding: 0 2rem; display: flex; align-items: center; gap: 2rem; height: 56px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    nav .brand { color: #e2b96f; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+    nav a { color: #b0b8d0; text-decoration: none; font-size: 0.9rem; padding: 0.25rem 0.5rem; border-radius: 4px; transition: color 0.15s, background 0.15s; }
+    nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,0.1); }
+    nav .sel-badge { margin-left: auto; background: #e2b96f; color: #1a1a2e; font-size: 0.8rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 99px; text-decoration: none; }
+    nav .sel-badge:hover { background: #f0ca80; }
+
+    .page { max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem; }
+    .page-header { margin-bottom: 1.5rem; }
+    .page-header h1 { font-size: 1.5rem; font-weight: 700; }
+    .page-header p  { color: #666; margin-top: 0.25rem; font-size: 0.9rem; }
+
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+
+    .tag { display: inline-block; background: #eef2ff; color: #4361b0; font-size: 0.72rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 99px; margin: 0.1rem; text-decoration: none; border: 1px solid #d0daff; transition: background 0.15s; }
+    .tag:hover { background: #d0daff; }
+    .tag.active { background: #4361b0; color: #fff; border-color: #4361b0; }
+
+    .btn { display: inline-block; padding: 0.5rem 1.1rem; border-radius: 6px; font-size: 0.88rem; font-weight: 600; cursor: pointer; border: none; text-decoration: none; transition: opacity 0.15s; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary   { background: #4361b0; color: #fff; }
+    .btn-success   { background: #2d8f5e; color: #fff; }
+    .btn-danger    { background: #c0392b; color: #fff; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn-sm { padding: 0.3rem 0.7rem; font-size: 0.8rem; }
+
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: #444; margin-bottom: 0.35rem; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.5rem 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 0.9rem; background: #fafafa; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #4361b0; background: #fff; }
+    .form-hint { font-size: 0.78rem; color: #888; margin-top: 0.25rem; }
+
+    .alert { padding: 0.9rem 1.1rem; border-radius: 6px; margin-bottom: 1rem; font-size: 0.9rem; }
+    .alert-error   { background: #fef2f2; border: 1px solid #fca5a5; color: #991b1b; }
+    .alert-success { background: #f0fdf4; border: 1px solid #86efac; color: #166534; }
+    .alert-info    { background: #eff6ff; border: 1px solid #93c5fd; color: #1e40af; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th { text-align: left; padding: 0.6rem 0.75rem; background: #f8f9fb; border-bottom: 2px solid #e5e7eb; font-size: 0.78rem; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
+    td { padding: 0.65rem 0.75rem; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafbff; }
+
+    .story-text { white-space: pre-wrap; font-family: Georgia, serif; font-size: 1rem; line-height: 1.75; color: #222; padding: 1.5rem; background: #fdfdfd; border: 1px solid #e5e7eb; border-radius: 6px; }
+
+    .layout-sidebar { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; align-items: start; }
+    .sidebar { position: sticky; top: 72px; }
+    .sidebar h3 { font-size: 0.78rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem; }
+    .sidebar-section { margin-bottom: 1.5rem; }
+
+    @media (max-width: 768px) { .layout-sidebar { grid-template-columns: 1fr; } .sidebar { position: static; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="brand">📰 News Pipeline</a>
+  <a href="/" class="{{ 'active' if request.endpoint == 'index' else '' }}">Articles</a>
+  <a href="/generate" class="{{ 'active' if request.endpoint == 'generate_story' else '' }}">Generate</a>
+  <a href="/stories" class="{{ 'active' if request.endpoint == 'stories' else '' }}">Story History</a>
+  {% set sel = session.get('selected_ids', []) %}
+  {% if sel %}<a href="/generate" class="sel-badge">{{ sel|length }} selected →</a>{% endif %}
+</nav>
+<div class="page">{% block content %}{% endblock %}</div>
+</body>
+</html>
