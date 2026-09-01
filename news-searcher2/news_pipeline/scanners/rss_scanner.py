@@ -16,6 +16,7 @@ import logging
 from pathlib import Path
 
 import feedparser
+import requests
 import trafilatura
 import yaml
 
@@ -60,7 +61,13 @@ class RSSScanner:
         return articles
 
     def _fetch_feed_entries(self, feed_url: str) -> list[tuple[str, str, str | None]]:
-        parsed = feedparser.parse(feed_url)
+        # Fetch via requests (uses certifi's CA bundle) rather than letting
+        # feedparser open the URL itself -- on Windows, feedparser/urllib
+        # falls back to the OS certificate store, which can contain a
+        # malformed root CA and break TLS verification for every feed.
+        response = requests.get(feed_url, timeout=self.timeout)
+        response.raise_for_status()
+        parsed = feedparser.parse(response.content)
         if parsed.bozo and not parsed.entries:
             # bozo=True with no entries usually means the feed didn't parse at all
             raise ValueError(f"Could not parse feed: {parsed.bozo_exception}")
